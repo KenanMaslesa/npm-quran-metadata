@@ -1,0 +1,14 @@
+{
+  "name": "@kmaslesa/quran-metadata",
+  "version": "1.0.0",
+  "description": "Qur'an metadata",
+  "main": "index.js",
+  "keywords": [
+    "quran",
+    "kur'an",
+    "islam",
+    "muslim"
+  ],
+  "author": "Kenan Maslesa",
+  "license": "ISC"
+}
