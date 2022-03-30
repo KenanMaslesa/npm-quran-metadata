@@ -3,13 +3,15 @@ const suraList = [
 		"index":1,
 		"numberOfAyas":7,
 		"startAyaIndex":0,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Fatiha",
-			"translation":"Pristup",
-			"purposeOfSura":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
+		"name":{
+			"arabic":"الفاتحة",
+			"english":"The Opener",
+			"englishTranscription":"Al-Fatihah",
+			"bosnian":"Pristup",
+			"bosnianTranscription":"El-Fatiha"
+		},
+		"aboutSura":{
+			"bosnian":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
 		},
 		"type":"Meccan",
 		"orderInPublishing":5,
@@ -25,15 +27,17 @@ const suraList = [
 		"index":2,
 		"numberOfAyas":286,
 		"startAyaIndex":7,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Bekare",
-			"translation":"Krava",
-			"purposeOfSura":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
+		"name":{
+			"arabic":"البقرة",
+			"english":"The Cow",
+			"englishTranscription":"Al-Baqarah",
+			"bosnian":"Krava",
+			"bosnianTranscription":"El-Bekare"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
+		},
+		"type":"Medinan",
 		"orderInPublishing":87,
 		"numberOfWords":6144,
 		"numberOfLetters":25500,
@@ -47,15 +51,17 @@ const suraList = [
 		"index":3,
 		"numberOfAyas":200,
 		"startAyaIndex":293,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ali-'Imran",
-			"translation":"Imranova porodica",
-			"purposeOfSura":"Ustrajnost na islamu nakon njegovog upotpunjenja i objašnjenja, i odgovor na sumnje sljedbenika Knjige, posebno kršćana."
+		"name":{
+			"arabic":"آل عمران",
+			"english":"Family of Imran",
+			"englishTranscription":"Ali 'Imran",
+			"bosnian":"Imranova porodica",
+			"bosnianTranscription":"Ali-'Imran"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ustrajnost na islamu nakon njegovog upotpunjenja i objašnjenja, i odgovor na sumnje sljedbenika Knjige, posebno kršćana."
+		},
+		"type":"Medinan",
 		"orderInPublishing":89,
 		"numberOfWords":3505,
 		"numberOfLetters":14525,
@@ -69,15 +75,17 @@ const suraList = [
 		"index":4,
 		"numberOfAyas":176,
 		"startAyaIndex":493,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nisa",
-			"translation":"Žene",
-			"purposeOfSura":"Uređenje muslimanskog društva iznutra kroz čuvanje socijalno-ekonomskih prava, i uklanjanje ostataka paganizma, koncetrišući se na prava žena i slabih."
+		"name":{
+			"arabic":"النساء",
+			"english":"The Women",
+			"englishTranscription":"An-Nisa",
+			"bosnian":"Žene",
+			"bosnianTranscription":"En-Nisa"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Uređenje muslimanskog društva iznutra kroz čuvanje socijalno-ekonomskih prava, i uklanjanje ostataka paganizma, koncetrišući se na prava žena i slabih."
+		},
+		"type":"Medinan",
 		"orderInPublishing":92,
 		"numberOfWords":3767,
 		"numberOfLetters":16030,
@@ -91,15 +99,17 @@ const suraList = [
 		"index":5,
 		"numberOfAyas":120,
 		"startAyaIndex":669,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Maide",
-			"translation":"Trpeza",
-			"purposeOfSura":"Poštovanje ugovora, pridržavanje zakona i upotpunjenje vjere."
+		"name":{
+			"arabic":"المائدة",
+			"english":"The Table Spread",
+			"englishTranscription":"Al-Ma'idah",
+			"bosnian":"Trpeza",
+			"bosnianTranscription":"El-Maide"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Poštovanje ugovora, pridržavanje zakona i upotpunjenje vjere."
+		},
+		"type":"Medinan",
 		"orderInPublishing":112,
 		"numberOfWords":2841,
 		"numberOfLetters":11933,
@@ -113,13 +123,15 @@ const suraList = [
 		"index":6,
 		"numberOfAyas":165,
 		"startAyaIndex":789,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-En'am",
-			"translation":"Stoka",
-			"purposeOfSura":"U ovoj se suri nalazi potvrda monoteizma uz razumske dokaze i pobijanje višebožačkih uvjerenja."
+		"name":{
+			"arabic":"الأنعام",
+			"english":"The Cattle",
+			"englishTranscription":"Al-An'am",
+			"bosnian":"Stoka",
+			"bosnianTranscription":"El-En'am"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj se suri nalazi potvrda monoteizma uz razumske dokaze i pobijanje višebožačkih uvjerenja."
 		},
 		"type":"Meccan",
 		"orderInPublishing":55,
@@ -135,13 +147,15 @@ const suraList = [
 		"index":7,
 		"numberOfAyas":206,
 		"startAyaIndex":954,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-A'raf",
-			"translation":"Bedemi",
-			"purposeOfSura":"Objašnjenje zakona borbe između vjere i nevjere i konačnica te borbe kroz navođenje događaja između vjerovjesnika i njihovih naroda."
+		"name":{
+			"arabic":"الأعراف",
+			"english":"The Heights",
+			"englishTranscription":"Al-A'raf",
+			"bosnian":"Bedemi",
+			"bosnianTranscription":"El-A'raf"
+		},
+		"aboutSura":{
+			"bosnian":"Objašnjenje zakona borbe između vjere i nevjere i konačnica te borbe kroz navođenje događaja između vjerovjesnika i njihovih naroda."
 		},
 		"type":"Meccan",
 		"orderInPublishing":39,
@@ -157,15 +171,17 @@ const suraList = [
 		"index":8,
 		"numberOfAyas":75,
 		"startAyaIndex":1160,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Enfal",
-			"translation":"Plijen",
-			"purposeOfSura":"Objašnjavanje propisa borbe i uzroka pobjede i poraza kroz kazivanje o bici na Bedru."
+		"name":{
+			"arabic":"الأنفال",
+			"english":"The Spoils of War",
+			"englishTranscription":"Al-Anfal",
+			"bosnian":"Plijen",
+			"bosnianTranscription":"El-Enfal"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Objašnjavanje propisa borbe i uzroka pobjede i poraza kroz kazivanje o bici na Bedru."
+		},
+		"type":"Medinan",
 		"orderInPublishing":88,
 		"numberOfWords":1246,
 		"numberOfLetters":5080,
@@ -179,15 +195,17 @@ const suraList = [
 		"index":9,
 		"numberOfAyas":129,
 		"startAyaIndex":1235,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tevbe",
-			"translation":"Pokajanje",
-			"purposeOfSura":"Ova sura otkriva stanje raznih kategorija ljudi i govori o odnosu spram njih, pa govori o odnosu prema nevjernicima, razotkriva dvoličanjake i karakterizira vjernike."
+		"name":{
+			"arabic":"التوبة",
+			"english":"The Repentance",
+			"englishTranscription":"At-Tawbah",
+			"bosnian":"Pokajanje",
+			"bosnianTranscription":"Et-Tevbe"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ova sura otkriva stanje raznih kategorija ljudi i govori o odnosu spram njih, pa govori o odnosu prema nevjernicima, razotkriva dvoličanjake i karakterizira vjernike."
+		},
+		"type":"Medinan",
 		"orderInPublishing":113,
 		"numberOfWords":2505,
 		"numberOfLetters":10488,
@@ -201,13 +219,15 @@ const suraList = [
 		"index":10,
 		"numberOfAyas":109,
 		"startAyaIndex":1364,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Junus",
-			"translation":"Junus",
-			"purposeOfSura":"Suprotstavljanje onima koji poriču Objavu, putem dokaza i argumeneta i pozivanje u vjerovanje metodom poticanja i zastrašivanja."
+		"name":{
+			"arabic":"يونس",
+			"english":"Jonah",
+			"englishTranscription":"Yunus",
+			"bosnian":"Junus",
+			"bosnianTranscription":"Junus"
+		},
+		"aboutSura":{
+			"bosnian":"Suprotstavljanje onima koji poriču Objavu, putem dokaza i argumeneta i pozivanje u vjerovanje metodom poticanja i zastrašivanja."
 		},
 		"type":"Meccan",
 		"orderInPublishing":51,
@@ -223,13 +243,15 @@ const suraList = [
 		"index":11,
 		"numberOfAyas":123,
 		"startAyaIndex":1473,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Hud",
-			"translation":"Hud",
-			"purposeOfSura":"Pojašnjenje metodologije poslanika spram njihovih naroda koji su poricali istinu."
+		"name":{
+			"arabic":"هود",
+			"english":"Hud",
+			"englishTranscription":"Hud",
+			"bosnian":"Hud",
+			"bosnianTranscription":"Hud"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašnjenje metodologije poslanika spram njihovih naroda koji su poricali istinu."
 		},
 		"type":"Meccan",
 		"orderInPublishing":52,
@@ -245,13 +267,15 @@ const suraList = [
 		"index":12,
 		"numberOfAyas":111,
 		"startAyaIndex":1596,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Jusuf",
-			"translation":"Jusuf",
-			"purposeOfSura":"Allahovo obećanje da će dati vlast na Zemlji nakon jasnog iskušenja, što je ustvari učvršćivanje i obećanje Muhammedu, sallallahu 'alejhi ve sellem, i vjernicima."
+		"name":{
+			"arabic":"يوسف",
+			"english":"Joseph",
+			"englishTranscription":"Yusuf",
+			"bosnian":"Jusuf",
+			"bosnianTranscription":"Jusuf"
+		},
+		"aboutSura":{
+			"bosnian":"Allahovo obećanje da će dati vlast na Zemlji nakon jasnog iskušenja, što je ustvari učvršćivanje i obećanje Muhammedu, sallallahu 'alejhi ve sellem, i vjernicima."
 		},
 		"type":"Meccan",
 		"orderInPublishing":53,
@@ -267,15 +291,17 @@ const suraList = [
 		"index":13,
 		"numberOfAyas":43,
 		"startAyaIndex":1707,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Er-Ra'd",
-			"translation":"Grom",
-			"purposeOfSura":"Objašnjenje suštine božanske snage i moći i vidova njene manifestacije, potvrda obećanja i prijetnje i objašnjenje Allahovih zakona u konstantnom mijenjanju i promjeni."
+		"name":{
+			"arabic":"الرعد",
+			"english":"The Thunder",
+			"englishTranscription":"Ar-Ra'd",
+			"bosnian":"Grom",
+			"bosnianTranscription":"Er-Ra'd"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Objašnjenje suštine božanske snage i moći i vidova njene manifestacije, potvrda obećanja i prijetnje i objašnjenje Allahovih zakona u konstantnom mijenjanju i promjeni."
+		},
+		"type":"Medinan",
 		"orderInPublishing":96,
 		"numberOfWords":857,
 		"numberOfLetters":3506,
@@ -289,13 +315,15 @@ const suraList = [
 		"index":14,
 		"numberOfAyas":52,
 		"startAyaIndex":1750,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ibrahim",
-			"translation":"Ibrahim",
-			"purposeOfSura":"Ova sura govori o ulozi Allahovih poslanika i njihovom nastojanju da ljude izvedu iz tmina višeboštva na svjetlo monoteizma, iako su im se njihovi narodi suprotstavljali, kako bi srce Muhammeda, sallallahu 'alejhi ve sellem, ostalo čvrsto i postojano, i kako bi dodatno zaprijetio nepravednicima."
+		"name":{
+			"arabic":"ابراهيم",
+			"english":"Abrahim",
+			"englishTranscription":"Ibrahim",
+			"bosnian":"Ibrahim",
+			"bosnianTranscription":"Ibrahim"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura govori o ulozi Allahovih poslanika i njihovom nastojanju da ljude izvedu iz tmina višeboštva na svjetlo monoteizma, iako su im se njihovi narodi suprotstavljali, kako bi srce Muhammeda, sallallahu 'alejhi ve sellem, ostalo čvrsto i postojano, i kako bi dodatno zaprijetio nepravednicima."
 		},
 		"type":"Meccan",
 		"orderInPublishing":72,
@@ -311,13 +339,15 @@ const suraList = [
 		"index":15,
 		"numberOfAyas":99,
 		"startAyaIndex":1802,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Hidžr",
-			"translation":"Hidžr",
-			"purposeOfSura":"Predočavajući prizore stradanja nekih ljudi, ova sura upozorava poricatelje na kaznu koja ih čeka, te donosi radosne vijesti onima koji vjeruju."
+		"name":{
+			"arabic":"الحجر",
+			"english":"The Rocky Tract",
+			"englishTranscription":"Al-Hijr",
+			"bosnian":"Hidžr",
+			"bosnianTranscription":"El-Hidžr"
+		},
+		"aboutSura":{
+			"bosnian":"Predočavajući prizore stradanja nekih ljudi, ova sura upozorava poricatelje na kaznu koja ih čeka, te donosi radosne vijesti onima koji vjeruju."
 		},
 		"type":"Meccan",
 		"orderInPublishing":54,
@@ -333,13 +363,15 @@ const suraList = [
 		"index":16,
 		"numberOfAyas":128,
 		"startAyaIndex":1901,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nahl",
-			"translation":"Pčele",
-			"purposeOfSura":"Podsjeća na blagodati, koje, opet, upućuju na Onog Koji ih je dao. One nas obavezuju na poslušnost Allahu i upozoravaju na opasnost njihovog negiranja."
+		"name":{
+			"arabic":"النحل",
+			"english":"The Bee",
+			"englishTranscription":"An-Nahl",
+			"bosnian":"Pčele",
+			"bosnianTranscription":"En-Nahl"
+		},
+		"aboutSura":{
+			"bosnian":"Podsjeća na blagodati, koje, opet, upućuju na Onog Koji ih je dao. One nas obavezuju na poslušnost Allahu i upozoravaju na opasnost njihovog negiranja."
 		},
 		"type":"Meccan",
 		"orderInPublishing":70,
@@ -355,13 +387,15 @@ const suraList = [
 		"index":17,
 		"numberOfAyas":111,
 		"startAyaIndex":2029,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Isra'",
-			"translation":"Noćno putovanje",
-			"purposeOfSura":"Ova sura govori o savršenstvu poslanstva Muhammedova, sallallahu alejhi ve sellem. Ona sadrži radosne vijesti koje su se već dogodile i one koje će se dogoditi."
+		"name":{
+			"arabic":"الإسراء",
+			"english":"The Night Journey",
+			"englishTranscription":"Al-Isra",
+			"bosnian":"Noćno putovanje",
+			"bosnianTranscription":"El-Isra'"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura govori o savršenstvu poslanstva Muhammedova, sallallahu alejhi ve sellem. Ona sadrži radosne vijesti koje su se već dogodile i one koje će se dogoditi."
 		},
 		"type":"Meccan",
 		"orderInPublishing":50,
@@ -377,13 +411,15 @@ const suraList = [
 		"index":18,
 		"numberOfAyas":110,
 		"startAyaIndex":2140,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kehf",
-			"translation":"Pećina",
-			"purposeOfSura":"Ova sura sadrži uputstva kako se treba ponašati u smutnjama i navodi primjere s tim u vezi."
+		"name":{
+			"arabic":"الكهف",
+			"english":"The Cave",
+			"englishTranscription":"Al-Kahf",
+			"bosnian":"Pećina",
+			"bosnianTranscription":"El-Kehf"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura sadrži uputstva kako se treba ponašati u smutnjama i navodi primjere s tim u vezi."
 		},
 		"type":"Meccan",
 		"orderInPublishing":69,
@@ -399,13 +435,15 @@ const suraList = [
 		"index":19,
 		"numberOfAyas":98,
 		"startAyaIndex":2250,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Merjem",
-			"translation":"Merjema",
-			"purposeOfSura":"Ova sura sadrži pokazatelje Allahove milosti prema iskrenim robovima, evlijama, te pokazatelje davanja blagodati, kao što je npr. blagodat djeteta. U njoj je Gospodar objasnio da je daleko od toga da ima dijete i pomagače. Time je pobio mišljenje onih koji to Gospodaru pripisuju."
+		"name":{
+			"arabic":"مريم",
+			"english":"Mary",
+			"englishTranscription":"Maryam",
+			"bosnian":"Merjema",
+			"bosnianTranscription":"Merjem"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura sadrži pokazatelje Allahove milosti prema iskrenim robovima, evlijama, te pokazatelje davanja blagodati, kao što je npr. blagodat djeteta. U njoj je Gospodar objasnio da je daleko od toga da ima dijete i pomagače. Time je pobio mišljenje onih koji to Gospodaru pripisuju."
 		},
 		"type":"Meccan",
 		"orderInPublishing":44,
@@ -421,13 +459,15 @@ const suraList = [
 		"index":20,
 		"numberOfAyas":135,
 		"startAyaIndex":2348,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Taha",
-			"translation":"Taha",
-			"purposeOfSura":"Ova je sura podrška Vjerovjesniku, sallallahu alejhi ve sellem, da bude strpljiv u dostavljanju poslanice."
+		"name":{
+			"arabic":"طه",
+			"english":"Ta-Ha",
+			"englishTranscription":"Taha",
+			"bosnian":"Taha",
+			"bosnianTranscription":"Taha"
+		},
+		"aboutSura":{
+			"bosnian":"Ova je sura podrška Vjerovjesniku, sallallahu alejhi ve sellem, da bude strpljiv u dostavljanju poslanice."
 		},
 		"type":"Meccan",
 		"orderInPublishing":45,
@@ -443,13 +483,15 @@ const suraList = [
 		"index":21,
 		"numberOfAyas":112,
 		"startAyaIndex":2483,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Enbija",
-			"translation":"Vjerovjesnici",
-			"purposeOfSura":"Ova sura govori o tome da su svi poslanici imali jedan cilj, a to je pozivanje u Allahovu jednoću."
+		"name":{
+			"arabic":"الأنبياء",
+			"english":"The Prophets",
+			"englishTranscription":"Al-Anbya",
+			"bosnian":"Vjerovjesnici",
+			"bosnianTranscription":"El-Enbija"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura govori o tome da su svi poslanici imali jedan cilj, a to je pozivanje u Allahovu jednoću."
 		},
 		"type":"Meccan",
 		"orderInPublishing":73,
@@ -465,15 +507,17 @@ const suraList = [
 		"index":22,
 		"numberOfAyas":78,
 		"startAyaIndex":2595,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Hadždž",
-			"translation":"Hadždž",
-			"purposeOfSura":"Ova sura govori o Allahovoj veličini i tome da On sve može učiniti, iz čega slijedi da ga ljudi veličaju i Njemu se povinuju."
+		"name":{
+			"arabic":"الحج",
+			"english":"The Pilgrimage",
+			"englishTranscription":"Al-Haj",
+			"bosnian":"Hadždž",
+			"bosnianTranscription":"El-Hadždž"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ova sura govori o Allahovoj veličini i tome da On sve može učiniti, iz čega slijedi da ga ljudi veličaju i Njemu se povinuju."
+		},
+		"type":"Medinan",
 		"orderInPublishing":103,
 		"numberOfWords":1283,
 		"numberOfLetters":5070,
@@ -487,13 +531,15 @@ const suraList = [
 		"index":23,
 		"numberOfAyas":118,
 		"startAyaIndex":2673,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Mu'minun",
-			"translation":"Vjernici",
-			"purposeOfSura":"Ova se sura bavi suštinom vjerovanja, njegovim plodovima i posljedicama njegova neprihvatanja, kao što se u njoj kude oni koji ne vjeruju. Zbog toga se na samom njenom početku nalazi obavijest da će vjernici uspjeti, iz čega proizlazi da će krivovjerni nastradati."
+		"name":{
+			"arabic":"المؤمنون",
+			"english":"The Believers",
+			"englishTranscription":"Al-Mu'minun",
+			"bosnian":"Vjernici",
+			"bosnianTranscription":"El-Mu'minun"
+		},
+		"aboutSura":{
+			"bosnian":"Ova se sura bavi suštinom vjerovanja, njegovim plodovima i posljedicama njegova neprihvatanja, kao što se u njoj kude oni koji ne vjeruju. Zbog toga se na samom njenom početku nalazi obavijest da će vjernici uspjeti, iz čega proizlazi da će krivovjerni nastradati."
 		},
 		"type":"Meccan",
 		"orderInPublishing":74,
@@ -509,15 +555,17 @@ const suraList = [
 		"index":24,
 		"numberOfAyas":64,
 		"startAyaIndex":2791,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nur",
-			"translation":"Svjetlost",
-			"purposeOfSura":"U ovoj se suri naglašava se važnost kreposti, sakrivanja tuđih mahana, čistote muslimanskog društva i njegova čuvanja od svega što vodi u razvrat. Ona se bavi i spletkama koje kuju dvoličnjaci kako bi širili poroke."
+		"name":{
+			"arabic":"النور",
+			"english":"The Light",
+			"englishTranscription":"An-Nur",
+			"bosnian":"Svjetlost",
+			"bosnianTranscription":"En-Nur"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"U ovoj se suri naglašava se važnost kreposti, sakrivanja tuđih mahana, čistote muslimanskog društva i njegova čuvanja od svega što vodi u razvrat. Ona se bavi i spletkama koje kuju dvoličnjaci kako bi širili poroke."
+		},
+		"type":"Medinan",
 		"orderInPublishing":102,
 		"numberOfWords":1323,
 		"numberOfLetters":5680,
@@ -531,13 +579,15 @@ const suraList = [
 		"index":25,
 		"numberOfAyas":77,
 		"startAyaIndex":2855,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Furkan",
-			"translation":"Furkan",
-			"purposeOfSura":"U ovoj se suri govori o tome da će, uprkos napadima višebožaca, Poslanik, sallallahu alejhi ve sellem, biti pobjednik."
+		"name":{
+			"arabic":"الفرقان",
+			"english":"The Criterian",
+			"englishTranscription":"Al-Furqan",
+			"bosnian":"Furkan",
+			"bosnianTranscription":"El-Furkan"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj se suri govori o tome da će, uprkos napadima višebožaca, Poslanik, sallallahu alejhi ve sellem, biti pobjednik."
 		},
 		"type":"Meccan",
 		"orderInPublishing":42,
@@ -553,13 +603,15 @@ const suraList = [
 		"index":26,
 		"numberOfAyas":227,
 		"startAyaIndex":2932,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Eš-Šu'ara'",
-			"translation":"Pjesnici",
-			"purposeOfSura":"U ovoj se suri pobijaju oni koji su ustrajni u poricanju Poslanika, sallallahu alejhi ve sellem, i u napadanju na njega kao poslanika, kao što se u njoj stavlja na znanje da su oni beznačajni."
+		"name":{
+			"arabic":"الشعراء",
+			"english":"The Poets",
+			"englishTranscription":"Ash-Shu'ara",
+			"bosnian":"Pjesnici",
+			"bosnianTranscription":"Eš-Šu'ara'"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj se suri pobijaju oni koji su ustrajni u poricanju Poslanika, sallallahu alejhi ve sellem, i u napadanju na njega kao poslanika, kao što se u njoj stavlja na znanje da su oni beznačajni."
 		},
 		"type":"Meccan",
 		"orderInPublishing":47,
@@ -575,13 +627,15 @@ const suraList = [
 		"index":27,
 		"numberOfAyas":93,
 		"startAyaIndex":3159,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Neml",
-			"translation":"Mravi",
-			"purposeOfSura":"U ovoj suri govori se o najvećoj blagodati (Časnom Kur’anu) koja je ukazana Vjerovjesniku, sallallahu alejhi ve sellem, o neophodnosti zahvaljivanja na njoj i strpljivosti prilikom dostavljanja Objave ljudima."
+		"name":{
+			"arabic":"النمل",
+			"english":"The Ant",
+			"englishTranscription":"An-Naml",
+			"bosnian":"Mravi",
+			"bosnianTranscription":"En-Neml"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj suri govori se o najvećoj blagodati (Časnom Kur’anu) koja je ukazana Vjerovjesniku, sallallahu alejhi ve sellem, o neophodnosti zahvaljivanja na njoj i strpljivosti prilikom dostavljanja Objave ljudima."
 		},
 		"type":"Meccan",
 		"orderInPublishing":48,
@@ -597,13 +651,15 @@ const suraList = [
 		"index":28,
 		"numberOfAyas":88,
 		"startAyaIndex":3252,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kasas",
-			"translation":"Kazivanje",
-			"purposeOfSura":"U ovoj suri govori se o tome šta je mjerodavna snaga, i to kroz isticanje Allahove moći da ukaže pomoć potlačenima, a uništi ohole silnike, što je ujedno i Božiji zakon u svemiru."
+		"name":{
+			"arabic":"القصص",
+			"english":"The Stories",
+			"englishTranscription":"Al-Qasas",
+			"bosnian":"Kazivanje",
+			"bosnianTranscription":"El-Kasas"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj suri govori se o tome šta je mjerodavna snaga, i to kroz isticanje Allahove moći da ukaže pomoć potlačenima, a uništi ohole silnike, što je ujedno i Božiji zakon u svemiru."
 		},
 		"type":"Meccan",
 		"orderInPublishing":49,
@@ -619,13 +675,15 @@ const suraList = [
 		"index":29,
 		"numberOfAyas":69,
 		"startAyaIndex":3340,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-'Ankebut",
-			"translation":"Pauk",
-			"purposeOfSura":"Ova sura govori o postojanosti u vjeri i trpeljivom podnošenju iskušenja tokom smutnji, te govori o rezultatima toga."
+		"name":{
+			"arabic":"العنكبوت",
+			"english":"The Spider",
+			"englishTranscription":"Al-'Ankabut",
+			"bosnian":"Pauk",
+			"bosnianTranscription":"El-'Ankebut"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura govori o postojanosti u vjeri i trpeljivom podnošenju iskušenja tokom smutnji, te govori o rezultatima toga."
 		},
 		"type":"Meccan",
 		"orderInPublishing":85,
@@ -641,13 +699,15 @@ const suraList = [
 		"index":30,
 		"numberOfAyas":60,
 		"startAyaIndex":3409,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Er-Rum",
-			"translation":"Bizantinci",
-			"purposeOfSura":"Ova sura govori o velikoj kosmičkoj istini, a to je da svime što postoji i svim događajima samo Allah upravlja, upravo kao što je rekao: “... samo Allahu pripada odluka i prije i poslije...”"
+		"name":{
+			"arabic":"الروم",
+			"english":"The Romans",
+			"englishTranscription":"Ar-Rum",
+			"bosnian":"Bizantinci",
+			"bosnianTranscription":"Er-Rum"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura govori o velikoj kosmičkoj istini, a to je da svime što postoji i svim događajima samo Allah upravlja, upravo kao što je rekao: “... samo Allahu pripada odluka i prije i poslije...”"
 		},
 		"type":"Meccan",
 		"orderInPublishing":84,
@@ -663,13 +723,15 @@ const suraList = [
 		"index":31,
 		"numberOfAyas":34,
 		"startAyaIndex":3469,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Lukman",
-			"translation":"Lukman",
-			"purposeOfSura":"U ovoj se suri ističe mudrost, koja je u skladu sa šerijatom, te se Lukman navodi kao primjer te mudrosti."
+		"name":{
+			"arabic":"لقمان",
+			"english":"Luqman",
+			"englishTranscription":"Luqman",
+			"bosnian":"Lukman",
+			"bosnianTranscription":"Lukman"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj se suri ističe mudrost, koja je u skladu sa šerijatom, te se Lukman navodi kao primjer te mudrosti."
 		},
 		"type":"Meccan",
 		"orderInPublishing":57,
@@ -685,13 +747,15 @@ const suraList = [
 		"index":32,
 		"numberOfAyas":30,
 		"startAyaIndex":3503,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Es-Sedžde",
-			"translation":"Padanje ničice",
-			"purposeOfSura":"Ova sura sadrži neke znakove koji ukazuju na istinu. Jedan od tih znakova jest stvaranje čovjeka i stanja kroz koja prolazi."
+		"name":{
+			"arabic":"السجدة",
+			"english":"The Prostration",
+			"englishTranscription":"As-Sajdah",
+			"bosnian":"Padanje ničice",
+			"bosnianTranscription":"Es-Sedžde"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura sadrži neke znakove koji ukazuju na istinu. Jedan od tih znakova jest stvaranje čovjeka i stanja kroz koja prolazi."
 		},
 		"type":"Meccan",
 		"orderInPublishing":75,
@@ -707,15 +771,17 @@ const suraList = [
 		"index":33,
 		"numberOfAyas":73,
 		"startAyaIndex":3533,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Ahzab",
-			"translation":"Saveznici",
-			"purposeOfSura":"U ovoj se suri govori o velikoj Allahovoj pažnji i čuvanju Poslanika islama i njegove porodice."
+		"name":{
+			"arabic":"الأحزاب",
+			"english":"The Combined Forces",
+			"englishTranscription":"Al-Ahzab",
+			"bosnian":"Saveznici",
+			"bosnianTranscription":"El-Ahzab"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"U ovoj se suri govori o velikoj Allahovoj pažnji i čuvanju Poslanika islama i njegove porodice."
+		},
+		"type":"Medinan",
 		"orderInPublishing":90,
 		"numberOfWords":1307,
 		"numberOfLetters":5796,
@@ -729,13 +795,15 @@ const suraList = [
 		"index":34,
 		"numberOfAyas":54,
 		"startAyaIndex":3606,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Sebe'",
-			"translation":"Saba",
-			"purposeOfSura":"U ovoj se suri govori o Allahovoj moći kroz promjenu prilika, kao i o prilikama kroz koje prolaze zahvalni i nezahvalni ljudi."
+		"name":{
+			"arabic":"سبإ",
+			"english":"Sheba",
+			"englishTranscription":"Saba",
+			"bosnian":"Saba",
+			"bosnianTranscription":"Sebe'"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj se suri govori o Allahovoj moći kroz promjenu prilika, kao i o prilikama kroz koje prolaze zahvalni i nezahvalni ljudi."
 		},
 		"type":"Meccan",
 		"orderInPublishing":58,
@@ -751,13 +819,15 @@ const suraList = [
 		"index":35,
 		"numberOfAyas":45,
 		"startAyaIndex":3660,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Fatir",
-			"translation":"Stvoritelj",
-			"purposeOfSura":"Ova se sura bavi predivnim Allahovim stvaranjem, koje ukazuje na Njegovu moć. U njoj se govori i o onom što potiče čovjeka na veličanje Uzvišenog Allaha, strahopoštovanje prema Njemu i iskreno vjerovanje u Njega. Ona podsjeća i na Njegove blagodati."
+		"name":{
+			"arabic":"فاطر",
+			"english":"Originator",
+			"englishTranscription":"Fatir",
+			"bosnian":"Stvoritelj",
+			"bosnianTranscription":"Fatir"
+		},
+		"aboutSura":{
+			"bosnian":"Ova se sura bavi predivnim Allahovim stvaranjem, koje ukazuje na Njegovu moć. U njoj se govori i o onom što potiče čovjeka na veličanje Uzvišenog Allaha, strahopoštovanje prema Njemu i iskreno vjerovanje u Njega. Ona podsjeća i na Njegove blagodati."
 		},
 		"type":"Meccan",
 		"orderInPublishing":43,
@@ -773,13 +843,15 @@ const suraList = [
 		"index":36,
 		"numberOfAyas":83,
 		"startAyaIndex":3705,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ja-sin",
-			"translation":"Jasin",
-			"purposeOfSura":"Ova se sura bavi dokazivanjem oživljenja na Sudnjem danu i dokazivanjem poslanice."
+		"name":{
+			"arabic":"يس",
+			"english":"Ya Sin",
+			"englishTranscription":"Ya-Sin",
+			"bosnian":"Jasin",
+			"bosnianTranscription":"Ja-sin"
+		},
+		"aboutSura":{
+			"bosnian":"Ova se sura bavi dokazivanjem oživljenja na Sudnjem danu i dokazivanjem poslanice."
 		},
 		"type":"Meccan",
 		"orderInPublishing":41,
@@ -795,13 +867,15 @@ const suraList = [
 		"index":37,
 		"numberOfAyas":182,
 		"startAyaIndex":3788,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Es-Saffat",
-			"translation":"Redovi",
-			"purposeOfSura":"U ovoj se suri negira ono što mnogobošci pripisuju Allahu i pobija njihovo vjerovanje glede meleka i džina."
+		"name":{
+			"arabic":"الصافات",
+			"english":"Those who set the Ranks",
+			"englishTranscription":"As-Saffat",
+			"bosnian":"Redovi",
+			"bosnianTranscription":"Es-Saffat"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj se suri negira ono što mnogobošci pripisuju Allahu i pobija njihovo vjerovanje glede meleka i džina."
 		},
 		"type":"Meccan",
 		"orderInPublishing":56,
@@ -817,13 +891,15 @@ const suraList = [
 		"index":38,
 		"numberOfAyas":88,
 		"startAyaIndex":3970,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Sad",
-			"translation":"Sad",
-			"purposeOfSura":"Ova sura govori o branjenju istine i posljedicama toga."
+		"name":{
+			"arabic":"ص",
+			"english":"The Letter 'Saad'",
+			"englishTranscription":"Sad",
+			"bosnian":"Sad",
+			"bosnianTranscription":"Sad"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura govori o branjenju istine i posljedicama toga."
 		},
 		"type":"Meccan",
 		"orderInPublishing":38,
@@ -839,13 +915,15 @@ const suraList = [
 		"index":39,
 		"numberOfAyas":75,
 		"startAyaIndex":4058,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ez-Zumer",
-			"translation":"Skupovi",
-			"purposeOfSura":"Ova sura sadrži poziv u tevhid i iskreno obožavanje Allaha, te odbacivanje širka. Također govori i o ahiretskim posljedicama tog dvoga."
+		"name":{
+			"arabic":"الزمر",
+			"english":"The Troops",
+			"englishTranscription":"Az-Zumar",
+			"bosnian":"Skupovi",
+			"bosnianTranscription":"Ez-Zumer"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura sadrži poziv u tevhid i iskreno obožavanje Allaha, te odbacivanje širka. Također govori i o ahiretskim posljedicama tog dvoga."
 		},
 		"type":"Meccan",
 		"orderInPublishing":59,
@@ -861,13 +939,15 @@ const suraList = [
 		"index":40,
 		"numberOfAyas":85,
 		"startAyaIndex":4133,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Mu'min",
-			"translation":"Vjernik",
-			"purposeOfSura":"Ova se sura bavi onima koji raspravljaju u Allahovim ajetima, njima se obraća i poziva ih da se vrate istini."
+		"name":{
+			"arabic":"غافر",
+			"english":"The Believer",
+			"englishTranscription":"Al'Mumin",
+			"bosnian":"Vjernik",
+			"bosnianTranscription":"El-Mu'min"
+		},
+		"aboutSura":{
+			"bosnian":"Ova se sura bavi onima koji raspravljaju u Allahovim ajetima, njima se obraća i poziva ih da se vrate istini."
 		},
 		"type":"Meccan",
 		"orderInPublishing":60,
@@ -883,13 +963,15 @@ const suraList = [
 		"index":41,
 		"numberOfAyas":54,
 		"startAyaIndex":4218,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Fussilet",
-			"translation":"Objašnjenje",
-			"purposeOfSura":"Ova sura upućuje na to kako se treba odnositi prema onima koji okreću leđa Objavi, govori o tome da je časna Knjiga istina i bavi se posljedicama otuđivanja od Boga."
+		"name":{
+			"arabic":"فصلت",
+			"english":"Explained in Detail",
+			"englishTranscription":"Fussilat",
+			"bosnian":"Objašnjenje",
+			"bosnianTranscription":"Fussilet"
+		},
+		"aboutSura":{
+			"bosnian":"Ova sura upućuje na to kako se treba odnositi prema onima koji okreću leđa Objavi, govori o tome da je časna Knjiga istina i bavi se posljedicama otuđivanja od Boga."
 		},
 		"type":"Meccan",
 		"orderInPublishing":61,
@@ -905,13 +987,15 @@ const suraList = [
 		"index":42,
 		"numberOfAyas":53,
 		"startAyaIndex":4272,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Eš-Šura",
-			"translation":"Dogovaranje",
-			"purposeOfSura":"Sura pojašnjava stvarnost i suštinu poslanice Muhammeda, sallallahu alejhi ve sellem, kao i to da je ona samo nastavak Objave koja je dolazila ranijim vjerovjesnicima."
+		"name":{
+			"arabic":"الشورى",
+			"english":"The Consultation",
+			"englishTranscription":"Ash-Shuraa",
+			"bosnian":"Dogovaranje",
+			"bosnianTranscription":"Eš-Šura"
+		},
+		"aboutSura":{
+			"bosnian":"Sura pojašnjava stvarnost i suštinu poslanice Muhammeda, sallallahu alejhi ve sellem, kao i to da je ona samo nastavak Objave koja je dolazila ranijim vjerovjesnicima."
 		},
 		"type":"Meccan",
 		"orderInPublishing":62,
@@ -927,13 +1011,15 @@ const suraList = [
 		"index":43,
 		"numberOfAyas":89,
 		"startAyaIndex":4325,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ez-Zuhruf",
-			"translation":"Ukras",
-			"purposeOfSura":"Pojašnjavanje ispravnih kur'anskih principa i pobijanje lažnih džahilijetskih predodžbi i zaključaka."
+		"name":{
+			"arabic":"الزخرف",
+			"english":"The Ornaments of Gold",
+			"englishTranscription":"Az-Zukhruf",
+			"bosnian":"Ukras",
+			"bosnianTranscription":"Ez-Zuhruf"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašnjavanje ispravnih kur'anskih principa i pobijanje lažnih džahilijetskih predodžbi i zaključaka."
 		},
 		"type":"Meccan",
 		"orderInPublishing":63,
@@ -949,13 +1035,15 @@ const suraList = [
 		"index":44,
 		"numberOfAyas":59,
 		"startAyaIndex":4414,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ed-Duhan",
-			"translation":"Dim",
-			"purposeOfSura":"Upozorenje na dolazeću kaznu kroz zastrašivanje njenih poricatelja kaznom i na ovome i na onome svijetu."
+		"name":{
+			"arabic":"الدخان",
+			"english":"The Smoke",
+			"englishTranscription":"Ad-Dukhan",
+			"bosnian":"Dim",
+			"bosnianTranscription":"Ed-Duhan"
+		},
+		"aboutSura":{
+			"bosnian":"Upozorenje na dolazeću kaznu kroz zastrašivanje njenih poricatelja kaznom i na ovome i na onome svijetu."
 		},
 		"type":"Meccan",
 		"orderInPublishing":64,
@@ -971,13 +1059,15 @@ const suraList = [
 		"index":45,
 		"numberOfAyas":37,
 		"startAyaIndex":4473,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Džasije",
-			"translation":"Oni koji kleče",
-			"purposeOfSura":"Razmatranje problema onih oholnika koji slijede prohtjeve i odbijaju istinu kroz navođenje ajeta i znamenja i podsjećanje na onaj svijet."
+		"name":{
+			"arabic":"الجاثية",
+			"english":"The Crouching",
+			"englishTranscription":"Al-Jathiyah",
+			"bosnian":"Oni koji kleče",
+			"bosnianTranscription":"El-Džasije"
+		},
+		"aboutSura":{
+			"bosnian":"Razmatranje problema onih oholnika koji slijede prohtjeve i odbijaju istinu kroz navođenje ajeta i znamenja i podsjećanje na onaj svijet."
 		},
 		"type":"Meccan",
 		"orderInPublishing":65,
@@ -993,13 +1083,15 @@ const suraList = [
 		"index":46,
 		"numberOfAyas":35,
 		"startAyaIndex":4510,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Ahkaf",
-			"translation":"Ahkaf",
-			"purposeOfSura":"U ovoj se suri govori o uspostavljanju dokaza protiv poricatelja. U njoj se oni nekoliko puta opominju na kaznu. "
+		"name":{
+			"arabic":"الأحقاف",
+			"english":"The Wind-Curved Sandhills",
+			"englishTranscription":"Al-Ahqaf",
+			"bosnian":"Ahkaf",
+			"bosnianTranscription":"El-Ahkaf"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj se suri govori o uspostavljanju dokaza protiv poricatelja. U njoj se oni nekoliko puta opominju na kaznu. "
 		},
 		"type":"Meccan",
 		"orderInPublishing":66,
@@ -1015,15 +1107,17 @@ const suraList = [
 		"index":47,
 		"numberOfAyas":38,
 		"startAyaIndex":4545,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Muhammed",
-			"translation":"Muhammed",
-			"purposeOfSura":"Ova sura potiče vjernike na borbu i osnažuje ih, a slabi one koji ne vjeruju."
+		"name":{
+			"arabic":"محمد",
+			"english":"Muhammad",
+			"englishTranscription":"Muhammad",
+			"bosnian":"Muhammed",
+			"bosnianTranscription":"Muhammed"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ova sura potiče vjernike na borbu i osnažuje ih, a slabi one koji ne vjeruju."
+		},
+		"type":"Medinan",
 		"orderInPublishing":95,
 		"numberOfWords":546,
 		"numberOfLetters":2349,
@@ -1037,15 +1131,17 @@ const suraList = [
 		"index":48,
 		"numberOfAyas":29,
 		"startAyaIndex":4583,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Feth",
-			"translation":"Pobjeda",
-			"purposeOfSura":"Ova sura sadrži Božije obećanje da će dati pobjedu i vlast Svom Poslaniku, sallallahu alejhi ve sellem, kao i iskrenim vjernicima koji se bore za vjeru."
+		"name":{
+			"arabic":"الفتح",
+			"english":"The Victory",
+			"englishTranscription":"Al-Fath",
+			"bosnian":"Pobjeda",
+			"bosnianTranscription":"El-Feth"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ova sura sadrži Božije obećanje da će dati pobjedu i vlast Svom Poslaniku, sallallahu alejhi ve sellem, kao i iskrenim vjernicima koji se bore za vjeru."
+		},
+		"type":"Medinan",
 		"orderInPublishing":111,
 		"numberOfWords":564,
 		"numberOfLetters":2438,
@@ -1059,15 +1155,17 @@ const suraList = [
 		"index":49,
 		"numberOfAyas":18,
 		"startAyaIndex":4612,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Hudžurat",
-			"translation":"Sobe",
-			"purposeOfSura":"U ovoj se suri govori o tome kako se muslimansko društvo treba ponašati i od kakvog se ponašanja treba sustezati."
+		"name":{
+			"arabic":"الحجرات",
+			"english":"The Rooms",
+			"englishTranscription":"Al-Hujurat",
+			"bosnian":"Sobe",
+			"bosnianTranscription":"El-Hudžurat"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"U ovoj se suri govori o tome kako se muslimansko društvo treba ponašati i od kakvog se ponašanja treba sustezati."
+		},
+		"type":"Medinan",
 		"orderInPublishing":106,
 		"numberOfWords":357,
 		"numberOfLetters":1496,
@@ -1081,13 +1179,15 @@ const suraList = [
 		"index":50,
 		"numberOfAyas":45,
 		"startAyaIndex":4630,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Kaf",
-			"translation":"Kaf",
-			"purposeOfSura":"Pomoću ove sure Gospodar budi nemarna srca i potiče ih da spoznaju suštinu sadržajnih dokaza o proživljenju na Ahiretu i poglanju računa."
+		"name":{
+			"arabic":"ق",
+			"english":"The Letter 'Qaf'",
+			"englishTranscription":"Qaf",
+			"bosnian":"Kaf",
+			"bosnianTranscription":"Kaf"
+		},
+		"aboutSura":{
+			"bosnian":"Pomoću ove sure Gospodar budi nemarna srca i potiče ih da spoznaju suštinu sadržajnih dokaza o proživljenju na Ahiretu i poglanju računa."
 		},
 		"type":"Meccan",
 		"orderInPublishing":34,
@@ -1103,13 +1203,15 @@ const suraList = [
 		"index":51,
 		"numberOfAyas":60,
 		"startAyaIndex":4675,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ez-Zarijat",
-			"translation":"Oni koji pušu",
-			"purposeOfSura":"Allah u ovoj suri stavlja ljudima na znanje da On daje nafaku, da bi kod Njega našli utočište i robovali Mu."
+		"name":{
+			"arabic":"الذاريات",
+			"english":"The Winnowing Winds",
+			"englishTranscription":"Adh-Dhariyat",
+			"bosnian":"Oni koji pušu",
+			"bosnianTranscription":"Ez-Zarijat"
+		},
+		"aboutSura":{
+			"bosnian":"Allah u ovoj suri stavlja ljudima na znanje da On daje nafaku, da bi kod Njega našli utočište i robovali Mu."
 		},
 		"type":"Meccan",
 		"orderInPublishing":67,
@@ -1125,13 +1227,15 @@ const suraList = [
 		"index":52,
 		"numberOfAyas":49,
 		"startAyaIndex":4735,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tur",
-			"translation":"Gora",
-			"purposeOfSura":"Otklanjanje sumnji i nejasnoća koje su imali poricatelji istine, kroz navođenje jasnih dokaza i argumenata, kako bi ih prihvatili i pokorili se."
+		"name":{
+			"arabic":"الطور",
+			"english":"The Mount",
+			"englishTranscription":"At-Tur",
+			"bosnian":"Gora",
+			"bosnianTranscription":"Et-Tur"
+		},
+		"aboutSura":{
+			"bosnian":"Otklanjanje sumnji i nejasnoća koje su imali poricatelji istine, kroz navođenje jasnih dokaza i argumenata, kako bi ih prihvatili i pokorili se."
 		},
 		"type":"Meccan",
 		"orderInPublishing":76,
@@ -1147,13 +1251,15 @@ const suraList = [
 		"index":53,
 		"numberOfAyas":62,
 		"startAyaIndex":4784,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nedžm",
-			"translation":"Zvijezda",
-			"purposeOfSura":"Ukazivanje na istinitost Objave i uzvišenost njenog izvora, kao vid potvrđivanja tevhida (jednoće Allaha) i negiranja širka."
+		"name":{
+			"arabic":"النجم",
+			"english":"The Star",
+			"englishTranscription":"An-Najm",
+			"bosnian":"Zvijezda",
+			"bosnianTranscription":"En-Nedžm"
+		},
+		"aboutSura":{
+			"bosnian":"Ukazivanje na istinitost Objave i uzvišenost njenog izvora, kao vid potvrđivanja tevhida (jednoće Allaha) i negiranja širka."
 		},
 		"type":"Meccan",
 		"orderInPublishing":23,
@@ -1169,13 +1275,15 @@ const suraList = [
 		"index":54,
 		"numberOfAyas":55,
 		"startAyaIndex":4846,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kamer",
-			"translation":"Mjesec",
-			"purposeOfSura":"Podsjećanje ajetima i upozorenjima, pojašnjavanje kakva konačnica čeka poricatelja, i upravo zbog toga ponavljaju se riječi u kojima Allah Uzvišeni kaže: 'A Mi smo Kur’an olakšali kao opomenu, pa ima li koga ko bi se prisjetio?'"
+		"name":{
+			"arabic":"القمر",
+			"english":"The Moon",
+			"englishTranscription":"Al-Qamar",
+			"bosnian":"Mjesec",
+			"bosnianTranscription":"El-Kamer"
+		},
+		"aboutSura":{
+			"bosnian":"Podsjećanje ajetima i upozorenjima, pojašnjavanje kakva konačnica čeka poricatelja, i upravo zbog toga ponavljaju se riječi u kojima Allah Uzvišeni kaže: 'A Mi smo Kur’an olakšali kao opomenu, pa ima li koga ko bi se prisjetio?'"
 		},
 		"type":"Meccan",
 		"orderInPublishing":37,
@@ -1191,15 +1299,17 @@ const suraList = [
 		"index":55,
 		"numberOfAyas":78,
 		"startAyaIndex":4901,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Er-Rahman",
-			"translation":"Milostivi",
-			"purposeOfSura":"Kazivanje o Allahovim vidljivim blagodatima, i tragovima Njegove milosti koja se ispoljava i na ovome i na onome svijetu, s ciljem da se vjernicima omili vjerovanje, i da se upozori na opasnost negiranja i poricanja."
+		"name":{
+			"arabic":"الرحمن",
+			"english":"The Beneficent",
+			"englishTranscription":"Ar-Rahman",
+			"bosnian":"Milostivi",
+			"bosnianTranscription":"Er-Rahman"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Kazivanje o Allahovim vidljivim blagodatima, i tragovima Njegove milosti koja se ispoljava i na ovome i na onome svijetu, s ciljem da se vjernicima omili vjerovanje, i da se upozori na opasnost negiranja i poricanja."
+		},
+		"type":"Medinan",
 		"orderInPublishing":97,
 		"numberOfWords":356,
 		"numberOfLetters":1636,
@@ -1213,13 +1323,15 @@ const suraList = [
 		"index":56,
 		"numberOfAyas":96,
 		"startAyaIndex":4979,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Vaki'a",
-			"translation":"Događaj",
-			"purposeOfSura":"Zastrašivanje Sudnjim danom, potvrđivanje njegova dešavanja i pojašnjavanje vrsta ljudi spram tog Dana, te kazne ili nagrade svake od tih kategorija."
+		"name":{
+			"arabic":"الواقعة",
+			"english":"The Inevitable",
+			"englishTranscription":"Al-Waqi'ah",
+			"bosnian":"Događaj",
+			"bosnianTranscription":"El-Vaki'a"
+		},
+		"aboutSura":{
+			"bosnian":"Zastrašivanje Sudnjim danom, potvrđivanje njegova dešavanja i pojašnjavanje vrsta ljudi spram tog Dana, te kazne ili nagrade svake od tih kategorija."
 		},
 		"type":"Meccan",
 		"orderInPublishing":46,
@@ -1235,15 +1347,17 @@ const suraList = [
 		"index":57,
 		"numberOfAyas":29,
 		"startAyaIndex":5075,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Hadid",
-			"translation":"Gvožđe",
-			"purposeOfSura":"Sticanje snage, imanske i materijalne, koja je potrebna za pozivanje Allahu i borbu na Njegovom putu, te čišćenje duše od svih negativnosti i svega onoga što čovjeka odvraća od dobra, što se vidi kroz učestalo spominjanje udjeljivanja imetka i vjerovanja."
+		"name":{
+			"arabic":"الحديد",
+			"english":"The Iron",
+			"englishTranscription":"Al-Hadid",
+			"bosnian":"Gvožđe",
+			"bosnianTranscription":"El-Hadid"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Sticanje snage, imanske i materijalne, koja je potrebna za pozivanje Allahu i borbu na Njegovom putu, te čišćenje duše od svih negativnosti i svega onoga što čovjeka odvraća od dobra, što se vidi kroz učestalo spominjanje udjeljivanja imetka i vjerovanja."
+		},
+		"type":"Medinan",
 		"orderInPublishing":94,
 		"numberOfWords":579,
 		"numberOfLetters":2476,
@@ -1257,15 +1371,17 @@ const suraList = [
 		"index":58,
 		"numberOfAyas":22,
 		"startAyaIndex":5104,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Mudžadele",
-			"translation":"Rasprava",
-			"purposeOfSura":"Ukazivanje na poptuno i sveobuhvatno Allahovo znanje, kako bi ljudi bili svjesni da ih On nadgleda i kako bi se upozorili svi oni koji Mu se suprotstavljaju."
+		"name":{
+			"arabic":"المجادلة",
+			"english":"The Pleading Woman",
+			"englishTranscription":"Al-Mujadila",
+			"bosnian":"Rasprava",
+			"bosnianTranscription":"El-Mudžadele"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ukazivanje na poptuno i sveobuhvatno Allahovo znanje, kako bi ljudi bili svjesni da ih On nadgleda i kako bi se upozorili svi oni koji Mu se suprotstavljaju."
+		},
+		"type":"Medinan",
 		"orderInPublishing":105,
 		"numberOfWords":479,
 		"numberOfLetters":1792,
@@ -1279,15 +1395,17 @@ const suraList = [
 		"index":59,
 		"numberOfAyas":24,
 		"startAyaIndex":5126,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Hašr",
-			"translation":"Progonstvo",
-			"purposeOfSura":"Ispoljavanje Allahove moći i snage koja se ogleda u ponižavanju i slabljenju Jevreja i licemjera, ukazivanje na njihovu razjedinjenost nasuprot muslimanskog jedinstva."
+		"name":{
+			"arabic":"الحشر",
+			"english":"The Exile",
+			"englishTranscription":"Al-Hashr",
+			"bosnian":"Progonstvo",
+			"bosnianTranscription":"El-Hašr"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ispoljavanje Allahove moći i snage koja se ogleda u ponižavanju i slabljenju Jevreja i licemjera, ukazivanje na njihovu razjedinjenost nasuprot muslimanskog jedinstva."
+		},
+		"type":"Medinan",
 		"orderInPublishing":101,
 		"numberOfWords":451,
 		"numberOfLetters":1913,
@@ -1301,15 +1419,17 @@ const suraList = [
 		"index":60,
 		"numberOfAyas":13,
 		"startAyaIndex":5150,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Mumtehine",
-			"translation":"Provjerena",
-			"purposeOfSura":"Čišćenje vjerničkih srca od prijateljevanja i ljubavi prema drugim vjerama mimo Allahove."
+		"name":{
+			"arabic":"الممتحنة",
+			"english":"She that is to be examined",
+			"englishTranscription":"Al-Mumtahanah",
+			"bosnian":"Provjerena",
+			"bosnianTranscription":"El-Mumtehine"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Čišćenje vjerničkih srca od prijateljevanja i ljubavi prema drugim vjerama mimo Allahove."
+		},
+		"type":"Medinan",
 		"orderInPublishing":91,
 		"numberOfWords":356,
 		"numberOfLetters":1510,
@@ -1323,15 +1443,17 @@ const suraList = [
 		"index":61,
 		"numberOfAyas":14,
 		"startAyaIndex":5163,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Es-Saff",
-			"translation":"Bojni red",
-			"purposeOfSura":"Stimulisanje vjernika na pomaganje Allahove vjere i borbu na Njegovom putu."
+		"name":{
+			"arabic":"الصف",
+			"english":"The Ranks",
+			"englishTranscription":"As-Saf",
+			"bosnian":"Bojni red",
+			"bosnianTranscription":"Es-Saff"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Stimulisanje vjernika na pomaganje Allahove vjere i borbu na Njegovom putu."
+		},
+		"type":"Medinan",
 		"orderInPublishing":109,
 		"numberOfWords":230,
 		"numberOfLetters":900,
@@ -1345,15 +1467,17 @@ const suraList = [
 		"index":62,
 		"numberOfAyas":11,
 		"startAyaIndex":5177,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Džumu'a",
-			"translation":"Petak",
-			"purposeOfSura":"Pojašnjavanje Allahove blagodati ovom ummetu kojeg je posebno odlikovao uputom i slanjem Poslanika, sallallahu alejhi ve sellem, nakon što je bio u zabludi, zaduživanje pokornošću njemu i upozorenje na opasnost poistovjećivanja sa Jevrejima."
+		"name":{
+			"arabic":"الجمعة",
+			"english":"The Congregation, Friday",
+			"englishTranscription":"Al-Jumu'ah",
+			"bosnian":"Petak",
+			"bosnianTranscription":"El-Džumu'a"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Pojašnjavanje Allahove blagodati ovom ummetu kojeg je posebno odlikovao uputom i slanjem Poslanika, sallallahu alejhi ve sellem, nakon što je bio u zabludi, zaduživanje pokornošću njemu i upozorenje na opasnost poistovjećivanja sa Jevrejima."
+		},
+		"type":"Medinan",
 		"orderInPublishing":110,
 		"numberOfWords":181,
 		"numberOfLetters":720,
@@ -1367,15 +1491,17 @@ const suraList = [
 		"index":63,
 		"numberOfAyas":11,
 		"startAyaIndex":5188,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Munafikun",
-			"translation":"Licemjeri",
-			"purposeOfSura":"Otkrivanje svojstava licemjera i pojašnjavanje njihovog stava naspram islama i muslimana, te upozorenje na opasnost poistovjećivanja s njima."
+		"name":{
+			"arabic":"المنافقون",
+			"english":"The Hypocrites",
+			"englishTranscription":"Al-Munafiqun",
+			"bosnian":"Licemjeri",
+			"bosnianTranscription":"El-Munafikun"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Otkrivanje svojstava licemjera i pojašnjavanje njihovog stava naspram islama i muslimana, te upozorenje na opasnost poistovjećivanja s njima."
+		},
+		"type":"Medinan",
 		"orderInPublishing":104,
 		"numberOfWords":185,
 		"numberOfLetters":776,
@@ -1389,15 +1515,17 @@ const suraList = [
 		"index":64,
 		"numberOfAyas":18,
 		"startAyaIndex":5199,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tegabun",
-			"translation":"Samoobmana",
-			"purposeOfSura":"Spominjanje samoobmane nevjernika i njihove propasti na Sudnjem danu, kao vid upozorenja na nevjerstvo i nevjernike."
+		"name":{
+			"arabic":"التغابن",
+			"english":"The Mutual Disillusion",
+			"englishTranscription":"At-Taghabun",
+			"bosnian":"Samoobmana",
+			"bosnianTranscription":"Et-Tegabun"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Spominjanje samoobmane nevjernika i njihove propasti na Sudnjem danu, kao vid upozorenja na nevjerstvo i nevjernike."
+		},
+		"type":"Medinan",
 		"orderInPublishing":108,
 		"numberOfWords":246,
 		"numberOfLetters":1070,
@@ -1411,15 +1539,17 @@ const suraList = [
 		"index":65,
 		"numberOfAyas":12,
 		"startAyaIndex":5217,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Talak",
-			"translation":"Razvod braka",
-			"purposeOfSura":"Davanje važnosti pitanjima razvoda braka i njegovim odredbama, te pojašnjenje konačnice onih koji se Allaha boje i onih koji Njegove granice prelaze."
+		"name":{
+			"arabic":"الطلاق",
+			"english":"The Divorce",
+			"englishTranscription":"At-Talaq",
+			"bosnian":"Razvod braka",
+			"bosnianTranscription":"Et-Talak"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Davanje važnosti pitanjima razvoda braka i njegovim odredbama, te pojašnjenje konačnice onih koji se Allaha boje i onih koji Njegove granice prelaze."
+		},
+		"type":"Medinan",
 		"orderInPublishing":99,
 		"numberOfWords":293,
 		"numberOfLetters":1060,
@@ -1433,15 +1563,17 @@ const suraList = [
 		"index":66,
 		"numberOfAyas":12,
 		"startAyaIndex":5229,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tahrim",
-			"translation":"Zabrana",
-			"purposeOfSura":"Odgajanje vjerovjesničke kuće, kako bi porodica i društvo imali uzor u njoj."
+		"name":{
+			"arabic":"التحريم",
+			"english":"The Prohibtiion",
+			"englishTranscription":"At-Tahrim",
+			"bosnian":"Zabrana",
+			"bosnianTranscription":"Et-Tahrim"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Odgajanje vjerovjesničke kuće, kako bi porodica i društvo imali uzor u njoj."
+		},
+		"type":"Medinan",
 		"orderInPublishing":107,
 		"numberOfWords":258,
 		"numberOfLetters":1160,
@@ -1455,13 +1587,15 @@ const suraList = [
 		"index":67,
 		"numberOfAyas":30,
 		"startAyaIndex":5241,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Mulk",
-			"translation":"Vlast",
-			"purposeOfSura":"Ukazivanje na savršenost Allahove vlasti moći, s ciljem podsticanja na strah od Njega i čuvanja od Njegove kazne."
+		"name":{
+			"arabic":"الملك",
+			"english":"The Sovereignty",
+			"englishTranscription":"Al-Mulk",
+			"bosnian":"Vlast",
+			"bosnianTranscription":"El-Mulk"
+		},
+		"aboutSura":{
+			"bosnian":"Ukazivanje na savršenost Allahove vlasti moći, s ciljem podsticanja na strah od Njega i čuvanja od Njegove kazne."
 		},
 		"type":"Meccan",
 		"orderInPublishing":77,
@@ -1477,13 +1611,15 @@ const suraList = [
 		"index":68,
 		"numberOfAyas":52,
 		"startAyaIndex":5271,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kalem",
-			"translation":"Kalem",
-			"purposeOfSura":"Ukazivanje na Poslanikovo, sallallahu alejhi ve sellem, znanje i njegovo lijepo ponašanje, kao vid podrške nakon što su ga mušrici napali."
+		"name":{
+			"arabic":"القلم",
+			"english":"The Pen",
+			"englishTranscription":"Al-Qalam",
+			"bosnian":"Kalem",
+			"bosnianTranscription":"El-Kalem"
+		},
+		"aboutSura":{
+			"bosnian":"Ukazivanje na Poslanikovo, sallallahu alejhi ve sellem, znanje i njegovo lijepo ponašanje, kao vid podrške nakon što su ga mušrici napali."
 		},
 		"type":"Meccan",
 		"orderInPublishing":2,
@@ -1499,13 +1635,15 @@ const suraList = [
 		"index":69,
 		"numberOfAyas":52,
 		"startAyaIndex":5323,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Hakka",
-			"translation":"Čas neizbježni",
-			"purposeOfSura":"Potvrđivanje tačnosti dolaska Sudnjeg dana, kao vid potvrde istinitosti Kur'ana, kako bi se vjernici radovali, a negatori istine opomenuli kaznom i propašću."
+		"name":{
+			"arabic":"الحاقة",
+			"english":"The Reality",
+			"englishTranscription":"Al-Haqqah",
+			"bosnian":"Čas neizbježni",
+			"bosnianTranscription":"El-Hakka"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrđivanje tačnosti dolaska Sudnjeg dana, kao vid potvrde istinitosti Kur'ana, kako bi se vjernici radovali, a negatori istine opomenuli kaznom i propašću."
 		},
 		"type":"Meccan",
 		"orderInPublishing":78,
@@ -1521,13 +1659,15 @@ const suraList = [
 		"index":70,
 		"numberOfAyas":44,
 		"startAyaIndex":5375,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Me'aridž",
-			"translation":"Stepeni",
-			"purposeOfSura":"Potvrda da će se dogoditi kazna nad nevjernicima i da će iskreni vjernici na Sudnjem danu imati blagodati i uživati."
+		"name":{
+			"arabic":"المعارج",
+			"english":"The Ascending Stairways",
+			"englishTranscription":"Al-Ma'arij",
+			"bosnian":"Stepeni",
+			"bosnianTranscription":"El-Me'aridž"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrda da će se dogoditi kazna nad nevjernicima i da će iskreni vjernici na Sudnjem danu imati blagodati i uživati."
 		},
 		"type":"Meccan",
 		"orderInPublishing":79,
@@ -1543,13 +1683,15 @@ const suraList = [
 		"index":71,
 		"numberOfAyas":28,
 		"startAyaIndex":5419,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Nuh",
-			"translation":"Nuh",
-			"purposeOfSura":"Strpljivost islamskih misionara i njihova borba i trud na polju širenja pozitivnih vrijednosti, što se zaključuje iz kazivanja o Nuhu, kako bi se vjernici učvrstili, a poricatelji opomenuli."
+		"name":{
+			"arabic":"نوح",
+			"english":"Noah",
+			"englishTranscription":"Nuh",
+			"bosnian":"Nuh",
+			"bosnianTranscription":"Nuh"
+		},
+		"aboutSura":{
+			"bosnian":"Strpljivost islamskih misionara i njihova borba i trud na polju širenja pozitivnih vrijednosti, što se zaključuje iz kazivanja o Nuhu, kako bi se vjernici učvrstili, a poricatelji opomenuli."
 		},
 		"type":"Meccan",
 		"orderInPublishing":71,
@@ -1565,13 +1707,15 @@ const suraList = [
 		"index":72,
 		"numberOfAyas":28,
 		"startAyaIndex":5447,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Džinn",
-			"translation":"Džini",
-			"purposeOfSura":"Potvrda objavljivanja Kur'ana, kao i toga da je on od Allaha, kroz kazivanje o vjerovanju džinna u njega, te poništavanje tvrdnji mušrika vezanih za njih."
+		"name":{
+			"arabic":"الجن",
+			"english":"The Jinn",
+			"englishTranscription":"Al-Jinn",
+			"bosnian":"Džini",
+			"bosnianTranscription":"El-Džinn"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrda objavljivanja Kur'ana, kao i toga da je on od Allaha, kroz kazivanje o vjerovanju džinna u njega, te poništavanje tvrdnji mušrika vezanih za njih."
 		},
 		"type":"Meccan",
 		"orderInPublishing":40,
@@ -1587,13 +1731,15 @@ const suraList = [
 		"index":73,
 		"numberOfAyas":20,
 		"startAyaIndex":5475,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Muzzemmil",
-			"translation":"Umotani",
-			"purposeOfSura":"Spominjanje duševne ospkrbe za islamske misionare (daije) potrebne za suočavanje sa životnim nevoljama, kao vid učvršćivanja Poslanika, sallallahu alejhi ve sellem, i opomene onima koji ga poriču."
+		"name":{
+			"arabic":"المزمل",
+			"english":"The Enshrouded One",
+			"englishTranscription":"Al-Muzzammil",
+			"bosnian":"Umotani",
+			"bosnianTranscription":"El-Muzzemmil"
+		},
+		"aboutSura":{
+			"bosnian":"Spominjanje duševne ospkrbe za islamske misionare (daije) potrebne za suočavanje sa životnim nevoljama, kao vid učvršćivanja Poslanika, sallallahu alejhi ve sellem, i opomene onima koji ga poriču."
 		},
 		"type":"Meccan",
 		"orderInPublishing":3,
@@ -1609,13 +1755,15 @@ const suraList = [
 		"index":74,
 		"numberOfAyas":56,
 		"startAyaIndex":5495,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Muddessir",
-			"translation":"Pokriveni",
-			"purposeOfSura":"Naredba da se bude aktivan i da se aktivira radi pozivanja u islam i opomena onim koji je poriču."
+		"name":{
+			"arabic":"المدثر",
+			"english":"The Cloaked One",
+			"englishTranscription":"Al-Muddaththir",
+			"bosnian":"Pokriveni",
+			"bosnianTranscription":"El-Muddessir"
+		},
+		"aboutSura":{
+			"bosnian":"Naredba da se bude aktivan i da se aktivira radi pozivanja u islam i opomena onim koji je poriču."
 		},
 		"type":"Meccan",
 		"orderInPublishing":4,
@@ -1631,13 +1779,15 @@ const suraList = [
 		"index":75,
 		"numberOfAyas":40,
 		"startAyaIndex":5551,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kijame",
-			"translation":"Smak svijeta",
-			"purposeOfSura":"Ispoljavanje Allahove moći da stvori i oživi sva stvorenja."
+		"name":{
+			"arabic":"القيامة",
+			"english":"The Resurrection",
+			"englishTranscription":"Al-Qiyamah",
+			"bosnian":"Smak svijeta",
+			"bosnianTranscription":"El-Kijame"
+		},
+		"aboutSura":{
+			"bosnian":"Ispoljavanje Allahove moći da stvori i oživi sva stvorenja."
 		},
 		"type":"Meccan",
 		"orderInPublishing":31,
@@ -1653,15 +1803,17 @@ const suraList = [
 		"index":76,
 		"numberOfAyas":31,
 		"startAyaIndex":5591,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Insan",
-			"translation":"Čovjek",
-			"purposeOfSura":"Podsjećanje čovjeka na njegovu osnovu, mudrost stvaranja i krajnji povratak i mjesto, te ispoljavanje džennetskih blagodati, kako bi se vjernici učvrstili, a nevjernici pozvali."
+		"name":{
+			"arabic":"الانسان",
+			"english":"The Man",
+			"englishTranscription":"Al-Insan",
+			"bosnian":"Čovjek",
+			"bosnianTranscription":"El-Insan"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Podsjećanje čovjeka na njegovu osnovu, mudrost stvaranja i krajnji povratak i mjesto, te ispoljavanje džennetskih blagodati, kako bi se vjernici učvrstili, a nevjernici pozvali."
+		},
+		"type":"Medinan",
 		"orderInPublishing":98,
 		"numberOfWords":247,
 		"numberOfLetters":1054,
@@ -1675,13 +1827,15 @@ const suraList = [
 		"index":77,
 		"numberOfAyas":50,
 		"startAyaIndex":5622,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Murselat",
-			"translation":"Poslani",
-			"purposeOfSura":"Potvrđivanje istinitosti Sudnjeg dana kroz iznošenje dokaza onima koji poriču, a nakon toga kroz prijetnje i upozorenja."
+		"name":{
+			"arabic":"المرسلات",
+			"english":"The Emissaries",
+			"englishTranscription":"Al-Mursalat",
+			"bosnian":"Poslani",
+			"bosnianTranscription":"El-Murselat"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrđivanje istinitosti Sudnjeg dana kroz iznošenje dokaza onima koji poriču, a nakon toga kroz prijetnje i upozorenja."
 		},
 		"type":"Meccan",
 		"orderInPublishing":33,
@@ -1697,13 +1851,15 @@ const suraList = [
 		"index":78,
 		"numberOfAyas":40,
 		"startAyaIndex":5672,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nebe'",
-			"translation":"Vijest",
-			"purposeOfSura":"Potvrđivanje istinitosti proživljenje nakon smrti, kao i nagrade i kazne, kroz jasne dokaze i argumente."
+		"name":{
+			"arabic":"النبإ",
+			"english":"The Tidings",
+			"englishTranscription":"An-Naba",
+			"bosnian":"Vijest",
+			"bosnianTranscription":"En-Nebe'"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrđivanje istinitosti proživljenje nakon smrti, kao i nagrade i kazne, kroz jasne dokaze i argumente."
 		},
 		"type":"Meccan",
 		"orderInPublishing":80,
@@ -1719,13 +1875,15 @@ const suraList = [
 		"index":79,
 		"numberOfAyas":46,
 		"startAyaIndex":5712,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nazi'at",
-			"translation":"Oni koji čupaju",
-			"purposeOfSura":"Zastrašivanje i pokretanje srca koja poriču proživljenje, nagradu i kaznu, kroz spominjanje događaja poput smrti, proživljenja, okupljanja, i Sudnjeg dana."
+		"name":{
+			"arabic":"النازعات",
+			"english":"Those who drag forth",
+			"englishTranscription":"An-Nazi'at",
+			"bosnian":"Oni koji čupaju",
+			"bosnianTranscription":"En-Nazi'at"
+		},
+		"aboutSura":{
+			"bosnian":"Zastrašivanje i pokretanje srca koja poriču proživljenje, nagradu i kaznu, kroz spominjanje događaja poput smrti, proživljenja, okupljanja, i Sudnjeg dana."
 		},
 		"type":"Meccan",
 		"orderInPublishing":81,
@@ -1741,13 +1899,15 @@ const suraList = [
 		"index":80,
 		"numberOfAyas":42,
 		"startAyaIndex":5758,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"'Abese'",
-			"translation":"Namrštio se",
-			"purposeOfSura":"Suština kur'anskog poziva, počast onome ko se njime koristi i poniženje onome ko se od njega okrene."
+		"name":{
+			"arabic":"عبس",
+			"english":"He Frowned",
+			"englishTranscription":"'Abasa",
+			"bosnian":"Namrštio se",
+			"bosnianTranscription":"'Abese'"
+		},
+		"aboutSura":{
+			"bosnian":"Suština kur'anskog poziva, počast onome ko se njime koristi i poniženje onome ko se od njega okrene."
 		},
 		"type":"Meccan",
 		"orderInPublishing":24,
@@ -1763,13 +1923,15 @@ const suraList = [
 		"index":81,
 		"numberOfAyas":29,
 		"startAyaIndex":5800,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tekvir",
-			"translation":"Prestanak sjaja",
-			"purposeOfSura":"Slikoviti opis Smaka svijeta, kada će se kosmos raspasti i labav postati, nakon što je bio precizno uređen."
+		"name":{
+			"arabic":"التكوير",
+			"english":"The Overthrowing",
+			"englishTranscription":"At-Takwir",
+			"bosnian":"Prestanak sjaja",
+			"bosnianTranscription":"Et-Tekvir"
+		},
+		"aboutSura":{
+			"bosnian":"Slikoviti opis Smaka svijeta, kada će se kosmos raspasti i labav postati, nakon što je bio precizno uređen."
 		},
 		"type":"Meccan",
 		"orderInPublishing":7,
@@ -1785,13 +1947,15 @@ const suraList = [
 		"index":82,
 		"numberOfAyas":19,
 		"startAyaIndex":5829,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Infitar",
-			"translation":"Rascjepljenje",
-			"purposeOfSura":"Prikaz Sudnjeg dana kada će precizno uređena stvorenja postati po svuda raspršena, kada će njihovo stanje i kretanje biti promijenjeno."
+		"name":{
+			"arabic":"الإنفطار",
+			"english":"The Cleaving",
+			"englishTranscription":"Al-Infitar",
+			"bosnian":"Rascjepljenje",
+			"bosnianTranscription":"El-Infitar"
+		},
+		"aboutSura":{
+			"bosnian":"Prikaz Sudnjeg dana kada će precizno uređena stvorenja postati po svuda raspršena, kada će njihovo stanje i kretanje biti promijenjeno."
 		},
 		"type":"Meccan",
 		"orderInPublishing":82,
@@ -1807,13 +1971,15 @@ const suraList = [
 		"index":83,
 		"numberOfAyas":36,
 		"startAyaIndex":5848,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Mutaffifin",
-			"translation":"Oni koji pri mjerenju zakidaju",
-			"purposeOfSura":"Sura se usmjerava na pojašnjenje stanja ljudi po pitanju mjerenja, ahiretskih položaja, prijeteći onima koji na vagi zakidaju i koji poriču i smirujući osjećaje vjernika i slabih."
+		"name":{
+			"arabic":"المطففين",
+			"english":"The Defrauding",
+			"englishTranscription":"Al-Mutaffifin",
+			"bosnian":"Oni koji pri mjerenju zakidaju",
+			"bosnianTranscription":"El-Mutaffifin"
+		},
+		"aboutSura":{
+			"bosnian":"Sura se usmjerava na pojašnjenje stanja ljudi po pitanju mjerenja, ahiretskih položaja, prijeteći onima koji na vagi zakidaju i koji poriču i smirujući osjećaje vjernika i slabih."
 		},
 		"type":"Meccan",
 		"orderInPublishing":86,
@@ -1829,13 +1995,15 @@ const suraList = [
 		"index":84,
 		"numberOfAyas":25,
 		"startAyaIndex":5884,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Inšikak",
-			"translation":"Cijepanje",
-			"purposeOfSura":"Prikaz dešavanja Smaka svijeta, kroz potčinjenost kosmosa naredbama Gospodara, iz čega proističe obaveznost pokoravanja i pogubnost odbijanja pokornosti."
+		"name":{
+			"arabic":"الإنشقاق",
+			"english":"The Sundering",
+			"englishTranscription":"Al-Inshiqaq",
+			"bosnian":"Cijepanje",
+			"bosnianTranscription":"El-Inšikak"
+		},
+		"aboutSura":{
+			"bosnian":"Prikaz dešavanja Smaka svijeta, kroz potčinjenost kosmosa naredbama Gospodara, iz čega proističe obaveznost pokoravanja i pogubnost odbijanja pokornosti."
 		},
 		"type":"Meccan",
 		"orderInPublishing":83,
@@ -1851,13 +2019,15 @@ const suraList = [
 		"index":85,
 		"numberOfAyas":22,
 		"startAyaIndex":5909,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Burudž",
-			"translation":"Sazviježđa",
-			"purposeOfSura":"Ispoljavanje Allahove snage i Njegove sveobuhvatne moći, kao i Njegove prijetnje strašnom kaznom onima koji vjernicima ne žele dobro i uznemiravaju ih."
+		"name":{
+			"arabic":"البروج",
+			"english":"The Mansions of the Stars",
+			"englishTranscription":"Al-Buruj",
+			"bosnian":"Sazviježđa",
+			"bosnianTranscription":"El-Burudž"
+		},
+		"aboutSura":{
+			"bosnian":"Ispoljavanje Allahove snage i Njegove sveobuhvatne moći, kao i Njegove prijetnje strašnom kaznom onima koji vjernicima ne žele dobro i uznemiravaju ih."
 		},
 		"type":"Meccan",
 		"orderInPublishing":27,
@@ -1873,13 +2043,15 @@ const suraList = [
 		"index":86,
 		"numberOfAyas":17,
 		"startAyaIndex":5931,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tarik",
-			"translation":"Danica",
-			"purposeOfSura":"Iskazivanje činjenice da Allahu ništa ne promiče, kao i ukazivanje na Njegovu apsolutnu moć."
+		"name":{
+			"arabic":"الطارق",
+			"english":"The Nightcommer",
+			"englishTranscription":"At-Tariq",
+			"bosnian":"Danica",
+			"bosnianTranscription":"Et-Tarik"
+		},
+		"aboutSura":{
+			"bosnian":"Iskazivanje činjenice da Allahu ništa ne promiče, kao i ukazivanje na Njegovu apsolutnu moć."
 		},
 		"type":"Meccan",
 		"orderInPublishing":36,
@@ -1895,13 +2067,15 @@ const suraList = [
 		"index":87,
 		"numberOfAyas":19,
 		"startAyaIndex":5948,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-E'la",
-			"translation":"Svevišnji",
-			"purposeOfSura":"Podsjećanje ljudi da blagodati Uzvišenog Allaha prema njima, podsticanje da se vežu za onaj svijet i da se riješe ovisnosti o dunjaluku."
+		"name":{
+			"arabic":"الأعلى",
+			"english":"The Most High",
+			"englishTranscription":"Al-A'la",
+			"bosnian":"Svevišnji",
+			"bosnianTranscription":"El-E'la"
+		},
+		"aboutSura":{
+			"bosnian":"Podsjećanje ljudi da blagodati Uzvišenog Allaha prema njima, podsticanje da se vežu za onaj svijet i da se riješe ovisnosti o dunjaluku."
 		},
 		"type":"Meccan",
 		"orderInPublishing":8,
@@ -1917,13 +2091,15 @@ const suraList = [
 		"index":88,
 		"numberOfAyas":26,
 		"startAyaIndex":5967,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Gašije",
-			"translation":"Teška nevolja",
-			"purposeOfSura":"Podsjećanje ljudi na božansku moć, kako u davanju blagodati, tako i u kažnjavanju, kroz prisutne dokaze i znakove, kako bi se ljudska srca ispunila željom za nagradom, i strahom od kazne."
+		"name":{
+			"arabic":"الغاشية",
+			"english":"The Overwhelming",
+			"englishTranscription":"Al-Ghashiyah",
+			"bosnian":"Teška nevolja",
+			"bosnianTranscription":"El-Gašije"
+		},
+		"aboutSura":{
+			"bosnian":"Podsjećanje ljudi na božansku moć, kako u davanju blagodati, tako i u kažnjavanju, kroz prisutne dokaze i znakove, kako bi se ljudska srca ispunila željom za nagradom, i strahom od kazne."
 		},
 		"type":"Meccan",
 		"orderInPublishing":68,
@@ -1939,13 +2115,15 @@ const suraList = [
 		"index":89,
 		"numberOfAyas":30,
 		"startAyaIndex":5993,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Fedžr",
-			"translation":"Zora",
-			"purposeOfSura":"Prikaz stanja u kojima se ogleda Allahova moć u kosmosu kao i u samom čovjeku, te pojašnjenje konačnice onih koji su obmanuti."
+		"name":{
+			"arabic":"الفجر",
+			"english":"The Dawn",
+			"englishTranscription":"Al-Fajr",
+			"bosnian":"Zora",
+			"bosnianTranscription":"El-Fedžr"
+		},
+		"aboutSura":{
+			"bosnian":"Prikaz stanja u kojima se ogleda Allahova moć u kosmosu kao i u samom čovjeku, te pojašnjenje konačnice onih koji su obmanuti."
 		},
 		"type":"Meccan",
 		"orderInPublishing":10,
@@ -1961,13 +2139,15 @@ const suraList = [
 		"index":90,
 		"numberOfAyas":20,
 		"startAyaIndex":6023,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Beled",
-			"translation":"Grad",
-			"purposeOfSura":"Spominjanje stanja čovjeka na oba svijeta, bilo da je vezano za nevjerovanje i kažnjavanje, ili za vjerovanje i postizanje velikih položaja i milosti."
+		"name":{
+			"arabic":"البلد",
+			"english":"The City",
+			"englishTranscription":"Al-Balad",
+			"bosnian":"Grad",
+			"bosnianTranscription":"El-Beled"
+		},
+		"aboutSura":{
+			"bosnian":"Spominjanje stanja čovjeka na oba svijeta, bilo da je vezano za nevjerovanje i kažnjavanje, ili za vjerovanje i postizanje velikih položaja i milosti."
 		},
 		"type":"Meccan",
 		"orderInPublishing":35,
@@ -1983,13 +2163,15 @@ const suraList = [
 		"index":91,
 		"numberOfAyas":15,
 		"startAyaIndex":6043,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Eš-Šems",
-			"translation":"Sunce",
-			"purposeOfSura":"Sura usmjerava pažnju ka Allahovovim znamenjima u kosmosu, a i u nama samima, te na stanja ljudskih duša, kako bi se one očistile i od grijeha udaljile."
+		"name":{
+			"arabic":"الشمس",
+			"english":"The Sun",
+			"englishTranscription":"Ash-Shams",
+			"bosnian":"Sunce",
+			"bosnianTranscription":"Eš-Šems"
+		},
+		"aboutSura":{
+			"bosnian":"Sura usmjerava pažnju ka Allahovovim znamenjima u kosmosu, a i u nama samima, te na stanja ljudskih duša, kako bi se one očistile i od grijeha udaljile."
 		},
 		"type":"Meccan",
 		"orderInPublishing":26,
@@ -2005,13 +2187,15 @@ const suraList = [
 		"index":92,
 		"numberOfAyas":21,
 		"startAyaIndex":6058,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Lejl",
-			"translation":"Noć",
-			"purposeOfSura":"Pojašenje razlike između znamenja, ljudi i njihovih postupaka, kako bi se ispoljila razlika između vjernika i nevjernika."
+		"name":{
+			"arabic":"الليل",
+			"english":"The Night",
+			"englishTranscription":"Al-Layl",
+			"bosnian":"Noć",
+			"bosnianTranscription":"El-Lejl"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašenje razlike između znamenja, ljudi i njihovih postupaka, kako bi se ispoljila razlika između vjernika i nevjernika."
 		},
 		"type":"Meccan",
 		"orderInPublishing":9,
@@ -2027,13 +2211,15 @@ const suraList = [
 		"index":93,
 		"numberOfAyas":11,
 		"startAyaIndex":6079,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ed-Duha",
-			"translation":"Jutro",
-			"purposeOfSura":"U ovoj suri spominje se pažnja Allahova prema Poslaniku, sallallahu alejhi ve sellem, Njegova blagodat prema njemu u vidu Objave, te trajnost te blagodati, s ciljem da se udovolji njegovim osjećajima i da se vjernici podsjete na zahvalnost."
+		"name":{
+			"arabic":"الضحى",
+			"english":"The Morning Hours",
+			"englishTranscription":"Ad-Duhaa",
+			"bosnian":"Jutro",
+			"bosnianTranscription":"Ed-Duha"
+		},
+		"aboutSura":{
+			"bosnian":"U ovoj suri spominje se pažnja Allahova prema Poslaniku, sallallahu alejhi ve sellem, Njegova blagodat prema njemu u vidu Objave, te trajnost te blagodati, s ciljem da se udovolji njegovim osjećajima i da se vjernici podsjete na zahvalnost."
 		},
 		"type":"Meccan",
 		"orderInPublishing":11,
@@ -2049,13 +2235,15 @@ const suraList = [
 		"index":94,
 		"numberOfAyas":8,
 		"startAyaIndex":6090,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Inširah",
-			"translation":"Širokogrudnost",
-			"purposeOfSura":"Spominjanje potpune Allahove blagodati prema Njegovom Poslaniku, sallallahu alejhi ve sellem, koja se ogleda u uklanjanju brige i poteškoće od njega, kao i onoga što do toga dovodi."
+		"name":{
+			"arabic":"الشرح",
+			"english":"The Relief",
+			"englishTranscription":"Ash-Sharh",
+			"bosnian":"Širokogrudnost",
+			"bosnianTranscription":"El-Inširah"
+		},
+		"aboutSura":{
+			"bosnian":"Spominjanje potpune Allahove blagodati prema Njegovom Poslaniku, sallallahu alejhi ve sellem, koja se ogleda u uklanjanju brige i poteškoće od njega, kao i onoga što do toga dovodi."
 		},
 		"type":"Meccan",
 		"orderInPublishing":12,
@@ -2071,13 +2259,15 @@ const suraList = [
 		"index":95,
 		"numberOfAyas":8,
 		"startAyaIndex":6098,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tin",
-			"translation":"Smokva",
-			"purposeOfSura":"Spominjanje vrijednosti čovjeka koji je u vjeri, kao i njegove bezvrijednosti kada tu vjeru izgubi. Zbog toga se Allah kune mjestima spuštanja Objave."
+		"name":{
+			"arabic":"التين",
+			"english":"The Fig",
+			"englishTranscription":"At-Tin",
+			"bosnian":"Smokva",
+			"bosnianTranscription":"Et-Tin"
+		},
+		"aboutSura":{
+			"bosnian":"Spominjanje vrijednosti čovjeka koji je u vjeri, kao i njegove bezvrijednosti kada tu vjeru izgubi. Zbog toga se Allah kune mjestima spuštanja Objave."
 		},
 		"type":"Meccan",
 		"orderInPublishing":28,
@@ -2093,13 +2283,15 @@ const suraList = [
 		"index":96,
 		"numberOfAyas":19,
 		"startAyaIndex":6106,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-'Alek",
-			"translation":"Ugrušak",
-			"purposeOfSura":"Pojašnjenje da čovjek biva potpun putem znanja i Objave koja ga vezuju s njegovim Gospodarom i čini ga Njemu poniznim, a da, suprotstavljajući se tome, umanjuje svoju vrijednost."
+		"name":{
+			"arabic":"العلق",
+			"english":"The Clot",
+			"englishTranscription":"Al-'Alaq",
+			"bosnian":"Ugrušak",
+			"bosnianTranscription":"El-'Alek"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašnjenje da čovjek biva potpun putem znanja i Objave koja ga vezuju s njegovim Gospodarom i čini ga Njemu poniznim, a da, suprotstavljajući se tome, umanjuje svoju vrijednost."
 		},
 		"type":"Meccan",
 		"orderInPublishing":1,
@@ -2115,13 +2307,15 @@ const suraList = [
 		"index":97,
 		"numberOfAyas":5,
 		"startAyaIndex":6125,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kadr",
-			"translation":"Noć Kadr",
-			"purposeOfSura":"Pojašnjavanje vrijednosti noći Kadr, njene veličanstvenosti kao i onoga što je u njoj spušteno."
+		"name":{
+			"arabic":"القدر",
+			"english":"The Power",
+			"englishTranscription":"Al-Qadr",
+			"bosnian":"Noć Kadr",
+			"bosnianTranscription":"El-Kadr"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašnjavanje vrijednosti noći Kadr, njene veličanstvenosti kao i onoga što je u njoj spušteno."
 		},
 		"type":"Meccan",
 		"orderInPublishing":25,
@@ -2137,15 +2331,17 @@ const suraList = [
 		"index":98,
 		"numberOfAyas":8,
 		"startAyaIndex":6130,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Bejjine",
-			"translation":"Dokaz jasni",
-			"purposeOfSura":"Ukazivanje na položaj poslanice Muhammeda, sallallahu alejhi ve sellem, na njenu jasnoću i potpunost."
+		"name":{
+			"arabic":"البينة",
+			"english":"The Clear Proof",
+			"englishTranscription":"Al-Bayyinah",
+			"bosnian":"Dokaz jasni",
+			"bosnianTranscription":"El-Bejjine"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ukazivanje na položaj poslanice Muhammeda, sallallahu alejhi ve sellem, na njenu jasnoću i potpunost."
+		},
+		"type":"Medinan",
 		"orderInPublishing":100,
 		"numberOfWords":98,
 		"numberOfLetters":392,
@@ -2159,15 +2355,17 @@ const suraList = [
 		"index":99,
 		"numberOfAyas":8,
 		"startAyaIndex":6138,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Ez-Zelzele",
-			"translation":"Zemljotres",
-			"purposeOfSura":"Buđenje nemarnih srca s ciljem da povjeruju u obračun i precizno svođenje računa na Sudnjem danu."
+		"name":{
+			"arabic":"الزلزلة",
+			"english":"The Earthquake",
+			"englishTranscription":"Az-Zalzalah",
+			"bosnian":"Zemljotres",
+			"bosnianTranscription":"Ez-Zelzele"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Buđenje nemarnih srca s ciljem da povjeruju u obračun i precizno svođenje računa na Sudnjem danu."
+		},
+		"type":"Medinan",
 		"orderInPublishing":93,
 		"numberOfWords":40,
 		"numberOfLetters":149,
@@ -2181,13 +2379,15 @@ const suraList = [
 		"index":100,
 		"numberOfAyas":11,
 		"startAyaIndex":6146,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-'Adijat",
-			"translation":"Oni koji jure",
-			"purposeOfSura":"Pojašnjenje osobina čovjeka u pogledu njegove brige za dunjalukom, kao vid podsjećanja na povratak i način da popravi svoje stanje i pravac kojim ide."
+		"name":{
+			"arabic":"العاديات",
+			"english":"The Courser",
+			"englishTranscription":"Al-'Adiyat",
+			"bosnian":"Oni koji jure",
+			"bosnianTranscription":"El-'Adijat"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašnjenje osobina čovjeka u pogledu njegove brige za dunjalukom, kao vid podsjećanja na povratak i način da popravi svoje stanje i pravac kojim ide."
 		},
 		"type":"Meccan",
 		"orderInPublishing":14,
@@ -2203,13 +2403,15 @@ const suraList = [
 		"index":101,
 		"numberOfAyas":11,
 		"startAyaIndex":6157,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kari'a",
-			"translation":"Smak svijeta",
-			"purposeOfSura":"Buđenje srca kroz prikaz strahota Smaka svijeta."
+		"name":{
+			"arabic":"القارعة",
+			"english":"The Calamity",
+			"englishTranscription":"Al-Qari'ah",
+			"bosnian":"Smak svijeta",
+			"bosnianTranscription":"El-Kari'a"
+		},
+		"aboutSura":{
+			"bosnian":"Buđenje srca kroz prikaz strahota Smaka svijeta."
 		},
 		"type":"Meccan",
 		"orderInPublishing":30,
@@ -2225,13 +2427,15 @@ const suraList = [
 		"index":102,
 		"numberOfAyas":8,
 		"startAyaIndex":6168,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Et-Tekasur",
-			"translation":"Nadmetanje",
-			"purposeOfSura":"Podsjećanje na smrt i obračun onih koji su zauzeti dunjalukom."
+		"name":{
+			"arabic":"التكاثر",
+			"english":"The Rivalry in world increase",
+			"englishTranscription":"At-Takathur",
+			"bosnian":"Nadmetanje",
+			"bosnianTranscription":"Et-Tekasur"
+		},
+		"aboutSura":{
+			"bosnian":"Podsjećanje na smrt i obračun onih koji su zauzeti dunjalukom."
 		},
 		"type":"Meccan",
 		"orderInPublishing":16,
@@ -2247,13 +2451,15 @@ const suraList = [
 		"index":103,
 		"numberOfAyas":3,
 		"startAyaIndex":6176,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-'Asr'",
-			"translation":"Vrijeme",
-			"purposeOfSura":"Pojašnjenje šta je to stvarna dobit i propast u životu i napomena na važnost vremena kojeg čovjek provodi."
+		"name":{
+			"arabic":"العصر",
+			"english":"The Declining Day",
+			"englishTranscription":"Al-'Asr",
+			"bosnian":"Vrijeme",
+			"bosnianTranscription":"El-'Asr'"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašnjenje šta je to stvarna dobit i propast u životu i napomena na važnost vremena kojeg čovjek provodi."
 		},
 		"type":"Meccan",
 		"orderInPublishing":13,
@@ -2269,13 +2475,15 @@ const suraList = [
 		"index":104,
 		"numberOfAyas":9,
 		"startAyaIndex":6179,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Humeze",
-			"translation":"Klevetnik",
-			"purposeOfSura":"Prijetnja onima koji se uzdižu i ismijavaju sa vjerom i vjernicima."
+		"name":{
+			"arabic":"الهمزة",
+			"english":"The Traducer",
+			"englishTranscription":"Al-Humazah",
+			"bosnian":"Klevetnik",
+			"bosnianTranscription":"El-Humeze"
+		},
+		"aboutSura":{
+			"bosnian":"Prijetnja onima koji se uzdižu i ismijavaju sa vjerom i vjernicima."
 		},
 		"type":"Meccan",
 		"orderInPublishing":32,
@@ -2291,13 +2499,15 @@ const suraList = [
 		"index":105,
 		"numberOfAyas":5,
 		"startAyaIndex":6188,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Fil",
-			"translation":"Slon",
-			"purposeOfSura":"Iskazivanje Allahove moći da štiti svoj sveti hram, kao vid opomene i blagodati."
+		"name":{
+			"arabic":"الفيل",
+			"english":"The Elephant",
+			"englishTranscription":"Al-Fil",
+			"bosnian":"Slon",
+			"bosnianTranscription":"El-Fil"
+		},
+		"aboutSura":{
+			"bosnian":"Iskazivanje Allahove moći da štiti svoj sveti hram, kao vid opomene i blagodati."
 		},
 		"type":"Meccan",
 		"orderInPublishing":19,
@@ -2313,13 +2523,15 @@ const suraList = [
 		"index":106,
 		"numberOfAyas":4,
 		"startAyaIndex":6193,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"Kurejš",
-			"translation":"Kurejšije",
-			"purposeOfSura":"Blagodat darovana Kurejšijama i obaveze naspram toga."
+		"name":{
+			"arabic":"قريش",
+			"english":"Quraysh",
+			"englishTranscription":"Quraysh",
+			"bosnian":"Kurejšije",
+			"bosnianTranscription":"Kurejš"
+		},
+		"aboutSura":{
+			"bosnian":"Blagodat darovana Kurejšijama i obaveze naspram toga."
 		},
 		"type":"Meccan",
 		"orderInPublishing":29,
@@ -2335,13 +2547,15 @@ const suraList = [
 		"index":107,
 		"numberOfAyas":7,
 		"startAyaIndex":6197,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Ma'un",
-			"translation":"Davanje u naruč",
-			"purposeOfSura":"Pojašnjenje ponašanja onih koji poriču Sudnji dan, kao vid upozorenja vjernicima i sramoćenja nevjernika."
+		"name":{
+			"arabic":"الماعون",
+			"english":"The Small Kindesses",
+			"englishTranscription":"Al-Ma'un",
+			"bosnian":"Davanje u naruč",
+			"bosnianTranscription":"El-Ma'un"
+		},
+		"aboutSura":{
+			"bosnian":"Pojašnjenje ponašanja onih koji poriču Sudnji dan, kao vid upozorenja vjernicima i sramoćenja nevjernika."
 		},
 		"type":"Meccan",
 		"orderInPublishing":17,
@@ -2357,13 +2571,15 @@ const suraList = [
 		"index":108,
 		"numberOfAyas":3,
 		"startAyaIndex":6204,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kevser",
-			"translation":"Mnogo dobro",
-			"purposeOfSura":"Blagodat Allaha prema Poslaniku, sallallahu alejhi ve sellem, i prekidanje svih puteva onima koji ga mrze."
+		"name":{
+			"arabic":"الكوثر",
+			"english":"The Abundance",
+			"englishTranscription":"Al-Kawthar",
+			"bosnian":"Mnogo dobro",
+			"bosnianTranscription":"El-Kevser"
+		},
+		"aboutSura":{
+			"bosnian":"Blagodat Allaha prema Poslaniku, sallallahu alejhi ve sellem, i prekidanje svih puteva onima koji ga mrze."
 		},
 		"type":"Meccan",
 		"orderInPublishing":15,
@@ -2379,13 +2595,15 @@ const suraList = [
 		"index":109,
 		"numberOfAyas":6,
 		"startAyaIndex":6207,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Kafirun",
-			"translation":"Nevjernici",
-			"purposeOfSura":"Potvrđivanje tevhida i vjerovanja da se samo Allahu čini ibadet, negiranje širka i potpuno odvajanja islama od širka."
+		"name":{
+			"arabic":"الكافرون",
+			"english":"The Disbelievers",
+			"englishTranscription":"Al-Kafirun",
+			"bosnian":"Nevjernici",
+			"bosnianTranscription":"El-Kafirun"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrđivanje tevhida i vjerovanja da se samo Allahu čini ibadet, negiranje širka i potpuno odvajanja islama od širka."
 		},
 		"type":"Meccan",
 		"orderInPublishing":18,
@@ -2401,15 +2619,17 @@ const suraList = [
 		"index":110,
 		"numberOfAyas":3,
 		"startAyaIndex":6213,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nasr",
-			"translation":"Pomoć",
-			"purposeOfSura":"Ukazivanje na krajnji rezultat islama, koji će biti pomoć i pobjeda, kao i na to šta je propisano kada se desi pobjeda islama. Također, sura ukazuje i na blizinu odlaska Poslanika, sallallahu alejhi ve sellem, s ovoga svijeta."
+		"name":{
+			"arabic":"النصر",
+			"english":"The Divine Support",
+			"englishTranscription":"An-Nasr",
+			"bosnian":"Pomoć",
+			"bosnianTranscription":"En-Nasr"
 		},
-		"type":"Meccan",
+		"aboutSura":{
+			"bosnian":"Ukazivanje na krajnji rezultat islama, koji će biti pomoć i pobjeda, kao i na to šta je propisano kada se desi pobjeda islama. Također, sura ukazuje i na blizinu odlaska Poslanika, sallallahu alejhi ve sellem, s ovoga svijeta."
+		},
+		"type":"Medinan",
 		"orderInPublishing":114,
 		"numberOfWords":23,
 		"numberOfLetters":77,
@@ -2423,13 +2643,15 @@ const suraList = [
 		"index":111,
 		"numberOfAyas":5,
 		"startAyaIndex":6216,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Leheb",
-			"translation":"Plamen",
-			"purposeOfSura":"Porijeklo i položaj ne koriste, ako je čovjek nevjernik u Allaha."
+		"name":{
+			"arabic":"المسد",
+			"english":"The Palm Fiber",
+			"englishTranscription":"Al-Masad",
+			"bosnian":"Plamen",
+			"bosnianTranscription":"El-Leheb"
+		},
+		"aboutSura":{
+			"bosnian":"Porijeklo i položaj ne koriste, ako je čovjek nevjernik u Allaha."
 		},
 		"type":"Meccan",
 		"orderInPublishing":6,
@@ -2445,13 +2667,15 @@ const suraList = [
 		"index":112,
 		"numberOfAyas":4,
 		"startAyaIndex":6221,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Ihlas",
-			"translation":"Iskrenost",
-			"purposeOfSura":"Potvrđivanje da je Allah jedinstven u svome savršenstvu, božanstvenosti i čistoći od mahana"
+		"name":{
+			"arabic":"الإخلاص",
+			"english":"The Sincerity",
+			"englishTranscription":"Al-Ikhlas",
+			"bosnian":"Iskrenost",
+			"bosnianTranscription":"El-Ihlas"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrđivanje da je Allah jedinstven u svome savršenstvu, božanstvenosti i čistoći od mahana"
 		},
 		"type":"Meccan",
 		"orderInPublishing":22,
@@ -2467,13 +2691,15 @@ const suraList = [
 		"index":113,
 		"numberOfAyas":5,
 		"startAyaIndex":6225,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Felek",
-			"translation":"Svitanje",
-			"purposeOfSura":"Traženje zaštite kod Allaha od vidljivog zla."
+		"name":{
+			"arabic":"الفلق",
+			"english":"The Daybreak",
+			"englishTranscription":"Al-Falaq",
+			"bosnian":"Svitanje",
+			"bosnianTranscription":"El-Felek"
+		},
+		"aboutSura":{
+			"bosnian":"Traženje zaštite kod Allaha od vidljivog zla."
 		},
 		"type":"Meccan",
 		"orderInPublishing":20,
@@ -2489,13 +2715,15 @@ const suraList = [
 		"index":114,
 		"numberOfAyas":6,
 		"startAyaIndex":6230,
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"En-Nas",
-			"translation":"Ljudi",
-			"purposeOfSura":"Zaštita kod Allaha od zla šejtana i njegovih došaptavanja i od skrivenog zla."
+		"name":{
+			"arabic":"الناس",
+			"english":"The Mankind",
+			"englishTranscription":"An-Nas",
+			"bosnian":"Ljudi",
+			"bosnianTranscription":"En-Nas"
+		},
+		"aboutSura":{
+			"bosnian":"Zaštita kod Allaha od zla šejtana i njegovih došaptavanja i od skrivenog zla."
 		},
 		"type":"Meccan",
 		"orderInPublishing":21,

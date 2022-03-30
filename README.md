@@ -33,572 +33,92 @@ quranMetaData.getSuraList();
 RESPONSE:
 [
 	{
-		"index":"1",
-		"ayas":"7",
-		"startAyaIndex":"0",
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Fatiha",
-			"translation":"Pristup",
-			"purposeOfSura":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
+		"index":1,
+		"numberOfAyas":7,
+		"startAyaIndex":0,
+		"name":{
+			"arabic":"الفاتحة",
+			"english":"The Opener",
+			"englishTranscription":"Al-Fatihah",
+			"bosnian":"Pristup",
+			"bosnianTranscription":"El-Fatiha"
+		},
+		"aboutSura":{
+			"bosnian":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
 		},
 		"type":"Meccan",
-		"order":"5",
-		"numberOfWords":"29",
-		"numberOfLetters":"142",
-		"startJuz":"1",
-		"endJuz":"1",
-		"startPage":"1",
-		"endPage":"1"
+		"orderInPublishing":5,
+		"numberOfWords":29,
+		"numberOfLetters":142,
+		"startJuz":1,
+		"endJuz":1,
+		"startPage":1,
+		"endPage":1,
+		"totalPages":1
 	},
 	{
-		"index":"2",
-		"ayas":"286",
-		"startAyaIndex":"7",
-		"name":"البقرة",
-		"tname":"Al-Baqarah",
-		"ename":"The Cow",
-		"bosnian":{
-			"name":"El-Bekare",
-			"translation":"Krava",
-			"purposeOfSura":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
+		"index":2,
+		"numberOfAyas":286,
+		"startAyaIndex":7,
+		"name":{
+			"arabic":"البقرة",
+			"english":"The Cow",
+			"englishTranscription":"Al-Baqarah",
+			"bosnian":"Krava",
+			"bosnianTranscription":"El-Bekare"
+		},
+		"aboutSura":{
+			"bosnian":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
 		},
 		"type":"Medinan",
-		"order":"87",
-		"numberOfWords":"6144",
-		"numberOfLetters":"25500",
-		"startJuz":"1",
-		"endJuz":"3",
-		"startPage":"2",
-		"endPage":"49"
-	}
+		"orderInPublishing":87,
+		"numberOfWords":6144,
+		"numberOfLetters":25500,
+		"startJuz":1,
+		"endJuz":3,
+		"startPage":2,
+		"endPage":49,
+		"totalPages":48
+	},
 	...
 	]
 ```
 
 ```typescript
 quranMetaData.searchSuraByName(searchTerm);
-```
-
-```bash
 EXAMPLE:
 quranMetaData.searchSuraByName('bek');
-
-RESPONSE:
-[
-	{
-		"index":"2",
-		"ayas":"286",
-		"startAyaIndex":"7",
-		"name":"البقرة",
-		"tname":"Al-Baqarah",
-		"ename":"The Cow",
-		"bosnian":{
-			"name":"El-Bekare",
-			"translation":"Krava",
-			"about":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
-		},
-		"type":"Medinan",
-		"order":"87",
-		"numberOfWords":"6144",
-		"numberOfLetters":"25500",
-		"startJuz":"1",
-		"endJuz":"3",
-		"startPage":"2",
-		"endPage":"49"
-	}
-]
 ```
+
 
 ```typescript
 quranMetaData.getSuraByIndex(index); //index = 1-114
-```
-
-```bash
 EXAMPLE: 
 quranMetaData.getSuraByIndex(1);
-
-RESPONSE:
-
-	{
-		"index":"1",
-		"ayas":"7",
-		"startAyaIndex":"0",
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Fatiha",
-			"translation":"Pristup",
-			"about":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
-		},
-		"type":"Meccan",
-		"order":"5",
-		"numberOfWords":"29",
-		"numberOfLetters":"142",
-		"startJuz":"1",
-		"endJuz":"1",
-		"startPage":"1",
-		"endPage":"1"
-	}
-
 ```
+
 
 ```typescript
 quranMetaData.sortSuraListByFirstPublished();
-```
-```bash
-RESPONSE:
-[
-	{
-		"index":"96",
-		"ayas":"19",
-		"startAyaIndex":"6106",
-		"name":"العلق",
-		"tname":"Al-'Alaq",
-		"ename":"The Clot",
-		"bosnian":{
-			"name":"El-'Alek",
-			"translation":"Ugrušak",
-			"about":"Pojašnjenje da čovjek biva potpun putem znanja i Objave koja ga vezuju s njegovim Gospodarom i čini ga Njemu poniznim, a da, suprotstavljajući se tome, umanjuje svoju vrijednost."
-		},
-		"type":"Meccan",
-		"order":"1",
-		"numberOfWords":"76",
-		"numberOfLetters":"280",
-		"startJuz":"30",
-		"endJuz":"30",
-		"startPage":"597",
-		"endPage":"597"
-	},
-	{
-		"index":"68",
-		"ayas":"52",
-		"startAyaIndex":"5271",
-		"name":"القلم",
-		"tname":"Al-Qalam",
-		"ename":"The Pen",
-		"bosnian":{
-			"name":"El-Kalem",
-			"translation":"Kalem",
-			"about":"Ukazivanje na Poslanikovo, sallallahu alejhi ve sellem, znanje i njegovo lijepo ponašanje, kao vid podrške nakon što su ga mušrici napali."
-		},
-		"type":"Meccan",
-		"order":"2",
-		"numberOfWords":"305",
-		"numberOfLetters":"1256",
-		"startJuz":"29",
-		"endJuz":"29",
-		"startPage":"564",
-		"endPage":"566"
-	},
-	{
-		"index":"73",
-		"ayas":"20",
-		"startAyaIndex":"5475",
-		"name":"المزمل",
-		"tname":"Al-Muzzammil",
-		"ename":"The Enshrouded One",
-		"bosnian":{
-			"name":"El-Muzzemmil",
-			"translation":"Umotani",
-			"about":"Spominjanje duševne ospkrbe za islamske misionare (daije) potrebne za suočavanje sa životnim nevoljama, kao vid učvršćivanja Poslanika, sallallahu alejhi ve sellem, i opomene onima koji ga poriču."
-		},
-		"type":"Meccan",
-		"order":"3",
-		"numberOfWords":"204",
-		"numberOfLetters":"838",
-		"startJuz":"29",
-		"endJuz":"29",
-		"startPage":"574",
-		"endPage":"575"
-	}
-	....
-]
 ```
 
 ```typescript
 quranMetaData.sortSuraListByLastPublished();
 ```
-```bash
-RESPONSE:
-[
-	{
-		"index":"110",
-		"ayas":"3",
-		"startAyaIndex":"6213",
-		"name":"النصر",
-		"tname":"An-Nasr",
-		"ename":"The Divine Support",
-		"bosnian":{
-			"name":"En-Nasr",
-			"translation":"Pomoć",
-			"about":"Ukazivanje na krajnji rezultat islama, koji će biti pomoć i pobjeda, kao i na to šta je propisano kada se desi pobjeda islama. Također, sura ukazuje i na blizinu odlaska Poslanika, sallallahu alejhi ve sellem, s ovoga svijeta."
-		},
-		"type":"Medinan",
-		"order":"114",
-		"numberOfWords":"23",
-		"numberOfLetters":"77",
-		"startJuz":"30",
-		"endJuz":"30",
-		"startPage":"603",
-		"endPage":"603"
-	},
-	{
-		"index":"9",
-		"ayas":"129",
-		"startAyaIndex":"1235",
-		"name":"التوبة",
-		"tname":"At-Tawbah",
-		"bosnian":{
-			"name":"Et-Tevbe",
-			"translation":"Pokajanje",
-			"about":"Ova sura otkriva stanje raznih kategorija ljudi i govori o odnosu spram njih, pa govori o odnosu prema nevjernicima, razotkriva dvoličanjake i karakterizira vjernike."
-		},
-		"ename":"The Repentance",
-		"type":"Medinan",
-		"order":"113",
-		"numberOfWords":"2505",
-		"numberOfLetters":"10488",
-		"startJuz":"10",
-		"endJuz":"11",
-		"startPage":"187",
-		"endPage":"207"
-	},
-	{
-		"index":"5",
-		"ayas":"120",
-		"startAyaIndex":"669",
-		"name":"المائدة",
-		"tname":"Al-Ma'idah",
-		"ename":"The Table Spread",
-		"bosnian":{
-			"name":"El-Maide",
-			"translation":"Trpeza",
-			"about":"Poštovanje ugovora, pridržavanje zakona i upotpunjenje vjere."
-		},
-		"type":"Medinan",
-		"order":"112",
-		"numberOfWords":"2841",
-		"numberOfLetters":"11933",
-		"startJuz":"6",
-		"endJuz":"7",
-		"startPage":"106",
-		"endPage":"127"
-	},
-	{
-		"index":"48",
-		"ayas":"29",
-		"startAyaIndex":"4583",
-		"name":"الفتح",
-		"tname":"Al-Fath",
-		"ename":"The Victory",
-		"bosnian":{
-			"name":"El-Feth",
-			"translation":"Pobjeda",
-			"about":"Ova sura sadrži Božije obećanje da će dati pobjedu i vlast Svom Poslaniku, sallallahu alejhi ve sellem, kao i iskrenim vjernicima koji se bore za vjeru."
-		},
-		"type":"Medinan",
-		"order":"111",
-		"numberOfWords":"564",
-		"numberOfLetters":"2438",
-		"startJuz":"26",
-		"endJuz":"26",
-		"startPage":"511",
-		"endPage":"515"
-	},
-	{
-		"index":"62",
-		"ayas":"11",
-		"startAyaIndex":"5177",
-		"name":"الجمعة",
-		"tname":"Al-Jumu'ah",
-		"ename":"The Congregation, Friday",
-		"bosnian":{
-			"name":"El-Džumu'a",
-			"translation":"Petak",
-			"about":"Pojašnjavanje Allahove blagodati ovom ummetu kojeg je posebno odlikovao uputom i slanjem Poslanika, sallallahu alejhi ve sellem, nakon što je bio u zabludi, zaduživanje pokornošću njemu i upozorenje na opasnost poistovjećivanja sa Jevrejima."
-		},
-		"type":"Medinan",
-		"order":"110",
-		"numberOfWords":"181",
-		"numberOfLetters":"720",
-		"startJuz":"28",
-		"endJuz":"28",
-		"startPage":"553",
-		"endPage":"554"
-	}
-]
-```
-
-
 
 ```typescript
 quranMetaData.getSuraListPublishedInMekka();
 ```
-```bash
-RESPONSE:
-[
-	{
-		"index":"1",
-		"ayas":"7",
-		"startAyaIndex":"0",
-		"name":"الفاتحة",
-		"tname":"Al-Fatihah",
-		"ename":"The Opener",
-		"bosnian":{
-			"name":"El-Fatiha",
-			"translation":"Pristup",
-			"about":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
-		},
-		"type":"Meccan",
-		"order":"5",
-		"numberOfWords":"29",
-		"numberOfLetters":"142",
-		"startJuz":"1",
-		"endJuz":"1",
-		"startPage":"1",
-		"endPage":"1"
-	},
-	{
-		"index":"6",
-		"ayas":"165",
-		"startAyaIndex":"789",
-		"name":"الأنعام",
-		"tname":"Al-An'am",
-		"ename":"The Cattle",
-		"bosnian":{
-			"name":"El-En'am",
-			"translation":"Stoka",
-			"about":"U ovoj se suri nalazi potvrda monoteizma uz razumske dokaze i pobijanje višebožačkih uvjerenja."
-		},
-		"type":"Meccan",
-		"order":"55",
-		"numberOfWords":"3060",
-		"numberOfLetters":"12254",
-		"startJuz":"7",
-		"endJuz":"8",
-		"startPage":"128",
-		"endPage":"150"
-	},
-	{
-		"index":"7",
-		"ayas":"206",
-		"startAyaIndex":"954",
-		"name":"الأعراف",
-		"tname":"Al-A'raf",
-		"ename":"The Heights",
-		"bosnian":{
-			"name":"El-A'raf",
-			"translation":"Bedemi",
-			"about":"Objašnjenje zakona borbe između vjere i nevjere i konačnica te borbe kroz navođenje događaja između vjerovjesnika i njihovih naroda."
-		},
-		"type":"Meccan",
-		"order":"39",
-		"numberOfWords":"3345",
-		"numberOfLetters":"13877",
-		"startJuz":"8",
-		"endJuz":"9",
-		"startPage":"151",
-		"endPage":"176"
-	},
-	{
-		"index":"10",
-		"ayas":"109",
-		"startAyaIndex":"1364",
-		"name":"يونس",
-		"tname":"Yunus",
-		"ename":"Jonah",
-		"bosnian":{
-			"name":"Junus",
-			"translation":"Junus",
-			"about":"Suprotstavljanje onima koji poriču Objavu, putem dokaza i argumeneta i pozivanje u vjerovanje metodom poticanja i zastrašivanja."
-		},
-		"type":"Meccan",
-		"order":"51",
-		"numberOfWords":"1843",
-		"numberOfLetters":"7567",
-		"startJuz":"11",
-		"endJuz":"11",
-		"startPage":"208",
-		"endPage":"221"
-	}
-]
-```
-
 
 ```typescript
 quranMetaData.getSuraListPublishedInMedina();
 ```
-```bash
-[
-	{
-		"index":"2",
-		"ayas":"286",
-		"startAyaIndex":"7",
-		"name":"البقرة",
-		"tname":"Al-Baqarah",
-		"ename":"The Cow",
-		"bosnian":{
-			"name":"El-Bekare",
-			"translation":"Krava",
-			"about":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
-		},
-		"type":"Medinan",
-		"order":"87",
-		"numberOfWords":"6144",
-		"numberOfLetters":"25500",
-		"startJuz":"1",
-		"endJuz":"3",
-		"startPage":"2",
-		"endPage":"49"
-	},
-	{
-		"index":"3",
-		"ayas":"200",
-		"startAyaIndex":"293",
-		"name":"آل عمران",
-		"tname":"Ali 'Imran",
-		"ename":"Family of Imran",
-		"bosnian":{
-			"name":"Ali-'Imran",
-			"translation":"Imranova porodica",
-			"about":"Ustrajnost na islamu nakon njegovog upotpunjenja i objašnjenja, i odgovor na sumnje sljedbenika Knjige, posebno kršćana."
-		},
-		"type":"Medinan",
-		"order":"89",
-		"numberOfWords":"3505",
-		"numberOfLetters":"14525",
-		"startJuz":"3",
-		"endJuz":"4",
-		"startPage":"50",
-		"endPage":"76"
-	},
-	{
-		"index":"4",
-		"ayas":"176",
-		"startAyaIndex":"493",
-		"name":"النساء",
-		"tname":"An-Nisa",
-		"ename":"The Women",
-		"bosnian":{
-			"name":"En-Nisa",
-			"translation":"Žene",
-			"about":"Uređenje muslimanskog društva iznutra kroz čuvanje socijalno-ekonomskih prava, i uklanjanje ostataka paganizma, koncetrišući se na prava žena i slabih."
-		},
-		"type":"Medinan",
-		"order":"92",
-		"numberOfWords":"3767",
-		"numberOfLetters":"16030",
-		"startJuz":"4",
-		"endJuz":"6",
-		"startPage":"77",
-		"endPage":"106"
-	},
-	{
-		"index":"5",
-		"ayas":"120",
-		"startAyaIndex":"669",
-		"name":"المائدة",
-		"tname":"Al-Ma'idah",
-		"ename":"The Table Spread",
-		"bosnian":{
-			"name":"El-Maide",
-			"translation":"Trpeza",
-			"about":"Poštovanje ugovora, pridržavanje zakona i upotpunjenje vjere."
-		},
-		"type":"Medinan",
-		"order":"112",
-		"numberOfWords":"2841",
-		"numberOfLetters":"11933",
-		"startJuz":"6",
-		"endJuz":"7",
-		"startPage":"106",
-		"endPage":"127"
-	},
-	{
-		"index":"8",
-		"ayas":"75",
-		"startAyaIndex":"1160",
-		"name":"الأنفال",
-		"tname":"Al-Anfal",
-		"ename":"The Spoils of War",
-		"bosnian":{
-			"name":"El-Enfal",
-			"translation":"Plijen",
-			"about":"Objašnjavanje propisa borbe i uzroka pobjede i poraza kroz kazivanje o bici na Bedru."
-		},
-		"type":"Medinan",
-		"order":"88",
-		"numberOfWords":"1246",
-		"numberOfLetters":"5080",
-		"startJuz":"9",
-		"endJuz":"10",
-		"startPage":"177",
-		"endPage":"186"
-	}
-	....
-]
-```
 
 ```typescript
 quranMetaData.getSuraListByJuz(juz); //juz = 1-30
-```
-```bash
+
 EXAMPLE:
 quranMetaData.getSuraListByJuz(1);
-
-RESPONSE:
-[
-	[
-		{
-			"index":"1",
-			"ayas":"7",
-			"startAyaIndex":"0",
-			"name":"الفاتحة",
-			"tname":"Al-Fatihah",
-			"ename":"The Opener",
-			"bosnian":{
-				"name":"El-Fatiha",
-				"translation":"Pristup",
-				"about":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
-			},
-			"type":"Meccan",
-			"order":"5",
-			"numberOfWords":"29",
-			"numberOfLetters":"142",
-			"startJuz":"1",
-			"endJuz":"1",
-			"startPage":"1",
-			"endPage":"1"
-		}
-	],
-	[
-		{
-			"index":"2",
-			"ayas":"286",
-			"startAyaIndex":"7",
-			"name":"البقرة",
-			"tname":"Al-Baqarah",
-			"ename":"The Cow",
-			"bosnian":{
-				"name":"El-Bekare",
-				"translation":"Krava",
-				"about":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
-			},
-			"type":"Medinan",
-			"order":"87",
-			"numberOfWords":"6144",
-			"numberOfLetters":"25500",
-			"startJuz":"1",
-			"endJuz":"3",
-			"startPage":"2",
-			"endPage":"49"
-		}
-	]
-]
 ```
 
 ```typescript
@@ -771,211 +291,9 @@ RESPONSE:
 
 ```typescript
 quranMetaData.getJuzByIndex(index); //index = 1-30
-```
 
-```bash
 EXAMPLE:
 quranMetaData.getJuzByIndex(30);
-
-RESPONSE:
-[
-	{
-		"id":30,
-		"juzNumber":30,
-		"surahs":[
-			{
-				"id":78,
-				"startAyah":1,
-				"endAyah":40
-			},
-			{
-				"id":79,
-				"startAyah":1,
-				"endAyah":46
-			},
-			{
-				"id":80,
-				"startAyah":1,
-				"endAyah":42
-			},
-			{
-				"id":81,
-				"startAyah":1,
-				"endAyah":29
-			},
-			{
-				"id":82,
-				"startAyah":1,
-				"endAyah":19
-			},
-			{
-				"id":83,
-				"startAyah":1,
-				"endAyah":36
-			},
-			{
-				"id":84,
-				"startAyah":1,
-				"endAyah":25
-			},
-			{
-				"id":85,
-				"startAyah":1,
-				"endAyah":22
-			},
-			{
-				"id":86,
-				"startAyah":1,
-				"endAyah":17
-			},
-			{
-				"id":87,
-				"startAyah":1,
-				"endAyah":19
-			},
-			{
-				"id":88,
-				"startAyah":1,
-				"endAyah":26
-			},
-			{
-				"id":89,
-				"startAyah":1,
-				"endAyah":30
-			},
-			{
-				"id":90,
-				"startAyah":1,
-				"endAyah":20
-			},
-			{
-				"id":91,
-				"startAyah":1,
-				"endAyah":15
-			},
-			{
-				"id":92,
-				"startAyah":1,
-				"endAyah":21
-			},
-			{
-				"id":93,
-				"startAyah":1,
-				"endAyah":11
-			},
-			{
-				"id":94,
-				"startAyah":1,
-				"endAyah":8
-			},
-			{
-				"id":95,
-				"startAyah":1,
-				"endAyah":8
-			},
-			{
-				"id":96,
-				"startAyah":1,
-				"endAyah":19
-			},
-			{
-				"id":97,
-				"startAyah":1,
-				"endAyah":5
-			},
-			{
-				"id":98,
-				"startAyah":1,
-				"endAyah":8
-			},
-			{
-				"id":99,
-				"startAyah":1,
-				"endAyah":8
-			},
-			{
-				"id":100,
-				"startAyah":1,
-				"endAyah":11
-			},
-			{
-				"id":101,
-				"startAyah":1,
-				"endAyah":11
-			},
-			{
-				"id":102,
-				"startAyah":1,
-				"endAyah":8
-			},
-			{
-				"id":103,
-				"startAyah":1,
-				"endAyah":3
-			},
-			{
-				"id":104,
-				"startAyah":1,
-				"endAyah":9
-			},
-			{
-				"id":105,
-				"startAyah":1,
-				"endAyah":5
-			},
-			{
-				"id":106,
-				"startAyah":1,
-				"endAyah":4
-			},
-			{
-				"id":107,
-				"startAyah":1,
-				"endAyah":7
-			},
-			{
-				"id":108,
-				"startAyah":1,
-				"endAyah":3
-			},
-			{
-				"id":109,
-				"startAyah":1,
-				"endAyah":6
-			},
-			{
-				"id":110,
-				"startAyah":1,
-				"endAyah":3
-			},
-			{
-				"id":111,
-				"startAyah":1,
-				"endAyah":5
-			},
-			{
-				"id":112,
-				"startAyah":1,
-				"endAyah":4
-			},
-			{
-				"id":113,
-				"startAyah":1,
-				"endAyah":5
-			},
-			{
-				"id":114,
-				"startAyah":1,
-				"endAyah":6
-			}
-		],
-		"firstAyahId":5673,
-		"lastAyahId":6236,
-		"numberOfAyahs":564,
-		"startPage":582,
-		"endPage":604
-	}
-]
 ```
 
 ```bash
