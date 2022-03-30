@@ -86,6 +86,7 @@ RESPONSE:
 
 ```typescript
 quranMetaData.searchSuraByName(searchTerm);
+
 EXAMPLE:
 quranMetaData.searchSuraByName('bek');
 ```
@@ -93,6 +94,7 @@ quranMetaData.searchSuraByName('bek');
 
 ```typescript
 quranMetaData.getSuraByIndex(index); //index = 1-114
+
 EXAMPLE: 
 quranMetaData.getSuraByIndex(1);
 ```
@@ -123,8 +125,7 @@ quranMetaData.getSuraListByJuz(1);
 
 ```typescript
 quranMetaData.getJuzList();
-```
-```bash
+
 RESPONSE:
 [
 	{
