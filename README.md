@@ -25,11 +25,9 @@ npm install @kmaslesa/quran-metadata
 const quranMetaData = require('@kmaslesa/quran-metadata');
 ```
 
-```typescript
-quranMetaData.getSuraList();
-```
-
 ```bash
+quranMetaData.getSuraList();
+
 RESPONSE:
 [
 	{
@@ -294,7 +292,31 @@ RESPONSE:
 quranMetaData.getJuzByIndex(index); //index = 1-30
 
 EXAMPLE:
-quranMetaData.getJuzByIndex(30);
+quranMetaData.getJuzByIndex(1);
+
+
+RESPONSE:
+{
+	"id":1,
+	"juzNumber":1,
+	"surahs":[
+		{
+			"id":1,
+			"startAyah":1,
+			"endAyah":7
+		},
+		{
+			"id":2,
+			"startAyah":1,
+			"endAyah":141
+		}
+	],
+	"firstAyahId":1,
+	"lastAyahId":148,
+	"numberOfAyahs":148,
+	"startPage":1,
+	"endPage":21
+}
 ```
 
 ```bash

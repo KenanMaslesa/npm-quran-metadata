@@ -54,7 +54,7 @@ function getJuzList() {
 }
 
 function getJuzByIndex(index) {
-  return data.juzList.filter(juz => +juz.id === +index);
+  return data.juzList.filter(juz => +juz.id === +index)[0];
 }
 
 function getNumberOfWordsAndLettersPerPage(page) {
