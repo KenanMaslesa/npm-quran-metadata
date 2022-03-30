@@ -16,7 +16,7 @@ function searchSuraByName(name) {
 }
 
 function getSuraByIndex(index) {
-  return data.suraList.filter(sura => +sura.index === +index);
+  return data.suraList.filter(sura => +sura.index === +index)[0];
 }
 
 function sortSuraListByFirstPublished() {
@@ -57,6 +57,10 @@ function getJuzByIndex(index) {
   return data.juzList.filter(juz => +juz.id === +index);
 }
 
+function getNumberOfWordsAndLettersPerPage(page) {
+  return data.wordsAndLettersPerPage.filter(item => item.page === +page)[0];
+}
+
 //helpers
 function contains(item, containsItem) {
   return item.toLowerCase().indexOf(containsItem.toLowerCase()) !== -1;
@@ -73,4 +77,5 @@ module.exports = {
   getSuraListByJuz,
   getJuzList,
   getJuzByIndex,
+  getNumberOfWordsAndLettersPerPage
 };

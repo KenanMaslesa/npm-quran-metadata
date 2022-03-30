@@ -18,6 +18,7 @@ npm install @kmaslesa/quran-metadata
   getSuraListByJuz,
   getJuzList,
   getJuzByIndex,
+  getNumberOfWordsAndLettersPerPage
 ```
 ## Usage
 ```typescript
@@ -120,7 +121,7 @@ EXAMPLE:
 quranMetaData.getSuraByIndex(1);
 
 RESPONSE:
-[
+
 	{
 		"index":"1",
 		"ayas":"7",
@@ -142,7 +143,7 @@ RESPONSE:
 		"startPage":"1",
 		"endPage":"1"
 	}
-]
+
 ```
 
 ```typescript
@@ -975,6 +976,13 @@ RESPONSE:
 		"endPage":604
 	}
 ]
+```
+
+```bash
+quranMetaData.getNumberOfWordsAndLettersPerPage(1);
+
+RESPONSE:
+{"page":1,"wordsNumber":29,"lettersNumber":145}
 ```
 
 
