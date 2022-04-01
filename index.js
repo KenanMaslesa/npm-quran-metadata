@@ -93,7 +93,7 @@ function getJuzList() {
 
 function searchJuzListById(id) {
   const juzList = [...data.juzList];
-  return juzList.filter(item => item.id === +id);
+  return juzList.filter(item => contains(item.id, id));
 }
 
 function getJuzById(id) {
@@ -106,7 +106,7 @@ function getNumberOfWordsAndLettersPerPage(page) {
 
 //helpers
 function contains(item, containsItem) {
-  return item.toLowerCase().indexOf(containsItem.toLowerCase()) !== -1;
+  return (item.toString().toLowerCase()).indexOf(containsItem.toString().toLowerCase()) !== -1;
 }
 
 module.exports = {
