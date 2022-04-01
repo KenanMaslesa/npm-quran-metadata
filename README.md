@@ -20,7 +20,8 @@ npm install @kmaslesa/quran-metadata
   getSuraListPublishedInMedina,
   getSuraListByJuz,
   getJuzList,
-  getJuzByIndex,
+  getJuzById,
+  searchJuzListById,
   getNumberOfWordsAndLettersPerPage
 ```
 ## Usage
@@ -297,10 +298,10 @@ RESPONSE:
 ```
 
 ```typescript
-quranMetaData.getJuzByIndex(index); //index = 1-30
+quranMetaData.getJuzById(index); //index = 1-30
 
 EXAMPLE:
-quranMetaData.getJuzByIndex(1);
+quranMetaData.getJuzById(1);
 
 
 RESPONSE:

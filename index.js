@@ -91,8 +91,13 @@ function getJuzList() {
   return data.juzList;
 }
 
-function getJuzByIndex(index) {
-  return data.juzList.filter(juz => +juz.id === +index)[0];
+function searchJuzListById(id) {
+  const juzList = [...data.juzList];
+  return juzList.filter(item => item.id === +id);
+}
+
+function getJuzById(id) {
+  return data.juzList.filter(juz => +juz.id === +id)[0];
 }
 
 function getNumberOfWordsAndLettersPerPage(page) {
@@ -114,7 +119,8 @@ module.exports = {
   getSuraListPublishedInMedina,
   getSuraListByJuz,
   getJuzList,
-  getJuzByIndex,
+  getJuzById,
+  searchJuzListById,
   getNumberOfWordsAndLettersPerPage,
   searchSuraByBosnianName,
   searchSuraByEnglishName,
