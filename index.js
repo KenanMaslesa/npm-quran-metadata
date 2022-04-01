@@ -21,13 +21,13 @@ function getSuraByIndex(index) {
 
 function sortSuraListByFirstPublished() {
   return data.suraList.sort((a, b) => {
-    return a.order - b.order;
+    return a.orderInPublishing - b.orderInPublishing;
   });
 }
 
 function sortSuraListByLastPublished() {
   return data.suraList.sort((a, b) => {
-    return b.order - a.order;
+    return b.orderInPublishing - a.orderInPublishing;
   });
 }
 
