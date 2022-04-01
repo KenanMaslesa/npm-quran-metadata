@@ -10,7 +10,7 @@ npm install @kmaslesa/quran-metadata
 ```bash
   getSuraList,
   searchSuraByName,
-	searchSuraByBosnianName,
+  searchSuraByBosnianName,
   searchSuraByEnglishName,
   searchSuraByArabicName
   getSuraByIndex,

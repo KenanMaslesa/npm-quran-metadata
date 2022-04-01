@@ -1,6 +1,6 @@
 {
   "name": "@kmaslesa/quran-metadata",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Qur'an metadata",
   "main": "index.js",
   "keywords": [
