@@ -1,17 +1,47 @@
 const data = require("./data");
 
 function getSuraList() {
-  return data.suraList;
+  const suraList = [...data.suraList];
+  return suraList;
+}
+
+function searchSuraByBosnianName(name) {
+  const suraList = [...data.suraList];
+
+  return suraList.filter(
+    sura =>
+      contains(sura.name.bosnian, name) ||
+      contains(sura.name.bosnianTranscription, name)
+  );
+}
+
+function searchSuraByEnglishName(name) {
+  const suraList = [...data.suraList];
+
+  return suraList.filter(
+    sura =>
+      contains(sura.name.english, name) ||
+      contains(sura.name.englishTranscription, name)
+  );
+}
+
+function searchSuraByArabicName(name) {
+  const suraList = [...data.suraList];
+
+  return suraList.filter(
+    sura =>
+      contains(sura.name.arabic, name)
+  );
 }
 
 function searchSuraByName(name) {
-  return data.suraList.filter(
+  const suraList = [...data.suraList];
+
+  return suraList.filter(
     sura =>
       contains(sura.name.arabic, name) ||
       contains(sura.name.bosnian, name) ||
-      contains(sura.name.bosnianTranscription, name) ||
-      contains(sura.name.english, name) ||
-      contains(sura.name.englishTranscription, name)
+      contains(sura.name.bosnianTranscription, name)
   );
 }
 
@@ -20,23 +50,31 @@ function getSuraByIndex(index) {
 }
 
 function sortSuraListByFirstPublished() {
-  return data.suraList.sort((a, b) => {
+  const suraList = [...data.suraList];
+
+  return suraList.sort((a, b) => {
     return a.orderInPublishing - b.orderInPublishing;
   });
 }
 
 function sortSuraListByLastPublished() {
-  return data.suraList.sort((a, b) => {
+  const suraList = [...data.suraList];
+
+  return suraList.sort((a, b) => {
     return b.orderInPublishing - a.orderInPublishing;
   });
 }
 
 function getSuraListPublishedInMekka() {
-  return data.suraList.filter(sura => sura.type === "Meccan");
+  const suraList = [...data.suraList];
+
+  return suraList.filter(sura => sura.type === "Meccan");
 }
 
 function getSuraListPublishedInMedina() {
-  return data.suraList.filter(sura => sura.type === "Medinan");
+  const suraList = [...data.suraList];
+
+  return suraList.filter(sura => sura.type === "Medinan");
 }
 
 function getSuraListByJuz(juzIndex) {
@@ -77,5 +115,8 @@ module.exports = {
   getSuraListByJuz,
   getJuzList,
   getJuzByIndex,
-  getNumberOfWordsAndLettersPerPage
+  getNumberOfWordsAndLettersPerPage,
+  searchSuraByBosnianName,
+  searchSuraByEnglishName,
+  searchSuraByArabicName
 };

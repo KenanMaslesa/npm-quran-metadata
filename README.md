@@ -10,6 +10,9 @@ npm install @kmaslesa/quran-metadata
 ```bash
   getSuraList,
   searchSuraByName,
+	searchSuraByBosnianName,
+  searchSuraByEnglishName,
+  searchSuraByArabicName
   getSuraByIndex,
   sortSuraListByFirstPublished,
   sortSuraListByLastPublished,
@@ -83,10 +86,15 @@ RESPONSE:
 ```
 
 ```typescript
-quranMetaData.searchSuraByName(searchTerm);
+quranMetaData.searchSuraByName(searchTerm); //bosnian, arabic and english
+quranMetaData.searchSuraByBosnianName(searchTerm),
+quranMetaData.searchSuraByEnglishName(searchTerm),
+quranMetaData.searchSuraByArabicName(searchTerm)
 
 EXAMPLE:
-quranMetaData.searchSuraByName('bek');
+quranMetaData.searchSuraByBosnianName('krava');
+quranMetaData.searchSuraByEnglishName('opener');
+quranMetaData.searchSuraByArabicName('الفاتحة');
 ```
 
 
