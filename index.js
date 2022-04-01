@@ -7,11 +7,11 @@ function getSuraList() {
 function searchSuraByName(name) {
   return data.suraList.filter(
     sura =>
-      contains(sura.name, name) ||
-      contains(sura.tname, name) ||
-      contains(sura.ename, name) ||
-      contains(sura.bosnian.translation, name) ||
-      contains(sura.bosnian.name, name)
+      contains(sura.name.arabic, name) ||
+      contains(sura.name.bosnian, name) ||
+      contains(sura.name.bosnianTranscription, name) ||
+      contains(sura.name.english, name) ||
+      contains(sura.name.englishTranscription, name)
   );
 }
 
