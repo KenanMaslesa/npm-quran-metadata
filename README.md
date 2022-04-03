@@ -14,6 +14,8 @@ npm install @kmaslesa/quran-metadata
   searchSuraByEnglishName,
   searchSuraByArabicName
   getSuraByIndex,
+  getSuraByPageNumber,
+  getJuzByPageNumber,
   sortSuraListByFirstPublished,
   sortSuraListByLastPublished,
   getSuraListPublishedInMekka,
@@ -106,7 +108,26 @@ EXAMPLE:
 quranMetaData.getSuraByIndex(1);
 ```
 
+```typescript
+quranMetaData.getJuzByPageNumber(page); //page = 1-604
 
+EXMAPLE: 
+quranMetaData.getJuzByPageNumber(50);
+
+RESPONSE:
+{"id":3,"juzNumber":3,"surahs":[{"id":2,"startAyah":253,"endAyah":286},{"id":3,"startAyah":1,"endAyah":92}],"firstAyahId":260,"lastAyahId":385,"numberOfAyahs":126,"startPage":42,"endPage":61}
+```
+```typescript
+quranMetaData.getSuraByPageNumber(page); //page = 1-604
+
+EXAMPLE: 
+quranMetaData.getSuraByPageNumber(50);
+
+REPONSE:
+```
+{"index":2,"numberOfAyas":286,"startAyaIndex":7,"name":{"arabic":"البقرة","english":"The Cow","englishTranscription":"Al-Baqarah","bosnian":"Krava","bosnianTranscription":"El-Bekare"},"aboutSura":{"bosnian":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."},"type":"Medinan","orderInPublishing":87,"numberOfWords":6144,"numberOfLetters":25500,"startJuz":1,"endJuz":3,"startPage":2,"endPage":49,"totalPages":48}
+KMASLESA-M-P3PR:test kmaslesa$ node script
+{"index":3,"numberOfAyas":200,"startAyaIndex":293,"name":{"arabic":"آل عمران","english":"Family of Imran","englishTranscription":"Ali 'Imran","bosnian":"Imranova porodica","bosnianTranscription":"Ali-'Imran"},"aboutSura":{"bosnian":"Ustrajnost na islamu nakon njegovog upotpunjenja i objašnjenja, i odgovor na sumnje sljedbenika Knjige, posebno kršćana."},"type":"Medinan","orderInPublishing":89,"numberOfWords":3505,"numberOfLetters":14525,"startJuz":3,"endJuz":4,"startPage":50,"endPage":76,"totalPages":27}
 ```typescript
 quranMetaData.sortSuraListByFirstPublished();
 ```

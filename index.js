@@ -77,6 +77,34 @@ function getSuraListPublishedInMedina() {
   return suraList.filter(sura => sura.type === "Medinan");
 }
 
+function getSuraByPageNumber(page) {
+  const suraList = [...data.suraList];
+  let suraVm;
+  suraList.forEach((sura) => {
+    if (
+      +page >= sura.startPage &&
+      +page <= sura.endPage
+    ) {
+      suraVm = sura;
+    }
+  });
+  return suraVm;
+}
+
+function getJuzByPageNumber(page) {
+  const juzList = [...data.juzList];
+  let juzVm;
+  juzList.forEach((juz) => {
+    if (
+      +page >= juz.startPage &&
+      +page <= juz.endPage
+    ) {
+      juzVm = juz;
+    }
+  });
+  return juzVm;
+}
+
 function getSuraListByJuz(juzIndex) {
     const suraListFromJuzlist = data.juzList.filter(juz => +juz.id === +juzIndex).map(item => item.surahs)[0];
     const returnedData = [];
@@ -86,6 +114,7 @@ function getSuraListByJuz(juzIndex) {
     });
     return returnedData;
 }
+
 
 function getJuzList() {
   return data.juzList;
@@ -124,5 +153,7 @@ module.exports = {
   getNumberOfWordsAndLettersPerPage,
   searchSuraByBosnianName,
   searchSuraByEnglishName,
-  searchSuraByArabicName
+  searchSuraByArabicName,
+  getSuraByPageNumber,
+  getJuzByPageNumber
 };
