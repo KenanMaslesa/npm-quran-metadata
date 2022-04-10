@@ -121,13 +121,84 @@ RESPONSE:
 quranMetaData.getSuraByPageNumber(page); //page = 1-604
 
 EXAMPLE: 
-quranMetaData.getSuraByPageNumber(50);
+quranMetaData.getSuraByPageNumber(604);
 
 REPONSE:
 ```
-{"index":2,"numberOfAyas":286,"startAyaIndex":7,"name":{"arabic":"البقرة","english":"The Cow","englishTranscription":"Al-Baqarah","bosnian":"Krava","bosnianTranscription":"El-Bekare"},"aboutSura":{"bosnian":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."},"type":"Medinan","orderInPublishing":87,"numberOfWords":6144,"numberOfLetters":25500,"startJuz":1,"endJuz":3,"startPage":2,"endPage":49,"totalPages":48}
-KMASLESA-M-P3PR:test kmaslesa$ node script
-{"index":3,"numberOfAyas":200,"startAyaIndex":293,"name":{"arabic":"آل عمران","english":"Family of Imran","englishTranscription":"Ali 'Imran","bosnian":"Imranova porodica","bosnianTranscription":"Ali-'Imran"},"aboutSura":{"bosnian":"Ustrajnost na islamu nakon njegovog upotpunjenja i objašnjenja, i odgovor na sumnje sljedbenika Knjige, posebno kršćana."},"type":"Medinan","orderInPublishing":89,"numberOfWords":3505,"numberOfLetters":14525,"startJuz":3,"endJuz":4,"startPage":50,"endPage":76,"totalPages":27}
+[
+	{
+		"index":112,
+		"numberOfAyas":4,
+		"startAyaIndex":6221,
+		"name":{
+			"arabic":"الإخلاص",
+			"english":"The Sincerity",
+			"englishTranscription":"Al-Ikhlas",
+			"bosnian":"Iskrenost",
+			"bosnianTranscription":"El-Ihlas"
+		},
+		"aboutSura":{
+			"bosnian":"Potvrđivanje da je Allah jedinstven u svome savršenstvu, božanstvenosti i čistoći od mahana"
+		},
+		"type":"Meccan",
+		"orderInPublishing":22,
+		"numberOfWords":19,
+		"numberOfLetters":47,
+		"startJuz":30,
+		"endJuz":30,
+		"startPage":604,
+		"endPage":604,
+		"totalPages":1
+	},
+	{
+		"index":113,
+		"numberOfAyas":5,
+		"startAyaIndex":6225,
+		"name":{
+			"arabic":"الفلق",
+			"english":"The Daybreak",
+			"englishTranscription":"Al-Falaq",
+			"bosnian":"Svitanje",
+			"bosnianTranscription":"El-Felek"
+		},
+		"aboutSura":{
+			"bosnian":"Traženje zaštite kod Allaha od vidljivog zla."
+		},
+		"type":"Meccan",
+		"orderInPublishing":20,
+		"numberOfWords":27,
+		"numberOfLetters":74,
+		"startJuz":30,
+		"endJuz":30,
+		"startPage":604,
+		"endPage":604,
+		"totalPages":1
+	},
+	{
+		"index":114,
+		"numberOfAyas":6,
+		"startAyaIndex":6230,
+		"name":{
+			"arabic":"الناس",
+			"english":"The Mankind",
+			"englishTranscription":"An-Nas",
+			"bosnian":"Ljudi",
+			"bosnianTranscription":"En-Nas"
+		},
+		"aboutSura":{
+			"bosnian":"Zaštita kod Allaha od zla šejtana i njegovih došaptavanja i od skrivenog zla."
+		},
+		"type":"Meccan",
+		"orderInPublishing":21,
+		"numberOfWords":24,
+		"numberOfLetters":79,
+		"startJuz":30,
+		"endJuz":30,
+		"startPage":604,
+		"endPage":604,
+		"totalPages":1
+	}
+]
 ```typescript
 quranMetaData.sortSuraListByFirstPublished();
 ```

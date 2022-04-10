@@ -79,13 +79,13 @@ function getSuraListPublishedInMedina() {
 
 function getSuraByPageNumber(page) {
   const suraList = [...data.suraList];
-  let suraVm;
+  let suraVm = [];
   suraList.forEach((sura) => {
     if (
       +page >= sura.startPage &&
       +page <= sura.endPage
     ) {
-      suraVm = sura;
+      suraVm.push(sura);
     }
   });
   return suraVm;
