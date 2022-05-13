@@ -234,12 +234,26 @@ RESPONSE:
 			{
 				"id":1,
 				"startAyah":1,
-				"endAyah":7
+				"endAyah":7,
+				"name":{
+					"arabic":"الفاتحة",
+					"english":"The Opener",
+					"englishTranscription":"Al-Fatihah",
+					"bosnian":"Pristup",
+					"bosnianTranscription":"El-Fatiha"
+				}
 			},
 			{
 				"id":2,
 				"startAyah":1,
-				"endAyah":141
+				"endAyah":141,
+				"name":{
+					"arabic":"الفاتحة",
+					"english":"The Opener",
+					"englishTranscription":"Al-Fatihah",
+					"bosnian":"Pristup",
+					"bosnianTranscription":"El-Fatiha"
+				}
 			}
 		],
 		"firstAyahId":1,
@@ -255,7 +269,14 @@ RESPONSE:
 			{
 				"id":2,
 				"startAyah":142,
-				"endAyah":252
+				"endAyah":252,
+				"name":{
+					"arabic":"البقرة",
+					"english":"The Cow",
+					"englishTranscription":"Al-Baqarah",
+					"bosnian":"Krava",
+					"bosnianTranscription":"El-Bekare"
+				}
 			}
 		],
 		"firstAyahId":149,
@@ -271,12 +292,26 @@ RESPONSE:
 			{
 				"id":2,
 				"startAyah":253,
-				"endAyah":286
+				"endAyah":286,
+				"name":{
+					"arabic":"آل عمران",
+					"english":"Family of Imran",
+					"englishTranscription":"Ali 'Imran",
+					"bosnian":"Imranova porodica",
+					"bosnianTranscription":"Ali-'Imran"
+				}
 			},
 			{
 				"id":3,
 				"startAyah":1,
-				"endAyah":92
+				"endAyah":92,
+				"name":{
+					"arabic":"آل عمران",
+					"english":"Family of Imran",
+					"englishTranscription":"Ali 'Imran",
+					"bosnian":"Imranova porodica",
+					"bosnianTranscription":"Ali-'Imran"
+				}
 			}
 		],
 		"firstAyahId":260,
@@ -292,12 +327,26 @@ RESPONSE:
 			{
 				"id":3,
 				"startAyah":93,
-				"endAyah":200
+				"endAyah":200,
+				"name":{
+					"arabic":"النساء",
+					"english":"The Women",
+					"englishTranscription":"An-Nisa",
+					"bosnian":"Žene",
+					"bosnianTranscription":"En-Nisa"
+				}
 			},
 			{
 				"id":4,
 				"startAyah":1,
-				"endAyah":23
+				"endAyah":23,
+				"name":{
+					"arabic":"النساء",
+					"english":"The Women",
+					"englishTranscription":"An-Nisa",
+					"bosnian":"Žene",
+					"bosnianTranscription":"En-Nisa"
+				}
 			}
 		],
 		"firstAyahId":386,
@@ -306,118 +355,8 @@ RESPONSE:
 		"startPage":62,
 		"endPage":81
 	},
-	{
-		"id":5,
-		"juzNumber":5,
-		"surahs":[
-			{
-				"id":4,
-				"startAyah":24,
-				"endAyah":147
-			}
-		],
-		"firstAyahId":517,
-		"lastAyahId":640,
-		"numberOfAyahs":124,
-		"startPage":82,
-		"endPage":101
-	},
-	{
-		"id":6,
-		"juzNumber":6,
-		"surahs":[
-			{
-				"id":4,
-				"startAyah":148,
-				"endAyah":176
-			},
-			{
-				"id":5,
-				"startAyah":1,
-				"endAyah":81
-			}
-		],
-		"firstAyahId":641,
-		"lastAyahId":750,
-		"numberOfAyahs":110,
-		"startPage":102,
-		"endPage":120
-	},
-	{
-		"id":7,
-		"juzNumber":7,
-		"surahs":[
-			{
-				"id":5,
-				"startAyah":82,
-				"endAyah":120
-			},
-			{
-				"id":6,
-				"startAyah":1,
-				"endAyah":110
-			}
-		],
-		"firstAyahId":751,
-		"lastAyahId":899,
-		"numberOfAyahs":149,
-		"startPage":121,
-		"endPage":141
-	},
-	{
-		"id":8,
-		"juzNumber":8,
-		"surahs":[
-			{
-				"id":6,
-				"startAyah":111,
-				"endAyah":165
-			},
-			{
-				"id":7,
-				"startAyah":1,
-				"endAyah":87
-			}
-		],
-		"firstAyahId":900,
-		"lastAyahId":1041,
-		"numberOfAyahs":142,
-		"startPage":142,
-		"endPage":161
-	}
 	....
 ]
-```
-
-```typescript
-quranMetaData.getJuzById(index); //index = 1-30
-
-EXAMPLE:
-quranMetaData.getJuzById(1);
-
-
-RESPONSE:
-{
-	"id":1,
-	"juzNumber":1,
-	"surahs":[
-		{
-			"id":1,
-			"startAyah":1,
-			"endAyah":7
-		},
-		{
-			"id":2,
-			"startAyah":1,
-			"endAyah":141
-		}
-	],
-	"firstAyahId":1,
-	"lastAyahId":148,
-	"numberOfAyahs":148,
-	"startPage":1,
-	"endPage":21
-}
 ```
 
 ```bash

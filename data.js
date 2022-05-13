@@ -2745,12 +2745,26 @@ const juzList = [
 			{
 				"id":1,
 				"startAyah":1,
-				"endAyah":7
+				"endAyah":7,
+				"name":{
+					"arabic":"الفاتحة",
+					"english":"The Opener",
+					"englishTranscription":"Al-Fatihah",
+					"bosnian":"Pristup",
+					"bosnianTranscription":"El-Fatiha"
+				}
 			},
 			{
 				"id":2,
 				"startAyah":1,
-				"endAyah":141
+				"endAyah":141,
+				"name":{
+					"arabic":"الفاتحة",
+					"english":"The Opener",
+					"englishTranscription":"Al-Fatihah",
+					"bosnian":"Pristup",
+					"bosnianTranscription":"El-Fatiha"
+				}
 			}
 		],
 		"firstAyahId":1,
@@ -2766,7 +2780,14 @@ const juzList = [
 			{
 				"id":2,
 				"startAyah":142,
-				"endAyah":252
+				"endAyah":252,
+				"name":{
+					"arabic":"البقرة",
+					"english":"The Cow",
+					"englishTranscription":"Al-Baqarah",
+					"bosnian":"Krava",
+					"bosnianTranscription":"El-Bekare"
+				}
 			}
 		],
 		"firstAyahId":149,
@@ -2782,12 +2803,26 @@ const juzList = [
 			{
 				"id":2,
 				"startAyah":253,
-				"endAyah":286
+				"endAyah":286,
+				"name":{
+					"arabic":"آل عمران",
+					"english":"Family of Imran",
+					"englishTranscription":"Ali 'Imran",
+					"bosnian":"Imranova porodica",
+					"bosnianTranscription":"Ali-'Imran"
+				}
 			},
 			{
 				"id":3,
 				"startAyah":1,
-				"endAyah":92
+				"endAyah":92,
+				"name":{
+					"arabic":"آل عمران",
+					"english":"Family of Imran",
+					"englishTranscription":"Ali 'Imran",
+					"bosnian":"Imranova porodica",
+					"bosnianTranscription":"Ali-'Imran"
+				}
 			}
 		],
 		"firstAyahId":260,
@@ -2803,12 +2838,26 @@ const juzList = [
 			{
 				"id":3,
 				"startAyah":93,
-				"endAyah":200
+				"endAyah":200,
+				"name":{
+					"arabic":"النساء",
+					"english":"The Women",
+					"englishTranscription":"An-Nisa",
+					"bosnian":"Žene",
+					"bosnianTranscription":"En-Nisa"
+				}
 			},
 			{
 				"id":4,
 				"startAyah":1,
-				"endAyah":23
+				"endAyah":23,
+				"name":{
+					"arabic":"النساء",
+					"english":"The Women",
+					"englishTranscription":"An-Nisa",
+					"bosnian":"Žene",
+					"bosnianTranscription":"En-Nisa"
+				}
 			}
 		],
 		"firstAyahId":386,
@@ -2824,7 +2873,14 @@ const juzList = [
 			{
 				"id":4,
 				"startAyah":24,
-				"endAyah":147
+				"endAyah":147,
+				"name":{
+					"arabic":"المائدة",
+					"english":"The Table Spread",
+					"englishTranscription":"Al-Ma'idah",
+					"bosnian":"Trpeza",
+					"bosnianTranscription":"El-Maide"
+				}
 			}
 		],
 		"firstAyahId":517,
@@ -2840,12 +2896,26 @@ const juzList = [
 			{
 				"id":4,
 				"startAyah":148,
-				"endAyah":176
+				"endAyah":176,
+				"name":{
+					"arabic":"الأنعام",
+					"english":"The Cattle",
+					"englishTranscription":"Al-An'am",
+					"bosnian":"Stoka",
+					"bosnianTranscription":"El-En'am"
+				}
 			},
 			{
 				"id":5,
 				"startAyah":1,
-				"endAyah":81
+				"endAyah":81,
+				"name":{
+					"arabic":"الأنعام",
+					"english":"The Cattle",
+					"englishTranscription":"Al-An'am",
+					"bosnian":"Stoka",
+					"bosnianTranscription":"El-En'am"
+				}
 			}
 		],
 		"firstAyahId":641,
@@ -2861,12 +2931,26 @@ const juzList = [
 			{
 				"id":5,
 				"startAyah":82,
-				"endAyah":120
+				"endAyah":120,
+				"name":{
+					"arabic":"الأعراف",
+					"english":"The Heights",
+					"englishTranscription":"Al-A'raf",
+					"bosnian":"Bedemi",
+					"bosnianTranscription":"El-A'raf"
+				}
 			},
 			{
 				"id":6,
 				"startAyah":1,
-				"endAyah":110
+				"endAyah":110,
+				"name":{
+					"arabic":"الأعراف",
+					"english":"The Heights",
+					"englishTranscription":"Al-A'raf",
+					"bosnian":"Bedemi",
+					"bosnianTranscription":"El-A'raf"
+				}
 			}
 		],
 		"firstAyahId":751,
@@ -2882,12 +2966,26 @@ const juzList = [
 			{
 				"id":6,
 				"startAyah":111,
-				"endAyah":165
+				"endAyah":165,
+				"name":{
+					"arabic":"الأنفال",
+					"english":"The Spoils of War",
+					"englishTranscription":"Al-Anfal",
+					"bosnian":"Plijen",
+					"bosnianTranscription":"El-Enfal"
+				}
 			},
 			{
 				"id":7,
 				"startAyah":1,
-				"endAyah":87
+				"endAyah":87,
+				"name":{
+					"arabic":"الأنفال",
+					"english":"The Spoils of War",
+					"englishTranscription":"Al-Anfal",
+					"bosnian":"Plijen",
+					"bosnianTranscription":"El-Enfal"
+				}
 			}
 		],
 		"firstAyahId":900,
@@ -2903,12 +3001,26 @@ const juzList = [
 			{
 				"id":7,
 				"startAyah":88,
-				"endAyah":206
+				"endAyah":206,
+				"name":{
+					"arabic":"التوبة",
+					"english":"The Repentance",
+					"englishTranscription":"At-Tawbah",
+					"bosnian":"Pokajanje",
+					"bosnianTranscription":"Et-Tevbe"
+				}
 			},
 			{
 				"id":8,
 				"startAyah":1,
-				"endAyah":40
+				"endAyah":40,
+				"name":{
+					"arabic":"التوبة",
+					"english":"The Repentance",
+					"englishTranscription":"At-Tawbah",
+					"bosnian":"Pokajanje",
+					"bosnianTranscription":"Et-Tevbe"
+				}
 			}
 		],
 		"firstAyahId":1042,
@@ -2924,12 +3036,26 @@ const juzList = [
 			{
 				"id":8,
 				"startAyah":41,
-				"endAyah":75
+				"endAyah":75,
+				"name":{
+					"arabic":"يونس",
+					"english":"Jonah",
+					"englishTranscription":"Yunus",
+					"bosnian":"Junus",
+					"bosnianTranscription":"Junus"
+				}
 			},
 			{
 				"id":9,
 				"startAyah":1,
-				"endAyah":92
+				"endAyah":92,
+				"name":{
+					"arabic":"يونس",
+					"english":"Jonah",
+					"englishTranscription":"Yunus",
+					"bosnian":"Junus",
+					"bosnianTranscription":"Junus"
+				}
 			}
 		],
 		"firstAyahId":1201,
@@ -2945,17 +3071,38 @@ const juzList = [
 			{
 				"id":9,
 				"startAyah":93,
-				"endAyah":129
+				"endAyah":129,
+				"name":{
+					"arabic":"هود",
+					"english":"Hud",
+					"englishTranscription":"Hud",
+					"bosnian":"Hud",
+					"bosnianTranscription":"Hud"
+				}
 			},
 			{
 				"id":10,
 				"startAyah":1,
-				"endAyah":109
+				"endAyah":109,
+				"name":{
+					"arabic":"هود",
+					"english":"Hud",
+					"englishTranscription":"Hud",
+					"bosnian":"Hud",
+					"bosnianTranscription":"Hud"
+				}
 			},
 			{
 				"id":11,
 				"startAyah":1,
-				"endAyah":5
+				"endAyah":5,
+				"name":{
+					"arabic":"هود",
+					"english":"Hud",
+					"englishTranscription":"Hud",
+					"bosnian":"Hud",
+					"bosnianTranscription":"Hud"
+				}
 			}
 		],
 		"firstAyahId":1328,
@@ -2971,12 +3118,26 @@ const juzList = [
 			{
 				"id":11,
 				"startAyah":6,
-				"endAyah":123
+				"endAyah":123,
+				"name":{
+					"arabic":"يوسف",
+					"english":"Joseph",
+					"englishTranscription":"Yusuf",
+					"bosnian":"Jusuf",
+					"bosnianTranscription":"Jusuf"
+				}
 			},
 			{
 				"id":12,
 				"startAyah":1,
-				"endAyah":52
+				"endAyah":52,
+				"name":{
+					"arabic":"يوسف",
+					"english":"Joseph",
+					"englishTranscription":"Yusuf",
+					"bosnian":"Jusuf",
+					"bosnianTranscription":"Jusuf"
+				}
 			}
 		],
 		"firstAyahId":1479,
@@ -2992,17 +3153,38 @@ const juzList = [
 			{
 				"id":12,
 				"startAyah":53,
-				"endAyah":111
+				"endAyah":111,
+				"name":{
+					"arabic":"الرعد",
+					"english":"The Thunder",
+					"englishTranscription":"Ar-Ra'd",
+					"bosnian":"Grom",
+					"bosnianTranscription":"Er-Ra'd"
+				}
 			},
 			{
 				"id":13,
 				"startAyah":1,
-				"endAyah":43
+				"endAyah":43,
+				"name":{
+					"arabic":"الرعد",
+					"english":"The Thunder",
+					"englishTranscription":"Ar-Ra'd",
+					"bosnian":"Grom",
+					"bosnianTranscription":"Er-Ra'd"
+				}
 			},
 			{
 				"id":14,
 				"startAyah":1,
-				"endAyah":52
+				"endAyah":52,
+				"name":{
+					"arabic":"الرعد",
+					"english":"The Thunder",
+					"englishTranscription":"Ar-Ra'd",
+					"bosnian":"Grom",
+					"bosnianTranscription":"Er-Ra'd"
+				}
 			}
 		],
 		"firstAyahId":1649,
@@ -3018,12 +3200,26 @@ const juzList = [
 			{
 				"id":15,
 				"startAyah":1,
-				"endAyah":99
+				"endAyah":99,
+				"name":{
+					"arabic":"ابراهيم",
+					"english":"Abrahim",
+					"englishTranscription":"Ibrahim",
+					"bosnian":"Ibrahim",
+					"bosnianTranscription":"Ibrahim"
+				}
 			},
 			{
 				"id":16,
 				"startAyah":1,
-				"endAyah":128
+				"endAyah":128,
+				"name":{
+					"arabic":"ابراهيم",
+					"english":"Abrahim",
+					"englishTranscription":"Ibrahim",
+					"bosnian":"Ibrahim",
+					"bosnianTranscription":"Ibrahim"
+				}
 			}
 		],
 		"firstAyahId":1803,
@@ -3039,12 +3235,26 @@ const juzList = [
 			{
 				"id":17,
 				"startAyah":1,
-				"endAyah":111
+				"endAyah":111,
+				"name":{
+					"arabic":"الحجر",
+					"english":"The Rocky Tract",
+					"englishTranscription":"Al-Hijr",
+					"bosnian":"Hidžr",
+					"bosnianTranscription":"El-Hidžr"
+				}
 			},
 			{
 				"id":18,
 				"startAyah":1,
-				"endAyah":74
+				"endAyah":74,
+				"name":{
+					"arabic":"الحجر",
+					"english":"The Rocky Tract",
+					"englishTranscription":"Al-Hijr",
+					"bosnian":"Hidžr",
+					"bosnianTranscription":"El-Hidžr"
+				}
 			}
 		],
 		"firstAyahId":2030,
@@ -3060,17 +3270,38 @@ const juzList = [
 			{
 				"id":18,
 				"startAyah":75,
-				"endAyah":110
+				"endAyah":110,
+				"name":{
+					"arabic":"النحل",
+					"english":"The Bee",
+					"englishTranscription":"An-Nahl",
+					"bosnian":"Pčele",
+					"bosnianTranscription":"En-Nahl"
+				}
 			},
 			{
 				"id":19,
 				"startAyah":1,
-				"endAyah":98
+				"endAyah":98,
+				"name":{
+					"arabic":"النحل",
+					"english":"The Bee",
+					"englishTranscription":"An-Nahl",
+					"bosnian":"Pčele",
+					"bosnianTranscription":"En-Nahl"
+				}
 			},
 			{
 				"id":20,
 				"startAyah":1,
-				"endAyah":135
+				"endAyah":135,
+				"name":{
+					"arabic":"النحل",
+					"english":"The Bee",
+					"englishTranscription":"An-Nahl",
+					"bosnian":"Pčele",
+					"bosnianTranscription":"En-Nahl"
+				}
 			}
 		],
 		"firstAyahId":2215,
@@ -3086,12 +3317,26 @@ const juzList = [
 			{
 				"id":21,
 				"startAyah":1,
-				"endAyah":112
+				"endAyah":112,
+				"name":{
+					"arabic":"الإسراء",
+					"english":"The Night Journey",
+					"englishTranscription":"Al-Isra",
+					"bosnian":"Noćno putovanje",
+					"bosnianTranscription":"El-Isra'"
+				}
 			},
 			{
 				"id":22,
 				"startAyah":1,
-				"endAyah":78
+				"endAyah":78,
+				"name":{
+					"arabic":"الإسراء",
+					"english":"The Night Journey",
+					"englishTranscription":"Al-Isra",
+					"bosnian":"Noćno putovanje",
+					"bosnianTranscription":"El-Isra'"
+				}
 			}
 		],
 		"firstAyahId":2484,
@@ -3107,17 +3352,38 @@ const juzList = [
 			{
 				"id":23,
 				"startAyah":1,
-				"endAyah":118
+				"endAyah":118,
+				"name":{
+					"arabic":"الكهف",
+					"english":"The Cave",
+					"englishTranscription":"Al-Kahf",
+					"bosnian":"Pećina",
+					"bosnianTranscription":"El-Kehf"
+				}
 			},
 			{
 				"id":24,
 				"startAyah":1,
-				"endAyah":64
+				"endAyah":64,
+				"name":{
+					"arabic":"الكهف",
+					"english":"The Cave",
+					"englishTranscription":"Al-Kahf",
+					"bosnian":"Pećina",
+					"bosnianTranscription":"El-Kehf"
+				}
 			},
 			{
 				"id":25,
 				"startAyah":1,
-				"endAyah":20
+				"endAyah":20,
+				"name":{
+					"arabic":"الكهف",
+					"english":"The Cave",
+					"englishTranscription":"Al-Kahf",
+					"bosnian":"Pećina",
+					"bosnianTranscription":"El-Kehf"
+				}
 			}
 		],
 		"firstAyahId":2674,
@@ -3133,17 +3399,38 @@ const juzList = [
 			{
 				"id":25,
 				"startAyah":21,
-				"endAyah":77
+				"endAyah":77,
+				"name":{
+					"arabic":"مريم",
+					"english":"Mary",
+					"englishTranscription":"Maryam",
+					"bosnian":"Merjema",
+					"bosnianTranscription":"Merjem"
+				}
 			},
 			{
 				"id":26,
 				"startAyah":1,
-				"endAyah":227
+				"endAyah":227,
+				"name":{
+					"arabic":"مريم",
+					"english":"Mary",
+					"englishTranscription":"Maryam",
+					"bosnian":"Merjema",
+					"bosnianTranscription":"Merjem"
+				}
 			},
 			{
 				"id":27,
 				"startAyah":1,
-				"endAyah":55
+				"endAyah":55,
+				"name":{
+					"arabic":"مريم",
+					"english":"Mary",
+					"englishTranscription":"Maryam",
+					"bosnian":"Merjema",
+					"bosnianTranscription":"Merjem"
+				}
 			}
 		],
 		"firstAyahId":2876,
@@ -3159,17 +3446,38 @@ const juzList = [
 			{
 				"id":27,
 				"startAyah":56,
-				"endAyah":93
+				"endAyah":93,
+				"name":{
+					"arabic":"طه",
+					"english":"Ta-Ha",
+					"englishTranscription":"Taha",
+					"bosnian":"Taha",
+					"bosnianTranscription":"Taha"
+				}
 			},
 			{
 				"id":28,
 				"startAyah":1,
-				"endAyah":88
+				"endAyah":88,
+				"name":{
+					"arabic":"طه",
+					"english":"Ta-Ha",
+					"englishTranscription":"Taha",
+					"bosnian":"Taha",
+					"bosnianTranscription":"Taha"
+				}
 			},
 			{
 				"id":29,
 				"startAyah":1,
-				"endAyah":45
+				"endAyah":45,
+				"name":{
+					"arabic":"طه",
+					"english":"Ta-Ha",
+					"englishTranscription":"Taha",
+					"bosnian":"Taha",
+					"bosnianTranscription":"Taha"
+				}
 			}
 		],
 		"firstAyahId":3215,
@@ -3185,27 +3493,62 @@ const juzList = [
 			{
 				"id":29,
 				"startAyah":46,
-				"endAyah":69
+				"endAyah":69,
+				"name":{
+					"arabic":"الأنبياء",
+					"english":"The Prophets",
+					"englishTranscription":"Al-Anbya",
+					"bosnian":"Vjerovjesnici",
+					"bosnianTranscription":"El-Enbija"
+				}
 			},
 			{
 				"id":30,
 				"startAyah":1,
-				"endAyah":60
+				"endAyah":60,
+				"name":{
+					"arabic":"الأنبياء",
+					"english":"The Prophets",
+					"englishTranscription":"Al-Anbya",
+					"bosnian":"Vjerovjesnici",
+					"bosnianTranscription":"El-Enbija"
+				}
 			},
 			{
 				"id":31,
 				"startAyah":1,
-				"endAyah":34
+				"endAyah":34,
+				"name":{
+					"arabic":"الأنبياء",
+					"english":"The Prophets",
+					"englishTranscription":"Al-Anbya",
+					"bosnian":"Vjerovjesnici",
+					"bosnianTranscription":"El-Enbija"
+				}
 			},
 			{
 				"id":32,
 				"startAyah":1,
-				"endAyah":30
+				"endAyah":30,
+				"name":{
+					"arabic":"الأنبياء",
+					"english":"The Prophets",
+					"englishTranscription":"Al-Anbya",
+					"bosnian":"Vjerovjesnici",
+					"bosnianTranscription":"El-Enbija"
+				}
 			},
 			{
 				"id":33,
 				"startAyah":1,
-				"endAyah":30
+				"endAyah":30,
+				"name":{
+					"arabic":"الأنبياء",
+					"english":"The Prophets",
+					"englishTranscription":"Al-Anbya",
+					"bosnian":"Vjerovjesnici",
+					"bosnianTranscription":"El-Enbija"
+				}
 			}
 		],
 		"firstAyahId":3386,
@@ -3221,22 +3564,50 @@ const juzList = [
 			{
 				"id":33,
 				"startAyah":31,
-				"endAyah":73
+				"endAyah":73,
+				"name":{
+					"arabic":"الحج",
+					"english":"The Pilgrimage",
+					"englishTranscription":"Al-Haj",
+					"bosnian":"Hadždž",
+					"bosnianTranscription":"El-Hadždž"
+				}
 			},
 			{
 				"id":34,
 				"startAyah":1,
-				"endAyah":54
+				"endAyah":54,
+				"name":{
+					"arabic":"الحج",
+					"english":"The Pilgrimage",
+					"englishTranscription":"Al-Haj",
+					"bosnian":"Hadždž",
+					"bosnianTranscription":"El-Hadždž"
+				}
 			},
 			{
 				"id":35,
 				"startAyah":1,
-				"endAyah":45
+				"endAyah":45,
+				"name":{
+					"arabic":"الحج",
+					"english":"The Pilgrimage",
+					"englishTranscription":"Al-Haj",
+					"bosnian":"Hadždž",
+					"bosnianTranscription":"El-Hadždž"
+				}
 			},
 			{
 				"id":36,
 				"startAyah":1,
-				"endAyah":27
+				"endAyah":27,
+				"name":{
+					"arabic":"الحج",
+					"english":"The Pilgrimage",
+					"englishTranscription":"Al-Haj",
+					"bosnian":"Hadždž",
+					"bosnianTranscription":"El-Hadždž"
+				}
 			}
 		],
 		"firstAyahId":3564,
@@ -3252,22 +3623,50 @@ const juzList = [
 			{
 				"id":36,
 				"startAyah":28,
-				"endAyah":83
+				"endAyah":83,
+				"name":{
+					"arabic":"المؤمنون",
+					"english":"The Believers",
+					"englishTranscription":"Al-Mu'minun",
+					"bosnian":"Vjernici",
+					"bosnianTranscription":"El-Mu'minun"
+				}
 			},
 			{
 				"id":37,
 				"startAyah":1,
-				"endAyah":182
+				"endAyah":182,
+				"name":{
+					"arabic":"المؤمنون",
+					"english":"The Believers",
+					"englishTranscription":"Al-Mu'minun",
+					"bosnian":"Vjernici",
+					"bosnianTranscription":"El-Mu'minun"
+				}
 			},
 			{
 				"id":38,
 				"startAyah":1,
-				"endAyah":88
+				"endAyah":88,
+				"name":{
+					"arabic":"المؤمنون",
+					"english":"The Believers",
+					"englishTranscription":"Al-Mu'minun",
+					"bosnian":"Vjernici",
+					"bosnianTranscription":"El-Mu'minun"
+				}
 			},
 			{
 				"id":39,
 				"startAyah":1,
-				"endAyah":31
+				"endAyah":31,
+				"name":{
+					"arabic":"المؤمنون",
+					"english":"The Believers",
+					"englishTranscription":"Al-Mu'minun",
+					"bosnian":"Vjernici",
+					"bosnianTranscription":"El-Mu'minun"
+				}
 			}
 		],
 		"firstAyahId":3733,
@@ -3283,17 +3682,38 @@ const juzList = [
 			{
 				"id":39,
 				"startAyah":32,
-				"endAyah":75
+				"endAyah":75,
+				"name":{
+					"arabic":"النور",
+					"english":"The Light",
+					"englishTranscription":"An-Nur",
+					"bosnian":"Svjetlost",
+					"bosnianTranscription":"En-Nur"
+				}
 			},
 			{
 				"id":40,
 				"startAyah":1,
-				"endAyah":85
+				"endAyah":85,
+				"name":{
+					"arabic":"النور",
+					"english":"The Light",
+					"englishTranscription":"An-Nur",
+					"bosnian":"Svjetlost",
+					"bosnianTranscription":"En-Nur"
+				}
 			},
 			{
 				"id":41,
 				"startAyah":1,
-				"endAyah":46
+				"endAyah":46,
+				"name":{
+					"arabic":"النور",
+					"english":"The Light",
+					"englishTranscription":"An-Nur",
+					"bosnian":"Svjetlost",
+					"bosnianTranscription":"En-Nur"
+				}
 			}
 		],
 		"firstAyahId":4090,
@@ -3309,27 +3729,62 @@ const juzList = [
 			{
 				"id":41,
 				"startAyah":47,
-				"endAyah":54
+				"endAyah":54,
+				"name":{
+					"arabic":"الفرقان",
+					"english":"The Criterian",
+					"englishTranscription":"Al-Furqan",
+					"bosnian":"Furkan",
+					"bosnianTranscription":"El-Furkan"
+				}
 			},
 			{
 				"id":42,
 				"startAyah":1,
-				"endAyah":53
+				"endAyah":53,
+				"name":{
+					"arabic":"الفرقان",
+					"english":"The Criterian",
+					"englishTranscription":"Al-Furqan",
+					"bosnian":"Furkan",
+					"bosnianTranscription":"El-Furkan"
+				}
 			},
 			{
 				"id":43,
 				"startAyah":1,
-				"endAyah":89
+				"endAyah":89,
+				"name":{
+					"arabic":"الفرقان",
+					"english":"The Criterian",
+					"englishTranscription":"Al-Furqan",
+					"bosnian":"Furkan",
+					"bosnianTranscription":"El-Furkan"
+				}
 			},
 			{
 				"id":44,
 				"startAyah":1,
-				"endAyah":59
+				"endAyah":59,
+				"name":{
+					"arabic":"الفرقان",
+					"english":"The Criterian",
+					"englishTranscription":"Al-Furqan",
+					"bosnian":"Furkan",
+					"bosnianTranscription":"El-Furkan"
+				}
 			},
 			{
 				"id":45,
 				"startAyah":1,
-				"endAyah":37
+				"endAyah":37,
+				"name":{
+					"arabic":"الفرقان",
+					"english":"The Criterian",
+					"englishTranscription":"Al-Furqan",
+					"bosnian":"Furkan",
+					"bosnianTranscription":"El-Furkan"
+				}
 			}
 		],
 		"firstAyahId":4265,
@@ -3345,32 +3800,74 @@ const juzList = [
 			{
 				"id":46,
 				"startAyah":1,
-				"endAyah":35
+				"endAyah":35,
+				"name":{
+					"arabic":"الشعراء",
+					"english":"The Poets",
+					"englishTranscription":"Ash-Shu'ara",
+					"bosnian":"Pjesnici",
+					"bosnianTranscription":"Eš-Šu'ara'"
+				}
 			},
 			{
 				"id":47,
 				"startAyah":1,
-				"endAyah":38
+				"endAyah":38,
+				"name":{
+					"arabic":"الشعراء",
+					"english":"The Poets",
+					"englishTranscription":"Ash-Shu'ara",
+					"bosnian":"Pjesnici",
+					"bosnianTranscription":"Eš-Šu'ara'"
+				}
 			},
 			{
 				"id":48,
 				"startAyah":1,
-				"endAyah":29
+				"endAyah":29,
+				"name":{
+					"arabic":"الشعراء",
+					"english":"The Poets",
+					"englishTranscription":"Ash-Shu'ara",
+					"bosnian":"Pjesnici",
+					"bosnianTranscription":"Eš-Šu'ara'"
+				}
 			},
 			{
 				"id":49,
 				"startAyah":1,
-				"endAyah":18
+				"endAyah":18,
+				"name":{
+					"arabic":"الشعراء",
+					"english":"The Poets",
+					"englishTranscription":"Ash-Shu'ara",
+					"bosnian":"Pjesnici",
+					"bosnianTranscription":"Eš-Šu'ara'"
+				}
 			},
 			{
 				"id":50,
 				"startAyah":1,
-				"endAyah":45
+				"endAyah":45,
+				"name":{
+					"arabic":"الشعراء",
+					"english":"The Poets",
+					"englishTranscription":"Ash-Shu'ara",
+					"bosnian":"Pjesnici",
+					"bosnianTranscription":"Eš-Šu'ara'"
+				}
 			},
 			{
 				"id":51,
 				"startAyah":1,
-				"endAyah":30
+				"endAyah":30,
+				"name":{
+					"arabic":"الشعراء",
+					"english":"The Poets",
+					"englishTranscription":"Ash-Shu'ara",
+					"bosnian":"Pjesnici",
+					"bosnianTranscription":"Eš-Šu'ara'"
+				}
 			}
 		],
 		"firstAyahId":4511,
@@ -3386,37 +3883,86 @@ const juzList = [
 			{
 				"id":51,
 				"startAyah":31,
-				"endAyah":60
+				"endAyah":60,
+				"name":{
+					"arabic":"النمل",
+					"english":"The Ant",
+					"englishTranscription":"An-Naml",
+					"bosnian":"Mravi",
+					"bosnianTranscription":"En-Neml"
+				}
 			},
 			{
 				"id":52,
 				"startAyah":1,
-				"endAyah":49
+				"endAyah":49,
+				"name":{
+					"arabic":"النمل",
+					"english":"The Ant",
+					"englishTranscription":"An-Naml",
+					"bosnian":"Mravi",
+					"bosnianTranscription":"En-Neml"
+				}
 			},
 			{
 				"id":53,
 				"startAyah":1,
-				"endAyah":62
+				"endAyah":62,
+				"name":{
+					"arabic":"النمل",
+					"english":"The Ant",
+					"englishTranscription":"An-Naml",
+					"bosnian":"Mravi",
+					"bosnianTranscription":"En-Neml"
+				}
 			},
 			{
 				"id":54,
 				"startAyah":1,
-				"endAyah":55
+				"endAyah":55,
+				"name":{
+					"arabic":"النمل",
+					"english":"The Ant",
+					"englishTranscription":"An-Naml",
+					"bosnian":"Mravi",
+					"bosnianTranscription":"En-Neml"
+				}
 			},
 			{
 				"id":55,
 				"startAyah":1,
-				"endAyah":78
+				"endAyah":78,
+				"name":{
+					"arabic":"النمل",
+					"english":"The Ant",
+					"englishTranscription":"An-Naml",
+					"bosnian":"Mravi",
+					"bosnianTranscription":"En-Neml"
+				}
 			},
 			{
 				"id":56,
 				"startAyah":1,
-				"endAyah":96
+				"endAyah":96,
+				"name":{
+					"arabic":"النمل",
+					"english":"The Ant",
+					"englishTranscription":"An-Naml",
+					"bosnian":"Mravi",
+					"bosnianTranscription":"En-Neml"
+				}
 			},
 			{
 				"id":57,
 				"startAyah":1,
-				"endAyah":29
+				"endAyah":29,
+				"name":{
+					"arabic":"النمل",
+					"english":"The Ant",
+					"englishTranscription":"An-Naml",
+					"bosnian":"Mravi",
+					"bosnianTranscription":"En-Neml"
+				}
 			}
 		],
 		"firstAyahId":4706,
@@ -3432,47 +3978,110 @@ const juzList = [
 			{
 				"id":58,
 				"startAyah":1,
-				"endAyah":22
+				"endAyah":22,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":59,
 				"startAyah":1,
-				"endAyah":24
+				"endAyah":24,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":60,
 				"startAyah":1,
-				"endAyah":13
+				"endAyah":13,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":61,
 				"startAyah":1,
-				"endAyah":14
+				"endAyah":14,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":62,
 				"startAyah":1,
-				"endAyah":11
+				"endAyah":11,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":63,
 				"startAyah":1,
-				"endAyah":11
+				"endAyah":11,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":64,
 				"startAyah":1,
-				"endAyah":18
+				"endAyah":18,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":65,
 				"startAyah":1,
-				"endAyah":12
+				"endAyah":12,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			},
 			{
 				"id":66,
 				"startAyah":1,
-				"endAyah":12
+				"endAyah":12,
+				"name":{
+					"arabic":"القصص",
+					"english":"The Stories",
+					"englishTranscription":"Al-Qasas",
+					"bosnian":"Kazivanje",
+					"bosnianTranscription":"El-Kasas"
+				}
 			}
 		],
 		"firstAyahId":5105,
@@ -3488,57 +4097,134 @@ const juzList = [
 			{
 				"id":67,
 				"startAyah":1,
-				"endAyah":30
+				"endAyah":30,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":68,
 				"startAyah":1,
-				"endAyah":52
+				"endAyah":52,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":69,
 				"startAyah":1,
-				"endAyah":52
+				"endAyah":52,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":70,
 				"startAyah":1,
-				"endAyah":44
+				"endAyah":44,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":71,
 				"startAyah":1,
-				"endAyah":28
+				"endAyah":28,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":72,
 				"startAyah":1,
-				"endAyah":28
+				"endAyah":28,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":73,
 				"startAyah":1,
-				"endAyah":20
+				"endAyah":20,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":74,
 				"startAyah":1,
-				"endAyah":56
+				"endAyah":56,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":75,
 				"startAyah":1,
-				"endAyah":40
+				"endAyah":40,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":76,
 				"startAyah":1,
-				"endAyah":31
+				"endAyah":31,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			},
 			{
 				"id":77,
 				"startAyah":1,
-				"endAyah":50
+				"endAyah":50,
+				"name":{
+					"arabic":"العنكبوت",
+					"english":"The Spider",
+					"englishTranscription":"Al-'Ankabut",
+					"bosnian":"Pauk",
+					"bosnianTranscription":"El-'Ankebut"
+				}
 			}
 		],
 		"firstAyahId":5242,
@@ -3554,187 +4240,446 @@ const juzList = [
 			{
 				"id":78,
 				"startAyah":1,
-				"endAyah":40
+				"endAyah":40,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":79,
 				"startAyah":1,
-				"endAyah":46
+				"endAyah":46,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":80,
 				"startAyah":1,
-				"endAyah":42
+				"endAyah":42,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":81,
 				"startAyah":1,
-				"endAyah":29
+				"endAyah":29,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":82,
 				"startAyah":1,
-				"endAyah":19
+				"endAyah":19,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":83,
 				"startAyah":1,
-				"endAyah":36
+				"endAyah":36,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":84,
 				"startAyah":1,
-				"endAyah":25
+				"endAyah":25,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":85,
 				"startAyah":1,
-				"endAyah":22
+				"endAyah":22,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":86,
 				"startAyah":1,
-				"endAyah":17
+				"endAyah":17,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":87,
 				"startAyah":1,
-				"endAyah":19
+				"endAyah":19,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":88,
 				"startAyah":1,
-				"endAyah":26
+				"endAyah":26,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":89,
 				"startAyah":1,
-				"endAyah":30
+				"endAyah":30,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":90,
 				"startAyah":1,
-				"endAyah":20
+				"endAyah":20,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":91,
 				"startAyah":1,
-				"endAyah":15
+				"endAyah":15,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":92,
 				"startAyah":1,
-				"endAyah":21
+				"endAyah":21,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":93,
 				"startAyah":1,
-				"endAyah":11
+				"endAyah":11,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":94,
 				"startAyah":1,
-				"endAyah":8
+				"endAyah":8,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":95,
 				"startAyah":1,
-				"endAyah":8
+				"endAyah":8,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":96,
 				"startAyah":1,
-				"endAyah":19
+				"endAyah":19,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":97,
 				"startAyah":1,
-				"endAyah":5
+				"endAyah":5,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":98,
 				"startAyah":1,
-				"endAyah":8
+				"endAyah":8,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":99,
 				"startAyah":1,
-				"endAyah":8
+				"endAyah":8,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":100,
 				"startAyah":1,
-				"endAyah":11
+				"endAyah":11,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":101,
 				"startAyah":1,
-				"endAyah":11
+				"endAyah":11,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":102,
 				"startAyah":1,
-				"endAyah":8
+				"endAyah":8,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":103,
 				"startAyah":1,
-				"endAyah":3
+				"endAyah":3,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":104,
 				"startAyah":1,
-				"endAyah":9
+				"endAyah":9,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":105,
 				"startAyah":1,
-				"endAyah":5
+				"endAyah":5,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":106,
 				"startAyah":1,
-				"endAyah":4
+				"endAyah":4,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":107,
 				"startAyah":1,
-				"endAyah":7
+				"endAyah":7,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":108,
 				"startAyah":1,
-				"endAyah":3
+				"endAyah":3,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":109,
 				"startAyah":1,
-				"endAyah":6
+				"endAyah":6,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":110,
 				"startAyah":1,
-				"endAyah":3
+				"endAyah":3,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":111,
 				"startAyah":1,
-				"endAyah":5
+				"endAyah":5,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":112,
 				"startAyah":1,
-				"endAyah":4
+				"endAyah":4,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":113,
 				"startAyah":1,
-				"endAyah":5
+				"endAyah":5,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			},
 			{
 				"id":114,
 				"startAyah":1,
-				"endAyah":6
+				"endAyah":6,
+				"name":{
+					"arabic":"الروم",
+					"english":"The Romans",
+					"englishTranscription":"Ar-Rum",
+					"bosnian":"Bizantinci",
+					"bosnianTranscription":"Er-Rum"
+				}
 			}
 		],
 		"firstAyahId":5673,
