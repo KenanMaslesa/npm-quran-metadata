@@ -1,7720 +1,7827 @@
 const suraList = [
-	{
-		"index":1,
-		"numberOfAyas":7,
-		"startAyaIndex":0,
-		"name":{
-			"arabic":"الفاتحة",
-			"english":"The Opener",
-			"englishTranscription":"Al-Fatihah",
-			"bosnian":"Pristup",
-			"bosnianTranscription":"El-Fatiha"
-		},
-		"aboutSura":{
-			"bosnian":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
-		},
-		"type":"Meccan",
-		"orderInPublishing":5,
-		"numberOfWords":29,
-		"numberOfLetters":142,
-		"startJuz":1,
-		"endJuz":1,
-		"startPage":1,
-		"endPage":1,
-		"totalPages":1
-	},
-	{
-		"index":2,
-		"numberOfAyas":286,
-		"startAyaIndex":7,
-		"name":{
-			"arabic":"البقرة",
-			"english":"The Cow",
-			"englishTranscription":"Al-Baqarah",
-			"bosnian":"Krava",
-			"bosnianTranscription":"El-Bekare"
-		},
-		"aboutSura":{
-			"bosnian":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
-		},
-		"type":"Medinan",
-		"orderInPublishing":87,
-		"numberOfWords":6144,
-		"numberOfLetters":25500,
-		"startJuz":1,
-		"endJuz":3,
-		"startPage":2,
-		"endPage":49,
-		"totalPages":48
-	},
-	{
-		"index":3,
-		"numberOfAyas":200,
-		"startAyaIndex":293,
-		"name":{
-			"arabic":"آل عمران",
-			"english":"Family of Imran",
-			"englishTranscription":"Ali 'Imran",
-			"bosnian":"Imranova porodica",
-			"bosnianTranscription":"Ali-'Imran"
-		},
-		"aboutSura":{
-			"bosnian":"Ustrajnost na islamu nakon njegovog upotpunjenja i objašnjenja, i odgovor na sumnje sljedbenika Knjige, posebno kršćana."
-		},
-		"type":"Medinan",
-		"orderInPublishing":89,
-		"numberOfWords":3505,
-		"numberOfLetters":14525,
-		"startJuz":3,
-		"endJuz":4,
-		"startPage":50,
-		"endPage":76,
-		"totalPages":27
-	},
-	{
-		"index":4,
-		"numberOfAyas":176,
-		"startAyaIndex":493,
-		"name":{
-			"arabic":"النساء",
-			"english":"The Women",
-			"englishTranscription":"An-Nisa",
-			"bosnian":"Žene",
-			"bosnianTranscription":"En-Nisa"
-		},
-		"aboutSura":{
-			"bosnian":"Uređenje muslimanskog društva iznutra kroz čuvanje socijalno-ekonomskih prava, i uklanjanje ostataka paganizma, koncetrišući se na prava žena i slabih."
-		},
-		"type":"Medinan",
-		"orderInPublishing":92,
-		"numberOfWords":3767,
-		"numberOfLetters":16030,
-		"startJuz":4,
-		"endJuz":6,
-		"startPage":77,
-		"endPage":106,
-		"totalPages":30
-	},
-	{
-		"index":5,
-		"numberOfAyas":120,
-		"startAyaIndex":669,
-		"name":{
-			"arabic":"المائدة",
-			"english":"The Table Spread",
-			"englishTranscription":"Al-Ma'idah",
-			"bosnian":"Trpeza",
-			"bosnianTranscription":"El-Maide"
-		},
-		"aboutSura":{
-			"bosnian":"Poštovanje ugovora, pridržavanje zakona i upotpunjenje vjere."
-		},
-		"type":"Medinan",
-		"orderInPublishing":112,
-		"numberOfWords":2841,
-		"numberOfLetters":11933,
-		"startJuz":6,
-		"endJuz":7,
-		"startPage":106,
-		"endPage":127,
-		"totalPages":22
-	},
-	{
-		"index":6,
-		"numberOfAyas":165,
-		"startAyaIndex":789,
-		"name":{
-			"arabic":"الأنعام",
-			"english":"The Cattle",
-			"englishTranscription":"Al-An'am",
-			"bosnian":"Stoka",
-			"bosnianTranscription":"El-En'am"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri nalazi potvrda monoteizma uz razumske dokaze i pobijanje višebožačkih uvjerenja."
-		},
-		"type":"Meccan",
-		"orderInPublishing":55,
-		"numberOfWords":3060,
-		"numberOfLetters":12254,
-		"startJuz":7,
-		"endJuz":8,
-		"startPage":128,
-		"endPage":150,
-		"totalPages":23
-	},
-	{
-		"index":7,
-		"numberOfAyas":206,
-		"startAyaIndex":954,
-		"name":{
-			"arabic":"الأعراف",
-			"english":"The Heights",
-			"englishTranscription":"Al-A'raf",
-			"bosnian":"Bedemi",
-			"bosnianTranscription":"El-A'raf"
-		},
-		"aboutSura":{
-			"bosnian":"Objašnjenje zakona borbe između vjere i nevjere i konačnica te borbe kroz navođenje događaja između vjerovjesnika i njihovih naroda."
-		},
-		"type":"Meccan",
-		"orderInPublishing":39,
-		"numberOfWords":3345,
-		"numberOfLetters":13877,
-		"startJuz":8,
-		"endJuz":9,
-		"startPage":151,
-		"endPage":176,
-		"totalPages":26
-	},
-	{
-		"index":8,
-		"numberOfAyas":75,
-		"startAyaIndex":1160,
-		"name":{
-			"arabic":"الأنفال",
-			"english":"The Spoils of War",
-			"englishTranscription":"Al-Anfal",
-			"bosnian":"Plijen",
-			"bosnianTranscription":"El-Enfal"
-		},
-		"aboutSura":{
-			"bosnian":"Objašnjavanje propisa borbe i uzroka pobjede i poraza kroz kazivanje o bici na Bedru."
-		},
-		"type":"Medinan",
-		"orderInPublishing":88,
-		"numberOfWords":1246,
-		"numberOfLetters":5080,
-		"startJuz":9,
-		"endJuz":10,
-		"startPage":177,
-		"endPage":186,
-		"totalPages":10
-	},
-	{
-		"index":9,
-		"numberOfAyas":129,
-		"startAyaIndex":1235,
-		"name":{
-			"arabic":"التوبة",
-			"english":"The Repentance",
-			"englishTranscription":"At-Tawbah",
-			"bosnian":"Pokajanje",
-			"bosnianTranscription":"Et-Tevbe"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura otkriva stanje raznih kategorija ljudi i govori o odnosu spram njih, pa govori o odnosu prema nevjernicima, razotkriva dvoličanjake i karakterizira vjernike."
-		},
-		"type":"Medinan",
-		"orderInPublishing":113,
-		"numberOfWords":2505,
-		"numberOfLetters":10488,
-		"startJuz":10,
-		"endJuz":11,
-		"startPage":187,
-		"endPage":207,
-		"totalPages":21
-	},
-	{
-		"index":10,
-		"numberOfAyas":109,
-		"startAyaIndex":1364,
-		"name":{
-			"arabic":"يونس",
-			"english":"Jonah",
-			"englishTranscription":"Yunus",
-			"bosnian":"Junus",
-			"bosnianTranscription":"Junus"
-		},
-		"aboutSura":{
-			"bosnian":"Suprotstavljanje onima koji poriču Objavu, putem dokaza i argumeneta i pozivanje u vjerovanje metodom poticanja i zastrašivanja."
-		},
-		"type":"Meccan",
-		"orderInPublishing":51,
-		"numberOfWords":1843,
-		"numberOfLetters":7567,
-		"startJuz":11,
-		"endJuz":11,
-		"startPage":208,
-		"endPage":221,
-		"totalPages":14
-	},
-	{
-		"index":11,
-		"numberOfAyas":123,
-		"startAyaIndex":1473,
-		"name":{
-			"arabic":"هود",
-			"english":"Hud",
-			"englishTranscription":"Hud",
-			"bosnian":"Hud",
-			"bosnianTranscription":"Hud"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjenje metodologije poslanika spram njihovih naroda koji su poricali istinu."
-		},
-		"type":"Meccan",
-		"orderInPublishing":52,
-		"numberOfWords":1950,
-		"numberOfLetters":7513,
-		"startJuz":11,
-		"endJuz":12,
-		"startPage":221,
-		"endPage":235,
-		"totalPages":15
-	},
-	{
-		"index":12,
-		"numberOfAyas":111,
-		"startAyaIndex":1596,
-		"name":{
-			"arabic":"يوسف",
-			"english":"Joseph",
-			"englishTranscription":"Yusuf",
-			"bosnian":"Jusuf",
-			"bosnianTranscription":"Jusuf"
-		},
-		"aboutSura":{
-			"bosnian":"Allahovo obećanje da će dati vlast na Zemlji nakon jasnog iskušenja, što je ustvari učvršćivanje i obećanje Muhammedu, sallallahu 'alejhi ve sellem, i vjernicima."
-		},
-		"type":"Meccan",
-		"orderInPublishing":53,
-		"numberOfWords":1799,
-		"numberOfLetters":7166,
-		"startJuz":12,
-		"endJuz":13,
-		"startPage":235,
-		"endPage":248,
-		"totalPages":14
-	},
-	{
-		"index":13,
-		"numberOfAyas":43,
-		"startAyaIndex":1707,
-		"name":{
-			"arabic":"الرعد",
-			"english":"The Thunder",
-			"englishTranscription":"Ar-Ra'd",
-			"bosnian":"Grom",
-			"bosnianTranscription":"Er-Ra'd"
-		},
-		"aboutSura":{
-			"bosnian":"Objašnjenje suštine božanske snage i moći i vidova njene manifestacije, potvrda obećanja i prijetnje i objašnjenje Allahovih zakona u konstantnom mijenjanju i promjeni."
-		},
-		"type":"Medinan",
-		"orderInPublishing":96,
-		"numberOfWords":857,
-		"numberOfLetters":3506,
-		"startJuz":13,
-		"endJuz":13,
-		"startPage":249,
-		"endPage":255,
-		"totalPages":7
-	},
-	{
-		"index":14,
-		"numberOfAyas":52,
-		"startAyaIndex":1750,
-		"name":{
-			"arabic":"ابراهيم",
-			"english":"Abrahim",
-			"englishTranscription":"Ibrahim",
-			"bosnian":"Ibrahim",
-			"bosnianTranscription":"Ibrahim"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura govori o ulozi Allahovih poslanika i njihovom nastojanju da ljude izvedu iz tmina višeboštva na svjetlo monoteizma, iako su im se njihovi narodi suprotstavljali, kako bi srce Muhammeda, sallallahu 'alejhi ve sellem, ostalo čvrsto i postojano, i kako bi dodatno zaprijetio nepravednicima."
-		},
-		"type":"Meccan",
-		"orderInPublishing":72,
-		"numberOfWords":834,
-		"numberOfLetters":3434,
-		"startJuz":13,
-		"endJuz":13,
-		"startPage":255,
-		"endPage":261,
-		"totalPages":7
-	},
-	{
-		"index":15,
-		"numberOfAyas":99,
-		"startAyaIndex":1802,
-		"name":{
-			"arabic":"الحجر",
-			"english":"The Rocky Tract",
-			"englishTranscription":"Al-Hijr",
-			"bosnian":"Hidžr",
-			"bosnianTranscription":"El-Hidžr"
-		},
-		"aboutSura":{
-			"bosnian":"Predočavajući prizore stradanja nekih ljudi, ova sura upozorava poricatelje na kaznu koja ih čeka, te donosi radosne vijesti onima koji vjeruju."
-		},
-		"type":"Meccan",
-		"orderInPublishing":54,
-		"numberOfWords":661,
-		"numberOfLetters":2760,
-		"startJuz":14,
-		"endJuz":14,
-		"startPage":262,
-		"endPage":267,
-		"totalPages":6
-	},
-	{
-		"index":16,
-		"numberOfAyas":128,
-		"startAyaIndex":1901,
-		"name":{
-			"arabic":"النحل",
-			"english":"The Bee",
-			"englishTranscription":"An-Nahl",
-			"bosnian":"Pčele",
-			"bosnianTranscription":"En-Nahl"
-		},
-		"aboutSura":{
-			"bosnian":"Podsjeća na blagodati, koje, opet, upućuju na Onog Koji ih je dao. One nas obavezuju na poslušnost Allahu i upozoravaju na opasnost njihovog negiranja."
-		},
-		"type":"Meccan",
-		"orderInPublishing":70,
-		"numberOfWords":1848,
-		"numberOfLetters":7707,
-		"startJuz":14,
-		"endJuz":14,
-		"startPage":267,
-		"endPage":281,
-		"totalPages":15
-	},
-	{
-		"index":17,
-		"numberOfAyas":111,
-		"startAyaIndex":2029,
-		"name":{
-			"arabic":"الإسراء",
-			"english":"The Night Journey",
-			"englishTranscription":"Al-Isra",
-			"bosnian":"Noćno putovanje",
-			"bosnianTranscription":"El-Isra'"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura govori o savršenstvu poslanstva Muhammedova, sallallahu alejhi ve sellem. Ona sadrži radosne vijesti koje su se već dogodile i one koje će se dogoditi."
-		},
-		"type":"Meccan",
-		"orderInPublishing":50,
-		"numberOfWords":1562,
-		"numberOfLetters":6460,
-		"startJuz":15,
-		"endJuz":15,
-		"startPage":282,
-		"endPage":293,
-		"totalPages":12
-	},
-	{
-		"index":18,
-		"numberOfAyas":110,
-		"startAyaIndex":2140,
-		"name":{
-			"arabic":"الكهف",
-			"english":"The Cave",
-			"englishTranscription":"Al-Kahf",
-			"bosnian":"Pećina",
-			"bosnianTranscription":"El-Kehf"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura sadrži uputstva kako se treba ponašati u smutnjama i navodi primjere s tim u vezi."
-		},
-		"type":"Meccan",
-		"orderInPublishing":69,
-		"numberOfWords":1587,
-		"numberOfLetters":6360,
-		"startJuz":15,
-		"endJuz":16,
-		"startPage":293,
-		"endPage":304,
-		"totalPages":12
-	},
-	{
-		"index":19,
-		"numberOfAyas":98,
-		"startAyaIndex":2250,
-		"name":{
-			"arabic":"مريم",
-			"english":"Mary",
-			"englishTranscription":"Maryam",
-			"bosnian":"Merjema",
-			"bosnianTranscription":"Merjem"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura sadrži pokazatelje Allahove milosti prema iskrenim robovima, evlijama, te pokazatelje davanja blagodati, kao što je npr. blagodat djeteta. U njoj je Gospodar objasnio da je daleko od toga da ima dijete i pomagače. Time je pobio mišljenje onih koji to Gospodaru pripisuju."
-		},
-		"type":"Meccan",
-		"orderInPublishing":44,
-		"numberOfWords":975,
-		"numberOfLetters":3802,
-		"startJuz":16,
-		"endJuz":16,
-		"startPage":305,
-		"endPage":312,
-		"totalPages":8
-	},
-	{
-		"index":20,
-		"numberOfAyas":135,
-		"startAyaIndex":2348,
-		"name":{
-			"arabic":"طه",
-			"english":"Ta-Ha",
-			"englishTranscription":"Taha",
-			"bosnian":"Taha",
-			"bosnianTranscription":"Taha"
-		},
-		"aboutSura":{
-			"bosnian":"Ova je sura podrška Vjerovjesniku, sallallahu alejhi ve sellem, da bude strpljiv u dostavljanju poslanice."
-		},
-		"type":"Meccan",
-		"orderInPublishing":45,
-		"numberOfWords":1357,
-		"numberOfLetters":5242,
-		"startJuz":16,
-		"endJuz":16,
-		"startPage":312,
-		"endPage":321,
-		"totalPages":10
-	},
-	{
-		"index":21,
-		"numberOfAyas":112,
-		"startAyaIndex":2483,
-		"name":{
-			"arabic":"الأنبياء",
-			"english":"The Prophets",
-			"englishTranscription":"Al-Anbya",
-			"bosnian":"Vjerovjesnici",
-			"bosnianTranscription":"El-Enbija"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura govori o tome da su svi poslanici imali jedan cilj, a to je pozivanje u Allahovu jednoću."
-		},
-		"type":"Meccan",
-		"orderInPublishing":73,
-		"numberOfWords":1178,
-		"numberOfLetters":4890,
-		"startJuz":17,
-		"endJuz":17,
-		"startPage":322,
-		"endPage":331,
-		"totalPages":10
-	},
-	{
-		"index":22,
-		"numberOfAyas":78,
-		"startAyaIndex":2595,
-		"name":{
-			"arabic":"الحج",
-			"english":"The Pilgrimage",
-			"englishTranscription":"Al-Haj",
-			"bosnian":"Hadždž",
-			"bosnianTranscription":"El-Hadždž"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura govori o Allahovoj veličini i tome da On sve može učiniti, iz čega slijedi da ga ljudi veličaju i Njemu se povinuju."
-		},
-		"type":"Medinan",
-		"orderInPublishing":103,
-		"numberOfWords":1283,
-		"numberOfLetters":5070,
-		"startJuz":17,
-		"endJuz":17,
-		"startPage":332,
-		"endPage":341,
-		"totalPages":10
-	},
-	{
-		"index":23,
-		"numberOfAyas":118,
-		"startAyaIndex":2673,
-		"name":{
-			"arabic":"المؤمنون",
-			"english":"The Believers",
-			"englishTranscription":"Al-Mu'minun",
-			"bosnian":"Vjernici",
-			"bosnianTranscription":"El-Mu'minun"
-		},
-		"aboutSura":{
-			"bosnian":"Ova se sura bavi suštinom vjerovanja, njegovim plodovima i posljedicama njegova neprihvatanja, kao što se u njoj kude oni koji ne vjeruju. Zbog toga se na samom njenom početku nalazi obavijest da će vjernici uspjeti, iz čega proizlazi da će krivovjerni nastradati."
-		},
-		"type":"Meccan",
-		"orderInPublishing":74,
-		"numberOfWords":1056,
-		"numberOfLetters":4802,
-		"startJuz":18,
-		"endJuz":18,
-		"startPage":342,
-		"endPage":349,
-		"totalPages":8
-	},
-	{
-		"index":24,
-		"numberOfAyas":64,
-		"startAyaIndex":2791,
-		"name":{
-			"arabic":"النور",
-			"english":"The Light",
-			"englishTranscription":"An-Nur",
-			"bosnian":"Svjetlost",
-			"bosnianTranscription":"En-Nur"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri naglašava se važnost kreposti, sakrivanja tuđih mahana, čistote muslimanskog društva i njegova čuvanja od svega što vodi u razvrat. Ona se bavi i spletkama koje kuju dvoličnjaci kako bi širili poroke."
-		},
-		"type":"Medinan",
-		"orderInPublishing":102,
-		"numberOfWords":1323,
-		"numberOfLetters":5680,
-		"startJuz":18,
-		"endJuz":18,
-		"startPage":350,
-		"endPage":359,
-		"totalPages":10
-	},
-	{
-		"index":25,
-		"numberOfAyas":77,
-		"startAyaIndex":2855,
-		"name":{
-			"arabic":"الفرقان",
-			"english":"The Criterian",
-			"englishTranscription":"Al-Furqan",
-			"bosnian":"Furkan",
-			"bosnianTranscription":"El-Furkan"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri govori o tome da će, uprkos napadima višebožaca, Poslanik, sallallahu alejhi ve sellem, biti pobjednik."
-		},
-		"type":"Meccan",
-		"orderInPublishing":42,
-		"numberOfWords":900,
-		"numberOfLetters":3733,
-		"startJuz":18,
-		"endJuz":19,
-		"startPage":359,
-		"endPage":366,
-		"totalPages":8
-	},
-	{
-		"index":26,
-		"numberOfAyas":227,
-		"startAyaIndex":2932,
-		"name":{
-			"arabic":"الشعراء",
-			"english":"The Poets",
-			"englishTranscription":"Ash-Shu'ara",
-			"bosnian":"Pjesnici",
-			"bosnianTranscription":"Eš-Šu'ara'"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri pobijaju oni koji su ustrajni u poricanju Poslanika, sallallahu alejhi ve sellem, i u napadanju na njega kao poslanika, kao što se u njoj stavlja na znanje da su oni beznačajni."
-		},
-		"type":"Meccan",
-		"orderInPublishing":47,
-		"numberOfWords":1324,
-		"numberOfLetters":5522,
-		"startJuz":19,
-		"endJuz":19,
-		"startPage":367,
-		"endPage":376,
-		"totalPages":10
-	},
-	{
-		"index":27,
-		"numberOfAyas":93,
-		"startAyaIndex":3159,
-		"name":{
-			"arabic":"النمل",
-			"english":"The Ant",
-			"englishTranscription":"An-Naml",
-			"bosnian":"Mravi",
-			"bosnianTranscription":"En-Neml"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj suri govori se o najvećoj blagodati (Časnom Kur’anu) koja je ukazana Vjerovjesniku, sallallahu alejhi ve sellem, o neophodnosti zahvaljivanja na njoj i strpljivosti prilikom dostavljanja Objave ljudima."
-		},
-		"type":"Meccan",
-		"orderInPublishing":48,
-		"numberOfWords":1163,
-		"numberOfLetters":4799,
-		"startJuz":19,
-		"endJuz":20,
-		"startPage":377,
-		"endPage":385,
-		"totalPages":9
-	},
-	{
-		"index":28,
-		"numberOfAyas":88,
-		"startAyaIndex":3252,
-		"name":{
-			"arabic":"القصص",
-			"english":"The Stories",
-			"englishTranscription":"Al-Qasas",
-			"bosnian":"Kazivanje",
-			"bosnianTranscription":"El-Kasas"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj suri govori se o tome šta je mjerodavna snaga, i to kroz isticanje Allahove moći da ukaže pomoć potlačenima, a uništi ohole silnike, što je ujedno i Božiji zakon u svemiru."
-		},
-		"type":"Meccan",
-		"orderInPublishing":49,
-		"numberOfWords":1442,
-		"numberOfLetters":5800,
-		"startJuz":20,
-		"endJuz":20,
-		"startPage":385,
-		"endPage":396,
-		"totalPages":12
-	},
-	{
-		"index":29,
-		"numberOfAyas":69,
-		"startAyaIndex":3340,
-		"name":{
-			"arabic":"العنكبوت",
-			"english":"The Spider",
-			"englishTranscription":"Al-'Ankabut",
-			"bosnian":"Pauk",
-			"bosnianTranscription":"El-'Ankebut"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura govori o postojanosti u vjeri i trpeljivom podnošenju iskušenja tokom smutnji, te govori o rezultatima toga."
-		},
-		"type":"Meccan",
-		"orderInPublishing":85,
-		"numberOfWords":982,
-		"numberOfLetters":4195,
-		"startJuz":20,
-		"endJuz":21,
-		"startPage":396,
-		"endPage":404,
-		"totalPages":9
-	},
-	{
-		"index":30,
-		"numberOfAyas":60,
-		"startAyaIndex":3409,
-		"name":{
-			"arabic":"الروم",
-			"english":"The Romans",
-			"englishTranscription":"Ar-Rum",
-			"bosnian":"Bizantinci",
-			"bosnianTranscription":"Er-Rum"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura govori o velikoj kosmičkoj istini, a to je da svime što postoji i svim događajima samo Allah upravlja, upravo kao što je rekao: “... samo Allahu pripada odluka i prije i poslije...”"
-		},
-		"type":"Meccan",
-		"orderInPublishing":84,
-		"numberOfWords":821,
-		"numberOfLetters":3534,
-		"startJuz":21,
-		"endJuz":21,
-		"startPage":404,
-		"endPage":410,
-		"totalPages":7
-	},
-	{
-		"index":31,
-		"numberOfAyas":34,
-		"startAyaIndex":3469,
-		"name":{
-			"arabic":"لقمان",
-			"english":"Luqman",
-			"englishTranscription":"Luqman",
-			"bosnian":"Lukman",
-			"bosnianTranscription":"Lukman"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri ističe mudrost, koja je u skladu sa šerijatom, te se Lukman navodi kao primjer te mudrosti."
-		},
-		"type":"Meccan",
-		"orderInPublishing":57,
-		"numberOfWords":554,
-		"numberOfLetters":2110,
-		"startJuz":21,
-		"endJuz":21,
-		"startPage":411,
-		"endPage":414,
-		"totalPages":4
-	},
-	{
-		"index":32,
-		"numberOfAyas":30,
-		"startAyaIndex":3503,
-		"name":{
-			"arabic":"السجدة",
-			"english":"The Prostration",
-			"englishTranscription":"As-Sajdah",
-			"bosnian":"Padanje ničice",
-			"bosnianTranscription":"Es-Sedžde"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura sadrži neke znakove koji ukazuju na istinu. Jedan od tih znakova jest stvaranje čovjeka i stanja kroz koja prolazi."
-		},
-		"type":"Meccan",
-		"orderInPublishing":75,
-		"numberOfWords":376,
-		"numberOfLetters":1500,
-		"startJuz":21,
-		"endJuz":21,
-		"startPage":415,
-		"endPage":417,
-		"totalPages":3
-	},
-	{
-		"index":33,
-		"numberOfAyas":73,
-		"startAyaIndex":3533,
-		"name":{
-			"arabic":"الأحزاب",
-			"english":"The Combined Forces",
-			"englishTranscription":"Al-Ahzab",
-			"bosnian":"Saveznici",
-			"bosnianTranscription":"El-Ahzab"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri govori o velikoj Allahovoj pažnji i čuvanju Poslanika islama i njegove porodice."
-		},
-		"type":"Medinan",
-		"orderInPublishing":90,
-		"numberOfWords":1307,
-		"numberOfLetters":5796,
-		"startJuz":21,
-		"endJuz":22,
-		"startPage":418,
-		"endPage":427,
-		"totalPages":10
-	},
-	{
-		"index":34,
-		"numberOfAyas":54,
-		"startAyaIndex":3606,
-		"name":{
-			"arabic":"سبإ",
-			"english":"Sheba",
-			"englishTranscription":"Saba",
-			"bosnian":"Saba",
-			"bosnianTranscription":"Sebe'"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri govori o Allahovoj moći kroz promjenu prilika, kao i o prilikama kroz koje prolaze zahvalni i nezahvalni ljudi."
-		},
-		"type":"Meccan",
-		"orderInPublishing":58,
-		"numberOfWords":888,
-		"numberOfLetters":1512,
-		"startJuz":22,
-		"endJuz":22,
-		"startPage":428,
-		"endPage":434,
-		"totalPages":7
-	},
-	{
-		"index":35,
-		"numberOfAyas":45,
-		"startAyaIndex":3660,
-		"name":{
-			"arabic":"فاطر",
-			"english":"Originator",
-			"englishTranscription":"Fatir",
-			"bosnian":"Stvoritelj",
-			"bosnianTranscription":"Fatir"
-		},
-		"aboutSura":{
-			"bosnian":"Ova se sura bavi predivnim Allahovim stvaranjem, koje ukazuje na Njegovu moć. U njoj se govori i o onom što potiče čovjeka na veličanje Uzvišenog Allaha, strahopoštovanje prema Njemu i iskreno vjerovanje u Njega. Ona podsjeća i na Njegove blagodati."
-		},
-		"type":"Meccan",
-		"orderInPublishing":43,
-		"numberOfWords":782,
-		"numberOfLetters":3130,
-		"startJuz":22,
-		"endJuz":22,
-		"startPage":434,
-		"endPage":440,
-		"totalPages":7
-	},
-	{
-		"index":36,
-		"numberOfAyas":83,
-		"startAyaIndex":3705,
-		"name":{
-			"arabic":"يس",
-			"english":"Ya Sin",
-			"englishTranscription":"Ya-Sin",
-			"bosnian":"Jasin",
-			"bosnianTranscription":"Ja-sin"
-		},
-		"aboutSura":{
-			"bosnian":"Ova se sura bavi dokazivanjem oživljenja na Sudnjem danu i dokazivanjem poslanice."
-		},
-		"type":"Meccan",
-		"orderInPublishing":41,
-		"numberOfWords":734,
-		"numberOfLetters":3000,
-		"startJuz":22,
-		"endJuz":23,
-		"startPage":440,
-		"endPage":445,
-		"totalPages":6
-	},
-	{
-		"index":37,
-		"numberOfAyas":182,
-		"startAyaIndex":3788,
-		"name":{
-			"arabic":"الصافات",
-			"english":"Those who set the Ranks",
-			"englishTranscription":"As-Saffat",
-			"bosnian":"Redovi",
-			"bosnianTranscription":"Es-Saffat"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri negira ono što mnogobošci pripisuju Allahu i pobija njihovo vjerovanje glede meleka i džina."
-		},
-		"type":"Meccan",
-		"orderInPublishing":56,
-		"numberOfWords":869,
-		"numberOfLetters":3823,
-		"startJuz":23,
-		"endJuz":23,
-		"startPage":446,
-		"endPage":452,
-		"totalPages":7
-	},
-	{
-		"index":38,
-		"numberOfAyas":88,
-		"startAyaIndex":3970,
-		"name":{
-			"arabic":"ص",
-			"english":"The Letter 'Saad'",
-			"englishTranscription":"Sad",
-			"bosnian":"Sad",
-			"bosnianTranscription":"Sad"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura govori o branjenju istine i posljedicama toga."
-		},
-		"type":"Meccan",
-		"orderInPublishing":38,
-		"numberOfWords":739,
-		"numberOfLetters":3029,
-		"startJuz":23,
-		"endJuz":23,
-		"startPage":453,
-		"endPage":458,
-		"totalPages":6
-	},
-	{
-		"index":39,
-		"numberOfAyas":75,
-		"startAyaIndex":4058,
-		"name":{
-			"arabic":"الزمر",
-			"english":"The Troops",
-			"englishTranscription":"Az-Zumar",
-			"bosnian":"Skupovi",
-			"bosnianTranscription":"Ez-Zumer"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura sadrži poziv u tevhid i iskreno obožavanje Allaha, te odbacivanje širka. Također govori i o ahiretskim posljedicama tog dvoga."
-		},
-		"type":"Meccan",
-		"orderInPublishing":59,
-		"numberOfWords":1181,
-		"numberOfLetters":4708,
-		"startJuz":23,
-		"endJuz":24,
-		"startPage":458,
-		"endPage":467,
-		"totalPages":10
-	},
-	{
-		"index":40,
-		"numberOfAyas":85,
-		"startAyaIndex":4133,
-		"name":{
-			"arabic":"غافر",
-			"english":"The Believer",
-			"englishTranscription":"Al'Mumin",
-			"bosnian":"Vjernik",
-			"bosnianTranscription":"El-Mu'min"
-		},
-		"aboutSura":{
-			"bosnian":"Ova se sura bavi onima koji raspravljaju u Allahovim ajetima, njima se obraća i poziva ih da se vrate istini."
-		},
-		"type":"Meccan",
-		"orderInPublishing":60,
-		"numberOfWords":1230,
-		"numberOfLetters":4960,
-		"startJuz":24,
-		"endJuz":24,
-		"startPage":467,
-		"endPage":476,
-		"totalPages":10
-	},
-	{
-		"index":41,
-		"numberOfAyas":54,
-		"startAyaIndex":4218,
-		"name":{
-			"arabic":"فصلت",
-			"english":"Explained in Detail",
-			"englishTranscription":"Fussilat",
-			"bosnian":"Objašnjenje",
-			"bosnianTranscription":"Fussilet"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura upućuje na to kako se treba odnositi prema onima koji okreću leđa Objavi, govori o tome da je časna Knjiga istina i bavi se posljedicama otuđivanja od Boga."
-		},
-		"type":"Meccan",
-		"orderInPublishing":61,
-		"numberOfWords":798,
-		"numberOfLetters":3350,
-		"startJuz":24,
-		"endJuz":25,
-		"startPage":477,
-		"endPage":482,
-		"totalPages":6
-	},
-	{
-		"index":42,
-		"numberOfAyas":53,
-		"startAyaIndex":4272,
-		"name":{
-			"arabic":"الشورى",
-			"english":"The Consultation",
-			"englishTranscription":"Ash-Shuraa",
-			"bosnian":"Dogovaranje",
-			"bosnianTranscription":"Eš-Šura"
-		},
-		"aboutSura":{
-			"bosnian":"Sura pojašnjava stvarnost i suštinu poslanice Muhammeda, sallallahu alejhi ve sellem, kao i to da je ona samo nastavak Objave koja je dolazila ranijim vjerovjesnicima."
-		},
-		"type":"Meccan",
-		"orderInPublishing":62,
-		"numberOfWords":864,
-		"numberOfLetters":3588,
-		"startJuz":25,
-		"endJuz":25,
-		"startPage":483,
-		"endPage":489,
-		"totalPages":7
-	},
-	{
-		"index":43,
-		"numberOfAyas":89,
-		"startAyaIndex":4325,
-		"name":{
-			"arabic":"الزخرف",
-			"english":"The Ornaments of Gold",
-			"englishTranscription":"Az-Zukhruf",
-			"bosnian":"Ukras",
-			"bosnianTranscription":"Ez-Zuhruf"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjavanje ispravnih kur'anskih principa i pobijanje lažnih džahilijetskih predodžbi i zaključaka."
-		},
-		"type":"Meccan",
-		"orderInPublishing":63,
-		"numberOfWords":840,
-		"numberOfLetters":3400,
-		"startJuz":25,
-		"endJuz":25,
-		"startPage":489,
-		"endPage":495,
-		"totalPages":7
-	},
-	{
-		"index":44,
-		"numberOfAyas":59,
-		"startAyaIndex":4414,
-		"name":{
-			"arabic":"الدخان",
-			"english":"The Smoke",
-			"englishTranscription":"Ad-Dukhan",
-			"bosnian":"Dim",
-			"bosnianTranscription":"Ed-Duhan"
-		},
-		"aboutSura":{
-			"bosnian":"Upozorenje na dolazeću kaznu kroz zastrašivanje njenih poricatelja kaznom i na ovome i na onome svijetu."
-		},
-		"type":"Meccan",
-		"orderInPublishing":64,
-		"numberOfWords":350,
-		"numberOfLetters":1431,
-		"startJuz":25,
-		"endJuz":25,
-		"startPage":496,
-		"endPage":498,
-		"totalPages":3
-	},
-	{
-		"index":45,
-		"numberOfAyas":37,
-		"startAyaIndex":4473,
-		"name":{
-			"arabic":"الجاثية",
-			"english":"The Crouching",
-			"englishTranscription":"Al-Jathiyah",
-			"bosnian":"Oni koji kleče",
-			"bosnianTranscription":"El-Džasije"
-		},
-		"aboutSura":{
-			"bosnian":"Razmatranje problema onih oholnika koji slijede prohtjeve i odbijaju istinu kroz navođenje ajeta i znamenja i podsjećanje na onaj svijet."
-		},
-		"type":"Meccan",
-		"orderInPublishing":65,
-		"numberOfWords":492,
-		"numberOfLetters":2191,
-		"startJuz":25,
-		"endJuz":25,
-		"startPage":499,
-		"endPage":502,
-		"totalPages":4
-	},
-	{
-		"index":46,
-		"numberOfAyas":35,
-		"startAyaIndex":4510,
-		"name":{
-			"arabic":"الأحقاف",
-			"english":"The Wind-Curved Sandhills",
-			"englishTranscription":"Al-Ahqaf",
-			"bosnian":"Ahkaf",
-			"bosnianTranscription":"El-Ahkaf"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri govori o uspostavljanju dokaza protiv poricatelja. U njoj se oni nekoliko puta opominju na kaznu. "
-		},
-		"type":"Meccan",
-		"orderInPublishing":66,
-		"numberOfWords":649,
-		"numberOfLetters":2598,
-		"startJuz":26,
-		"endJuz":26,
-		"startPage":502,
-		"endPage":506,
-		"totalPages":5
-	},
-	{
-		"index":47,
-		"numberOfAyas":38,
-		"startAyaIndex":4545,
-		"name":{
-			"arabic":"محمد",
-			"english":"Muhammad",
-			"englishTranscription":"Muhammad",
-			"bosnian":"Muhammed",
-			"bosnianTranscription":"Muhammed"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura potiče vjernike na borbu i osnažuje ih, a slabi one koji ne vjeruju."
-		},
-		"type":"Medinan",
-		"orderInPublishing":95,
-		"numberOfWords":546,
-		"numberOfLetters":2349,
-		"startJuz":26,
-		"endJuz":26,
-		"startPage":507,
-		"endPage":510,
-		"totalPages":4
-	},
-	{
-		"index":48,
-		"numberOfAyas":29,
-		"startAyaIndex":4583,
-		"name":{
-			"arabic":"الفتح",
-			"english":"The Victory",
-			"englishTranscription":"Al-Fath",
-			"bosnian":"Pobjeda",
-			"bosnianTranscription":"El-Feth"
-		},
-		"aboutSura":{
-			"bosnian":"Ova sura sadrži Božije obećanje da će dati pobjedu i vlast Svom Poslaniku, sallallahu alejhi ve sellem, kao i iskrenim vjernicima koji se bore za vjeru."
-		},
-		"type":"Medinan",
-		"orderInPublishing":111,
-		"numberOfWords":564,
-		"numberOfLetters":2438,
-		"startJuz":26,
-		"endJuz":26,
-		"startPage":511,
-		"endPage":515,
-		"totalPages":5
-	},
-	{
-		"index":49,
-		"numberOfAyas":18,
-		"startAyaIndex":4612,
-		"name":{
-			"arabic":"الحجرات",
-			"english":"The Rooms",
-			"englishTranscription":"Al-Hujurat",
-			"bosnian":"Sobe",
-			"bosnianTranscription":"El-Hudžurat"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj se suri govori o tome kako se muslimansko društvo treba ponašati i od kakvog se ponašanja treba sustezati."
-		},
-		"type":"Medinan",
-		"orderInPublishing":106,
-		"numberOfWords":357,
-		"numberOfLetters":1496,
-		"startJuz":26,
-		"endJuz":26,
-		"startPage":515,
-		"endPage":517,
-		"totalPages":3
-	},
-	{
-		"index":50,
-		"numberOfAyas":45,
-		"startAyaIndex":4630,
-		"name":{
-			"arabic":"ق",
-			"english":"The Letter 'Qaf'",
-			"englishTranscription":"Qaf",
-			"bosnian":"Kaf",
-			"bosnianTranscription":"Kaf"
-		},
-		"aboutSura":{
-			"bosnian":"Pomoću ove sure Gospodar budi nemarna srca i potiče ih da spoznaju suštinu sadržajnih dokaza o proživljenju na Ahiretu i poglanju računa."
-		},
-		"type":"Meccan",
-		"orderInPublishing":34,
-		"numberOfWords":377,
-		"numberOfLetters":1494,
-		"startJuz":26,
-		"endJuz":26,
-		"startPage":518,
-		"endPage":520,
-		"totalPages":3
-	},
-	{
-		"index":51,
-		"numberOfAyas":60,
-		"startAyaIndex":4675,
-		"name":{
-			"arabic":"الذاريات",
-			"english":"The Winnowing Winds",
-			"englishTranscription":"Adh-Dhariyat",
-			"bosnian":"Oni koji pušu",
-			"bosnianTranscription":"Ez-Zarijat"
-		},
-		"aboutSura":{
-			"bosnian":"Allah u ovoj suri stavlja ljudima na znanje da On daje nafaku, da bi kod Njega našli utočište i robovali Mu."
-		},
-		"type":"Meccan",
-		"orderInPublishing":67,
-		"numberOfWords":364,
-		"numberOfLetters":1287,
-		"startJuz":26,
-		"endJuz":27,
-		"startPage":520,
-		"endPage":523,
-		"totalPages":4
-	},
-	{
-		"index":52,
-		"numberOfAyas":49,
-		"startAyaIndex":4735,
-		"name":{
-			"arabic":"الطور",
-			"english":"The Mount",
-			"englishTranscription":"At-Tur",
-			"bosnian":"Gora",
-			"bosnianTranscription":"Et-Tur"
-		},
-		"aboutSura":{
-			"bosnian":"Otklanjanje sumnji i nejasnoća koje su imali poricatelji istine, kroz navođenje jasnih dokaza i argumenata, kako bi ih prihvatili i pokorili se."
-		},
-		"type":"Meccan",
-		"orderInPublishing":76,
-		"numberOfWords":316,
-		"numberOfLetters":1500,
-		"startJuz":27,
-		"endJuz":27,
-		"startPage":523,
-		"endPage":525,
-		"totalPages":3
-	},
-	{
-		"index":53,
-		"numberOfAyas":62,
-		"startAyaIndex":4784,
-		"name":{
-			"arabic":"النجم",
-			"english":"The Star",
-			"englishTranscription":"An-Najm",
-			"bosnian":"Zvijezda",
-			"bosnianTranscription":"En-Nedžm"
-		},
-		"aboutSura":{
-			"bosnian":"Ukazivanje na istinitost Objave i uzvišenost njenog izvora, kao vid potvrđivanja tevhida (jednoće Allaha) i negiranja širka."
-		},
-		"type":"Meccan",
-		"orderInPublishing":23,
-		"numberOfWords":364,
-		"numberOfLetters":1405,
-		"startJuz":27,
-		"endJuz":27,
-		"startPage":526,
-		"endPage":528,
-		"totalPages":3
-	},
-	{
-		"index":54,
-		"numberOfAyas":55,
-		"startAyaIndex":4846,
-		"name":{
-			"arabic":"القمر",
-			"english":"The Moon",
-			"englishTranscription":"Al-Qamar",
-			"bosnian":"Mjesec",
-			"bosnianTranscription":"El-Kamer"
-		},
-		"aboutSura":{
-			"bosnian":"Podsjećanje ajetima i upozorenjima, pojašnjavanje kakva konačnica čeka poricatelja, i upravo zbog toga ponavljaju se riječi u kojima Allah Uzvišeni kaže: 'A Mi smo Kur’an olakšali kao opomenu, pa ima li koga ko bi se prisjetio?'"
-		},
-		"type":"Meccan",
-		"orderInPublishing":37,
-		"numberOfWords":346,
-		"numberOfLetters":1420,
-		"startJuz":27,
-		"endJuz":27,
-		"startPage":528,
-		"endPage":531,
-		"totalPages":4
-	},
-	{
-		"index":55,
-		"numberOfAyas":78,
-		"startAyaIndex":4901,
-		"name":{
-			"arabic":"الرحمن",
-			"english":"The Beneficent",
-			"englishTranscription":"Ar-Rahman",
-			"bosnian":"Milostivi",
-			"bosnianTranscription":"Er-Rahman"
-		},
-		"aboutSura":{
-			"bosnian":"Kazivanje o Allahovim vidljivim blagodatima, i tragovima Njegove milosti koja se ispoljava i na ovome i na onome svijetu, s ciljem da se vjernicima omili vjerovanje, i da se upozori na opasnost negiranja i poricanja."
-		},
-		"type":"Medinan",
-		"orderInPublishing":97,
-		"numberOfWords":356,
-		"numberOfLetters":1636,
-		"startJuz":27,
-		"endJuz":27,
-		"startPage":531,
-		"endPage":534,
-		"totalPages":4
-	},
-	{
-		"index":56,
-		"numberOfAyas":96,
-		"startAyaIndex":4979,
-		"name":{
-			"arabic":"الواقعة",
-			"english":"The Inevitable",
-			"englishTranscription":"Al-Waqi'ah",
-			"bosnian":"Događaj",
-			"bosnianTranscription":"El-Vaki'a"
-		},
-		"aboutSura":{
-			"bosnian":"Zastrašivanje Sudnjim danom, potvrđivanje njegova dešavanja i pojašnjavanje vrsta ljudi spram tog Dana, te kazne ili nagrade svake od tih kategorija."
-		},
-		"type":"Meccan",
-		"orderInPublishing":46,
-		"numberOfWords":383,
-		"numberOfLetters":1703,
-		"startJuz":27,
-		"endJuz":27,
-		"startPage":534,
-		"endPage":537,
-		"totalPages":4
-	},
-	{
-		"index":57,
-		"numberOfAyas":29,
-		"startAyaIndex":5075,
-		"name":{
-			"arabic":"الحديد",
-			"english":"The Iron",
-			"englishTranscription":"Al-Hadid",
-			"bosnian":"Gvožđe",
-			"bosnianTranscription":"El-Hadid"
-		},
-		"aboutSura":{
-			"bosnian":"Sticanje snage, imanske i materijalne, koja je potrebna za pozivanje Allahu i borbu na Njegovom putu, te čišćenje duše od svih negativnosti i svega onoga što čovjeka odvraća od dobra, što se vidi kroz učestalo spominjanje udjeljivanja imetka i vjerovanja."
-		},
-		"type":"Medinan",
-		"orderInPublishing":94,
-		"numberOfWords":579,
-		"numberOfLetters":2476,
-		"startJuz":27,
-		"endJuz":27,
-		"startPage":537,
-		"endPage":541,
-		"totalPages":5
-	},
-	{
-		"index":58,
-		"numberOfAyas":22,
-		"startAyaIndex":5104,
-		"name":{
-			"arabic":"المجادلة",
-			"english":"The Pleading Woman",
-			"englishTranscription":"Al-Mujadila",
-			"bosnian":"Rasprava",
-			"bosnianTranscription":"El-Mudžadele"
-		},
-		"aboutSura":{
-			"bosnian":"Ukazivanje na poptuno i sveobuhvatno Allahovo znanje, kako bi ljudi bili svjesni da ih On nadgleda i kako bi se upozorili svi oni koji Mu se suprotstavljaju."
-		},
-		"type":"Medinan",
-		"orderInPublishing":105,
-		"numberOfWords":479,
-		"numberOfLetters":1792,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":542,
-		"endPage":545,
-		"totalPages":4
-	},
-	{
-		"index":59,
-		"numberOfAyas":24,
-		"startAyaIndex":5126,
-		"name":{
-			"arabic":"الحشر",
-			"english":"The Exile",
-			"englishTranscription":"Al-Hashr",
-			"bosnian":"Progonstvo",
-			"bosnianTranscription":"El-Hašr"
-		},
-		"aboutSura":{
-			"bosnian":"Ispoljavanje Allahove moći i snage koja se ogleda u ponižavanju i slabljenju Jevreja i licemjera, ukazivanje na njihovu razjedinjenost nasuprot muslimanskog jedinstva."
-		},
-		"type":"Medinan",
-		"orderInPublishing":101,
-		"numberOfWords":451,
-		"numberOfLetters":1913,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":545,
-		"endPage":548,
-		"totalPages":4
-	},
-	{
-		"index":60,
-		"numberOfAyas":13,
-		"startAyaIndex":5150,
-		"name":{
-			"arabic":"الممتحنة",
-			"english":"She that is to be examined",
-			"englishTranscription":"Al-Mumtahanah",
-			"bosnian":"Provjerena",
-			"bosnianTranscription":"El-Mumtehine"
-		},
-		"aboutSura":{
-			"bosnian":"Čišćenje vjerničkih srca od prijateljevanja i ljubavi prema drugim vjerama mimo Allahove."
-		},
-		"type":"Medinan",
-		"orderInPublishing":91,
-		"numberOfWords":356,
-		"numberOfLetters":1510,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":549,
-		"endPage":551,
-		"totalPages":3
-	},
-	{
-		"index":61,
-		"numberOfAyas":14,
-		"startAyaIndex":5163,
-		"name":{
-			"arabic":"الصف",
-			"english":"The Ranks",
-			"englishTranscription":"As-Saf",
-			"bosnian":"Bojni red",
-			"bosnianTranscription":"Es-Saff"
-		},
-		"aboutSura":{
-			"bosnian":"Stimulisanje vjernika na pomaganje Allahove vjere i borbu na Njegovom putu."
-		},
-		"type":"Medinan",
-		"orderInPublishing":109,
-		"numberOfWords":230,
-		"numberOfLetters":900,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":551,
-		"endPage":552,
-		"totalPages":2
-	},
-	{
-		"index":62,
-		"numberOfAyas":11,
-		"startAyaIndex":5177,
-		"name":{
-			"arabic":"الجمعة",
-			"english":"The Congregation, Friday",
-			"englishTranscription":"Al-Jumu'ah",
-			"bosnian":"Petak",
-			"bosnianTranscription":"El-Džumu'a"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjavanje Allahove blagodati ovom ummetu kojeg je posebno odlikovao uputom i slanjem Poslanika, sallallahu alejhi ve sellem, nakon što je bio u zabludi, zaduživanje pokornošću njemu i upozorenje na opasnost poistovjećivanja sa Jevrejima."
-		},
-		"type":"Medinan",
-		"orderInPublishing":110,
-		"numberOfWords":181,
-		"numberOfLetters":720,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":553,
-		"endPage":554,
-		"totalPages":2
-	},
-	{
-		"index":63,
-		"numberOfAyas":11,
-		"startAyaIndex":5188,
-		"name":{
-			"arabic":"المنافقون",
-			"english":"The Hypocrites",
-			"englishTranscription":"Al-Munafiqun",
-			"bosnian":"Licemjeri",
-			"bosnianTranscription":"El-Munafikun"
-		},
-		"aboutSura":{
-			"bosnian":"Otkrivanje svojstava licemjera i pojašnjavanje njihovog stava naspram islama i muslimana, te upozorenje na opasnost poistovjećivanja s njima."
-		},
-		"type":"Medinan",
-		"orderInPublishing":104,
-		"numberOfWords":185,
-		"numberOfLetters":776,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":554,
-		"endPage":555,
-		"totalPages":2
-	},
-	{
-		"index":64,
-		"numberOfAyas":18,
-		"startAyaIndex":5199,
-		"name":{
-			"arabic":"التغابن",
-			"english":"The Mutual Disillusion",
-			"englishTranscription":"At-Taghabun",
-			"bosnian":"Samoobmana",
-			"bosnianTranscription":"Et-Tegabun"
-		},
-		"aboutSura":{
-			"bosnian":"Spominjanje samoobmane nevjernika i njihove propasti na Sudnjem danu, kao vid upozorenja na nevjerstvo i nevjernike."
-		},
-		"type":"Medinan",
-		"orderInPublishing":108,
-		"numberOfWords":246,
-		"numberOfLetters":1070,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":556,
-		"endPage":557,
-		"totalPages":2
-	},
-	{
-		"index":65,
-		"numberOfAyas":12,
-		"startAyaIndex":5217,
-		"name":{
-			"arabic":"الطلاق",
-			"english":"The Divorce",
-			"englishTranscription":"At-Talaq",
-			"bosnian":"Razvod braka",
-			"bosnianTranscription":"Et-Talak"
-		},
-		"aboutSura":{
-			"bosnian":"Davanje važnosti pitanjima razvoda braka i njegovim odredbama, te pojašnjenje konačnice onih koji se Allaha boje i onih koji Njegove granice prelaze."
-		},
-		"type":"Medinan",
-		"orderInPublishing":99,
-		"numberOfWords":293,
-		"numberOfLetters":1060,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":558,
-		"endPage":559,
-		"totalPages":2
-	},
-	{
-		"index":66,
-		"numberOfAyas":12,
-		"startAyaIndex":5229,
-		"name":{
-			"arabic":"التحريم",
-			"english":"The Prohibtiion",
-			"englishTranscription":"At-Tahrim",
-			"bosnian":"Zabrana",
-			"bosnianTranscription":"Et-Tahrim"
-		},
-		"aboutSura":{
-			"bosnian":"Odgajanje vjerovjesničke kuće, kako bi porodica i društvo imali uzor u njoj."
-		},
-		"type":"Medinan",
-		"orderInPublishing":107,
-		"numberOfWords":258,
-		"numberOfLetters":1160,
-		"startJuz":28,
-		"endJuz":28,
-		"startPage":560,
-		"endPage":561,
-		"totalPages":2
-	},
-	{
-		"index":67,
-		"numberOfAyas":30,
-		"startAyaIndex":5241,
-		"name":{
-			"arabic":"الملك",
-			"english":"The Sovereignty",
-			"englishTranscription":"Al-Mulk",
-			"bosnian":"Vlast",
-			"bosnianTranscription":"El-Mulk"
-		},
-		"aboutSura":{
-			"bosnian":"Ukazivanje na savršenost Allahove vlasti moći, s ciljem podsticanja na strah od Njega i čuvanja od Njegove kazne."
-		},
-		"type":"Meccan",
-		"orderInPublishing":77,
-		"numberOfWords":337,
-		"numberOfLetters":1300,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":562,
-		"endPage":564,
-		"totalPages":3
-	},
-	{
-		"index":68,
-		"numberOfAyas":52,
-		"startAyaIndex":5271,
-		"name":{
-			"arabic":"القلم",
-			"english":"The Pen",
-			"englishTranscription":"Al-Qalam",
-			"bosnian":"Kalem",
-			"bosnianTranscription":"El-Kalem"
-		},
-		"aboutSura":{
-			"bosnian":"Ukazivanje na Poslanikovo, sallallahu alejhi ve sellem, znanje i njegovo lijepo ponašanje, kao vid podrške nakon što su ga mušrici napali."
-		},
-		"type":"Meccan",
-		"orderInPublishing":2,
-		"numberOfWords":305,
-		"numberOfLetters":1256,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":564,
-		"endPage":566,
-		"totalPages":3
-	},
-	{
-		"index":69,
-		"numberOfAyas":52,
-		"startAyaIndex":5323,
-		"name":{
-			"arabic":"الحاقة",
-			"english":"The Reality",
-			"englishTranscription":"Al-Haqqah",
-			"bosnian":"Čas neizbježni",
-			"bosnianTranscription":"El-Hakka"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrđivanje tačnosti dolaska Sudnjeg dana, kao vid potvrde istinitosti Kur'ana, kako bi se vjernici radovali, a negatori istine opomenuli kaznom i propašću."
-		},
-		"type":"Meccan",
-		"orderInPublishing":78,
-		"numberOfWords":264,
-		"numberOfLetters":1084,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":566,
-		"endPage":568,
-		"totalPages":3
-	},
-	{
-		"index":70,
-		"numberOfAyas":44,
-		"startAyaIndex":5375,
-		"name":{
-			"arabic":"المعارج",
-			"english":"The Ascending Stairways",
-			"englishTranscription":"Al-Ma'arij",
-			"bosnian":"Stepeni",
-			"bosnianTranscription":"El-Me'aridž"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrda da će se dogoditi kazna nad nevjernicima i da će iskreni vjernici na Sudnjem danu imati blagodati i uživati."
-		},
-		"type":"Meccan",
-		"orderInPublishing":79,
-		"numberOfWords":221,
-		"numberOfLetters":1061,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":568,
-		"endPage":570,
-		"totalPages":3
-	},
-	{
-		"index":71,
-		"numberOfAyas":28,
-		"startAyaIndex":5419,
-		"name":{
-			"arabic":"نوح",
-			"english":"Noah",
-			"englishTranscription":"Nuh",
-			"bosnian":"Nuh",
-			"bosnianTranscription":"Nuh"
-		},
-		"aboutSura":{
-			"bosnian":"Strpljivost islamskih misionara i njihova borba i trud na polju širenja pozitivnih vrijednosti, što se zaključuje iz kazivanja o Nuhu, kako bi se vjernici učvrstili, a poricatelji opomenuli."
-		},
-		"type":"Meccan",
-		"orderInPublishing":71,
-		"numberOfWords":231,
-		"numberOfLetters":929,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":570,
-		"endPage":571,
-		"totalPages":2
-	},
-	{
-		"index":72,
-		"numberOfAyas":28,
-		"startAyaIndex":5447,
-		"name":{
-			"arabic":"الجن",
-			"english":"The Jinn",
-			"englishTranscription":"Al-Jinn",
-			"bosnian":"Džini",
-			"bosnianTranscription":"El-Džinn"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrda objavljivanja Kur'ana, kao i toga da je on od Allaha, kroz kazivanje o vjerovanju džinna u njega, te poništavanje tvrdnji mušrika vezanih za njih."
-		},
-		"type":"Meccan",
-		"orderInPublishing":40,
-		"numberOfWords":290,
-		"numberOfLetters":870,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":572,
-		"endPage":573,
-		"totalPages":2
-	},
-	{
-		"index":73,
-		"numberOfAyas":20,
-		"startAyaIndex":5475,
-		"name":{
-			"arabic":"المزمل",
-			"english":"The Enshrouded One",
-			"englishTranscription":"Al-Muzzammil",
-			"bosnian":"Umotani",
-			"bosnianTranscription":"El-Muzzemmil"
-		},
-		"aboutSura":{
-			"bosnian":"Spominjanje duševne ospkrbe za islamske misionare (daije) potrebne za suočavanje sa životnim nevoljama, kao vid učvršćivanja Poslanika, sallallahu alejhi ve sellem, i opomene onima koji ga poriču."
-		},
-		"type":"Meccan",
-		"orderInPublishing":3,
-		"numberOfWords":204,
-		"numberOfLetters":838,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":574,
-		"endPage":575,
-		"totalPages":2
-	},
-	{
-		"index":74,
-		"numberOfAyas":56,
-		"startAyaIndex":5495,
-		"name":{
-			"arabic":"المدثر",
-			"english":"The Cloaked One",
-			"englishTranscription":"Al-Muddaththir",
-			"bosnian":"Pokriveni",
-			"bosnianTranscription":"El-Muddessir"
-		},
-		"aboutSura":{
-			"bosnian":"Naredba da se bude aktivan i da se aktivira radi pozivanja u islam i opomena onim koji je poriču."
-		},
-		"type":"Meccan",
-		"orderInPublishing":4,
-		"numberOfWords":260,
-		"numberOfLetters":1010,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":575,
-		"endPage":577,
-		"totalPages":3
-	},
-	{
-		"index":75,
-		"numberOfAyas":40,
-		"startAyaIndex":5551,
-		"name":{
-			"arabic":"القيامة",
-			"english":"The Resurrection",
-			"englishTranscription":"Al-Qiyamah",
-			"bosnian":"Smak svijeta",
-			"bosnianTranscription":"El-Kijame"
-		},
-		"aboutSura":{
-			"bosnian":"Ispoljavanje Allahove moći da stvori i oživi sva stvorenja."
-		},
-		"type":"Meccan",
-		"orderInPublishing":31,
-		"numberOfWords":168,
-		"numberOfLetters":652,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":577,
-		"endPage":578,
-		"totalPages":2
-	},
-	{
-		"index":76,
-		"numberOfAyas":31,
-		"startAyaIndex":5591,
-		"name":{
-			"arabic":"الانسان",
-			"english":"The Man",
-			"englishTranscription":"Al-Insan",
-			"bosnian":"Čovjek",
-			"bosnianTranscription":"El-Insan"
-		},
-		"aboutSura":{
-			"bosnian":"Podsjećanje čovjeka na njegovu osnovu, mudrost stvaranja i krajnji povratak i mjesto, te ispoljavanje džennetskih blagodati, kako bi se vjernici učvrstili, a nevjernici pozvali."
-		},
-		"type":"Medinan",
-		"orderInPublishing":98,
-		"numberOfWords":247,
-		"numberOfLetters":1054,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":578,
-		"endPage":580,
-		"totalPages":3
-	},
-	{
-		"index":77,
-		"numberOfAyas":50,
-		"startAyaIndex":5622,
-		"name":{
-			"arabic":"المرسلات",
-			"english":"The Emissaries",
-			"englishTranscription":"Al-Mursalat",
-			"bosnian":"Poslani",
-			"bosnianTranscription":"El-Murselat"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrđivanje istinitosti Sudnjeg dana kroz iznošenje dokaza onima koji poriču, a nakon toga kroz prijetnje i upozorenja."
-		},
-		"type":"Meccan",
-		"orderInPublishing":33,
-		"numberOfWords":185,
-		"numberOfLetters":816,
-		"startJuz":29,
-		"endJuz":29,
-		"startPage":580,
-		"endPage":581,
-		"totalPages":2
-	},
-	{
-		"index":78,
-		"numberOfAyas":40,
-		"startAyaIndex":5672,
-		"name":{
-			"arabic":"النبإ",
-			"english":"The Tidings",
-			"englishTranscription":"An-Naba",
-			"bosnian":"Vijest",
-			"bosnianTranscription":"En-Nebe'"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrđivanje istinitosti proživljenje nakon smrti, kao i nagrade i kazne, kroz jasne dokaze i argumente."
-		},
-		"type":"Meccan",
-		"orderInPublishing":80,
-		"numberOfWords":178,
-		"numberOfLetters":770,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":582,
-		"endPage":583,
-		"totalPages":2
-	},
-	{
-		"index":79,
-		"numberOfAyas":46,
-		"startAyaIndex":5712,
-		"name":{
-			"arabic":"النازعات",
-			"english":"Those who drag forth",
-			"englishTranscription":"An-Nazi'at",
-			"bosnian":"Oni koji čupaju",
-			"bosnianTranscription":"En-Nazi'at"
-		},
-		"aboutSura":{
-			"bosnian":"Zastrašivanje i pokretanje srca koja poriču proživljenje, nagradu i kaznu, kroz spominjanje događaja poput smrti, proživljenja, okupljanja, i Sudnjeg dana."
-		},
-		"type":"Meccan",
-		"orderInPublishing":81,
-		"numberOfWords":183,
-		"numberOfLetters":753,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":583,
-		"endPage":584,
-		"totalPages":2
-	},
-	{
-		"index":80,
-		"numberOfAyas":42,
-		"startAyaIndex":5758,
-		"name":{
-			"arabic":"عبس",
-			"english":"He Frowned",
-			"englishTranscription":"'Abasa",
-			"bosnian":"Namrštio se",
-			"bosnianTranscription":"'Abese'"
-		},
-		"aboutSura":{
-			"bosnian":"Suština kur'anskog poziva, počast onome ko se njime koristi i poniženje onome ko se od njega okrene."
-		},
-		"type":"Meccan",
-		"orderInPublishing":24,
-		"numberOfWords":137,
-		"numberOfLetters":533,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":585,
-		"endPage":585,
-		"totalPages":1
-	},
-	{
-		"index":81,
-		"numberOfAyas":29,
-		"startAyaIndex":5800,
-		"name":{
-			"arabic":"التكوير",
-			"english":"The Overthrowing",
-			"englishTranscription":"At-Takwir",
-			"bosnian":"Prestanak sjaja",
-			"bosnianTranscription":"Et-Tekvir"
-		},
-		"aboutSura":{
-			"bosnian":"Slikoviti opis Smaka svijeta, kada će se kosmos raspasti i labav postati, nakon što je bio precizno uređen."
-		},
-		"type":"Meccan",
-		"orderInPublishing":7,
-		"numberOfWords":108,
-		"numberOfLetters":533,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":586,
-		"endPage":586,
-		"totalPages":1
-	},
-	{
-		"index":82,
-		"numberOfAyas":19,
-		"startAyaIndex":5829,
-		"name":{
-			"arabic":"الإنفطار",
-			"english":"The Cleaving",
-			"englishTranscription":"Al-Infitar",
-			"bosnian":"Rascjepljenje",
-			"bosnianTranscription":"El-Infitar"
-		},
-		"aboutSura":{
-			"bosnian":"Prikaz Sudnjeg dana kada će precizno uređena stvorenja postati po svuda raspršena, kada će njihovo stanje i kretanje biti promijenjeno."
-		},
-		"type":"Meccan",
-		"orderInPublishing":82,
-		"numberOfWords":85,
-		"numberOfLetters":327,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":587,
-		"endPage":587,
-		"totalPages":1
-	},
-	{
-		"index":83,
-		"numberOfAyas":36,
-		"startAyaIndex":5848,
-		"name":{
-			"arabic":"المطففين",
-			"english":"The Defrauding",
-			"englishTranscription":"Al-Mutaffifin",
-			"bosnian":"Oni koji pri mjerenju zakidaju",
-			"bosnianTranscription":"El-Mutaffifin"
-		},
-		"aboutSura":{
-			"bosnian":"Sura se usmjerava na pojašnjenje stanja ljudi po pitanju mjerenja, ahiretskih položaja, prijeteći onima koji na vagi zakidaju i koji poriču i smirujući osjećaje vjernika i slabih."
-		},
-		"type":"Meccan",
-		"orderInPublishing":86,
-		"numberOfWords":173,
-		"numberOfLetters":830,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":587,
-		"endPage":589,
-		"totalPages":3
-	},
-	{
-		"index":84,
-		"numberOfAyas":25,
-		"startAyaIndex":5884,
-		"name":{
-			"arabic":"الإنشقاق",
-			"english":"The Sundering",
-			"englishTranscription":"Al-Inshiqaq",
-			"bosnian":"Cijepanje",
-			"bosnianTranscription":"El-Inšikak"
-		},
-		"aboutSura":{
-			"bosnian":"Prikaz dešavanja Smaka svijeta, kroz potčinjenost kosmosa naredbama Gospodara, iz čega proističe obaveznost pokoravanja i pogubnost odbijanja pokornosti."
-		},
-		"type":"Meccan",
-		"orderInPublishing":83,
-		"numberOfWords":112,
-		"numberOfLetters":430,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":589,
-		"endPage":589,
-		"totalPages":1
-	},
-	{
-		"index":85,
-		"numberOfAyas":22,
-		"startAyaIndex":5909,
-		"name":{
-			"arabic":"البروج",
-			"english":"The Mansions of the Stars",
-			"englishTranscription":"Al-Buruj",
-			"bosnian":"Sazviježđa",
-			"bosnianTranscription":"El-Burudž"
-		},
-		"aboutSura":{
-			"bosnian":"Ispoljavanje Allahove snage i Njegove sveobuhvatne moći, kao i Njegove prijetnje strašnom kaznom onima koji vjernicima ne žele dobro i uznemiravaju ih."
-		},
-		"type":"Meccan",
-		"orderInPublishing":27,
-		"numberOfWords":113,
-		"numberOfLetters":458,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":590,
-		"endPage":590,
-		"totalPages":1
-	},
-	{
-		"index":86,
-		"numberOfAyas":17,
-		"startAyaIndex":5931,
-		"name":{
-			"arabic":"الطارق",
-			"english":"The Nightcommer",
-			"englishTranscription":"At-Tariq",
-			"bosnian":"Danica",
-			"bosnianTranscription":"Et-Tarik"
-		},
-		"aboutSura":{
-			"bosnian":"Iskazivanje činjenice da Allahu ništa ne promiče, kao i ukazivanje na Njegovu apsolutnu moć."
-		},
-		"type":"Meccan",
-		"orderInPublishing":36,
-		"numberOfWords":65,
-		"numberOfLetters":245,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":591,
-		"endPage":591,
-		"totalPages":1
-	},
-	{
-		"index":87,
-		"numberOfAyas":19,
-		"startAyaIndex":5948,
-		"name":{
-			"arabic":"الأعلى",
-			"english":"The Most High",
-			"englishTranscription":"Al-A'la",
-			"bosnian":"Svevišnji",
-			"bosnianTranscription":"El-E'la"
-		},
-		"aboutSura":{
-			"bosnian":"Podsjećanje ljudi da blagodati Uzvišenog Allaha prema njima, podsticanje da se vežu za onaj svijet i da se riješe ovisnosti o dunjaluku."
-		},
-		"type":"Meccan",
-		"orderInPublishing":8,
-		"numberOfWords":76,
-		"numberOfLetters":270,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":591,
-		"endPage":592,
-		"totalPages":2
-	},
-	{
-		"index":88,
-		"numberOfAyas":26,
-		"startAyaIndex":5967,
-		"name":{
-			"arabic":"الغاشية",
-			"english":"The Overwhelming",
-			"englishTranscription":"Al-Ghashiyah",
-			"bosnian":"Teška nevolja",
-			"bosnianTranscription":"El-Gašije"
-		},
-		"aboutSura":{
-			"bosnian":"Podsjećanje ljudi na božansku moć, kako u davanju blagodati, tako i u kažnjavanju, kroz prisutne dokaze i znakove, kako bi se ljudska srca ispunila željom za nagradom, i strahom od kazne."
-		},
-		"type":"Meccan",
-		"orderInPublishing":68,
-		"numberOfWords":96,
-		"numberOfLetters":330,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":592,
-		"endPage":592,
-		"totalPages":1
-	},
-	{
-		"index":89,
-		"numberOfAyas":30,
-		"startAyaIndex":5993,
-		"name":{
-			"arabic":"الفجر",
-			"english":"The Dawn",
-			"englishTranscription":"Al-Fajr",
-			"bosnian":"Zora",
-			"bosnianTranscription":"El-Fedžr"
-		},
-		"aboutSura":{
-			"bosnian":"Prikaz stanja u kojima se ogleda Allahova moć u kosmosu kao i u samom čovjeku, te pojašnjenje konačnice onih koji su obmanuti."
-		},
-		"type":"Meccan",
-		"orderInPublishing":10,
-		"numberOfWords":143,
-		"numberOfLetters":577,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":593,
-		"endPage":594,
-		"totalPages":2
-	},
-	{
-		"index":90,
-		"numberOfAyas":20,
-		"startAyaIndex":6023,
-		"name":{
-			"arabic":"البلد",
-			"english":"The City",
-			"englishTranscription":"Al-Balad",
-			"bosnian":"Grad",
-			"bosnianTranscription":"El-Beled"
-		},
-		"aboutSura":{
-			"bosnian":"Spominjanje stanja čovjeka na oba svijeta, bilo da je vezano za nevjerovanje i kažnjavanje, ili za vjerovanje i postizanje velikih položaja i milosti."
-		},
-		"type":"Meccan",
-		"orderInPublishing":35,
-		"numberOfWords":86,
-		"numberOfLetters":330,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":594,
-		"endPage":594,
-		"totalPages":1
-	},
-	{
-		"index":91,
-		"numberOfAyas":15,
-		"startAyaIndex":6043,
-		"name":{
-			"arabic":"الشمس",
-			"english":"The Sun",
-			"englishTranscription":"Ash-Shams",
-			"bosnian":"Sunce",
-			"bosnianTranscription":"Eš-Šems"
-		},
-		"aboutSura":{
-			"bosnian":"Sura usmjerava pažnju ka Allahovovim znamenjima u kosmosu, a i u nama samima, te na stanja ljudskih duša, kako bi se one očistile i od grijeha udaljile."
-		},
-		"type":"Meccan",
-		"orderInPublishing":26,
-		"numberOfWords":58,
-		"numberOfLetters":247,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":595,
-		"endPage":595,
-		"totalPages":1
-	},
-	{
-		"index":92,
-		"numberOfAyas":21,
-		"startAyaIndex":6058,
-		"name":{
-			"arabic":"الليل",
-			"english":"The Night",
-			"englishTranscription":"Al-Layl",
-			"bosnian":"Noć",
-			"bosnianTranscription":"El-Lejl"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašenje razlike između znamenja, ljudi i njihovih postupaka, kako bi se ispoljila razlika između vjernika i nevjernika."
-		},
-		"type":"Meccan",
-		"orderInPublishing":9,
-		"numberOfWords":75,
-		"numberOfLetters":302,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":595,
-		"endPage":596,
-		"totalPages":2
-	},
-	{
-		"index":93,
-		"numberOfAyas":11,
-		"startAyaIndex":6079,
-		"name":{
-			"arabic":"الضحى",
-			"english":"The Morning Hours",
-			"englishTranscription":"Ad-Duhaa",
-			"bosnian":"Jutro",
-			"bosnianTranscription":"Ed-Duha"
-		},
-		"aboutSura":{
-			"bosnian":"U ovoj suri spominje se pažnja Allahova prema Poslaniku, sallallahu alejhi ve sellem, Njegova blagodat prema njemu u vidu Objave, te trajnost te blagodati, s ciljem da se udovolji njegovim osjećajima i da se vjernici podsjete na zahvalnost."
-		},
-		"type":"Meccan",
-		"orderInPublishing":11,
-		"numberOfWords":44,
-		"numberOfLetters":192,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":596,
-		"endPage":596,
-		"totalPages":1
-	},
-	{
-		"index":94,
-		"numberOfAyas":8,
-		"startAyaIndex":6090,
-		"name":{
-			"arabic":"الشرح",
-			"english":"The Relief",
-			"englishTranscription":"Ash-Sharh",
-			"bosnian":"Širokogrudnost",
-			"bosnianTranscription":"El-Inširah"
-		},
-		"aboutSura":{
-			"bosnian":"Spominjanje potpune Allahove blagodati prema Njegovom Poslaniku, sallallahu alejhi ve sellem, koja se ogleda u uklanjanju brige i poteškoće od njega, kao i onoga što do toga dovodi."
-		},
-		"type":"Meccan",
-		"orderInPublishing":12,
-		"numberOfWords":31,
-		"numberOfLetters":103,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":596,
-		"endPage":596,
-		"totalPages":1
-	},
-	{
-		"index":95,
-		"numberOfAyas":8,
-		"startAyaIndex":6098,
-		"name":{
-			"arabic":"التين",
-			"english":"The Fig",
-			"englishTranscription":"At-Tin",
-			"bosnian":"Smokva",
-			"bosnianTranscription":"Et-Tin"
-		},
-		"aboutSura":{
-			"bosnian":"Spominjanje vrijednosti čovjeka koji je u vjeri, kao i njegove bezvrijednosti kada tu vjeru izgubi. Zbog toga se Allah kune mjestima spuštanja Objave."
-		},
-		"type":"Meccan",
-		"orderInPublishing":28,
-		"numberOfWords":38,
-		"numberOfLetters":150,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":597,
-		"endPage":597,
-		"totalPages":1
-	},
-	{
-		"index":96,
-		"numberOfAyas":19,
-		"startAyaIndex":6106,
-		"name":{
-			"arabic":"العلق",
-			"english":"The Clot",
-			"englishTranscription":"Al-'Alaq",
-			"bosnian":"Ugrušak",
-			"bosnianTranscription":"El-'Alek"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjenje da čovjek biva potpun putem znanja i Objave koja ga vezuju s njegovim Gospodarom i čini ga Njemu poniznim, a da, suprotstavljajući se tome, umanjuje svoju vrijednost."
-		},
-		"type":"Meccan",
-		"orderInPublishing":1,
-		"numberOfWords":76,
-		"numberOfLetters":280,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":597,
-		"endPage":597,
-		"totalPages":1
-	},
-	{
-		"index":97,
-		"numberOfAyas":5,
-		"startAyaIndex":6125,
-		"name":{
-			"arabic":"القدر",
-			"english":"The Power",
-			"englishTranscription":"Al-Qadr",
-			"bosnian":"Noć Kadr",
-			"bosnianTranscription":"El-Kadr"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjavanje vrijednosti noći Kadr, njene veličanstvenosti kao i onoga što je u njoj spušteno."
-		},
-		"type":"Meccan",
-		"orderInPublishing":25,
-		"numberOfWords":34,
-		"numberOfLetters":112,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":598,
-		"endPage":598,
-		"totalPages":1
-	},
-	{
-		"index":98,
-		"numberOfAyas":8,
-		"startAyaIndex":6130,
-		"name":{
-			"arabic":"البينة",
-			"english":"The Clear Proof",
-			"englishTranscription":"Al-Bayyinah",
-			"bosnian":"Dokaz jasni",
-			"bosnianTranscription":"El-Bejjine"
-		},
-		"aboutSura":{
-			"bosnian":"Ukazivanje na položaj poslanice Muhammeda, sallallahu alejhi ve sellem, na njenu jasnoću i potpunost."
-		},
-		"type":"Medinan",
-		"orderInPublishing":100,
-		"numberOfWords":98,
-		"numberOfLetters":392,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":598,
-		"endPage":599,
-		"totalPages":2
-	},
-	{
-		"index":99,
-		"numberOfAyas":8,
-		"startAyaIndex":6138,
-		"name":{
-			"arabic":"الزلزلة",
-			"english":"The Earthquake",
-			"englishTranscription":"Az-Zalzalah",
-			"bosnian":"Zemljotres",
-			"bosnianTranscription":"Ez-Zelzele"
-		},
-		"aboutSura":{
-			"bosnian":"Buđenje nemarnih srca s ciljem da povjeruju u obračun i precizno svođenje računa na Sudnjem danu."
-		},
-		"type":"Medinan",
-		"orderInPublishing":93,
-		"numberOfWords":40,
-		"numberOfLetters":149,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":599,
-		"endPage":599,
-		"totalPages":1
-	},
-	{
-		"index":100,
-		"numberOfAyas":11,
-		"startAyaIndex":6146,
-		"name":{
-			"arabic":"العاديات",
-			"english":"The Courser",
-			"englishTranscription":"Al-'Adiyat",
-			"bosnian":"Oni koji jure",
-			"bosnianTranscription":"El-'Adijat"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjenje osobina čovjeka u pogledu njegove brige za dunjalukom, kao vid podsjećanja na povratak i način da popravi svoje stanje i pravac kojim ide."
-		},
-		"type":"Meccan",
-		"orderInPublishing":14,
-		"numberOfWords":44,
-		"numberOfLetters":163,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":599,
-		"endPage":600,
-		"totalPages":2
-	},
-	{
-		"index":101,
-		"numberOfAyas":11,
-		"startAyaIndex":6157,
-		"name":{
-			"arabic":"القارعة",
-			"english":"The Calamity",
-			"englishTranscription":"Al-Qari'ah",
-			"bosnian":"Smak svijeta",
-			"bosnianTranscription":"El-Kari'a"
-		},
-		"aboutSura":{
-			"bosnian":"Buđenje srca kroz prikaz strahota Smaka svijeta."
-		},
-		"type":"Meccan",
-		"orderInPublishing":30,
-		"numberOfWords":40,
-		"numberOfLetters":150,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":600,
-		"endPage":600,
-		"totalPages":1
-	},
-	{
-		"index":102,
-		"numberOfAyas":8,
-		"startAyaIndex":6168,
-		"name":{
-			"arabic":"التكاثر",
-			"english":"The Rivalry in world increase",
-			"englishTranscription":"At-Takathur",
-			"bosnian":"Nadmetanje",
-			"bosnianTranscription":"Et-Tekasur"
-		},
-		"aboutSura":{
-			"bosnian":"Podsjećanje na smrt i obračun onih koji su zauzeti dunjalukom."
-		},
-		"type":"Meccan",
-		"orderInPublishing":16,
-		"numberOfWords":32,
-		"numberOfLetters":120,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":600,
-		"endPage":600,
-		"totalPages":1
-	},
-	{
-		"index":103,
-		"numberOfAyas":3,
-		"startAyaIndex":6176,
-		"name":{
-			"arabic":"العصر",
-			"english":"The Declining Day",
-			"englishTranscription":"Al-'Asr",
-			"bosnian":"Vrijeme",
-			"bosnianTranscription":"El-'Asr'"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjenje šta je to stvarna dobit i propast u životu i napomena na važnost vremena kojeg čovjek provodi."
-		},
-		"type":"Meccan",
-		"orderInPublishing":13,
-		"numberOfWords":18,
-		"numberOfLetters":68,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":601,
-		"endPage":601,
-		"totalPages":1
-	},
-	{
-		"index":104,
-		"numberOfAyas":9,
-		"startAyaIndex":6179,
-		"name":{
-			"arabic":"الهمزة",
-			"english":"The Traducer",
-			"englishTranscription":"Al-Humazah",
-			"bosnian":"Klevetnik",
-			"bosnianTranscription":"El-Humeze"
-		},
-		"aboutSura":{
-			"bosnian":"Prijetnja onima koji se uzdižu i ismijavaju sa vjerom i vjernicima."
-		},
-		"type":"Meccan",
-		"orderInPublishing":32,
-		"numberOfWords":37,
-		"numberOfLetters":130,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":601,
-		"endPage":601,
-		"totalPages":1
-	},
-	{
-		"index":105,
-		"numberOfAyas":5,
-		"startAyaIndex":6188,
-		"name":{
-			"arabic":"الفيل",
-			"english":"The Elephant",
-			"englishTranscription":"Al-Fil",
-			"bosnian":"Slon",
-			"bosnianTranscription":"El-Fil"
-		},
-		"aboutSura":{
-			"bosnian":"Iskazivanje Allahove moći da štiti svoj sveti hram, kao vid opomene i blagodati."
-		},
-		"type":"Meccan",
-		"orderInPublishing":19,
-		"numberOfWords":27,
-		"numberOfLetters":96,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":601,
-		"endPage":601,
-		"totalPages":1
-	},
-	{
-		"index":106,
-		"numberOfAyas":4,
-		"startAyaIndex":6193,
-		"name":{
-			"arabic":"قريش",
-			"english":"Quraysh",
-			"englishTranscription":"Quraysh",
-			"bosnian":"Kurejšije",
-			"bosnianTranscription":"Kurejš"
-		},
-		"aboutSura":{
-			"bosnian":"Blagodat darovana Kurejšijama i obaveze naspram toga."
-		},
-		"type":"Meccan",
-		"orderInPublishing":29,
-		"numberOfWords":21,
-		"numberOfLetters":93,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":602,
-		"endPage":602,
-		"totalPages":1
-	},
-	{
-		"index":107,
-		"numberOfAyas":7,
-		"startAyaIndex":6197,
-		"name":{
-			"arabic":"الماعون",
-			"english":"The Small Kindesses",
-			"englishTranscription":"Al-Ma'un",
-			"bosnian":"Davanje u naruč",
-			"bosnianTranscription":"El-Ma'un"
-		},
-		"aboutSura":{
-			"bosnian":"Pojašnjenje ponašanja onih koji poriču Sudnji dan, kao vid upozorenja vjernicima i sramoćenja nevjernika."
-		},
-		"type":"Meccan",
-		"orderInPublishing":17,
-		"numberOfWords":29,
-		"numberOfLetters":125,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":602,
-		"endPage":602,
-		"totalPages":1
-	},
-	{
-		"index":108,
-		"numberOfAyas":3,
-		"startAyaIndex":6204,
-		"name":{
-			"arabic":"الكوثر",
-			"english":"The Abundance",
-			"englishTranscription":"Al-Kawthar",
-			"bosnian":"Mnogo dobro",
-			"bosnianTranscription":"El-Kevser"
-		},
-		"aboutSura":{
-			"bosnian":"Blagodat Allaha prema Poslaniku, sallallahu alejhi ve sellem, i prekidanje svih puteva onima koji ga mrze."
-		},
-		"type":"Meccan",
-		"orderInPublishing":15,
-		"numberOfWords":14,
-		"numberOfLetters":42,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":602,
-		"endPage":602,
-		"totalPages":1
-	},
-	{
-		"index":109,
-		"numberOfAyas":6,
-		"startAyaIndex":6207,
-		"name":{
-			"arabic":"الكافرون",
-			"english":"The Disbelievers",
-			"englishTranscription":"Al-Kafirun",
-			"bosnian":"Nevjernici",
-			"bosnianTranscription":"El-Kafirun"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrđivanje tevhida i vjerovanja da se samo Allahu čini ibadet, negiranje širka i potpuno odvajanja islama od širka."
-		},
-		"type":"Meccan",
-		"orderInPublishing":18,
-		"numberOfWords":31,
-		"numberOfLetters":94,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":603,
-		"endPage":603,
-		"totalPages":1
-	},
-	{
-		"index":110,
-		"numberOfAyas":3,
-		"startAyaIndex":6213,
-		"name":{
-			"arabic":"النصر",
-			"english":"The Divine Support",
-			"englishTranscription":"An-Nasr",
-			"bosnian":"Pomoć",
-			"bosnianTranscription":"En-Nasr"
-		},
-		"aboutSura":{
-			"bosnian":"Ukazivanje na krajnji rezultat islama, koji će biti pomoć i pobjeda, kao i na to šta je propisano kada se desi pobjeda islama. Također, sura ukazuje i na blizinu odlaska Poslanika, sallallahu alejhi ve sellem, s ovoga svijeta."
-		},
-		"type":"Medinan",
-		"orderInPublishing":114,
-		"numberOfWords":23,
-		"numberOfLetters":77,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":603,
-		"endPage":603,
-		"totalPages":1
-	},
-	{
-		"index":111,
-		"numberOfAyas":5,
-		"startAyaIndex":6216,
-		"name":{
-			"arabic":"المسد",
-			"english":"The Palm Fiber",
-			"englishTranscription":"Al-Masad",
-			"bosnian":"Plamen",
-			"bosnianTranscription":"El-Leheb"
-		},
-		"aboutSura":{
-			"bosnian":"Porijeklo i položaj ne koriste, ako je čovjek nevjernik u Allaha."
-		},
-		"type":"Meccan",
-		"orderInPublishing":6,
-		"numberOfWords":27,
-		"numberOfLetters":77,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":603,
-		"endPage":603,
-		"totalPages":1
-	},
-	{
-		"index":112,
-		"numberOfAyas":4,
-		"startAyaIndex":6221,
-		"name":{
-			"arabic":"الإخلاص",
-			"english":"The Sincerity",
-			"englishTranscription":"Al-Ikhlas",
-			"bosnian":"Iskrenost",
-			"bosnianTranscription":"El-Ihlas"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrđivanje da je Allah jedinstven u svome savršenstvu, božanstvenosti i čistoći od mahana"
-		},
-		"type":"Meccan",
-		"orderInPublishing":22,
-		"numberOfWords":19,
-		"numberOfLetters":47,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":604,
-		"endPage":604,
-		"totalPages":1
-	},
-	{
-		"index":113,
-		"numberOfAyas":5,
-		"startAyaIndex":6225,
-		"name":{
-			"arabic":"الفلق",
-			"english":"The Daybreak",
-			"englishTranscription":"Al-Falaq",
-			"bosnian":"Svitanje",
-			"bosnianTranscription":"El-Felek"
-		},
-		"aboutSura":{
-			"bosnian":"Traženje zaštite kod Allaha od vidljivog zla."
-		},
-		"type":"Meccan",
-		"orderInPublishing":20,
-		"numberOfWords":27,
-		"numberOfLetters":74,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":604,
-		"endPage":604,
-		"totalPages":1
-	},
-	{
-		"index":114,
-		"numberOfAyas":6,
-		"startAyaIndex":6230,
-		"name":{
-			"arabic":"الناس",
-			"english":"The Mankind",
-			"englishTranscription":"An-Nas",
-			"bosnian":"Ljudi",
-			"bosnianTranscription":"En-Nas"
-		},
-		"aboutSura":{
-			"bosnian":"Zaštita kod Allaha od zla šejtana i njegovih došaptavanja i od skrivenog zla."
-		},
-		"type":"Meccan",
-		"orderInPublishing":21,
-		"numberOfWords":24,
-		"numberOfLetters":79,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":604,
-		"endPage":604,
-		"totalPages":1
-	}
+  {
+    index: 1,
+    numberOfAyas: 7,
+    startAyaIndex: 0,
+    name: {
+      arabic: "الفاتحة",
+      english: "The Opener",
+      englishTranscription: "Al-Fatihah",
+      bosnian: "Pristup",
+      bosnianTranscription: "El-Fatiha",
+    },
+    aboutSura: {
+      bosnian:
+        "Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega.",
+    },
+    type: "Meccan",
+    orderInPublishing: 5,
+    numberOfWords: 29,
+    numberOfLetters: 142,
+    startJuz: 1,
+    endJuz: 1,
+    startPage: 1,
+    endPage: 1,
+    totalPages: 1,
+  },
+  {
+    index: 2,
+    numberOfAyas: 286,
+    startAyaIndex: 7,
+    name: {
+      arabic: "البقرة",
+      english: "The Cow",
+      englishTranscription: "Al-Baqarah",
+      bosnian: "Krava",
+      bosnianTranscription: "El-Bekare",
+    },
+    aboutSura: {
+      bosnian:
+        "Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata.",
+    },
+    type: "Medinan",
+    orderInPublishing: 87,
+    numberOfWords: 6144,
+    numberOfLetters: 25500,
+    startJuz: 1,
+    endJuz: 3,
+    startPage: 2,
+    endPage: 49,
+    totalPages: 48,
+  },
+  {
+    index: 3,
+    numberOfAyas: 200,
+    startAyaIndex: 293,
+    name: {
+      arabic: "آل عمران",
+      english: "Family of Imran",
+      englishTranscription: "Ali 'Imran",
+      bosnian: "Imranova porodica",
+      bosnianTranscription: "Ali-'Imran",
+    },
+    aboutSura: {
+      bosnian:
+        "Ustrajnost na islamu nakon njegovog upotpunjenja i objašnjenja, i odgovor na sumnje sljedbenika Knjige, posebno kršćana.",
+    },
+    type: "Medinan",
+    orderInPublishing: 89,
+    numberOfWords: 3505,
+    numberOfLetters: 14525,
+    startJuz: 3,
+    endJuz: 4,
+    startPage: 50,
+    endPage: 76,
+    totalPages: 27,
+  },
+  {
+    index: 4,
+    numberOfAyas: 176,
+    startAyaIndex: 493,
+    name: {
+      arabic: "النساء",
+      english: "The Women",
+      englishTranscription: "An-Nisa",
+      bosnian: "Žene",
+      bosnianTranscription: "En-Nisa",
+    },
+    aboutSura: {
+      bosnian:
+        "Uređenje muslimanskog društva iznutra kroz čuvanje socijalno-ekonomskih prava, i uklanjanje ostataka paganizma, koncetrišući se na prava žena i slabih.",
+    },
+    type: "Medinan",
+    orderInPublishing: 92,
+    numberOfWords: 3767,
+    numberOfLetters: 16030,
+    startJuz: 4,
+    endJuz: 6,
+    startPage: 77,
+    endPage: 106,
+    totalPages: 30,
+  },
+  {
+    index: 5,
+    numberOfAyas: 120,
+    startAyaIndex: 669,
+    name: {
+      arabic: "المائدة",
+      english: "The Table Spread",
+      englishTranscription: "Al-Ma'idah",
+      bosnian: "Trpeza",
+      bosnianTranscription: "El-Maide",
+    },
+    aboutSura: {
+      bosnian: "Poštovanje ugovora, pridržavanje zakona i upotpunjenje vjere.",
+    },
+    type: "Medinan",
+    orderInPublishing: 112,
+    numberOfWords: 2841,
+    numberOfLetters: 11933,
+    startJuz: 6,
+    endJuz: 7,
+    startPage: 106,
+    endPage: 127,
+    totalPages: 22,
+  },
+  {
+    index: 6,
+    numberOfAyas: 165,
+    startAyaIndex: 789,
+    name: {
+      arabic: "الأنعام",
+      english: "The Cattle",
+      englishTranscription: "Al-An'am",
+      bosnian: "Stoka",
+      bosnianTranscription: "El-En'am",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri nalazi potvrda monoteizma uz razumske dokaze i pobijanje višebožačkih uvjerenja.",
+    },
+    type: "Meccan",
+    orderInPublishing: 55,
+    numberOfWords: 3060,
+    numberOfLetters: 12254,
+    startJuz: 7,
+    endJuz: 8,
+    startPage: 128,
+    endPage: 150,
+    totalPages: 23,
+  },
+  {
+    index: 7,
+    numberOfAyas: 206,
+    startAyaIndex: 954,
+    name: {
+      arabic: "الأعراف",
+      english: "The Heights",
+      englishTranscription: "Al-A'raf",
+      bosnian: "Bedemi",
+      bosnianTranscription: "El-A'raf",
+    },
+    aboutSura: {
+      bosnian:
+        "Objašnjenje zakona borbe između vjere i nevjere i konačnica te borbe kroz navođenje događaja između vjerovjesnika i njihovih naroda.",
+    },
+    type: "Meccan",
+    orderInPublishing: 39,
+    numberOfWords: 3345,
+    numberOfLetters: 13877,
+    startJuz: 8,
+    endJuz: 9,
+    startPage: 151,
+    endPage: 176,
+    totalPages: 26,
+  },
+  {
+    index: 8,
+    numberOfAyas: 75,
+    startAyaIndex: 1160,
+    name: {
+      arabic: "الأنفال",
+      english: "The Spoils of War",
+      englishTranscription: "Al-Anfal",
+      bosnian: "Plijen",
+      bosnianTranscription: "El-Enfal",
+    },
+    aboutSura: {
+      bosnian:
+        "Objašnjavanje propisa borbe i uzroka pobjede i poraza kroz kazivanje o bici na Bedru.",
+    },
+    type: "Medinan",
+    orderInPublishing: 88,
+    numberOfWords: 1246,
+    numberOfLetters: 5080,
+    startJuz: 9,
+    endJuz: 10,
+    startPage: 177,
+    endPage: 186,
+    totalPages: 10,
+  },
+  {
+    index: 9,
+    numberOfAyas: 129,
+    startAyaIndex: 1235,
+    name: {
+      arabic: "التوبة",
+      english: "The Repentance",
+      englishTranscription: "At-Tawbah",
+      bosnian: "Pokajanje",
+      bosnianTranscription: "Et-Tevbe",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura otkriva stanje raznih kategorija ljudi i govori o odnosu spram njih, pa govori o odnosu prema nevjernicima, razotkriva dvoličanjake i karakterizira vjernike.",
+    },
+    type: "Medinan",
+    orderInPublishing: 113,
+    numberOfWords: 2505,
+    numberOfLetters: 10488,
+    startJuz: 10,
+    endJuz: 11,
+    startPage: 187,
+    endPage: 207,
+    totalPages: 21,
+  },
+  {
+    index: 10,
+    numberOfAyas: 109,
+    startAyaIndex: 1364,
+    name: {
+      arabic: "يونس",
+      english: "Jonah",
+      englishTranscription: "Yunus",
+      bosnian: "Junus",
+      bosnianTranscription: "Junus",
+    },
+    aboutSura: {
+      bosnian:
+        "Suprotstavljanje onima koji poriču Objavu, putem dokaza i argumeneta i pozivanje u vjerovanje metodom poticanja i zastrašivanja.",
+    },
+    type: "Meccan",
+    orderInPublishing: 51,
+    numberOfWords: 1843,
+    numberOfLetters: 7567,
+    startJuz: 11,
+    endJuz: 11,
+    startPage: 208,
+    endPage: 221,
+    totalPages: 14,
+  },
+  {
+    index: 11,
+    numberOfAyas: 123,
+    startAyaIndex: 1473,
+    name: {
+      arabic: "هود",
+      english: "Hud",
+      englishTranscription: "Hud",
+      bosnian: "Hud",
+      bosnianTranscription: "Hud",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjenje metodologije poslanika spram njihovih naroda koji su poricali istinu.",
+    },
+    type: "Meccan",
+    orderInPublishing: 52,
+    numberOfWords: 1950,
+    numberOfLetters: 7513,
+    startJuz: 11,
+    endJuz: 12,
+    startPage: 221,
+    endPage: 235,
+    totalPages: 15,
+  },
+  {
+    index: 12,
+    numberOfAyas: 111,
+    startAyaIndex: 1596,
+    name: {
+      arabic: "يوسف",
+      english: "Joseph",
+      englishTranscription: "Yusuf",
+      bosnian: "Jusuf",
+      bosnianTranscription: "Jusuf",
+    },
+    aboutSura: {
+      bosnian:
+        "Allahovo obećanje da će dati vlast na Zemlji nakon jasnog iskušenja, što je ustvari učvršćivanje i obećanje Muhammedu, sallallahu 'alejhi ve sellem, i vjernicima.",
+    },
+    type: "Meccan",
+    orderInPublishing: 53,
+    numberOfWords: 1799,
+    numberOfLetters: 7166,
+    startJuz: 12,
+    endJuz: 13,
+    startPage: 235,
+    endPage: 248,
+    totalPages: 14,
+  },
+  {
+    index: 13,
+    numberOfAyas: 43,
+    startAyaIndex: 1707,
+    name: {
+      arabic: "الرعد",
+      english: "The Thunder",
+      englishTranscription: "Ar-Ra'd",
+      bosnian: "Grom",
+      bosnianTranscription: "Er-Ra'd",
+    },
+    aboutSura: {
+      bosnian:
+        "Objašnjenje suštine božanske snage i moći i vidova njene manifestacije, potvrda obećanja i prijetnje i objašnjenje Allahovih zakona u konstantnom mijenjanju i promjeni.",
+    },
+    type: "Medinan",
+    orderInPublishing: 96,
+    numberOfWords: 857,
+    numberOfLetters: 3506,
+    startJuz: 13,
+    endJuz: 13,
+    startPage: 249,
+    endPage: 255,
+    totalPages: 7,
+  },
+  {
+    index: 14,
+    numberOfAyas: 52,
+    startAyaIndex: 1750,
+    name: {
+      arabic: "ابراهيم",
+      english: "Abrahim",
+      englishTranscription: "Ibrahim",
+      bosnian: "Ibrahim",
+      bosnianTranscription: "Ibrahim",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura govori o ulozi Allahovih poslanika i njihovom nastojanju da ljude izvedu iz tmina višeboštva na svjetlo monoteizma, iako su im se njihovi narodi suprotstavljali, kako bi srce Muhammeda, sallallahu 'alejhi ve sellem, ostalo čvrsto i postojano, i kako bi dodatno zaprijetio nepravednicima.",
+    },
+    type: "Meccan",
+    orderInPublishing: 72,
+    numberOfWords: 834,
+    numberOfLetters: 3434,
+    startJuz: 13,
+    endJuz: 13,
+    startPage: 255,
+    endPage: 261,
+    totalPages: 7,
+  },
+  {
+    index: 15,
+    numberOfAyas: 99,
+    startAyaIndex: 1802,
+    name: {
+      arabic: "الحجر",
+      english: "The Rocky Tract",
+      englishTranscription: "Al-Hijr",
+      bosnian: "Hidžr",
+      bosnianTranscription: "El-Hidžr",
+    },
+    aboutSura: {
+      bosnian:
+        "Predočavajući prizore stradanja nekih ljudi, ova sura upozorava poricatelje na kaznu koja ih čeka, te donosi radosne vijesti onima koji vjeruju.",
+    },
+    type: "Meccan",
+    orderInPublishing: 54,
+    numberOfWords: 661,
+    numberOfLetters: 2760,
+    startJuz: 14,
+    endJuz: 14,
+    startPage: 262,
+    endPage: 267,
+    totalPages: 6,
+  },
+  {
+    index: 16,
+    numberOfAyas: 128,
+    startAyaIndex: 1901,
+    name: {
+      arabic: "النحل",
+      english: "The Bee",
+      englishTranscription: "An-Nahl",
+      bosnian: "Pčele",
+      bosnianTranscription: "En-Nahl",
+    },
+    aboutSura: {
+      bosnian:
+        "Podsjeća na blagodati, koje, opet, upućuju na Onog Koji ih je dao. One nas obavezuju na poslušnost Allahu i upozoravaju na opasnost njihovog negiranja.",
+    },
+    type: "Meccan",
+    orderInPublishing: 70,
+    numberOfWords: 1848,
+    numberOfLetters: 7707,
+    startJuz: 14,
+    endJuz: 14,
+    startPage: 267,
+    endPage: 281,
+    totalPages: 15,
+  },
+  {
+    index: 17,
+    numberOfAyas: 111,
+    startAyaIndex: 2029,
+    name: {
+      arabic: "الإسراء",
+      english: "The Night Journey",
+      englishTranscription: "Al-Isra",
+      bosnian: "Noćno putovanje",
+      bosnianTranscription: "El-Isra'",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura govori o savršenstvu poslanstva Muhammedova, sallallahu alejhi ve sellem. Ona sadrži radosne vijesti koje su se već dogodile i one koje će se dogoditi.",
+    },
+    type: "Meccan",
+    orderInPublishing: 50,
+    numberOfWords: 1562,
+    numberOfLetters: 6460,
+    startJuz: 15,
+    endJuz: 15,
+    startPage: 282,
+    endPage: 293,
+    totalPages: 12,
+  },
+  {
+    index: 18,
+    numberOfAyas: 110,
+    startAyaIndex: 2140,
+    name: {
+      arabic: "الكهف",
+      english: "The Cave",
+      englishTranscription: "Al-Kahf",
+      bosnian: "Pećina",
+      bosnianTranscription: "El-Kehf",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura sadrži uputstva kako se treba ponašati u smutnjama i navodi primjere s tim u vezi.",
+    },
+    type: "Meccan",
+    orderInPublishing: 69,
+    numberOfWords: 1587,
+    numberOfLetters: 6360,
+    startJuz: 15,
+    endJuz: 16,
+    startPage: 293,
+    endPage: 304,
+    totalPages: 12,
+  },
+  {
+    index: 19,
+    numberOfAyas: 98,
+    startAyaIndex: 2250,
+    name: {
+      arabic: "مريم",
+      english: "Mary",
+      englishTranscription: "Maryam",
+      bosnian: "Merjema",
+      bosnianTranscription: "Merjem",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura sadrži pokazatelje Allahove milosti prema iskrenim robovima, evlijama, te pokazatelje davanja blagodati, kao što je npr. blagodat djeteta. U njoj je Gospodar objasnio da je daleko od toga da ima dijete i pomagače. Time je pobio mišljenje onih koji to Gospodaru pripisuju.",
+    },
+    type: "Meccan",
+    orderInPublishing: 44,
+    numberOfWords: 975,
+    numberOfLetters: 3802,
+    startJuz: 16,
+    endJuz: 16,
+    startPage: 305,
+    endPage: 312,
+    totalPages: 8,
+  },
+  {
+    index: 20,
+    numberOfAyas: 135,
+    startAyaIndex: 2348,
+    name: {
+      arabic: "طه",
+      english: "Ta-Ha",
+      englishTranscription: "Taha",
+      bosnian: "Taha",
+      bosnianTranscription: "Taha",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova je sura podrška Vjerovjesniku, sallallahu alejhi ve sellem, da bude strpljiv u dostavljanju poslanice.",
+    },
+    type: "Meccan",
+    orderInPublishing: 45,
+    numberOfWords: 1357,
+    numberOfLetters: 5242,
+    startJuz: 16,
+    endJuz: 16,
+    startPage: 312,
+    endPage: 321,
+    totalPages: 10,
+  },
+  {
+    index: 21,
+    numberOfAyas: 112,
+    startAyaIndex: 2483,
+    name: {
+      arabic: "الأنبياء",
+      english: "The Prophets",
+      englishTranscription: "Al-Anbya",
+      bosnian: "Vjerovjesnici",
+      bosnianTranscription: "El-Enbija",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura govori o tome da su svi poslanici imali jedan cilj, a to je pozivanje u Allahovu jednoću.",
+    },
+    type: "Meccan",
+    orderInPublishing: 73,
+    numberOfWords: 1178,
+    numberOfLetters: 4890,
+    startJuz: 17,
+    endJuz: 17,
+    startPage: 322,
+    endPage: 331,
+    totalPages: 10,
+  },
+  {
+    index: 22,
+    numberOfAyas: 78,
+    startAyaIndex: 2595,
+    name: {
+      arabic: "الحج",
+      english: "The Pilgrimage",
+      englishTranscription: "Al-Haj",
+      bosnian: "Hadždž",
+      bosnianTranscription: "El-Hadždž",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura govori o Allahovoj veličini i tome da On sve može učiniti, iz čega slijedi da ga ljudi veličaju i Njemu se povinuju.",
+    },
+    type: "Medinan",
+    orderInPublishing: 103,
+    numberOfWords: 1283,
+    numberOfLetters: 5070,
+    startJuz: 17,
+    endJuz: 17,
+    startPage: 332,
+    endPage: 341,
+    totalPages: 10,
+  },
+  {
+    index: 23,
+    numberOfAyas: 118,
+    startAyaIndex: 2673,
+    name: {
+      arabic: "المؤمنون",
+      english: "The Believers",
+      englishTranscription: "Al-Mu'minun",
+      bosnian: "Vjernici",
+      bosnianTranscription: "El-Mu'minun",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova se sura bavi suštinom vjerovanja, njegovim plodovima i posljedicama njegova neprihvatanja, kao što se u njoj kude oni koji ne vjeruju. Zbog toga se na samom njenom početku nalazi obavijest da će vjernici uspjeti, iz čega proizlazi da će krivovjerni nastradati.",
+    },
+    type: "Meccan",
+    orderInPublishing: 74,
+    numberOfWords: 1056,
+    numberOfLetters: 4802,
+    startJuz: 18,
+    endJuz: 18,
+    startPage: 342,
+    endPage: 349,
+    totalPages: 8,
+  },
+  {
+    index: 24,
+    numberOfAyas: 64,
+    startAyaIndex: 2791,
+    name: {
+      arabic: "النور",
+      english: "The Light",
+      englishTranscription: "An-Nur",
+      bosnian: "Svjetlost",
+      bosnianTranscription: "En-Nur",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri naglašava se važnost kreposti, sakrivanja tuđih mahana, čistote muslimanskog društva i njegova čuvanja od svega što vodi u razvrat. Ona se bavi i spletkama koje kuju dvoličnjaci kako bi širili poroke.",
+    },
+    type: "Medinan",
+    orderInPublishing: 102,
+    numberOfWords: 1323,
+    numberOfLetters: 5680,
+    startJuz: 18,
+    endJuz: 18,
+    startPage: 350,
+    endPage: 359,
+    totalPages: 10,
+  },
+  {
+    index: 25,
+    numberOfAyas: 77,
+    startAyaIndex: 2855,
+    name: {
+      arabic: "الفرقان",
+      english: "The Criterian",
+      englishTranscription: "Al-Furqan",
+      bosnian: "Furkan",
+      bosnianTranscription: "El-Furkan",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri govori o tome da će, uprkos napadima višebožaca, Poslanik, sallallahu alejhi ve sellem, biti pobjednik.",
+    },
+    type: "Meccan",
+    orderInPublishing: 42,
+    numberOfWords: 900,
+    numberOfLetters: 3733,
+    startJuz: 18,
+    endJuz: 19,
+    startPage: 359,
+    endPage: 366,
+    totalPages: 8,
+  },
+  {
+    index: 26,
+    numberOfAyas: 227,
+    startAyaIndex: 2932,
+    name: {
+      arabic: "الشعراء",
+      english: "The Poets",
+      englishTranscription: "Ash-Shu'ara",
+      bosnian: "Pjesnici",
+      bosnianTranscription: "Eš-Šu'ara'",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri pobijaju oni koji su ustrajni u poricanju Poslanika, sallallahu alejhi ve sellem, i u napadanju na njega kao poslanika, kao što se u njoj stavlja na znanje da su oni beznačajni.",
+    },
+    type: "Meccan",
+    orderInPublishing: 47,
+    numberOfWords: 1324,
+    numberOfLetters: 5522,
+    startJuz: 19,
+    endJuz: 19,
+    startPage: 367,
+    endPage: 376,
+    totalPages: 10,
+  },
+  {
+    index: 27,
+    numberOfAyas: 93,
+    startAyaIndex: 3159,
+    name: {
+      arabic: "النمل",
+      english: "The Ant",
+      englishTranscription: "An-Naml",
+      bosnian: "Mravi",
+      bosnianTranscription: "En-Neml",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj suri govori se o najvećoj blagodati (Časnom Kur’anu) koja je ukazana Vjerovjesniku, sallallahu alejhi ve sellem, o neophodnosti zahvaljivanja na njoj i strpljivosti prilikom dostavljanja Objave ljudima.",
+    },
+    type: "Meccan",
+    orderInPublishing: 48,
+    numberOfWords: 1163,
+    numberOfLetters: 4799,
+    startJuz: 19,
+    endJuz: 20,
+    startPage: 377,
+    endPage: 385,
+    totalPages: 9,
+  },
+  {
+    index: 28,
+    numberOfAyas: 88,
+    startAyaIndex: 3252,
+    name: {
+      arabic: "القصص",
+      english: "The Stories",
+      englishTranscription: "Al-Qasas",
+      bosnian: "Kazivanje",
+      bosnianTranscription: "El-Kasas",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj suri govori se o tome šta je mjerodavna snaga, i to kroz isticanje Allahove moći da ukaže pomoć potlačenima, a uništi ohole silnike, što je ujedno i Božiji zakon u svemiru.",
+    },
+    type: "Meccan",
+    orderInPublishing: 49,
+    numberOfWords: 1442,
+    numberOfLetters: 5800,
+    startJuz: 20,
+    endJuz: 20,
+    startPage: 385,
+    endPage: 396,
+    totalPages: 12,
+  },
+  {
+    index: 29,
+    numberOfAyas: 69,
+    startAyaIndex: 3340,
+    name: {
+      arabic: "العنكبوت",
+      english: "The Spider",
+      englishTranscription: "Al-'Ankabut",
+      bosnian: "Pauk",
+      bosnianTranscription: "El-'Ankebut",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura govori o postojanosti u vjeri i trpeljivom podnošenju iskušenja tokom smutnji, te govori o rezultatima toga.",
+    },
+    type: "Meccan",
+    orderInPublishing: 85,
+    numberOfWords: 982,
+    numberOfLetters: 4195,
+    startJuz: 20,
+    endJuz: 21,
+    startPage: 396,
+    endPage: 404,
+    totalPages: 9,
+  },
+  {
+    index: 30,
+    numberOfAyas: 60,
+    startAyaIndex: 3409,
+    name: {
+      arabic: "الروم",
+      english: "The Romans",
+      englishTranscription: "Ar-Rum",
+      bosnian: "Bizantinci",
+      bosnianTranscription: "Er-Rum",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura govori o velikoj kosmičkoj istini, a to je da svime što postoji i svim događajima samo Allah upravlja, upravo kao što je rekao: “... samo Allahu pripada odluka i prije i poslije...”",
+    },
+    type: "Meccan",
+    orderInPublishing: 84,
+    numberOfWords: 821,
+    numberOfLetters: 3534,
+    startJuz: 21,
+    endJuz: 21,
+    startPage: 404,
+    endPage: 410,
+    totalPages: 7,
+  },
+  {
+    index: 31,
+    numberOfAyas: 34,
+    startAyaIndex: 3469,
+    name: {
+      arabic: "لقمان",
+      english: "Luqman",
+      englishTranscription: "Luqman",
+      bosnian: "Lukman",
+      bosnianTranscription: "Lukman",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri ističe mudrost, koja je u skladu sa šerijatom, te se Lukman navodi kao primjer te mudrosti.",
+    },
+    type: "Meccan",
+    orderInPublishing: 57,
+    numberOfWords: 554,
+    numberOfLetters: 2110,
+    startJuz: 21,
+    endJuz: 21,
+    startPage: 411,
+    endPage: 414,
+    totalPages: 4,
+  },
+  {
+    index: 32,
+    numberOfAyas: 30,
+    startAyaIndex: 3503,
+    name: {
+      arabic: "السجدة",
+      english: "The Prostration",
+      englishTranscription: "As-Sajdah",
+      bosnian: "Padanje ničice",
+      bosnianTranscription: "Es-Sedžde",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura sadrži neke znakove koji ukazuju na istinu. Jedan od tih znakova jest stvaranje čovjeka i stanja kroz koja prolazi.",
+    },
+    type: "Meccan",
+    orderInPublishing: 75,
+    numberOfWords: 376,
+    numberOfLetters: 1500,
+    startJuz: 21,
+    endJuz: 21,
+    startPage: 415,
+    endPage: 417,
+    totalPages: 3,
+  },
+  {
+    index: 33,
+    numberOfAyas: 73,
+    startAyaIndex: 3533,
+    name: {
+      arabic: "الأحزاب",
+      english: "The Combined Forces",
+      englishTranscription: "Al-Ahzab",
+      bosnian: "Saveznici",
+      bosnianTranscription: "El-Ahzab",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri govori o velikoj Allahovoj pažnji i čuvanju Poslanika islama i njegove porodice.",
+    },
+    type: "Medinan",
+    orderInPublishing: 90,
+    numberOfWords: 1307,
+    numberOfLetters: 5796,
+    startJuz: 21,
+    endJuz: 22,
+    startPage: 418,
+    endPage: 427,
+    totalPages: 10,
+  },
+  {
+    index: 34,
+    numberOfAyas: 54,
+    startAyaIndex: 3606,
+    name: {
+      arabic: "سبإ",
+      english: "Sheba",
+      englishTranscription: "Saba",
+      bosnian: "Saba",
+      bosnianTranscription: "Sebe'",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri govori o Allahovoj moći kroz promjenu prilika, kao i o prilikama kroz koje prolaze zahvalni i nezahvalni ljudi.",
+    },
+    type: "Meccan",
+    orderInPublishing: 58,
+    numberOfWords: 888,
+    numberOfLetters: 1512,
+    startJuz: 22,
+    endJuz: 22,
+    startPage: 428,
+    endPage: 434,
+    totalPages: 7,
+  },
+  {
+    index: 35,
+    numberOfAyas: 45,
+    startAyaIndex: 3660,
+    name: {
+      arabic: "فاطر",
+      english: "Originator",
+      englishTranscription: "Fatir",
+      bosnian: "Stvoritelj",
+      bosnianTranscription: "Fatir",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova se sura bavi predivnim Allahovim stvaranjem, koje ukazuje na Njegovu moć. U njoj se govori i o onom što potiče čovjeka na veličanje Uzvišenog Allaha, strahopoštovanje prema Njemu i iskreno vjerovanje u Njega. Ona podsjeća i na Njegove blagodati.",
+    },
+    type: "Meccan",
+    orderInPublishing: 43,
+    numberOfWords: 782,
+    numberOfLetters: 3130,
+    startJuz: 22,
+    endJuz: 22,
+    startPage: 434,
+    endPage: 440,
+    totalPages: 7,
+  },
+  {
+    index: 36,
+    numberOfAyas: 83,
+    startAyaIndex: 3705,
+    name: {
+      arabic: "يس",
+      english: "Ya Sin",
+      englishTranscription: "Ya-Sin",
+      bosnian: "Jasin",
+      bosnianTranscription: "Ja-sin",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova se sura bavi dokazivanjem oživljenja na Sudnjem danu i dokazivanjem poslanice.",
+    },
+    type: "Meccan",
+    orderInPublishing: 41,
+    numberOfWords: 734,
+    numberOfLetters: 3000,
+    startJuz: 22,
+    endJuz: 23,
+    startPage: 440,
+    endPage: 445,
+    totalPages: 6,
+  },
+  {
+    index: 37,
+    numberOfAyas: 182,
+    startAyaIndex: 3788,
+    name: {
+      arabic: "الصافات",
+      english: "Those who set the Ranks",
+      englishTranscription: "As-Saffat",
+      bosnian: "Redovi",
+      bosnianTranscription: "Es-Saffat",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri negira ono što mnogobošci pripisuju Allahu i pobija njihovo vjerovanje glede meleka i džina.",
+    },
+    type: "Meccan",
+    orderInPublishing: 56,
+    numberOfWords: 869,
+    numberOfLetters: 3823,
+    startJuz: 23,
+    endJuz: 23,
+    startPage: 446,
+    endPage: 452,
+    totalPages: 7,
+  },
+  {
+    index: 38,
+    numberOfAyas: 88,
+    startAyaIndex: 3970,
+    name: {
+      arabic: "ص",
+      english: "The Letter 'Saad'",
+      englishTranscription: "Sad",
+      bosnian: "Sad",
+      bosnianTranscription: "Sad",
+    },
+    aboutSura: {
+      bosnian: "Ova sura govori o branjenju istine i posljedicama toga.",
+    },
+    type: "Meccan",
+    orderInPublishing: 38,
+    numberOfWords: 739,
+    numberOfLetters: 3029,
+    startJuz: 23,
+    endJuz: 23,
+    startPage: 453,
+    endPage: 458,
+    totalPages: 6,
+  },
+  {
+    index: 39,
+    numberOfAyas: 75,
+    startAyaIndex: 4058,
+    name: {
+      arabic: "الزمر",
+      english: "The Troops",
+      englishTranscription: "Az-Zumar",
+      bosnian: "Skupovi",
+      bosnianTranscription: "Ez-Zumer",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura sadrži poziv u tevhid i iskreno obožavanje Allaha, te odbacivanje širka. Također govori i o ahiretskim posljedicama tog dvoga.",
+    },
+    type: "Meccan",
+    orderInPublishing: 59,
+    numberOfWords: 1181,
+    numberOfLetters: 4708,
+    startJuz: 23,
+    endJuz: 24,
+    startPage: 458,
+    endPage: 467,
+    totalPages: 10,
+  },
+  {
+    index: 40,
+    numberOfAyas: 85,
+    startAyaIndex: 4133,
+    name: {
+      arabic: "غافر",
+      english: "The Believer",
+      englishTranscription: "Al'Mumin",
+      bosnian: "Vjernik",
+      bosnianTranscription: "El-Mu'min",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova se sura bavi onima koji raspravljaju u Allahovim ajetima, njima se obraća i poziva ih da se vrate istini.",
+    },
+    type: "Meccan",
+    orderInPublishing: 60,
+    numberOfWords: 1230,
+    numberOfLetters: 4960,
+    startJuz: 24,
+    endJuz: 24,
+    startPage: 467,
+    endPage: 476,
+    totalPages: 10,
+  },
+  {
+    index: 41,
+    numberOfAyas: 54,
+    startAyaIndex: 4218,
+    name: {
+      arabic: "فصلت",
+      english: "Explained in Detail",
+      englishTranscription: "Fussilat",
+      bosnian: "Objašnjenje",
+      bosnianTranscription: "Fussilet",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura upućuje na to kako se treba odnositi prema onima koji okreću leđa Objavi, govori o tome da je časna Knjiga istina i bavi se posljedicama otuđivanja od Boga.",
+    },
+    type: "Meccan",
+    orderInPublishing: 61,
+    numberOfWords: 798,
+    numberOfLetters: 3350,
+    startJuz: 24,
+    endJuz: 25,
+    startPage: 477,
+    endPage: 482,
+    totalPages: 6,
+  },
+  {
+    index: 42,
+    numberOfAyas: 53,
+    startAyaIndex: 4272,
+    name: {
+      arabic: "الشورى",
+      english: "The Consultation",
+      englishTranscription: "Ash-Shuraa",
+      bosnian: "Dogovaranje",
+      bosnianTranscription: "Eš-Šura",
+    },
+    aboutSura: {
+      bosnian:
+        "Sura pojašnjava stvarnost i suštinu poslanice Muhammeda, sallallahu alejhi ve sellem, kao i to da je ona samo nastavak Objave koja je dolazila ranijim vjerovjesnicima.",
+    },
+    type: "Meccan",
+    orderInPublishing: 62,
+    numberOfWords: 864,
+    numberOfLetters: 3588,
+    startJuz: 25,
+    endJuz: 25,
+    startPage: 483,
+    endPage: 489,
+    totalPages: 7,
+  },
+  {
+    index: 43,
+    numberOfAyas: 89,
+    startAyaIndex: 4325,
+    name: {
+      arabic: "الزخرف",
+      english: "The Ornaments of Gold",
+      englishTranscription: "Az-Zukhruf",
+      bosnian: "Ukras",
+      bosnianTranscription: "Ez-Zuhruf",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjavanje ispravnih kur'anskih principa i pobijanje lažnih džahilijetskih predodžbi i zaključaka.",
+    },
+    type: "Meccan",
+    orderInPublishing: 63,
+    numberOfWords: 840,
+    numberOfLetters: 3400,
+    startJuz: 25,
+    endJuz: 25,
+    startPage: 489,
+    endPage: 495,
+    totalPages: 7,
+  },
+  {
+    index: 44,
+    numberOfAyas: 59,
+    startAyaIndex: 4414,
+    name: {
+      arabic: "الدخان",
+      english: "The Smoke",
+      englishTranscription: "Ad-Dukhan",
+      bosnian: "Dim",
+      bosnianTranscription: "Ed-Duhan",
+    },
+    aboutSura: {
+      bosnian:
+        "Upozorenje na dolazeću kaznu kroz zastrašivanje njenih poricatelja kaznom i na ovome i na onome svijetu.",
+    },
+    type: "Meccan",
+    orderInPublishing: 64,
+    numberOfWords: 350,
+    numberOfLetters: 1431,
+    startJuz: 25,
+    endJuz: 25,
+    startPage: 496,
+    endPage: 498,
+    totalPages: 3,
+  },
+  {
+    index: 45,
+    numberOfAyas: 37,
+    startAyaIndex: 4473,
+    name: {
+      arabic: "الجاثية",
+      english: "The Crouching",
+      englishTranscription: "Al-Jathiyah",
+      bosnian: "Oni koji kleče",
+      bosnianTranscription: "El-Džasije",
+    },
+    aboutSura: {
+      bosnian:
+        "Razmatranje problema onih oholnika koji slijede prohtjeve i odbijaju istinu kroz navođenje ajeta i znamenja i podsjećanje na onaj svijet.",
+    },
+    type: "Meccan",
+    orderInPublishing: 65,
+    numberOfWords: 492,
+    numberOfLetters: 2191,
+    startJuz: 25,
+    endJuz: 25,
+    startPage: 499,
+    endPage: 502,
+    totalPages: 4,
+  },
+  {
+    index: 46,
+    numberOfAyas: 35,
+    startAyaIndex: 4510,
+    name: {
+      arabic: "الأحقاف",
+      english: "The Wind-Curved Sandhills",
+      englishTranscription: "Al-Ahqaf",
+      bosnian: "Ahkaf",
+      bosnianTranscription: "El-Ahkaf",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri govori o uspostavljanju dokaza protiv poricatelja. U njoj se oni nekoliko puta opominju na kaznu. ",
+    },
+    type: "Meccan",
+    orderInPublishing: 66,
+    numberOfWords: 649,
+    numberOfLetters: 2598,
+    startJuz: 26,
+    endJuz: 26,
+    startPage: 502,
+    endPage: 506,
+    totalPages: 5,
+  },
+  {
+    index: 47,
+    numberOfAyas: 38,
+    startAyaIndex: 4545,
+    name: {
+      arabic: "محمد",
+      english: "Muhammad",
+      englishTranscription: "Muhammad",
+      bosnian: "Muhammed",
+      bosnianTranscription: "Muhammed",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura potiče vjernike na borbu i osnažuje ih, a slabi one koji ne vjeruju.",
+    },
+    type: "Medinan",
+    orderInPublishing: 95,
+    numberOfWords: 546,
+    numberOfLetters: 2349,
+    startJuz: 26,
+    endJuz: 26,
+    startPage: 507,
+    endPage: 510,
+    totalPages: 4,
+  },
+  {
+    index: 48,
+    numberOfAyas: 29,
+    startAyaIndex: 4583,
+    name: {
+      arabic: "الفتح",
+      english: "The Victory",
+      englishTranscription: "Al-Fath",
+      bosnian: "Pobjeda",
+      bosnianTranscription: "El-Feth",
+    },
+    aboutSura: {
+      bosnian:
+        "Ova sura sadrži Božije obećanje da će dati pobjedu i vlast Svom Poslaniku, sallallahu alejhi ve sellem, kao i iskrenim vjernicima koji se bore za vjeru.",
+    },
+    type: "Medinan",
+    orderInPublishing: 111,
+    numberOfWords: 564,
+    numberOfLetters: 2438,
+    startJuz: 26,
+    endJuz: 26,
+    startPage: 511,
+    endPage: 515,
+    totalPages: 5,
+  },
+  {
+    index: 49,
+    numberOfAyas: 18,
+    startAyaIndex: 4612,
+    name: {
+      arabic: "الحجرات",
+      english: "The Rooms",
+      englishTranscription: "Al-Hujurat",
+      bosnian: "Sobe",
+      bosnianTranscription: "El-Hudžurat",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj se suri govori o tome kako se muslimansko društvo treba ponašati i od kakvog se ponašanja treba sustezati.",
+    },
+    type: "Medinan",
+    orderInPublishing: 106,
+    numberOfWords: 357,
+    numberOfLetters: 1496,
+    startJuz: 26,
+    endJuz: 26,
+    startPage: 515,
+    endPage: 517,
+    totalPages: 3,
+  },
+  {
+    index: 50,
+    numberOfAyas: 45,
+    startAyaIndex: 4630,
+    name: {
+      arabic: "ق",
+      english: "The Letter 'Qaf'",
+      englishTranscription: "Qaf",
+      bosnian: "Kaf",
+      bosnianTranscription: "Kaf",
+    },
+    aboutSura: {
+      bosnian:
+        "Pomoću ove sure Gospodar budi nemarna srca i potiče ih da spoznaju suštinu sadržajnih dokaza o proživljenju na Ahiretu i poglanju računa.",
+    },
+    type: "Meccan",
+    orderInPublishing: 34,
+    numberOfWords: 377,
+    numberOfLetters: 1494,
+    startJuz: 26,
+    endJuz: 26,
+    startPage: 518,
+    endPage: 520,
+    totalPages: 3,
+  },
+  {
+    index: 51,
+    numberOfAyas: 60,
+    startAyaIndex: 4675,
+    name: {
+      arabic: "الذاريات",
+      english: "The Winnowing Winds",
+      englishTranscription: "Adh-Dhariyat",
+      bosnian: "Oni koji pušu",
+      bosnianTranscription: "Ez-Zarijat",
+    },
+    aboutSura: {
+      bosnian:
+        "Allah u ovoj suri stavlja ljudima na znanje da On daje nafaku, da bi kod Njega našli utočište i robovali Mu.",
+    },
+    type: "Meccan",
+    orderInPublishing: 67,
+    numberOfWords: 364,
+    numberOfLetters: 1287,
+    startJuz: 26,
+    endJuz: 27,
+    startPage: 520,
+    endPage: 523,
+    totalPages: 4,
+  },
+  {
+    index: 52,
+    numberOfAyas: 49,
+    startAyaIndex: 4735,
+    name: {
+      arabic: "الطور",
+      english: "The Mount",
+      englishTranscription: "At-Tur",
+      bosnian: "Gora",
+      bosnianTranscription: "Et-Tur",
+    },
+    aboutSura: {
+      bosnian:
+        "Otklanjanje sumnji i nejasnoća koje su imali poricatelji istine, kroz navođenje jasnih dokaza i argumenata, kako bi ih prihvatili i pokorili se.",
+    },
+    type: "Meccan",
+    orderInPublishing: 76,
+    numberOfWords: 316,
+    numberOfLetters: 1500,
+    startJuz: 27,
+    endJuz: 27,
+    startPage: 523,
+    endPage: 525,
+    totalPages: 3,
+  },
+  {
+    index: 53,
+    numberOfAyas: 62,
+    startAyaIndex: 4784,
+    name: {
+      arabic: "النجم",
+      english: "The Star",
+      englishTranscription: "An-Najm",
+      bosnian: "Zvijezda",
+      bosnianTranscription: "En-Nedžm",
+    },
+    aboutSura: {
+      bosnian:
+        "Ukazivanje na istinitost Objave i uzvišenost njenog izvora, kao vid potvrđivanja tevhida (jednoće Allaha) i negiranja širka.",
+    },
+    type: "Meccan",
+    orderInPublishing: 23,
+    numberOfWords: 364,
+    numberOfLetters: 1405,
+    startJuz: 27,
+    endJuz: 27,
+    startPage: 526,
+    endPage: 528,
+    totalPages: 3,
+  },
+  {
+    index: 54,
+    numberOfAyas: 55,
+    startAyaIndex: 4846,
+    name: {
+      arabic: "القمر",
+      english: "The Moon",
+      englishTranscription: "Al-Qamar",
+      bosnian: "Mjesec",
+      bosnianTranscription: "El-Kamer",
+    },
+    aboutSura: {
+      bosnian:
+        "Podsjećanje ajetima i upozorenjima, pojašnjavanje kakva konačnica čeka poricatelja, i upravo zbog toga ponavljaju se riječi u kojima Allah Uzvišeni kaže: 'A Mi smo Kur’an olakšali kao opomenu, pa ima li koga ko bi se prisjetio?'",
+    },
+    type: "Meccan",
+    orderInPublishing: 37,
+    numberOfWords: 346,
+    numberOfLetters: 1420,
+    startJuz: 27,
+    endJuz: 27,
+    startPage: 528,
+    endPage: 531,
+    totalPages: 4,
+  },
+  {
+    index: 55,
+    numberOfAyas: 78,
+    startAyaIndex: 4901,
+    name: {
+      arabic: "الرحمن",
+      english: "The Beneficent",
+      englishTranscription: "Ar-Rahman",
+      bosnian: "Milostivi",
+      bosnianTranscription: "Er-Rahman",
+    },
+    aboutSura: {
+      bosnian:
+        "Kazivanje o Allahovim vidljivim blagodatima, i tragovima Njegove milosti koja se ispoljava i na ovome i na onome svijetu, s ciljem da se vjernicima omili vjerovanje, i da se upozori na opasnost negiranja i poricanja.",
+    },
+    type: "Medinan",
+    orderInPublishing: 97,
+    numberOfWords: 356,
+    numberOfLetters: 1636,
+    startJuz: 27,
+    endJuz: 27,
+    startPage: 531,
+    endPage: 534,
+    totalPages: 4,
+  },
+  {
+    index: 56,
+    numberOfAyas: 96,
+    startAyaIndex: 4979,
+    name: {
+      arabic: "الواقعة",
+      english: "The Inevitable",
+      englishTranscription: "Al-Waqi'ah",
+      bosnian: "Događaj",
+      bosnianTranscription: "El-Vaki'a",
+    },
+    aboutSura: {
+      bosnian:
+        "Zastrašivanje Sudnjim danom, potvrđivanje njegova dešavanja i pojašnjavanje vrsta ljudi spram tog Dana, te kazne ili nagrade svake od tih kategorija.",
+    },
+    type: "Meccan",
+    orderInPublishing: 46,
+    numberOfWords: 383,
+    numberOfLetters: 1703,
+    startJuz: 27,
+    endJuz: 27,
+    startPage: 534,
+    endPage: 537,
+    totalPages: 4,
+  },
+  {
+    index: 57,
+    numberOfAyas: 29,
+    startAyaIndex: 5075,
+    name: {
+      arabic: "الحديد",
+      english: "The Iron",
+      englishTranscription: "Al-Hadid",
+      bosnian: "Gvožđe",
+      bosnianTranscription: "El-Hadid",
+    },
+    aboutSura: {
+      bosnian:
+        "Sticanje snage, imanske i materijalne, koja je potrebna za pozivanje Allahu i borbu na Njegovom putu, te čišćenje duše od svih negativnosti i svega onoga što čovjeka odvraća od dobra, što se vidi kroz učestalo spominjanje udjeljivanja imetka i vjerovanja.",
+    },
+    type: "Medinan",
+    orderInPublishing: 94,
+    numberOfWords: 579,
+    numberOfLetters: 2476,
+    startJuz: 27,
+    endJuz: 27,
+    startPage: 537,
+    endPage: 541,
+    totalPages: 5,
+  },
+  {
+    index: 58,
+    numberOfAyas: 22,
+    startAyaIndex: 5104,
+    name: {
+      arabic: "المجادلة",
+      english: "The Pleading Woman",
+      englishTranscription: "Al-Mujadila",
+      bosnian: "Rasprava",
+      bosnianTranscription: "El-Mudžadele",
+    },
+    aboutSura: {
+      bosnian:
+        "Ukazivanje na poptuno i sveobuhvatno Allahovo znanje, kako bi ljudi bili svjesni da ih On nadgleda i kako bi se upozorili svi oni koji Mu se suprotstavljaju.",
+    },
+    type: "Medinan",
+    orderInPublishing: 105,
+    numberOfWords: 479,
+    numberOfLetters: 1792,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 542,
+    endPage: 545,
+    totalPages: 4,
+  },
+  {
+    index: 59,
+    numberOfAyas: 24,
+    startAyaIndex: 5126,
+    name: {
+      arabic: "الحشر",
+      english: "The Exile",
+      englishTranscription: "Al-Hashr",
+      bosnian: "Progonstvo",
+      bosnianTranscription: "El-Hašr",
+    },
+    aboutSura: {
+      bosnian:
+        "Ispoljavanje Allahove moći i snage koja se ogleda u ponižavanju i slabljenju Jevreja i licemjera, ukazivanje na njihovu razjedinjenost nasuprot muslimanskog jedinstva.",
+    },
+    type: "Medinan",
+    orderInPublishing: 101,
+    numberOfWords: 451,
+    numberOfLetters: 1913,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 545,
+    endPage: 548,
+    totalPages: 4,
+  },
+  {
+    index: 60,
+    numberOfAyas: 13,
+    startAyaIndex: 5150,
+    name: {
+      arabic: "الممتحنة",
+      english: "She that is to be examined",
+      englishTranscription: "Al-Mumtahanah",
+      bosnian: "Provjerena",
+      bosnianTranscription: "El-Mumtehine",
+    },
+    aboutSura: {
+      bosnian:
+        "Čišćenje vjerničkih srca od prijateljevanja i ljubavi prema drugim vjerama mimo Allahove.",
+    },
+    type: "Medinan",
+    orderInPublishing: 91,
+    numberOfWords: 356,
+    numberOfLetters: 1510,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 549,
+    endPage: 551,
+    totalPages: 3,
+  },
+  {
+    index: 61,
+    numberOfAyas: 14,
+    startAyaIndex: 5163,
+    name: {
+      arabic: "الصف",
+      english: "The Ranks",
+      englishTranscription: "As-Saf",
+      bosnian: "Bojni red",
+      bosnianTranscription: "Es-Saff",
+    },
+    aboutSura: {
+      bosnian:
+        "Stimulisanje vjernika na pomaganje Allahove vjere i borbu na Njegovom putu.",
+    },
+    type: "Medinan",
+    orderInPublishing: 109,
+    numberOfWords: 230,
+    numberOfLetters: 900,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 551,
+    endPage: 552,
+    totalPages: 2,
+  },
+  {
+    index: 62,
+    numberOfAyas: 11,
+    startAyaIndex: 5177,
+    name: {
+      arabic: "الجمعة",
+      english: "The Congregation, Friday",
+      englishTranscription: "Al-Jumu'ah",
+      bosnian: "Petak",
+      bosnianTranscription: "El-Džumu'a",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjavanje Allahove blagodati ovom ummetu kojeg je posebno odlikovao uputom i slanjem Poslanika, sallallahu alejhi ve sellem, nakon što je bio u zabludi, zaduživanje pokornošću njemu i upozorenje na opasnost poistovjećivanja sa Jevrejima.",
+    },
+    type: "Medinan",
+    orderInPublishing: 110,
+    numberOfWords: 181,
+    numberOfLetters: 720,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 553,
+    endPage: 554,
+    totalPages: 2,
+  },
+  {
+    index: 63,
+    numberOfAyas: 11,
+    startAyaIndex: 5188,
+    name: {
+      arabic: "المنافقون",
+      english: "The Hypocrites",
+      englishTranscription: "Al-Munafiqun",
+      bosnian: "Licemjeri",
+      bosnianTranscription: "El-Munafikun",
+    },
+    aboutSura: {
+      bosnian:
+        "Otkrivanje svojstava licemjera i pojašnjavanje njihovog stava naspram islama i muslimana, te upozorenje na opasnost poistovjećivanja s njima.",
+    },
+    type: "Medinan",
+    orderInPublishing: 104,
+    numberOfWords: 185,
+    numberOfLetters: 776,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 554,
+    endPage: 555,
+    totalPages: 2,
+  },
+  {
+    index: 64,
+    numberOfAyas: 18,
+    startAyaIndex: 5199,
+    name: {
+      arabic: "التغابن",
+      english: "The Mutual Disillusion",
+      englishTranscription: "At-Taghabun",
+      bosnian: "Samoobmana",
+      bosnianTranscription: "Et-Tegabun",
+    },
+    aboutSura: {
+      bosnian:
+        "Spominjanje samoobmane nevjernika i njihove propasti na Sudnjem danu, kao vid upozorenja na nevjerstvo i nevjernike.",
+    },
+    type: "Medinan",
+    orderInPublishing: 108,
+    numberOfWords: 246,
+    numberOfLetters: 1070,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 556,
+    endPage: 557,
+    totalPages: 2,
+  },
+  {
+    index: 65,
+    numberOfAyas: 12,
+    startAyaIndex: 5217,
+    name: {
+      arabic: "الطلاق",
+      english: "The Divorce",
+      englishTranscription: "At-Talaq",
+      bosnian: "Razvod braka",
+      bosnianTranscription: "Et-Talak",
+    },
+    aboutSura: {
+      bosnian:
+        "Davanje važnosti pitanjima razvoda braka i njegovim odredbama, te pojašnjenje konačnice onih koji se Allaha boje i onih koji Njegove granice prelaze.",
+    },
+    type: "Medinan",
+    orderInPublishing: 99,
+    numberOfWords: 293,
+    numberOfLetters: 1060,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 558,
+    endPage: 559,
+    totalPages: 2,
+  },
+  {
+    index: 66,
+    numberOfAyas: 12,
+    startAyaIndex: 5229,
+    name: {
+      arabic: "التحريم",
+      english: "The Prohibtiion",
+      englishTranscription: "At-Tahrim",
+      bosnian: "Zabrana",
+      bosnianTranscription: "Et-Tahrim",
+    },
+    aboutSura: {
+      bosnian:
+        "Odgajanje vjerovjesničke kuće, kako bi porodica i društvo imali uzor u njoj.",
+    },
+    type: "Medinan",
+    orderInPublishing: 107,
+    numberOfWords: 258,
+    numberOfLetters: 1160,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 560,
+    endPage: 561,
+    totalPages: 2,
+  },
+  {
+    index: 67,
+    numberOfAyas: 30,
+    startAyaIndex: 5241,
+    name: {
+      arabic: "الملك",
+      english: "The Sovereignty",
+      englishTranscription: "Al-Mulk",
+      bosnian: "Vlast",
+      bosnianTranscription: "El-Mulk",
+    },
+    aboutSura: {
+      bosnian:
+        "Ukazivanje na savršenost Allahove vlasti moći, s ciljem podsticanja na strah od Njega i čuvanja od Njegove kazne.",
+    },
+    type: "Meccan",
+    orderInPublishing: 77,
+    numberOfWords: 337,
+    numberOfLetters: 1300,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 562,
+    endPage: 564,
+    totalPages: 3,
+  },
+  {
+    index: 68,
+    numberOfAyas: 52,
+    startAyaIndex: 5271,
+    name: {
+      arabic: "القلم",
+      english: "The Pen",
+      englishTranscription: "Al-Qalam",
+      bosnian: "Kalem",
+      bosnianTranscription: "El-Kalem",
+    },
+    aboutSura: {
+      bosnian:
+        "Ukazivanje na Poslanikovo, sallallahu alejhi ve sellem, znanje i njegovo lijepo ponašanje, kao vid podrške nakon što su ga mušrici napali.",
+    },
+    type: "Meccan",
+    orderInPublishing: 2,
+    numberOfWords: 305,
+    numberOfLetters: 1256,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 564,
+    endPage: 566,
+    totalPages: 3,
+  },
+  {
+    index: 69,
+    numberOfAyas: 52,
+    startAyaIndex: 5323,
+    name: {
+      arabic: "الحاقة",
+      english: "The Reality",
+      englishTranscription: "Al-Haqqah",
+      bosnian: "Čas neizbježni",
+      bosnianTranscription: "El-Hakka",
+    },
+    aboutSura: {
+      bosnian:
+        "Potvrđivanje tačnosti dolaska Sudnjeg dana, kao vid potvrde istinitosti Kur'ana, kako bi se vjernici radovali, a negatori istine opomenuli kaznom i propašću.",
+    },
+    type: "Meccan",
+    orderInPublishing: 78,
+    numberOfWords: 264,
+    numberOfLetters: 1084,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 566,
+    endPage: 568,
+    totalPages: 3,
+  },
+  {
+    index: 70,
+    numberOfAyas: 44,
+    startAyaIndex: 5375,
+    name: {
+      arabic: "المعارج",
+      english: "The Ascending Stairways",
+      englishTranscription: "Al-Ma'arij",
+      bosnian: "Stepeni",
+      bosnianTranscription: "El-Me'aridž",
+    },
+    aboutSura: {
+      bosnian:
+        "Potvrda da će se dogoditi kazna nad nevjernicima i da će iskreni vjernici na Sudnjem danu imati blagodati i uživati.",
+    },
+    type: "Meccan",
+    orderInPublishing: 79,
+    numberOfWords: 221,
+    numberOfLetters: 1061,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 568,
+    endPage: 570,
+    totalPages: 3,
+  },
+  {
+    index: 71,
+    numberOfAyas: 28,
+    startAyaIndex: 5419,
+    name: {
+      arabic: "نوح",
+      english: "Noah",
+      englishTranscription: "Nuh",
+      bosnian: "Nuh",
+      bosnianTranscription: "Nuh",
+    },
+    aboutSura: {
+      bosnian:
+        "Strpljivost islamskih misionara i njihova borba i trud na polju širenja pozitivnih vrijednosti, što se zaključuje iz kazivanja o Nuhu, kako bi se vjernici učvrstili, a poricatelji opomenuli.",
+    },
+    type: "Meccan",
+    orderInPublishing: 71,
+    numberOfWords: 231,
+    numberOfLetters: 929,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 570,
+    endPage: 571,
+    totalPages: 2,
+  },
+  {
+    index: 72,
+    numberOfAyas: 28,
+    startAyaIndex: 5447,
+    name: {
+      arabic: "الجن",
+      english: "The Jinn",
+      englishTranscription: "Al-Jinn",
+      bosnian: "Džini",
+      bosnianTranscription: "El-Džinn",
+    },
+    aboutSura: {
+      bosnian:
+        "Potvrda objavljivanja Kur'ana, kao i toga da je on od Allaha, kroz kazivanje o vjerovanju džinna u njega, te poništavanje tvrdnji mušrika vezanih za njih.",
+    },
+    type: "Meccan",
+    orderInPublishing: 40,
+    numberOfWords: 290,
+    numberOfLetters: 870,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 572,
+    endPage: 573,
+    totalPages: 2,
+  },
+  {
+    index: 73,
+    numberOfAyas: 20,
+    startAyaIndex: 5475,
+    name: {
+      arabic: "المزمل",
+      english: "The Enshrouded One",
+      englishTranscription: "Al-Muzzammil",
+      bosnian: "Umotani",
+      bosnianTranscription: "El-Muzzemmil",
+    },
+    aboutSura: {
+      bosnian:
+        "Spominjanje duševne ospkrbe za islamske misionare (daije) potrebne za suočavanje sa životnim nevoljama, kao vid učvršćivanja Poslanika, sallallahu alejhi ve sellem, i opomene onima koji ga poriču.",
+    },
+    type: "Meccan",
+    orderInPublishing: 3,
+    numberOfWords: 204,
+    numberOfLetters: 838,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 574,
+    endPage: 575,
+    totalPages: 2,
+  },
+  {
+    index: 74,
+    numberOfAyas: 56,
+    startAyaIndex: 5495,
+    name: {
+      arabic: "المدثر",
+      english: "The Cloaked One",
+      englishTranscription: "Al-Muddaththir",
+      bosnian: "Pokriveni",
+      bosnianTranscription: "El-Muddessir",
+    },
+    aboutSura: {
+      bosnian:
+        "Naredba da se bude aktivan i da se aktivira radi pozivanja u islam i opomena onim koji je poriču.",
+    },
+    type: "Meccan",
+    orderInPublishing: 4,
+    numberOfWords: 260,
+    numberOfLetters: 1010,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 575,
+    endPage: 577,
+    totalPages: 3,
+  },
+  {
+    index: 75,
+    numberOfAyas: 40,
+    startAyaIndex: 5551,
+    name: {
+      arabic: "القيامة",
+      english: "The Resurrection",
+      englishTranscription: "Al-Qiyamah",
+      bosnian: "Smak svijeta",
+      bosnianTranscription: "El-Kijame",
+    },
+    aboutSura: {
+      bosnian: "Ispoljavanje Allahove moći da stvori i oživi sva stvorenja.",
+    },
+    type: "Meccan",
+    orderInPublishing: 31,
+    numberOfWords: 168,
+    numberOfLetters: 652,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 577,
+    endPage: 578,
+    totalPages: 2,
+  },
+  {
+    index: 76,
+    numberOfAyas: 31,
+    startAyaIndex: 5591,
+    name: {
+      arabic: "الانسان",
+      english: "The Man",
+      englishTranscription: "Al-Insan",
+      bosnian: "Čovjek",
+      bosnianTranscription: "El-Insan",
+    },
+    aboutSura: {
+      bosnian:
+        "Podsjećanje čovjeka na njegovu osnovu, mudrost stvaranja i krajnji povratak i mjesto, te ispoljavanje džennetskih blagodati, kako bi se vjernici učvrstili, a nevjernici pozvali.",
+    },
+    type: "Medinan",
+    orderInPublishing: 98,
+    numberOfWords: 247,
+    numberOfLetters: 1054,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 578,
+    endPage: 580,
+    totalPages: 3,
+  },
+  {
+    index: 77,
+    numberOfAyas: 50,
+    startAyaIndex: 5622,
+    name: {
+      arabic: "المرسلات",
+      english: "The Emissaries",
+      englishTranscription: "Al-Mursalat",
+      bosnian: "Poslani",
+      bosnianTranscription: "El-Murselat",
+    },
+    aboutSura: {
+      bosnian:
+        "Potvrđivanje istinitosti Sudnjeg dana kroz iznošenje dokaza onima koji poriču, a nakon toga kroz prijetnje i upozorenja.",
+    },
+    type: "Meccan",
+    orderInPublishing: 33,
+    numberOfWords: 185,
+    numberOfLetters: 816,
+    startJuz: 29,
+    endJuz: 29,
+    startPage: 580,
+    endPage: 581,
+    totalPages: 2,
+  },
+  {
+    index: 78,
+    numberOfAyas: 40,
+    startAyaIndex: 5672,
+    name: {
+      arabic: "النبإ",
+      english: "The Tidings",
+      englishTranscription: "An-Naba",
+      bosnian: "Vijest",
+      bosnianTranscription: "En-Nebe'",
+    },
+    aboutSura: {
+      bosnian:
+        "Potvrđivanje istinitosti proživljenje nakon smrti, kao i nagrade i kazne, kroz jasne dokaze i argumente.",
+    },
+    type: "Meccan",
+    orderInPublishing: 80,
+    numberOfWords: 178,
+    numberOfLetters: 770,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 582,
+    endPage: 583,
+    totalPages: 2,
+  },
+  {
+    index: 79,
+    numberOfAyas: 46,
+    startAyaIndex: 5712,
+    name: {
+      arabic: "النازعات",
+      english: "Those who drag forth",
+      englishTranscription: "An-Nazi'at",
+      bosnian: "Oni koji čupaju",
+      bosnianTranscription: "En-Nazi'at",
+    },
+    aboutSura: {
+      bosnian:
+        "Zastrašivanje i pokretanje srca koja poriču proživljenje, nagradu i kaznu, kroz spominjanje događaja poput smrti, proživljenja, okupljanja, i Sudnjeg dana.",
+    },
+    type: "Meccan",
+    orderInPublishing: 81,
+    numberOfWords: 183,
+    numberOfLetters: 753,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 583,
+    endPage: 584,
+    totalPages: 2,
+  },
+  {
+    index: 80,
+    numberOfAyas: 42,
+    startAyaIndex: 5758,
+    name: {
+      arabic: "عبس",
+      english: "He Frowned",
+      englishTranscription: "'Abasa",
+      bosnian: "Namrštio se",
+      bosnianTranscription: "'Abese'",
+    },
+    aboutSura: {
+      bosnian:
+        "Suština kur'anskog poziva, počast onome ko se njime koristi i poniženje onome ko se od njega okrene.",
+    },
+    type: "Meccan",
+    orderInPublishing: 24,
+    numberOfWords: 137,
+    numberOfLetters: 533,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 585,
+    endPage: 585,
+    totalPages: 1,
+  },
+  {
+    index: 81,
+    numberOfAyas: 29,
+    startAyaIndex: 5800,
+    name: {
+      arabic: "التكوير",
+      english: "The Overthrowing",
+      englishTranscription: "At-Takwir",
+      bosnian: "Prestanak sjaja",
+      bosnianTranscription: "Et-Tekvir",
+    },
+    aboutSura: {
+      bosnian:
+        "Slikoviti opis Smaka svijeta, kada će se kosmos raspasti i labav postati, nakon što je bio precizno uređen.",
+    },
+    type: "Meccan",
+    orderInPublishing: 7,
+    numberOfWords: 108,
+    numberOfLetters: 533,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 586,
+    endPage: 586,
+    totalPages: 1,
+  },
+  {
+    index: 82,
+    numberOfAyas: 19,
+    startAyaIndex: 5829,
+    name: {
+      arabic: "الإنفطار",
+      english: "The Cleaving",
+      englishTranscription: "Al-Infitar",
+      bosnian: "Rascjepljenje",
+      bosnianTranscription: "El-Infitar",
+    },
+    aboutSura: {
+      bosnian:
+        "Prikaz Sudnjeg dana kada će precizno uređena stvorenja postati po svuda raspršena, kada će njihovo stanje i kretanje biti promijenjeno.",
+    },
+    type: "Meccan",
+    orderInPublishing: 82,
+    numberOfWords: 85,
+    numberOfLetters: 327,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 587,
+    endPage: 587,
+    totalPages: 1,
+  },
+  {
+    index: 83,
+    numberOfAyas: 36,
+    startAyaIndex: 5848,
+    name: {
+      arabic: "المطففين",
+      english: "The Defrauding",
+      englishTranscription: "Al-Mutaffifin",
+      bosnian: "Oni koji pri mjerenju zakidaju",
+      bosnianTranscription: "El-Mutaffifin",
+    },
+    aboutSura: {
+      bosnian:
+        "Sura se usmjerava na pojašnjenje stanja ljudi po pitanju mjerenja, ahiretskih položaja, prijeteći onima koji na vagi zakidaju i koji poriču i smirujući osjećaje vjernika i slabih.",
+    },
+    type: "Meccan",
+    orderInPublishing: 86,
+    numberOfWords: 173,
+    numberOfLetters: 830,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 587,
+    endPage: 589,
+    totalPages: 3,
+  },
+  {
+    index: 84,
+    numberOfAyas: 25,
+    startAyaIndex: 5884,
+    name: {
+      arabic: "الإنشقاق",
+      english: "The Sundering",
+      englishTranscription: "Al-Inshiqaq",
+      bosnian: "Cijepanje",
+      bosnianTranscription: "El-Inšikak",
+    },
+    aboutSura: {
+      bosnian:
+        "Prikaz dešavanja Smaka svijeta, kroz potčinjenost kosmosa naredbama Gospodara, iz čega proističe obaveznost pokoravanja i pogubnost odbijanja pokornosti.",
+    },
+    type: "Meccan",
+    orderInPublishing: 83,
+    numberOfWords: 112,
+    numberOfLetters: 430,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 589,
+    endPage: 589,
+    totalPages: 1,
+  },
+  {
+    index: 85,
+    numberOfAyas: 22,
+    startAyaIndex: 5909,
+    name: {
+      arabic: "البروج",
+      english: "The Mansions of the Stars",
+      englishTranscription: "Al-Buruj",
+      bosnian: "Sazviježđa",
+      bosnianTranscription: "El-Burudž",
+    },
+    aboutSura: {
+      bosnian:
+        "Ispoljavanje Allahove snage i Njegove sveobuhvatne moći, kao i Njegove prijetnje strašnom kaznom onima koji vjernicima ne žele dobro i uznemiravaju ih.",
+    },
+    type: "Meccan",
+    orderInPublishing: 27,
+    numberOfWords: 113,
+    numberOfLetters: 458,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 590,
+    endPage: 590,
+    totalPages: 1,
+  },
+  {
+    index: 86,
+    numberOfAyas: 17,
+    startAyaIndex: 5931,
+    name: {
+      arabic: "الطارق",
+      english: "The Nightcommer",
+      englishTranscription: "At-Tariq",
+      bosnian: "Danica",
+      bosnianTranscription: "Et-Tarik",
+    },
+    aboutSura: {
+      bosnian:
+        "Iskazivanje činjenice da Allahu ništa ne promiče, kao i ukazivanje na Njegovu apsolutnu moć.",
+    },
+    type: "Meccan",
+    orderInPublishing: 36,
+    numberOfWords: 65,
+    numberOfLetters: 245,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 591,
+    endPage: 591,
+    totalPages: 1,
+  },
+  {
+    index: 87,
+    numberOfAyas: 19,
+    startAyaIndex: 5948,
+    name: {
+      arabic: "الأعلى",
+      english: "The Most High",
+      englishTranscription: "Al-A'la",
+      bosnian: "Svevišnji",
+      bosnianTranscription: "El-E'la",
+    },
+    aboutSura: {
+      bosnian:
+        "Podsjećanje ljudi da blagodati Uzvišenog Allaha prema njima, podsticanje da se vežu za onaj svijet i da se riješe ovisnosti o dunjaluku.",
+    },
+    type: "Meccan",
+    orderInPublishing: 8,
+    numberOfWords: 76,
+    numberOfLetters: 270,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 591,
+    endPage: 592,
+    totalPages: 2,
+  },
+  {
+    index: 88,
+    numberOfAyas: 26,
+    startAyaIndex: 5967,
+    name: {
+      arabic: "الغاشية",
+      english: "The Overwhelming",
+      englishTranscription: "Al-Ghashiyah",
+      bosnian: "Teška nevolja",
+      bosnianTranscription: "El-Gašije",
+    },
+    aboutSura: {
+      bosnian:
+        "Podsjećanje ljudi na božansku moć, kako u davanju blagodati, tako i u kažnjavanju, kroz prisutne dokaze i znakove, kako bi se ljudska srca ispunila željom za nagradom, i strahom od kazne.",
+    },
+    type: "Meccan",
+    orderInPublishing: 68,
+    numberOfWords: 96,
+    numberOfLetters: 330,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 592,
+    endPage: 592,
+    totalPages: 1,
+  },
+  {
+    index: 89,
+    numberOfAyas: 30,
+    startAyaIndex: 5993,
+    name: {
+      arabic: "الفجر",
+      english: "The Dawn",
+      englishTranscription: "Al-Fajr",
+      bosnian: "Zora",
+      bosnianTranscription: "El-Fedžr",
+    },
+    aboutSura: {
+      bosnian:
+        "Prikaz stanja u kojima se ogleda Allahova moć u kosmosu kao i u samom čovjeku, te pojašnjenje konačnice onih koji su obmanuti.",
+    },
+    type: "Meccan",
+    orderInPublishing: 10,
+    numberOfWords: 143,
+    numberOfLetters: 577,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 593,
+    endPage: 594,
+    totalPages: 2,
+  },
+  {
+    index: 90,
+    numberOfAyas: 20,
+    startAyaIndex: 6023,
+    name: {
+      arabic: "البلد",
+      english: "The City",
+      englishTranscription: "Al-Balad",
+      bosnian: "Grad",
+      bosnianTranscription: "El-Beled",
+    },
+    aboutSura: {
+      bosnian:
+        "Spominjanje stanja čovjeka na oba svijeta, bilo da je vezano za nevjerovanje i kažnjavanje, ili za vjerovanje i postizanje velikih položaja i milosti.",
+    },
+    type: "Meccan",
+    orderInPublishing: 35,
+    numberOfWords: 86,
+    numberOfLetters: 330,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 594,
+    endPage: 594,
+    totalPages: 1,
+  },
+  {
+    index: 91,
+    numberOfAyas: 15,
+    startAyaIndex: 6043,
+    name: {
+      arabic: "الشمس",
+      english: "The Sun",
+      englishTranscription: "Ash-Shams",
+      bosnian: "Sunce",
+      bosnianTranscription: "Eš-Šems",
+    },
+    aboutSura: {
+      bosnian:
+        "Sura usmjerava pažnju ka Allahovovim znamenjima u kosmosu, a i u nama samima, te na stanja ljudskih duša, kako bi se one očistile i od grijeha udaljile.",
+    },
+    type: "Meccan",
+    orderInPublishing: 26,
+    numberOfWords: 58,
+    numberOfLetters: 247,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 595,
+    endPage: 595,
+    totalPages: 1,
+  },
+  {
+    index: 92,
+    numberOfAyas: 21,
+    startAyaIndex: 6058,
+    name: {
+      arabic: "الليل",
+      english: "The Night",
+      englishTranscription: "Al-Layl",
+      bosnian: "Noć",
+      bosnianTranscription: "El-Lejl",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašenje razlike između znamenja, ljudi i njihovih postupaka, kako bi se ispoljila razlika između vjernika i nevjernika.",
+    },
+    type: "Meccan",
+    orderInPublishing: 9,
+    numberOfWords: 75,
+    numberOfLetters: 302,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 595,
+    endPage: 596,
+    totalPages: 2,
+  },
+  {
+    index: 93,
+    numberOfAyas: 11,
+    startAyaIndex: 6079,
+    name: {
+      arabic: "الضحى",
+      english: "The Morning Hours",
+      englishTranscription: "Ad-Duhaa",
+      bosnian: "Jutro",
+      bosnianTranscription: "Ed-Duha",
+    },
+    aboutSura: {
+      bosnian:
+        "U ovoj suri spominje se pažnja Allahova prema Poslaniku, sallallahu alejhi ve sellem, Njegova blagodat prema njemu u vidu Objave, te trajnost te blagodati, s ciljem da se udovolji njegovim osjećajima i da se vjernici podsjete na zahvalnost.",
+    },
+    type: "Meccan",
+    orderInPublishing: 11,
+    numberOfWords: 44,
+    numberOfLetters: 192,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 596,
+    endPage: 596,
+    totalPages: 1,
+  },
+  {
+    index: 94,
+    numberOfAyas: 8,
+    startAyaIndex: 6090,
+    name: {
+      arabic: "الشرح",
+      english: "The Relief",
+      englishTranscription: "Ash-Sharh",
+      bosnian: "Širokogrudnost",
+      bosnianTranscription: "El-Inširah",
+    },
+    aboutSura: {
+      bosnian:
+        "Spominjanje potpune Allahove blagodati prema Njegovom Poslaniku, sallallahu alejhi ve sellem, koja se ogleda u uklanjanju brige i poteškoće od njega, kao i onoga što do toga dovodi.",
+    },
+    type: "Meccan",
+    orderInPublishing: 12,
+    numberOfWords: 31,
+    numberOfLetters: 103,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 596,
+    endPage: 596,
+    totalPages: 1,
+  },
+  {
+    index: 95,
+    numberOfAyas: 8,
+    startAyaIndex: 6098,
+    name: {
+      arabic: "التين",
+      english: "The Fig",
+      englishTranscription: "At-Tin",
+      bosnian: "Smokva",
+      bosnianTranscription: "Et-Tin",
+    },
+    aboutSura: {
+      bosnian:
+        "Spominjanje vrijednosti čovjeka koji je u vjeri, kao i njegove bezvrijednosti kada tu vjeru izgubi. Zbog toga se Allah kune mjestima spuštanja Objave.",
+    },
+    type: "Meccan",
+    orderInPublishing: 28,
+    numberOfWords: 38,
+    numberOfLetters: 150,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 597,
+    endPage: 597,
+    totalPages: 1,
+  },
+  {
+    index: 96,
+    numberOfAyas: 19,
+    startAyaIndex: 6106,
+    name: {
+      arabic: "العلق",
+      english: "The Clot",
+      englishTranscription: "Al-'Alaq",
+      bosnian: "Ugrušak",
+      bosnianTranscription: "El-'Alek",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjenje da čovjek biva potpun putem znanja i Objave koja ga vezuju s njegovim Gospodarom i čini ga Njemu poniznim, a da, suprotstavljajući se tome, umanjuje svoju vrijednost.",
+    },
+    type: "Meccan",
+    orderInPublishing: 1,
+    numberOfWords: 76,
+    numberOfLetters: 280,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 597,
+    endPage: 597,
+    totalPages: 1,
+  },
+  {
+    index: 97,
+    numberOfAyas: 5,
+    startAyaIndex: 6125,
+    name: {
+      arabic: "القدر",
+      english: "The Power",
+      englishTranscription: "Al-Qadr",
+      bosnian: "Noć Kadr",
+      bosnianTranscription: "El-Kadr",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjavanje vrijednosti noći Kadr, njene veličanstvenosti kao i onoga što je u njoj spušteno.",
+    },
+    type: "Meccan",
+    orderInPublishing: 25,
+    numberOfWords: 34,
+    numberOfLetters: 112,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 598,
+    endPage: 598,
+    totalPages: 1,
+  },
+  {
+    index: 98,
+    numberOfAyas: 8,
+    startAyaIndex: 6130,
+    name: {
+      arabic: "البينة",
+      english: "The Clear Proof",
+      englishTranscription: "Al-Bayyinah",
+      bosnian: "Dokaz jasni",
+      bosnianTranscription: "El-Bejjine",
+    },
+    aboutSura: {
+      bosnian:
+        "Ukazivanje na položaj poslanice Muhammeda, sallallahu alejhi ve sellem, na njenu jasnoću i potpunost.",
+    },
+    type: "Medinan",
+    orderInPublishing: 100,
+    numberOfWords: 98,
+    numberOfLetters: 392,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 598,
+    endPage: 599,
+    totalPages: 2,
+  },
+  {
+    index: 99,
+    numberOfAyas: 8,
+    startAyaIndex: 6138,
+    name: {
+      arabic: "الزلزلة",
+      english: "The Earthquake",
+      englishTranscription: "Az-Zalzalah",
+      bosnian: "Zemljotres",
+      bosnianTranscription: "Ez-Zelzele",
+    },
+    aboutSura: {
+      bosnian:
+        "Buđenje nemarnih srca s ciljem da povjeruju u obračun i precizno svođenje računa na Sudnjem danu.",
+    },
+    type: "Medinan",
+    orderInPublishing: 93,
+    numberOfWords: 40,
+    numberOfLetters: 149,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 599,
+    endPage: 599,
+    totalPages: 1,
+  },
+  {
+    index: 100,
+    numberOfAyas: 11,
+    startAyaIndex: 6146,
+    name: {
+      arabic: "العاديات",
+      english: "The Courser",
+      englishTranscription: "Al-'Adiyat",
+      bosnian: "Oni koji jure",
+      bosnianTranscription: "El-'Adijat",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjenje osobina čovjeka u pogledu njegove brige za dunjalukom, kao vid podsjećanja na povratak i način da popravi svoje stanje i pravac kojim ide.",
+    },
+    type: "Meccan",
+    orderInPublishing: 14,
+    numberOfWords: 44,
+    numberOfLetters: 163,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 599,
+    endPage: 600,
+    totalPages: 2,
+  },
+  {
+    index: 101,
+    numberOfAyas: 11,
+    startAyaIndex: 6157,
+    name: {
+      arabic: "القارعة",
+      english: "The Calamity",
+      englishTranscription: "Al-Qari'ah",
+      bosnian: "Smak svijeta",
+      bosnianTranscription: "El-Kari'a",
+    },
+    aboutSura: {
+      bosnian: "Buđenje srca kroz prikaz strahota Smaka svijeta.",
+    },
+    type: "Meccan",
+    orderInPublishing: 30,
+    numberOfWords: 40,
+    numberOfLetters: 150,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 600,
+    endPage: 600,
+    totalPages: 1,
+  },
+  {
+    index: 102,
+    numberOfAyas: 8,
+    startAyaIndex: 6168,
+    name: {
+      arabic: "التكاثر",
+      english: "The Rivalry in world increase",
+      englishTranscription: "At-Takathur",
+      bosnian: "Nadmetanje",
+      bosnianTranscription: "Et-Tekasur",
+    },
+    aboutSura: {
+      bosnian: "Podsjećanje na smrt i obračun onih koji su zauzeti dunjalukom.",
+    },
+    type: "Meccan",
+    orderInPublishing: 16,
+    numberOfWords: 32,
+    numberOfLetters: 120,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 600,
+    endPage: 600,
+    totalPages: 1,
+  },
+  {
+    index: 103,
+    numberOfAyas: 3,
+    startAyaIndex: 6176,
+    name: {
+      arabic: "العصر",
+      english: "The Declining Day",
+      englishTranscription: "Al-'Asr",
+      bosnian: "Vrijeme",
+      bosnianTranscription: "El-'Asr'",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjenje šta je to stvarna dobit i propast u životu i napomena na važnost vremena kojeg čovjek provodi.",
+    },
+    type: "Meccan",
+    orderInPublishing: 13,
+    numberOfWords: 18,
+    numberOfLetters: 68,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 601,
+    endPage: 601,
+    totalPages: 1,
+  },
+  {
+    index: 104,
+    numberOfAyas: 9,
+    startAyaIndex: 6179,
+    name: {
+      arabic: "الهمزة",
+      english: "The Traducer",
+      englishTranscription: "Al-Humazah",
+      bosnian: "Klevetnik",
+      bosnianTranscription: "El-Humeze",
+    },
+    aboutSura: {
+      bosnian:
+        "Prijetnja onima koji se uzdižu i ismijavaju sa vjerom i vjernicima.",
+    },
+    type: "Meccan",
+    orderInPublishing: 32,
+    numberOfWords: 37,
+    numberOfLetters: 130,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 601,
+    endPage: 601,
+    totalPages: 1,
+  },
+  {
+    index: 105,
+    numberOfAyas: 5,
+    startAyaIndex: 6188,
+    name: {
+      arabic: "الفيل",
+      english: "The Elephant",
+      englishTranscription: "Al-Fil",
+      bosnian: "Slon",
+      bosnianTranscription: "El-Fil",
+    },
+    aboutSura: {
+      bosnian:
+        "Iskazivanje Allahove moći da štiti svoj sveti hram, kao vid opomene i blagodati.",
+    },
+    type: "Meccan",
+    orderInPublishing: 19,
+    numberOfWords: 27,
+    numberOfLetters: 96,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 601,
+    endPage: 601,
+    totalPages: 1,
+  },
+  {
+    index: 106,
+    numberOfAyas: 4,
+    startAyaIndex: 6193,
+    name: {
+      arabic: "قريش",
+      english: "Quraysh",
+      englishTranscription: "Quraysh",
+      bosnian: "Kurejšije",
+      bosnianTranscription: "Kurejš",
+    },
+    aboutSura: {
+      bosnian: "Blagodat darovana Kurejšijama i obaveze naspram toga.",
+    },
+    type: "Meccan",
+    orderInPublishing: 29,
+    numberOfWords: 21,
+    numberOfLetters: 93,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 602,
+    endPage: 602,
+    totalPages: 1,
+  },
+  {
+    index: 107,
+    numberOfAyas: 7,
+    startAyaIndex: 6197,
+    name: {
+      arabic: "الماعون",
+      english: "The Small Kindesses",
+      englishTranscription: "Al-Ma'un",
+      bosnian: "Davanje u naruč",
+      bosnianTranscription: "El-Ma'un",
+    },
+    aboutSura: {
+      bosnian:
+        "Pojašnjenje ponašanja onih koji poriču Sudnji dan, kao vid upozorenja vjernicima i sramoćenja nevjernika.",
+    },
+    type: "Meccan",
+    orderInPublishing: 17,
+    numberOfWords: 29,
+    numberOfLetters: 125,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 602,
+    endPage: 602,
+    totalPages: 1,
+  },
+  {
+    index: 108,
+    numberOfAyas: 3,
+    startAyaIndex: 6204,
+    name: {
+      arabic: "الكوثر",
+      english: "The Abundance",
+      englishTranscription: "Al-Kawthar",
+      bosnian: "Mnogo dobro",
+      bosnianTranscription: "El-Kevser",
+    },
+    aboutSura: {
+      bosnian:
+        "Blagodat Allaha prema Poslaniku, sallallahu alejhi ve sellem, i prekidanje svih puteva onima koji ga mrze.",
+    },
+    type: "Meccan",
+    orderInPublishing: 15,
+    numberOfWords: 14,
+    numberOfLetters: 42,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 602,
+    endPage: 602,
+    totalPages: 1,
+  },
+  {
+    index: 109,
+    numberOfAyas: 6,
+    startAyaIndex: 6207,
+    name: {
+      arabic: "الكافرون",
+      english: "The Disbelievers",
+      englishTranscription: "Al-Kafirun",
+      bosnian: "Nevjernici",
+      bosnianTranscription: "El-Kafirun",
+    },
+    aboutSura: {
+      bosnian:
+        "Potvrđivanje tevhida i vjerovanja da se samo Allahu čini ibadet, negiranje širka i potpuno odvajanja islama od širka.",
+    },
+    type: "Meccan",
+    orderInPublishing: 18,
+    numberOfWords: 31,
+    numberOfLetters: 94,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 603,
+    endPage: 603,
+    totalPages: 1,
+  },
+  {
+    index: 110,
+    numberOfAyas: 3,
+    startAyaIndex: 6213,
+    name: {
+      arabic: "النصر",
+      english: "The Divine Support",
+      englishTranscription: "An-Nasr",
+      bosnian: "Pomoć",
+      bosnianTranscription: "En-Nasr",
+    },
+    aboutSura: {
+      bosnian:
+        "Ukazivanje na krajnji rezultat islama, koji će biti pomoć i pobjeda, kao i na to šta je propisano kada se desi pobjeda islama. Također, sura ukazuje i na blizinu odlaska Poslanika, sallallahu alejhi ve sellem, s ovoga svijeta.",
+    },
+    type: "Medinan",
+    orderInPublishing: 114,
+    numberOfWords: 23,
+    numberOfLetters: 77,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 603,
+    endPage: 603,
+    totalPages: 1,
+  },
+  {
+    index: 111,
+    numberOfAyas: 5,
+    startAyaIndex: 6216,
+    name: {
+      arabic: "المسد",
+      english: "The Palm Fiber",
+      englishTranscription: "Al-Masad",
+      bosnian: "Plamen",
+      bosnianTranscription: "El-Leheb",
+    },
+    aboutSura: {
+      bosnian:
+        "Porijeklo i položaj ne koriste, ako je čovjek nevjernik u Allaha.",
+    },
+    type: "Meccan",
+    orderInPublishing: 6,
+    numberOfWords: 27,
+    numberOfLetters: 77,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 603,
+    endPage: 603,
+    totalPages: 1,
+  },
+  {
+    index: 112,
+    numberOfAyas: 4,
+    startAyaIndex: 6221,
+    name: {
+      arabic: "الإخلاص",
+      english: "The Sincerity",
+      englishTranscription: "Al-Ikhlas",
+      bosnian: "Iskrenost",
+      bosnianTranscription: "El-Ihlas",
+    },
+    aboutSura: {
+      bosnian:
+        "Potvrđivanje da je Allah jedinstven u svome savršenstvu, božanstvenosti i čistoći od mahana",
+    },
+    type: "Meccan",
+    orderInPublishing: 22,
+    numberOfWords: 19,
+    numberOfLetters: 47,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 604,
+    endPage: 604,
+    totalPages: 1,
+  },
+  {
+    index: 113,
+    numberOfAyas: 5,
+    startAyaIndex: 6225,
+    name: {
+      arabic: "الفلق",
+      english: "The Daybreak",
+      englishTranscription: "Al-Falaq",
+      bosnian: "Svitanje",
+      bosnianTranscription: "El-Felek",
+    },
+    aboutSura: {
+      bosnian: "Traženje zaštite kod Allaha od vidljivog zla.",
+    },
+    type: "Meccan",
+    orderInPublishing: 20,
+    numberOfWords: 27,
+    numberOfLetters: 74,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 604,
+    endPage: 604,
+    totalPages: 1,
+  },
+  {
+    index: 114,
+    numberOfAyas: 6,
+    startAyaIndex: 6230,
+    name: {
+      arabic: "الناس",
+      english: "The Mankind",
+      englishTranscription: "An-Nas",
+      bosnian: "Ljudi",
+      bosnianTranscription: "En-Nas",
+    },
+    aboutSura: {
+      bosnian:
+        "Zaštita kod Allaha od zla šejtana i njegovih došaptavanja i od skrivenog zla.",
+    },
+    type: "Meccan",
+    orderInPublishing: 21,
+    numberOfWords: 24,
+    numberOfLetters: 79,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 604,
+    endPage: 604,
+    totalPages: 1,
+  },
 ];
 
 const juzList = [
-	{
-		"id":1,
-		"juzNumber":1,
-		"surahs":[
-			{
-				"id":1,
-				"startAyah":1,
-				"endAyah":7,
-				"name":{
-					"arabic":"الفاتحة",
-					"english":"The Opener",
-					"englishTranscription":"Al-Fatihah",
-					"bosnian":"Pristup",
-					"bosnianTranscription":"El-Fatiha"
-				}
-			},
-			{
-				"id":2,
-				"startAyah":1,
-				"endAyah":141,
-				"name":{
-					"arabic":"الفاتحة",
-					"english":"The Opener",
-					"englishTranscription":"Al-Fatihah",
-					"bosnian":"Pristup",
-					"bosnianTranscription":"El-Fatiha"
-				}
-			}
-		],
-		"firstAyahId":1,
-		"lastAyahId":148,
-		"numberOfAyahs":148,
-		"startPage":1,
-		"endPage":21
-	},
-	{
-		"id":2,
-		"juzNumber":2,
-		"surahs":[
-			{
-				"id":2,
-				"startAyah":142,
-				"endAyah":252,
-				"name":{
-					"arabic":"البقرة",
-					"english":"The Cow",
-					"englishTranscription":"Al-Baqarah",
-					"bosnian":"Krava",
-					"bosnianTranscription":"El-Bekare"
-				}
-			}
-		],
-		"firstAyahId":149,
-		"lastAyahId":259,
-		"numberOfAyahs":111,
-		"startPage":22,
-		"endPage":41
-	},
-	{
-		"id":3,
-		"juzNumber":3,
-		"surahs":[
-			{
-				"id":2,
-				"startAyah":253,
-				"endAyah":286,
-				"name":{
-					"arabic":"آل عمران",
-					"english":"Family of Imran",
-					"englishTranscription":"Ali 'Imran",
-					"bosnian":"Imranova porodica",
-					"bosnianTranscription":"Ali-'Imran"
-				}
-			},
-			{
-				"id":3,
-				"startAyah":1,
-				"endAyah":92,
-				"name":{
-					"arabic":"آل عمران",
-					"english":"Family of Imran",
-					"englishTranscription":"Ali 'Imran",
-					"bosnian":"Imranova porodica",
-					"bosnianTranscription":"Ali-'Imran"
-				}
-			}
-		],
-		"firstAyahId":260,
-		"lastAyahId":385,
-		"numberOfAyahs":126,
-		"startPage":42,
-		"endPage":61
-	},
-	{
-		"id":4,
-		"juzNumber":4,
-		"surahs":[
-			{
-				"id":3,
-				"startAyah":93,
-				"endAyah":200,
-				"name":{
-					"arabic":"النساء",
-					"english":"The Women",
-					"englishTranscription":"An-Nisa",
-					"bosnian":"Žene",
-					"bosnianTranscription":"En-Nisa"
-				}
-			},
-			{
-				"id":4,
-				"startAyah":1,
-				"endAyah":23,
-				"name":{
-					"arabic":"النساء",
-					"english":"The Women",
-					"englishTranscription":"An-Nisa",
-					"bosnian":"Žene",
-					"bosnianTranscription":"En-Nisa"
-				}
-			}
-		],
-		"firstAyahId":386,
-		"lastAyahId":516,
-		"numberOfAyahs":131,
-		"startPage":62,
-		"endPage":81
-	},
-	{
-		"id":5,
-		"juzNumber":5,
-		"surahs":[
-			{
-				"id":4,
-				"startAyah":24,
-				"endAyah":147,
-				"name":{
-					"arabic":"المائدة",
-					"english":"The Table Spread",
-					"englishTranscription":"Al-Ma'idah",
-					"bosnian":"Trpeza",
-					"bosnianTranscription":"El-Maide"
-				}
-			}
-		],
-		"firstAyahId":517,
-		"lastAyahId":640,
-		"numberOfAyahs":124,
-		"startPage":82,
-		"endPage":101
-	},
-	{
-		"id":6,
-		"juzNumber":6,
-		"surahs":[
-			{
-				"id":4,
-				"startAyah":148,
-				"endAyah":176,
-				"name":{
-					"arabic":"الأنعام",
-					"english":"The Cattle",
-					"englishTranscription":"Al-An'am",
-					"bosnian":"Stoka",
-					"bosnianTranscription":"El-En'am"
-				}
-			},
-			{
-				"id":5,
-				"startAyah":1,
-				"endAyah":81,
-				"name":{
-					"arabic":"الأنعام",
-					"english":"The Cattle",
-					"englishTranscription":"Al-An'am",
-					"bosnian":"Stoka",
-					"bosnianTranscription":"El-En'am"
-				}
-			}
-		],
-		"firstAyahId":641,
-		"lastAyahId":750,
-		"numberOfAyahs":110,
-		"startPage":102,
-		"endPage":120
-	},
-	{
-		"id":7,
-		"juzNumber":7,
-		"surahs":[
-			{
-				"id":5,
-				"startAyah":82,
-				"endAyah":120,
-				"name":{
-					"arabic":"الأعراف",
-					"english":"The Heights",
-					"englishTranscription":"Al-A'raf",
-					"bosnian":"Bedemi",
-					"bosnianTranscription":"El-A'raf"
-				}
-			},
-			{
-				"id":6,
-				"startAyah":1,
-				"endAyah":110,
-				"name":{
-					"arabic":"الأعراف",
-					"english":"The Heights",
-					"englishTranscription":"Al-A'raf",
-					"bosnian":"Bedemi",
-					"bosnianTranscription":"El-A'raf"
-				}
-			}
-		],
-		"firstAyahId":751,
-		"lastAyahId":899,
-		"numberOfAyahs":149,
-		"startPage":121,
-		"endPage":141
-	},
-	{
-		"id":8,
-		"juzNumber":8,
-		"surahs":[
-			{
-				"id":6,
-				"startAyah":111,
-				"endAyah":165,
-				"name":{
-					"arabic":"الأنفال",
-					"english":"The Spoils of War",
-					"englishTranscription":"Al-Anfal",
-					"bosnian":"Plijen",
-					"bosnianTranscription":"El-Enfal"
-				}
-			},
-			{
-				"id":7,
-				"startAyah":1,
-				"endAyah":87,
-				"name":{
-					"arabic":"الأنفال",
-					"english":"The Spoils of War",
-					"englishTranscription":"Al-Anfal",
-					"bosnian":"Plijen",
-					"bosnianTranscription":"El-Enfal"
-				}
-			}
-		],
-		"firstAyahId":900,
-		"lastAyahId":1041,
-		"numberOfAyahs":142,
-		"startPage":142,
-		"endPage":161
-	},
-	{
-		"id":9,
-		"juzNumber":9,
-		"surahs":[
-			{
-				"id":7,
-				"startAyah":88,
-				"endAyah":206,
-				"name":{
-					"arabic":"التوبة",
-					"english":"The Repentance",
-					"englishTranscription":"At-Tawbah",
-					"bosnian":"Pokajanje",
-					"bosnianTranscription":"Et-Tevbe"
-				}
-			},
-			{
-				"id":8,
-				"startAyah":1,
-				"endAyah":40,
-				"name":{
-					"arabic":"التوبة",
-					"english":"The Repentance",
-					"englishTranscription":"At-Tawbah",
-					"bosnian":"Pokajanje",
-					"bosnianTranscription":"Et-Tevbe"
-				}
-			}
-		],
-		"firstAyahId":1042,
-		"lastAyahId":1200,
-		"numberOfAyahs":159,
-		"startPage":162,
-		"endPage":181
-	},
-	{
-		"id":10,
-		"juzNumber":10,
-		"surahs":[
-			{
-				"id":8,
-				"startAyah":41,
-				"endAyah":75,
-				"name":{
-					"arabic":"يونس",
-					"english":"Jonah",
-					"englishTranscription":"Yunus",
-					"bosnian":"Junus",
-					"bosnianTranscription":"Junus"
-				}
-			},
-			{
-				"id":9,
-				"startAyah":1,
-				"endAyah":92,
-				"name":{
-					"arabic":"يونس",
-					"english":"Jonah",
-					"englishTranscription":"Yunus",
-					"bosnian":"Junus",
-					"bosnianTranscription":"Junus"
-				}
-			}
-		],
-		"firstAyahId":1201,
-		"lastAyahId":1327,
-		"numberOfAyahs":127,
-		"startPage":182,
-		"endPage":200
-	},
-	{
-		"id":11,
-		"juzNumber":11,
-		"surahs":[
-			{
-				"id":9,
-				"startAyah":93,
-				"endAyah":129,
-				"name":{
-					"arabic":"هود",
-					"english":"Hud",
-					"englishTranscription":"Hud",
-					"bosnian":"Hud",
-					"bosnianTranscription":"Hud"
-				}
-			},
-			{
-				"id":10,
-				"startAyah":1,
-				"endAyah":109,
-				"name":{
-					"arabic":"هود",
-					"english":"Hud",
-					"englishTranscription":"Hud",
-					"bosnian":"Hud",
-					"bosnianTranscription":"Hud"
-				}
-			},
-			{
-				"id":11,
-				"startAyah":1,
-				"endAyah":5,
-				"name":{
-					"arabic":"هود",
-					"english":"Hud",
-					"englishTranscription":"Hud",
-					"bosnian":"Hud",
-					"bosnianTranscription":"Hud"
-				}
-			}
-		],
-		"firstAyahId":1328,
-		"lastAyahId":1478,
-		"numberOfAyahs":151,
-		"startPage":201,
-		"endPage":221
-	},
-	{
-		"id":12,
-		"juzNumber":12,
-		"surahs":[
-			{
-				"id":11,
-				"startAyah":6,
-				"endAyah":123,
-				"name":{
-					"arabic":"يوسف",
-					"english":"Joseph",
-					"englishTranscription":"Yusuf",
-					"bosnian":"Jusuf",
-					"bosnianTranscription":"Jusuf"
-				}
-			},
-			{
-				"id":12,
-				"startAyah":1,
-				"endAyah":52,
-				"name":{
-					"arabic":"يوسف",
-					"english":"Joseph",
-					"englishTranscription":"Yusuf",
-					"bosnian":"Jusuf",
-					"bosnianTranscription":"Jusuf"
-				}
-			}
-		],
-		"firstAyahId":1479,
-		"lastAyahId":1648,
-		"numberOfAyahs":170,
-		"startPage":222,
-		"endPage":241
-	},
-	{
-		"id":13,
-		"juzNumber":13,
-		"surahs":[
-			{
-				"id":12,
-				"startAyah":53,
-				"endAyah":111,
-				"name":{
-					"arabic":"الرعد",
-					"english":"The Thunder",
-					"englishTranscription":"Ar-Ra'd",
-					"bosnian":"Grom",
-					"bosnianTranscription":"Er-Ra'd"
-				}
-			},
-			{
-				"id":13,
-				"startAyah":1,
-				"endAyah":43,
-				"name":{
-					"arabic":"الرعد",
-					"english":"The Thunder",
-					"englishTranscription":"Ar-Ra'd",
-					"bosnian":"Grom",
-					"bosnianTranscription":"Er-Ra'd"
-				}
-			},
-			{
-				"id":14,
-				"startAyah":1,
-				"endAyah":52,
-				"name":{
-					"arabic":"الرعد",
-					"english":"The Thunder",
-					"englishTranscription":"Ar-Ra'd",
-					"bosnian":"Grom",
-					"bosnianTranscription":"Er-Ra'd"
-				}
-			}
-		],
-		"firstAyahId":1649,
-		"lastAyahId":1802,
-		"numberOfAyahs":154,
-		"startPage":242,
-		"endPage":261
-	},
-	{
-		"id":14,
-		"juzNumber":14,
-		"surahs":[
-			{
-				"id":15,
-				"startAyah":1,
-				"endAyah":99,
-				"name":{
-					"arabic":"ابراهيم",
-					"english":"Abrahim",
-					"englishTranscription":"Ibrahim",
-					"bosnian":"Ibrahim",
-					"bosnianTranscription":"Ibrahim"
-				}
-			},
-			{
-				"id":16,
-				"startAyah":1,
-				"endAyah":128,
-				"name":{
-					"arabic":"ابراهيم",
-					"english":"Abrahim",
-					"englishTranscription":"Ibrahim",
-					"bosnian":"Ibrahim",
-					"bosnianTranscription":"Ibrahim"
-				}
-			}
-		],
-		"firstAyahId":1803,
-		"lastAyahId":2029,
-		"numberOfAyahs":227,
-		"startPage":262,
-		"endPage":281
-	},
-	{
-		"id":15,
-		"juzNumber":15,
-		"surahs":[
-			{
-				"id":17,
-				"startAyah":1,
-				"endAyah":111,
-				"name":{
-					"arabic":"الحجر",
-					"english":"The Rocky Tract",
-					"englishTranscription":"Al-Hijr",
-					"bosnian":"Hidžr",
-					"bosnianTranscription":"El-Hidžr"
-				}
-			},
-			{
-				"id":18,
-				"startAyah":1,
-				"endAyah":74,
-				"name":{
-					"arabic":"الحجر",
-					"english":"The Rocky Tract",
-					"englishTranscription":"Al-Hijr",
-					"bosnian":"Hidžr",
-					"bosnianTranscription":"El-Hidžr"
-				}
-			}
-		],
-		"firstAyahId":2030,
-		"lastAyahId":2214,
-		"numberOfAyahs":185,
-		"startPage":282,
-		"endPage":301
-	},
-	{
-		"id":16,
-		"juzNumber":16,
-		"surahs":[
-			{
-				"id":18,
-				"startAyah":75,
-				"endAyah":110,
-				"name":{
-					"arabic":"النحل",
-					"english":"The Bee",
-					"englishTranscription":"An-Nahl",
-					"bosnian":"Pčele",
-					"bosnianTranscription":"En-Nahl"
-				}
-			},
-			{
-				"id":19,
-				"startAyah":1,
-				"endAyah":98,
-				"name":{
-					"arabic":"النحل",
-					"english":"The Bee",
-					"englishTranscription":"An-Nahl",
-					"bosnian":"Pčele",
-					"bosnianTranscription":"En-Nahl"
-				}
-			},
-			{
-				"id":20,
-				"startAyah":1,
-				"endAyah":135,
-				"name":{
-					"arabic":"النحل",
-					"english":"The Bee",
-					"englishTranscription":"An-Nahl",
-					"bosnian":"Pčele",
-					"bosnianTranscription":"En-Nahl"
-				}
-			}
-		],
-		"firstAyahId":2215,
-		"lastAyahId":2483,
-		"numberOfAyahs":269,
-		"startPage":302,
-		"endPage":321
-	},
-	{
-		"id":17,
-		"juzNumber":17,
-		"surahs":[
-			{
-				"id":21,
-				"startAyah":1,
-				"endAyah":112,
-				"name":{
-					"arabic":"الإسراء",
-					"english":"The Night Journey",
-					"englishTranscription":"Al-Isra",
-					"bosnian":"Noćno putovanje",
-					"bosnianTranscription":"El-Isra'"
-				}
-			},
-			{
-				"id":22,
-				"startAyah":1,
-				"endAyah":78,
-				"name":{
-					"arabic":"الإسراء",
-					"english":"The Night Journey",
-					"englishTranscription":"Al-Isra",
-					"bosnian":"Noćno putovanje",
-					"bosnianTranscription":"El-Isra'"
-				}
-			}
-		],
-		"firstAyahId":2484,
-		"lastAyahId":2673,
-		"numberOfAyahs":190,
-		"startPage":322,
-		"endPage":341
-	},
-	{
-		"id":18,
-		"juzNumber":18,
-		"surahs":[
-			{
-				"id":23,
-				"startAyah":1,
-				"endAyah":118,
-				"name":{
-					"arabic":"الكهف",
-					"english":"The Cave",
-					"englishTranscription":"Al-Kahf",
-					"bosnian":"Pećina",
-					"bosnianTranscription":"El-Kehf"
-				}
-			},
-			{
-				"id":24,
-				"startAyah":1,
-				"endAyah":64,
-				"name":{
-					"arabic":"الكهف",
-					"english":"The Cave",
-					"englishTranscription":"Al-Kahf",
-					"bosnian":"Pećina",
-					"bosnianTranscription":"El-Kehf"
-				}
-			},
-			{
-				"id":25,
-				"startAyah":1,
-				"endAyah":20,
-				"name":{
-					"arabic":"الكهف",
-					"english":"The Cave",
-					"englishTranscription":"Al-Kahf",
-					"bosnian":"Pećina",
-					"bosnianTranscription":"El-Kehf"
-				}
-			}
-		],
-		"firstAyahId":2674,
-		"lastAyahId":2875,
-		"numberOfAyahs":202,
-		"startPage":342,
-		"endPage":361
-	},
-	{
-		"id":19,
-		"juzNumber":19,
-		"surahs":[
-			{
-				"id":25,
-				"startAyah":21,
-				"endAyah":77,
-				"name":{
-					"arabic":"مريم",
-					"english":"Mary",
-					"englishTranscription":"Maryam",
-					"bosnian":"Merjema",
-					"bosnianTranscription":"Merjem"
-				}
-			},
-			{
-				"id":26,
-				"startAyah":1,
-				"endAyah":227,
-				"name":{
-					"arabic":"مريم",
-					"english":"Mary",
-					"englishTranscription":"Maryam",
-					"bosnian":"Merjema",
-					"bosnianTranscription":"Merjem"
-				}
-			},
-			{
-				"id":27,
-				"startAyah":1,
-				"endAyah":55,
-				"name":{
-					"arabic":"مريم",
-					"english":"Mary",
-					"englishTranscription":"Maryam",
-					"bosnian":"Merjema",
-					"bosnianTranscription":"Merjem"
-				}
-			}
-		],
-		"firstAyahId":2876,
-		"lastAyahId":3214,
-		"numberOfAyahs":339,
-		"startPage":362,
-		"endPage":381
-	},
-	{
-		"id":20,
-		"juzNumber":20,
-		"surahs":[
-			{
-				"id":27,
-				"startAyah":56,
-				"endAyah":93,
-				"name":{
-					"arabic":"طه",
-					"english":"Ta-Ha",
-					"englishTranscription":"Taha",
-					"bosnian":"Taha",
-					"bosnianTranscription":"Taha"
-				}
-			},
-			{
-				"id":28,
-				"startAyah":1,
-				"endAyah":88,
-				"name":{
-					"arabic":"طه",
-					"english":"Ta-Ha",
-					"englishTranscription":"Taha",
-					"bosnian":"Taha",
-					"bosnianTranscription":"Taha"
-				}
-			},
-			{
-				"id":29,
-				"startAyah":1,
-				"endAyah":45,
-				"name":{
-					"arabic":"طه",
-					"english":"Ta-Ha",
-					"englishTranscription":"Taha",
-					"bosnian":"Taha",
-					"bosnianTranscription":"Taha"
-				}
-			}
-		],
-		"firstAyahId":3215,
-		"lastAyahId":3385,
-		"numberOfAyahs":171,
-		"startPage":382,
-		"endPage":401
-	},
-	{
-		"id":21,
-		"juzNumber":21,
-		"surahs":[
-			{
-				"id":29,
-				"startAyah":46,
-				"endAyah":69,
-				"name":{
-					"arabic":"الأنبياء",
-					"english":"The Prophets",
-					"englishTranscription":"Al-Anbya",
-					"bosnian":"Vjerovjesnici",
-					"bosnianTranscription":"El-Enbija"
-				}
-			},
-			{
-				"id":30,
-				"startAyah":1,
-				"endAyah":60,
-				"name":{
-					"arabic":"الأنبياء",
-					"english":"The Prophets",
-					"englishTranscription":"Al-Anbya",
-					"bosnian":"Vjerovjesnici",
-					"bosnianTranscription":"El-Enbija"
-				}
-			},
-			{
-				"id":31,
-				"startAyah":1,
-				"endAyah":34,
-				"name":{
-					"arabic":"الأنبياء",
-					"english":"The Prophets",
-					"englishTranscription":"Al-Anbya",
-					"bosnian":"Vjerovjesnici",
-					"bosnianTranscription":"El-Enbija"
-				}
-			},
-			{
-				"id":32,
-				"startAyah":1,
-				"endAyah":30,
-				"name":{
-					"arabic":"الأنبياء",
-					"english":"The Prophets",
-					"englishTranscription":"Al-Anbya",
-					"bosnian":"Vjerovjesnici",
-					"bosnianTranscription":"El-Enbija"
-				}
-			},
-			{
-				"id":33,
-				"startAyah":1,
-				"endAyah":30,
-				"name":{
-					"arabic":"الأنبياء",
-					"english":"The Prophets",
-					"englishTranscription":"Al-Anbya",
-					"bosnian":"Vjerovjesnici",
-					"bosnianTranscription":"El-Enbija"
-				}
-			}
-		],
-		"firstAyahId":3386,
-		"lastAyahId":3563,
-		"numberOfAyahs":178,
-		"startPage":402,
-		"endPage":421
-	},
-	{
-		"id":22,
-		"juzNumber":22,
-		"surahs":[
-			{
-				"id":33,
-				"startAyah":31,
-				"endAyah":73,
-				"name":{
-					"arabic":"الحج",
-					"english":"The Pilgrimage",
-					"englishTranscription":"Al-Haj",
-					"bosnian":"Hadždž",
-					"bosnianTranscription":"El-Hadždž"
-				}
-			},
-			{
-				"id":34,
-				"startAyah":1,
-				"endAyah":54,
-				"name":{
-					"arabic":"الحج",
-					"english":"The Pilgrimage",
-					"englishTranscription":"Al-Haj",
-					"bosnian":"Hadždž",
-					"bosnianTranscription":"El-Hadždž"
-				}
-			},
-			{
-				"id":35,
-				"startAyah":1,
-				"endAyah":45,
-				"name":{
-					"arabic":"الحج",
-					"english":"The Pilgrimage",
-					"englishTranscription":"Al-Haj",
-					"bosnian":"Hadždž",
-					"bosnianTranscription":"El-Hadždž"
-				}
-			},
-			{
-				"id":36,
-				"startAyah":1,
-				"endAyah":27,
-				"name":{
-					"arabic":"الحج",
-					"english":"The Pilgrimage",
-					"englishTranscription":"Al-Haj",
-					"bosnian":"Hadždž",
-					"bosnianTranscription":"El-Hadždž"
-				}
-			}
-		],
-		"firstAyahId":3564,
-		"lastAyahId":3732,
-		"numberOfAyahs":169,
-		"startPage":422,
-		"endPage":441
-	},
-	{
-		"id":23,
-		"juzNumber":23,
-		"surahs":[
-			{
-				"id":36,
-				"startAyah":28,
-				"endAyah":83,
-				"name":{
-					"arabic":"المؤمنون",
-					"english":"The Believers",
-					"englishTranscription":"Al-Mu'minun",
-					"bosnian":"Vjernici",
-					"bosnianTranscription":"El-Mu'minun"
-				}
-			},
-			{
-				"id":37,
-				"startAyah":1,
-				"endAyah":182,
-				"name":{
-					"arabic":"المؤمنون",
-					"english":"The Believers",
-					"englishTranscription":"Al-Mu'minun",
-					"bosnian":"Vjernici",
-					"bosnianTranscription":"El-Mu'minun"
-				}
-			},
-			{
-				"id":38,
-				"startAyah":1,
-				"endAyah":88,
-				"name":{
-					"arabic":"المؤمنون",
-					"english":"The Believers",
-					"englishTranscription":"Al-Mu'minun",
-					"bosnian":"Vjernici",
-					"bosnianTranscription":"El-Mu'minun"
-				}
-			},
-			{
-				"id":39,
-				"startAyah":1,
-				"endAyah":31,
-				"name":{
-					"arabic":"المؤمنون",
-					"english":"The Believers",
-					"englishTranscription":"Al-Mu'minun",
-					"bosnian":"Vjernici",
-					"bosnianTranscription":"El-Mu'minun"
-				}
-			}
-		],
-		"firstAyahId":3733,
-		"lastAyahId":4089,
-		"numberOfAyahs":357,
-		"startPage":442,
-		"endPage":461
-	},
-	{
-		"id":24,
-		"juzNumber":24,
-		"surahs":[
-			{
-				"id":39,
-				"startAyah":32,
-				"endAyah":75,
-				"name":{
-					"arabic":"النور",
-					"english":"The Light",
-					"englishTranscription":"An-Nur",
-					"bosnian":"Svjetlost",
-					"bosnianTranscription":"En-Nur"
-				}
-			},
-			{
-				"id":40,
-				"startAyah":1,
-				"endAyah":85,
-				"name":{
-					"arabic":"النور",
-					"english":"The Light",
-					"englishTranscription":"An-Nur",
-					"bosnian":"Svjetlost",
-					"bosnianTranscription":"En-Nur"
-				}
-			},
-			{
-				"id":41,
-				"startAyah":1,
-				"endAyah":46,
-				"name":{
-					"arabic":"النور",
-					"english":"The Light",
-					"englishTranscription":"An-Nur",
-					"bosnian":"Svjetlost",
-					"bosnianTranscription":"En-Nur"
-				}
-			}
-		],
-		"firstAyahId":4090,
-		"lastAyahId":4264,
-		"numberOfAyahs":175,
-		"startPage":462,
-		"endPage":481
-	},
-	{
-		"id":25,
-		"juzNumber":25,
-		"surahs":[
-			{
-				"id":41,
-				"startAyah":47,
-				"endAyah":54,
-				"name":{
-					"arabic":"الفرقان",
-					"english":"The Criterian",
-					"englishTranscription":"Al-Furqan",
-					"bosnian":"Furkan",
-					"bosnianTranscription":"El-Furkan"
-				}
-			},
-			{
-				"id":42,
-				"startAyah":1,
-				"endAyah":53,
-				"name":{
-					"arabic":"الفرقان",
-					"english":"The Criterian",
-					"englishTranscription":"Al-Furqan",
-					"bosnian":"Furkan",
-					"bosnianTranscription":"El-Furkan"
-				}
-			},
-			{
-				"id":43,
-				"startAyah":1,
-				"endAyah":89,
-				"name":{
-					"arabic":"الفرقان",
-					"english":"The Criterian",
-					"englishTranscription":"Al-Furqan",
-					"bosnian":"Furkan",
-					"bosnianTranscription":"El-Furkan"
-				}
-			},
-			{
-				"id":44,
-				"startAyah":1,
-				"endAyah":59,
-				"name":{
-					"arabic":"الفرقان",
-					"english":"The Criterian",
-					"englishTranscription":"Al-Furqan",
-					"bosnian":"Furkan",
-					"bosnianTranscription":"El-Furkan"
-				}
-			},
-			{
-				"id":45,
-				"startAyah":1,
-				"endAyah":37,
-				"name":{
-					"arabic":"الفرقان",
-					"english":"The Criterian",
-					"englishTranscription":"Al-Furqan",
-					"bosnian":"Furkan",
-					"bosnianTranscription":"El-Furkan"
-				}
-			}
-		],
-		"firstAyahId":4265,
-		"lastAyahId":4510,
-		"numberOfAyahs":246,
-		"startPage":482,
-		"endPage":501
-	},
-	{
-		"id":26,
-		"juzNumber":26,
-		"surahs":[
-			{
-				"id":46,
-				"startAyah":1,
-				"endAyah":35,
-				"name":{
-					"arabic":"الشعراء",
-					"english":"The Poets",
-					"englishTranscription":"Ash-Shu'ara",
-					"bosnian":"Pjesnici",
-					"bosnianTranscription":"Eš-Šu'ara'"
-				}
-			},
-			{
-				"id":47,
-				"startAyah":1,
-				"endAyah":38,
-				"name":{
-					"arabic":"الشعراء",
-					"english":"The Poets",
-					"englishTranscription":"Ash-Shu'ara",
-					"bosnian":"Pjesnici",
-					"bosnianTranscription":"Eš-Šu'ara'"
-				}
-			},
-			{
-				"id":48,
-				"startAyah":1,
-				"endAyah":29,
-				"name":{
-					"arabic":"الشعراء",
-					"english":"The Poets",
-					"englishTranscription":"Ash-Shu'ara",
-					"bosnian":"Pjesnici",
-					"bosnianTranscription":"Eš-Šu'ara'"
-				}
-			},
-			{
-				"id":49,
-				"startAyah":1,
-				"endAyah":18,
-				"name":{
-					"arabic":"الشعراء",
-					"english":"The Poets",
-					"englishTranscription":"Ash-Shu'ara",
-					"bosnian":"Pjesnici",
-					"bosnianTranscription":"Eš-Šu'ara'"
-				}
-			},
-			{
-				"id":50,
-				"startAyah":1,
-				"endAyah":45,
-				"name":{
-					"arabic":"الشعراء",
-					"english":"The Poets",
-					"englishTranscription":"Ash-Shu'ara",
-					"bosnian":"Pjesnici",
-					"bosnianTranscription":"Eš-Šu'ara'"
-				}
-			},
-			{
-				"id":51,
-				"startAyah":1,
-				"endAyah":30,
-				"name":{
-					"arabic":"الشعراء",
-					"english":"The Poets",
-					"englishTranscription":"Ash-Shu'ara",
-					"bosnian":"Pjesnici",
-					"bosnianTranscription":"Eš-Šu'ara'"
-				}
-			}
-		],
-		"firstAyahId":4511,
-		"lastAyahId":4705,
-		"numberOfAyahs":195,
-		"startPage":502,
-		"endPage":521
-	},
-	{
-		"id":27,
-		"juzNumber":27,
-		"surahs":[
-			{
-				"id":51,
-				"startAyah":31,
-				"endAyah":60,
-				"name":{
-					"arabic":"النمل",
-					"english":"The Ant",
-					"englishTranscription":"An-Naml",
-					"bosnian":"Mravi",
-					"bosnianTranscription":"En-Neml"
-				}
-			},
-			{
-				"id":52,
-				"startAyah":1,
-				"endAyah":49,
-				"name":{
-					"arabic":"النمل",
-					"english":"The Ant",
-					"englishTranscription":"An-Naml",
-					"bosnian":"Mravi",
-					"bosnianTranscription":"En-Neml"
-				}
-			},
-			{
-				"id":53,
-				"startAyah":1,
-				"endAyah":62,
-				"name":{
-					"arabic":"النمل",
-					"english":"The Ant",
-					"englishTranscription":"An-Naml",
-					"bosnian":"Mravi",
-					"bosnianTranscription":"En-Neml"
-				}
-			},
-			{
-				"id":54,
-				"startAyah":1,
-				"endAyah":55,
-				"name":{
-					"arabic":"النمل",
-					"english":"The Ant",
-					"englishTranscription":"An-Naml",
-					"bosnian":"Mravi",
-					"bosnianTranscription":"En-Neml"
-				}
-			},
-			{
-				"id":55,
-				"startAyah":1,
-				"endAyah":78,
-				"name":{
-					"arabic":"النمل",
-					"english":"The Ant",
-					"englishTranscription":"An-Naml",
-					"bosnian":"Mravi",
-					"bosnianTranscription":"En-Neml"
-				}
-			},
-			{
-				"id":56,
-				"startAyah":1,
-				"endAyah":96,
-				"name":{
-					"arabic":"النمل",
-					"english":"The Ant",
-					"englishTranscription":"An-Naml",
-					"bosnian":"Mravi",
-					"bosnianTranscription":"En-Neml"
-				}
-			},
-			{
-				"id":57,
-				"startAyah":1,
-				"endAyah":29,
-				"name":{
-					"arabic":"النمل",
-					"english":"The Ant",
-					"englishTranscription":"An-Naml",
-					"bosnian":"Mravi",
-					"bosnianTranscription":"En-Neml"
-				}
-			}
-		],
-		"firstAyahId":4706,
-		"lastAyahId":5104,
-		"numberOfAyahs":399,
-		"startPage":522,
-		"endPage":541
-	},
-	{
-		"id":28,
-		"juzNumber":28,
-		"surahs":[
-			{
-				"id":58,
-				"startAyah":1,
-				"endAyah":22,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":59,
-				"startAyah":1,
-				"endAyah":24,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":60,
-				"startAyah":1,
-				"endAyah":13,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":61,
-				"startAyah":1,
-				"endAyah":14,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":62,
-				"startAyah":1,
-				"endAyah":11,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":63,
-				"startAyah":1,
-				"endAyah":11,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":64,
-				"startAyah":1,
-				"endAyah":18,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":65,
-				"startAyah":1,
-				"endAyah":12,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			},
-			{
-				"id":66,
-				"startAyah":1,
-				"endAyah":12,
-				"name":{
-					"arabic":"القصص",
-					"english":"The Stories",
-					"englishTranscription":"Al-Qasas",
-					"bosnian":"Kazivanje",
-					"bosnianTranscription":"El-Kasas"
-				}
-			}
-		],
-		"firstAyahId":5105,
-		"lastAyahId":5241,
-		"numberOfAyahs":137,
-		"startPage":542,
-		"endPage":561
-	},
-	{
-		"id":29,
-		"juzNumber":29,
-		"surahs":[
-			{
-				"id":67,
-				"startAyah":1,
-				"endAyah":30,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":68,
-				"startAyah":1,
-				"endAyah":52,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":69,
-				"startAyah":1,
-				"endAyah":52,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":70,
-				"startAyah":1,
-				"endAyah":44,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":71,
-				"startAyah":1,
-				"endAyah":28,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":72,
-				"startAyah":1,
-				"endAyah":28,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":73,
-				"startAyah":1,
-				"endAyah":20,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":74,
-				"startAyah":1,
-				"endAyah":56,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":75,
-				"startAyah":1,
-				"endAyah":40,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":76,
-				"startAyah":1,
-				"endAyah":31,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			},
-			{
-				"id":77,
-				"startAyah":1,
-				"endAyah":50,
-				"name":{
-					"arabic":"العنكبوت",
-					"english":"The Spider",
-					"englishTranscription":"Al-'Ankabut",
-					"bosnian":"Pauk",
-					"bosnianTranscription":"El-'Ankebut"
-				}
-			}
-		],
-		"firstAyahId":5242,
-		"lastAyahId":5672,
-		"numberOfAyahs":431,
-		"startPage":562,
-		"endPage":581
-	},
-	{
-		"id":30,
-		"juzNumber":30,
-		"surahs":[
-			{
-				"id":78,
-				"startAyah":1,
-				"endAyah":40,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":79,
-				"startAyah":1,
-				"endAyah":46,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":80,
-				"startAyah":1,
-				"endAyah":42,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":81,
-				"startAyah":1,
-				"endAyah":29,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":82,
-				"startAyah":1,
-				"endAyah":19,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":83,
-				"startAyah":1,
-				"endAyah":36,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":84,
-				"startAyah":1,
-				"endAyah":25,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":85,
-				"startAyah":1,
-				"endAyah":22,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":86,
-				"startAyah":1,
-				"endAyah":17,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":87,
-				"startAyah":1,
-				"endAyah":19,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":88,
-				"startAyah":1,
-				"endAyah":26,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":89,
-				"startAyah":1,
-				"endAyah":30,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":90,
-				"startAyah":1,
-				"endAyah":20,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":91,
-				"startAyah":1,
-				"endAyah":15,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":92,
-				"startAyah":1,
-				"endAyah":21,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":93,
-				"startAyah":1,
-				"endAyah":11,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":94,
-				"startAyah":1,
-				"endAyah":8,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":95,
-				"startAyah":1,
-				"endAyah":8,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":96,
-				"startAyah":1,
-				"endAyah":19,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":97,
-				"startAyah":1,
-				"endAyah":5,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":98,
-				"startAyah":1,
-				"endAyah":8,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":99,
-				"startAyah":1,
-				"endAyah":8,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":100,
-				"startAyah":1,
-				"endAyah":11,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":101,
-				"startAyah":1,
-				"endAyah":11,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":102,
-				"startAyah":1,
-				"endAyah":8,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":103,
-				"startAyah":1,
-				"endAyah":3,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":104,
-				"startAyah":1,
-				"endAyah":9,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":105,
-				"startAyah":1,
-				"endAyah":5,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":106,
-				"startAyah":1,
-				"endAyah":4,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":107,
-				"startAyah":1,
-				"endAyah":7,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":108,
-				"startAyah":1,
-				"endAyah":3,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":109,
-				"startAyah":1,
-				"endAyah":6,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":110,
-				"startAyah":1,
-				"endAyah":3,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":111,
-				"startAyah":1,
-				"endAyah":5,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":112,
-				"startAyah":1,
-				"endAyah":4,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":113,
-				"startAyah":1,
-				"endAyah":5,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			},
-			{
-				"id":114,
-				"startAyah":1,
-				"endAyah":6,
-				"name":{
-					"arabic":"الروم",
-					"english":"The Romans",
-					"englishTranscription":"Ar-Rum",
-					"bosnian":"Bizantinci",
-					"bosnianTranscription":"Er-Rum"
-				}
-			}
-		],
-		"firstAyahId":5673,
-		"lastAyahId":6236,
-		"numberOfAyahs":564,
-		"startPage":582,
-		"endPage":604
-	}
+  {
+    id: 1,
+    juzNumber: 1,
+    surahs: [
+      {
+        id: 1,
+        startAyah: 1,
+        endAyah: 7,
+        name: {
+          arabic: "الفاتحة",
+          english: "The Opener",
+          englishTranscription: "Al-Fatihah",
+          bosnian: "Pristup",
+          bosnianTranscription: "El-Fatiha",
+        },
+      },
+      {
+        id: 2,
+        startAyah: 1,
+        endAyah: 141,
+        name: {
+          arabic: "البقرة",
+          english: "The Cow",
+          englishTranscription: "Al-Baqarah",
+          bosnian: "Krava",
+          bosnianTranscription: "El-Bekare",
+        },
+      },
+    ],
+    firstAyahId: 1,
+    lastAyahId: 148,
+    numberOfAyahs: 148,
+    startPage: 1,
+    endPage: 21,
+  },
+  {
+    id: 2,
+    juzNumber: 2,
+    surahs: [
+      {
+        id: 2,
+        startAyah: 142,
+        endAyah: 252,
+        name: {
+          arabic: "البقرة",
+          english: "The Cow",
+          englishTranscription: "Al-Baqarah",
+          bosnian: "Krava",
+          bosnianTranscription: "El-Bekare",
+        },
+      },
+    ],
+    firstAyahId: 149,
+    lastAyahId: 259,
+    numberOfAyahs: 111,
+    startPage: 22,
+    endPage: 41,
+  },
+  {
+    id: 3,
+    juzNumber: 3,
+    surahs: [
+      {
+        id: 2,
+        startAyah: 253,
+        endAyah: 286,
+        name: {
+          arabic: "البقرة",
+          english: "The Cow",
+          englishTranscription: "Al-Baqarah",
+          bosnian: "Krava",
+          bosnianTranscription: "El-Bekare",
+        },
+      },
+      {
+        id: 3,
+        startAyah: 1,
+        endAyah: 92,
+        name: {
+          arabic: "آل عمران",
+          english: "Family of Imran",
+          englishTranscription: "Ali 'Imran",
+          bosnian: "Imranova porodica",
+          bosnianTranscription: "Ali-'Imran",
+        },
+      },
+    ],
+    firstAyahId: 260,
+    lastAyahId: 385,
+    numberOfAyahs: 126,
+    startPage: 42,
+    endPage: 61,
+  },
+  {
+    id: 4,
+    juzNumber: 4,
+    surahs: [
+      {
+        id: 3,
+        startAyah: 93,
+        endAyah: 200,
+        name: {
+          arabic: "آل عمران",
+          english: "Family of Imran",
+          englishTranscription: "Ali 'Imran",
+          bosnian: "Imranova porodica",
+          bosnianTranscription: "Ali-'Imran",
+        },
+      },
+      {
+        id: 4,
+        startAyah: 1,
+        endAyah: 23,
+        name: {
+          arabic: "النساء",
+          english: "The Women",
+          englishTranscription: "An-Nisa",
+          bosnian: "Žene",
+          bosnianTranscription: "En-Nisa",
+        },
+      },
+    ],
+    firstAyahId: 386,
+    lastAyahId: 516,
+    numberOfAyahs: 131,
+    startPage: 62,
+    endPage: 81,
+  },
+  {
+    id: 5,
+    juzNumber: 5,
+    surahs: [
+      {
+        id: 4,
+        startAyah: 24,
+        endAyah: 147,
+        name: {
+          arabic: "النساء",
+          english: "The Women",
+          englishTranscription: "An-Nisa",
+          bosnian: "Žene",
+          bosnianTranscription: "En-Nisa",
+        },
+      },
+    ],
+    firstAyahId: 517,
+    lastAyahId: 640,
+    numberOfAyahs: 124,
+    startPage: 82,
+    endPage: 101,
+  },
+  {
+    id: 6,
+    juzNumber: 6,
+    surahs: [
+      {
+        id: 4,
+        startAyah: 148,
+        endAyah: 176,
+        name: {
+          arabic: "النساء",
+          english: "The Women",
+          englishTranscription: "An-Nisa",
+          bosnian: "Žene",
+          bosnianTranscription: "En-Nisa",
+        },
+      },
+      {
+        id: 5,
+        startAyah: 1,
+        endAyah: 81,
+        name: {
+          arabic: "المائدة",
+          english: "The Table Spread",
+          englishTranscription: "Al-Ma'idah",
+          bosnian: "Trpeza",
+          bosnianTranscription: "El-Maide",
+        },
+      },
+    ],
+    firstAyahId: 641,
+    lastAyahId: 750,
+    numberOfAyahs: 110,
+    startPage: 102,
+    endPage: 120,
+  },
+  {
+    id: 7,
+    juzNumber: 7,
+    surahs: [
+      {
+        id: 5,
+        startAyah: 82,
+        endAyah: 120,
+        name: {
+          arabic: "المائدة",
+          english: "The Table Spread",
+          englishTranscription: "Al-Ma'idah",
+          bosnian: "Trpeza",
+          bosnianTranscription: "El-Maide",
+        },
+      },
+      {
+        id: 6,
+        startAyah: 1,
+        endAyah: 110,
+        name: {
+          arabic: "الأنعام",
+          english: "The Cattle",
+          englishTranscription: "Al-An'am",
+          bosnian: "Stoka",
+          bosnianTranscription: "El-En'am",
+        },
+      },
+    ],
+    firstAyahId: 751,
+    lastAyahId: 899,
+    numberOfAyahs: 149,
+    startPage: 121,
+    endPage: 141,
+  },
+  {
+    id: 8,
+    juzNumber: 8,
+    surahs: [
+      {
+        id: 6,
+        startAyah: 111,
+        endAyah: 165,
+        name: {
+          arabic: "الأنعام",
+          english: "The Cattle",
+          englishTranscription: "Al-An'am",
+          bosnian: "Stoka",
+          bosnianTranscription: "El-En'am",
+        },
+      },
+      {
+        id: 7,
+        startAyah: 1,
+        endAyah: 87,
+        name: {
+          arabic: "الأعراف",
+          english: "The Heights",
+          englishTranscription: "Al-A'raf",
+          bosnian: "Bedemi",
+          bosnianTranscription: "El-A'raf",
+        },
+      },
+    ],
+    firstAyahId: 900,
+    lastAyahId: 1041,
+    numberOfAyahs: 142,
+    startPage: 142,
+    endPage: 161,
+  },
+  {
+    id: 9,
+    juzNumber: 9,
+    surahs: [
+      {
+        id: 7,
+        startAyah: 88,
+        endAyah: 206,
+        name: {
+          arabic: "الأعراف",
+          english: "The Heights",
+          englishTranscription: "Al-A'raf",
+          bosnian: "Bedemi",
+          bosnianTranscription: "El-A'raf",
+        },
+      },
+      {
+        id: 8,
+        startAyah: 1,
+        endAyah: 40,
+        name: {
+          arabic: "الأنفال",
+          english: "The Spoils of War",
+          englishTranscription: "Al-Anfal",
+          bosnian: "Plijen",
+          bosnianTranscription: "El-Enfal",
+        },
+      },
+    ],
+    firstAyahId: 1042,
+    lastAyahId: 1200,
+    numberOfAyahs: 159,
+    startPage: 162,
+    endPage: 181,
+  },
+  {
+    id: 10,
+    juzNumber: 10,
+    surahs: [
+      {
+        id: 8,
+        startAyah: 41,
+        endAyah: 75,
+        name: {
+          arabic: "الأنفال",
+          english: "The Spoils of War",
+          englishTranscription: "Al-Anfal",
+          bosnian: "Plijen",
+          bosnianTranscription: "El-Enfal",
+        },
+      },
+      {
+        id: 9,
+        startAyah: 1,
+        endAyah: 92,
+        name: {
+          arabic: "التوبة",
+          english: "The Repentance",
+          englishTranscription: "At-Tawbah",
+          bosnian: "Pokajanje",
+          bosnianTranscription: "Et-Tevbe",
+        },
+      },
+    ],
+    firstAyahId: 1201,
+    lastAyahId: 1327,
+    numberOfAyahs: 127,
+    startPage: 182,
+    endPage: 200,
+  },
+  {
+    id: 11,
+    juzNumber: 11,
+    surahs: [
+      {
+        id: 9,
+        startAyah: 93,
+        endAyah: 129,
+        name: {
+          arabic: "التوبة",
+          english: "The Repentance",
+          englishTranscription: "At-Tawbah",
+          bosnian: "Pokajanje",
+          bosnianTranscription: "Et-Tevbe",
+        },
+      },
+      {
+        id: 10,
+        startAyah: 1,
+        endAyah: 109,
+        name: {
+          arabic: "يونس",
+          english: "Jonah",
+          englishTranscription: "Yunus",
+          bosnian: "Junus",
+          bosnianTranscription: "Junus",
+        },
+      },
+      {
+        id: 11,
+        startAyah: 1,
+        endAyah: 5,
+        name: {
+          arabic: "هود",
+          english: "Hud",
+          englishTranscription: "Hud",
+          bosnian: "Hud",
+          bosnianTranscription: "Hud",
+        },
+      },
+    ],
+    firstAyahId: 1328,
+    lastAyahId: 1478,
+    numberOfAyahs: 151,
+    startPage: 201,
+    endPage: 221,
+  },
+  {
+    id: 12,
+    juzNumber: 12,
+    surahs: [
+      {
+        id: 11,
+        startAyah: 6,
+        endAyah: 123,
+        name: {
+          arabic: "هود",
+          english: "Hud",
+          englishTranscription: "Hud",
+          bosnian: "Hud",
+          bosnianTranscription: "Hud",
+        },
+      },
+      {
+        id: 12,
+        startAyah: 1,
+        endAyah: 52,
+        name: {
+          arabic: "يوسف",
+          english: "Joseph",
+          englishTranscription: "Yusuf",
+          bosnian: "Jusuf",
+          bosnianTranscription: "Jusuf",
+        },
+      },
+    ],
+    firstAyahId: 1479,
+    lastAyahId: 1648,
+    numberOfAyahs: 170,
+    startPage: 222,
+    endPage: 241,
+  },
+  {
+    id: 13,
+    juzNumber: 13,
+    surahs: [
+      {
+        id: 12,
+        startAyah: 53,
+        endAyah: 111,
+        name: {
+          arabic: "يوسف",
+          english: "Joseph",
+          englishTranscription: "Yusuf",
+          bosnian: "Jusuf",
+          bosnianTranscription: "Jusuf",
+        },
+      },
+      {
+        id: 13,
+        startAyah: 1,
+        endAyah: 43,
+        name: {
+          arabic: "الرعد",
+          english: "The Thunder",
+          englishTranscription: "Ar-Ra'd",
+          bosnian: "Grom",
+          bosnianTranscription: "Er-Ra'd",
+        },
+      },
+      {
+        id: 14,
+        startAyah: 1,
+        endAyah: 52,
+        name: {
+          arabic: "ابراهيم",
+          english: "Abrahim",
+          englishTranscription: "Ibrahim",
+          bosnian: "Ibrahim",
+          bosnianTranscription: "Ibrahim",
+        },
+      },
+    ],
+    firstAyahId: 1649,
+    lastAyahId: 1802,
+    numberOfAyahs: 154,
+    startPage: 242,
+    endPage: 261,
+  },
+  {
+    id: 14,
+    juzNumber: 14,
+    surahs: [
+      {
+        id: 15,
+        startAyah: 1,
+        endAyah: 99,
+        name: {
+          arabic: "الحجر",
+          english: "The Rocky Tract",
+          englishTranscription: "Al-Hijr",
+          bosnian: "Hidžr",
+          bosnianTranscription: "El-Hidžr",
+        },
+      },
+      {
+        id: 16,
+        startAyah: 1,
+        endAyah: 128,
+        name: {
+          arabic: "النحل",
+          english: "The Bee",
+          englishTranscription: "An-Nahl",
+          bosnian: "Pčele",
+          bosnianTranscription: "En-Nahl",
+        },
+      },
+    ],
+    firstAyahId: 1803,
+    lastAyahId: 2029,
+    numberOfAyahs: 227,
+    startPage: 262,
+    endPage: 281,
+  },
+  {
+    id: 15,
+    juzNumber: 15,
+    surahs: [
+      {
+        id: 17,
+        startAyah: 1,
+        endAyah: 111,
+        name: {
+          arabic: "الإسراء",
+          english: "The Night Journey",
+          englishTranscription: "Al-Isra",
+          bosnian: "Noćno putovanje",
+          bosnianTranscription: "El-Isra'",
+        },
+      },
+      {
+        id: 18,
+        startAyah: 1,
+        endAyah: 74,
+        name: {
+          arabic: "الكهف",
+          english: "The Cave",
+          englishTranscription: "Al-Kahf",
+          bosnian: "Pećina",
+          bosnianTranscription: "El-Kehf",
+        },
+      },
+    ],
+    firstAyahId: 2030,
+    lastAyahId: 2214,
+    numberOfAyahs: 185,
+    startPage: 282,
+    endPage: 301,
+  },
+  {
+    id: 16,
+    juzNumber: 16,
+    surahs: [
+      {
+        id: 18,
+        startAyah: 75,
+        endAyah: 110,
+        name: {
+          arabic: "الكهف",
+          english: "The Cave",
+          englishTranscription: "Al-Kahf",
+          bosnian: "Pećina",
+          bosnianTranscription: "El-Kehf",
+        },
+      },
+      {
+        id: 19,
+        startAyah: 1,
+        endAyah: 98,
+        name: {
+          arabic: "مريم",
+          english: "Mary",
+          englishTranscription: "Maryam",
+          bosnian: "Merjema",
+          bosnianTranscription: "Merjem",
+        },
+      },
+      {
+        id: 20,
+        startAyah: 1,
+        endAyah: 135,
+        name: {
+          arabic: "طه",
+          english: "Ta-Ha",
+          englishTranscription: "Taha",
+          bosnian: "Taha",
+          bosnianTranscription: "Taha",
+        },
+      },
+    ],
+    firstAyahId: 2215,
+    lastAyahId: 2483,
+    numberOfAyahs: 269,
+    startPage: 302,
+    endPage: 321,
+  },
+  {
+    id: 17,
+    juzNumber: 17,
+    surahs: [
+      {
+        id: 21,
+        startAyah: 1,
+        endAyah: 112,
+        name: {
+          arabic: "الأنبياء",
+          english: "The Prophets",
+          englishTranscription: "Al-Anbya",
+          bosnian: "Vjerovjesnici",
+          bosnianTranscription: "El-Enbija",
+        },
+      },
+      {
+        id: 22,
+        startAyah: 1,
+        endAyah: 78,
+        name: {
+          arabic: "الحج",
+          english: "The Pilgrimage",
+          englishTranscription: "Al-Haj",
+          bosnian: "Hadždž",
+          bosnianTranscription: "El-Hadždž",
+        },
+      },
+    ],
+    firstAyahId: 2484,
+    lastAyahId: 2673,
+    numberOfAyahs: 190,
+    startPage: 322,
+    endPage: 341,
+  },
+  {
+    id: 18,
+    juzNumber: 18,
+    surahs: [
+      {
+        id: 23,
+        startAyah: 1,
+        endAyah: 118,
+        name: {
+          arabic: "المؤمنون",
+          english: "The Believers",
+          englishTranscription: "Al-Mu'minun",
+          bosnian: "Vjernici",
+          bosnianTranscription: "El-Mu'minun",
+        },
+      },
+      {
+        id: 24,
+        startAyah: 1,
+        endAyah: 64,
+        name: {
+          arabic: "النور",
+          english: "The Light",
+          englishTranscription: "An-Nur",
+          bosnian: "Svjetlost",
+          bosnianTranscription: "En-Nur",
+        },
+      },
+      {
+        id: 25,
+        startAyah: 1,
+        endAyah: 20,
+        name: {
+          arabic: "الفرقان",
+          english: "The Criterian",
+          englishTranscription: "Al-Furqan",
+          bosnian: "Furkan",
+          bosnianTranscription: "El-Furkan",
+        },
+      },
+    ],
+    firstAyahId: 2674,
+    lastAyahId: 2875,
+    numberOfAyahs: 202,
+    startPage: 342,
+    endPage: 361,
+  },
+  {
+    id: 19,
+    juzNumber: 19,
+    surahs: [
+      {
+        id: 25,
+        startAyah: 21,
+        endAyah: 77,
+        name: {
+          arabic: "الفرقان",
+          english: "The Criterian",
+          englishTranscription: "Al-Furqan",
+          bosnian: "Furkan",
+          bosnianTranscription: "El-Furkan",
+        },
+      },
+      {
+        id: 26,
+        startAyah: 1,
+        endAyah: 227,
+        name: {
+          arabic: "الشعراء",
+          english: "The Poets",
+          englishTranscription: "Ash-Shu'ara",
+          bosnian: "Pjesnici",
+          bosnianTranscription: "Eš-Šu'ara'",
+        },
+      },
+      {
+        id: 27,
+        startAyah: 1,
+        endAyah: 55,
+        name: {
+          arabic: "النمل",
+          english: "The Ant",
+          englishTranscription: "An-Naml",
+          bosnian: "Mravi",
+          bosnianTranscription: "En-Neml",
+        },
+      },
+    ],
+    firstAyahId: 2876,
+    lastAyahId: 3214,
+    numberOfAyahs: 339,
+    startPage: 362,
+    endPage: 381,
+  },
+  {
+    id: 20,
+    juzNumber: 20,
+    surahs: [
+      {
+        id: 27,
+        startAyah: 56,
+        endAyah: 93,
+        name: {
+          arabic: "النمل",
+          english: "The Ant",
+          englishTranscription: "An-Naml",
+          bosnian: "Mravi",
+          bosnianTranscription: "En-Neml",
+        },
+      },
+      {
+        id: 28,
+        startAyah: 1,
+        endAyah: 88,
+        name: {
+          arabic: "القصص",
+          english: "The Stories",
+          englishTranscription: "Al-Qasas",
+          bosnian: "Kazivanje",
+          bosnianTranscription: "El-Kasas",
+        },
+      },
+      {
+        id: 29,
+        startAyah: 1,
+        endAyah: 45,
+        name: {
+          arabic: "العنكبوت",
+          english: "The Spider",
+          englishTranscription: "Al-'Ankabut",
+          bosnian: "Pauk",
+          bosnianTranscription: "El-'Ankebut",
+        },
+      },
+    ],
+    firstAyahId: 3215,
+    lastAyahId: 3385,
+    numberOfAyahs: 171,
+    startPage: 382,
+    endPage: 401,
+  },
+  {
+    id: 21,
+    juzNumber: 21,
+    surahs: [
+      {
+        id: 29,
+        startAyah: 46,
+        endAyah: 69,
+        name: {
+          arabic: "العنكبوت",
+          english: "The Spider",
+          englishTranscription: "Al-'Ankabut",
+          bosnian: "Pauk",
+          bosnianTranscription: "El-'Ankebut",
+        },
+      },
+      {
+        id: 30,
+        startAyah: 1,
+        endAyah: 60,
+        name: {
+          arabic: "الروم",
+          english: "The Romans",
+          englishTranscription: "Ar-Rum",
+          bosnian: "Bizantinci",
+          bosnianTranscription: "Er-Rum",
+        },
+      },
+      {
+        id: 31,
+        startAyah: 1,
+        endAyah: 34,
+        name: {
+          arabic: "لقمان",
+          english: "Luqman",
+          englishTranscription: "Luqman",
+          bosnian: "Lukman",
+          bosnianTranscription: "Lukman",
+        },
+      },
+      {
+        id: 32,
+        startAyah: 1,
+        endAyah: 30,
+        name: {
+          arabic: "السجدة",
+          english: "The Prostration",
+          englishTranscription: "As-Sajdah",
+          bosnian: "Padanje ničice",
+          bosnianTranscription: "Es-Sedžde",
+        },
+      },
+      {
+        id: 33,
+        startAyah: 1,
+        endAyah: 30,
+        name: {
+          arabic: "الأحزاب",
+          english: "The Combined Forces",
+          englishTranscription: "Al-Ahzab",
+          bosnian: "Saveznici",
+          bosnianTranscription: "El-Ahzab",
+        },
+      },
+    ],
+    firstAyahId: 3386,
+    lastAyahId: 3563,
+    numberOfAyahs: 178,
+    startPage: 402,
+    endPage: 421,
+  },
+  {
+    id: 22,
+    juzNumber: 22,
+    surahs: [
+      {
+        id: 33,
+        startAyah: 31,
+        endAyah: 73,
+        name: {
+          arabic: "الأحزاب",
+          english: "The Combined Forces",
+          englishTranscription: "Al-Ahzab",
+          bosnian: "Saveznici",
+          bosnianTranscription: "El-Ahzab",
+        },
+      },
+      {
+        id: 34,
+        startAyah: 1,
+        endAyah: 54,
+        name: {
+          arabic: "سبإ",
+          english: "Sheba",
+          englishTranscription: "Saba",
+          bosnian: "Saba",
+          bosnianTranscription: "Sebe'",
+        },
+      },
+      {
+        id: 35,
+        startAyah: 1,
+        endAyah: 45,
+        name: {
+          arabic: "فاطر",
+          english: "Originator",
+          englishTranscription: "Fatir",
+          bosnian: "Stvoritelj",
+          bosnianTranscription: "Fatir",
+        },
+      },
+      {
+        id: 36,
+        startAyah: 1,
+        endAyah: 27,
+        name: {
+          arabic: "يس",
+          english: "Ya Sin",
+          englishTranscription: "Ya-Sin",
+          bosnian: "Jasin",
+          bosnianTranscription: "Ja-sin",
+        },
+      },
+    ],
+    firstAyahId: 3564,
+    lastAyahId: 3732,
+    numberOfAyahs: 169,
+    startPage: 422,
+    endPage: 441,
+  },
+  {
+    id: 23,
+    juzNumber: 23,
+    surahs: [
+      {
+        id: 36,
+        startAyah: 28,
+        endAyah: 83,
+        name: {
+          arabic: "يس",
+          english: "Ya Sin",
+          englishTranscription: "Ya-Sin",
+          bosnian: "Jasin",
+          bosnianTranscription: "Ja-sin",
+        },
+      },
+      {
+        id: 37,
+        startAyah: 1,
+        endAyah: 182,
+        name: {
+          arabic: "الصافات",
+          english: "Those who set the Ranks",
+          englishTranscription: "As-Saffat",
+          bosnian: "Redovi",
+          bosnianTranscription: "Es-Saffat",
+        },
+      },
+      {
+        id: 38,
+        startAyah: 1,
+        endAyah: 88,
+        name: {
+          arabic: "ص",
+          english: "The Letter 'Saad'",
+          englishTranscription: "Sad",
+          bosnian: "Sad",
+          bosnianTranscription: "Sad",
+        },
+      },
+      {
+        id: 39,
+        startAyah: 1,
+        endAyah: 31,
+        name: {
+          arabic: "الزمر",
+          english: "The Troops",
+          englishTranscription: "Az-Zumar",
+          bosnian: "Skupovi",
+          bosnianTranscription: "Ez-Zumer",
+        },
+      },
+    ],
+    firstAyahId: 3733,
+    lastAyahId: 4089,
+    numberOfAyahs: 357,
+    startPage: 442,
+    endPage: 461,
+  },
+  {
+    id: 24,
+    juzNumber: 24,
+    surahs: [
+      {
+        id: 39,
+        startAyah: 32,
+        endAyah: 75,
+        name: {
+          arabic: "الزمر",
+          english: "The Troops",
+          englishTranscription: "Az-Zumar",
+          bosnian: "Skupovi",
+          bosnianTranscription: "Ez-Zumer",
+        },
+      },
+      {
+        id: 40,
+        startAyah: 1,
+        endAyah: 85,
+        name: {
+          arabic: "غافر",
+          english: "The Believer",
+          englishTranscription: "Al'Mumin",
+          bosnian: "Vjernik",
+          bosnianTranscription: "El-Mu'min",
+        },
+      },
+      {
+        id: 41,
+        startAyah: 1,
+        endAyah: 46,
+        name: {
+          arabic: "فصلت",
+          english: "Explained in Detail",
+          englishTranscription: "Fussilat",
+          bosnian: "Objašnjenje",
+          bosnianTranscription: "Fussilet",
+        },
+      },
+    ],
+    firstAyahId: 4090,
+    lastAyahId: 4264,
+    numberOfAyahs: 175,
+    startPage: 462,
+    endPage: 481,
+  },
+  {
+    id: 25,
+    juzNumber: 25,
+    surahs: [
+      {
+        id: 41,
+        startAyah: 47,
+        endAyah: 54,
+        name: {
+          arabic: "فصلت",
+          english: "Explained in Detail",
+          englishTranscription: "Fussilat",
+          bosnian: "Objašnjenje",
+          bosnianTranscription: "Fussilet",
+        },
+      },
+      {
+        id: 42,
+        startAyah: 1,
+        endAyah: 53,
+        name: {
+          arabic: "الشورى",
+          english: "The Consultation",
+          englishTranscription: "Ash-Shuraa",
+          bosnian: "Dogovaranje",
+          bosnianTranscription: "Eš-Šura",
+        },
+      },
+      {
+        id: 43,
+        startAyah: 1,
+        endAyah: 89,
+        name: {
+          arabic: "الزخرف",
+          english: "The Ornaments of Gold",
+          englishTranscription: "Az-Zukhruf",
+          bosnian: "Ukras",
+          bosnianTranscription: "Ez-Zuhruf",
+        },
+      },
+      {
+        id: 44,
+        startAyah: 1,
+        endAyah: 59,
+        name: {
+          arabic: "الدخان",
+          english: "The Smoke",
+          englishTranscription: "Ad-Dukhan",
+          bosnian: "Dim",
+          bosnianTranscription: "Ed-Duhan",
+        },
+      },
+      {
+        id: 45,
+        startAyah: 1,
+        endAyah: 37,
+        name: {
+          arabic: "الجاثية",
+          english: "The Crouching",
+          englishTranscription: "Al-Jathiyah",
+          bosnian: "Oni koji kleče",
+          bosnianTranscription: "El-Džasije",
+        },
+      },
+    ],
+    firstAyahId: 4265,
+    lastAyahId: 4510,
+    numberOfAyahs: 246,
+    startPage: 482,
+    endPage: 501,
+  },
+  {
+    id: 26,
+    juzNumber: 26,
+    surahs: [
+      {
+        id: 46,
+        startAyah: 1,
+        endAyah: 35,
+        name: {
+          arabic: "الأحقاف",
+          english: "The Wind-Curved Sandhills",
+          englishTranscription: "Al-Ahqaf",
+          bosnian: "Ahkaf",
+          bosnianTranscription: "El-Ahkaf",
+        },
+      },
+      {
+        id: 47,
+        startAyah: 1,
+        endAyah: 38,
+        name: {
+          arabic: "محمد",
+          english: "Muhammad",
+          englishTranscription: "Muhammad",
+          bosnian: "Muhammed",
+          bosnianTranscription: "Muhammed",
+        },
+      },
+      {
+        id: 48,
+        startAyah: 1,
+        endAyah: 29,
+        name: {
+          arabic: "الفتح",
+          english: "The Victory",
+          englishTranscription: "Al-Fath",
+          bosnian: "Pobjeda",
+          bosnianTranscription: "El-Feth",
+        },
+      },
+      {
+        id: 49,
+        startAyah: 1,
+        endAyah: 18,
+        name: {
+          arabic: "الحجرات",
+          english: "The Rooms",
+          englishTranscription: "Al-Hujurat",
+          bosnian: "Sobe",
+          bosnianTranscription: "El-Hudžurat",
+        },
+      },
+      {
+        id: 50,
+        startAyah: 1,
+        endAyah: 45,
+        name: {
+          arabic: "ق",
+          english: "The Letter 'Qaf'",
+          englishTranscription: "Qaf",
+          bosnian: "Kaf",
+          bosnianTranscription: "Kaf",
+        },
+      },
+      {
+        id: 51,
+        startAyah: 1,
+        endAyah: 30,
+        name: {
+          arabic: "الذاريات",
+          english: "The Winnowing Winds",
+          englishTranscription: "Adh-Dhariyat",
+          bosnian: "Oni koji pušu",
+          bosnianTranscription: "Ez-Zarijat",
+        },
+      },
+    ],
+    firstAyahId: 4511,
+    lastAyahId: 4705,
+    numberOfAyahs: 195,
+    startPage: 502,
+    endPage: 521,
+  },
+  {
+    id: 27,
+    juzNumber: 27,
+    surahs: [
+      {
+        id: 51,
+        startAyah: 31,
+        endAyah: 60,
+        name: {
+          arabic: "الذاريات",
+          english: "The Winnowing Winds",
+          englishTranscription: "Adh-Dhariyat",
+          bosnian: "Oni koji pušu",
+          bosnianTranscription: "Ez-Zarijat",
+        },
+      },
+      {
+        id: 52,
+        startAyah: 1,
+        endAyah: 49,
+        name: {
+          arabic: "الطور",
+          english: "The Mount",
+          englishTranscription: "At-Tur",
+          bosnian: "Gora",
+          bosnianTranscription: "Et-Tur",
+        },
+      },
+      {
+        id: 53,
+        startAyah: 1,
+        endAyah: 62,
+        name: {
+          arabic: "النجم",
+          english: "The Star",
+          englishTranscription: "An-Najm",
+          bosnian: "Zvijezda",
+          bosnianTranscription: "En-Nedžm",
+        },
+      },
+      {
+        id: 54,
+        startAyah: 1,
+        endAyah: 55,
+        name: {
+          arabic: "القمر",
+          english: "The Moon",
+          englishTranscription: "Al-Qamar",
+          bosnian: "Mjesec",
+          bosnianTranscription: "El-Kamer",
+        },
+      },
+      {
+        id: 55,
+        startAyah: 1,
+        endAyah: 78,
+        name: {
+          arabic: "الرحمن",
+          english: "The Beneficent",
+          englishTranscription: "Ar-Rahman",
+          bosnian: "Milostivi",
+          bosnianTranscription: "Er-Rahman",
+        },
+      },
+      {
+        id: 56,
+        startAyah: 1,
+        endAyah: 96,
+        name: {
+          arabic: "الواقعة",
+          english: "The Inevitable",
+          englishTranscription: "Al-Waqi'ah",
+          bosnian: "Događaj",
+          bosnianTranscription: "El-Vaki'a",
+        },
+      },
+      {
+        id: 57,
+        startAyah: 1,
+        endAyah: 29,
+        name: {
+          arabic: "الحديد",
+          english: "The Iron",
+          englishTranscription: "Al-Hadid",
+          bosnian: "Gvožđe",
+          bosnianTranscription: "El-Hadid",
+        },
+      },
+    ],
+    firstAyahId: 4706,
+    lastAyahId: 5104,
+    numberOfAyahs: 399,
+    startPage: 522,
+    endPage: 541,
+  },
+  {
+    id: 28,
+    juzNumber: 28,
+    surahs: [
+      {
+        id: 58,
+        startAyah: 1,
+        endAyah: 22,
+        name: {
+          arabic: "المجادلة",
+          english: "The Pleading Woman",
+          englishTranscription: "Al-Mujadila",
+          bosnian: "Rasprava",
+          bosnianTranscription: "El-Mudžadele",
+        },
+      },
+      {
+        id: 59,
+        startAyah: 1,
+        endAyah: 24,
+        name: {
+          arabic: "الحشر",
+          english: "The Exile",
+          englishTranscription: "Al-Hashr",
+          bosnian: "Progonstvo",
+          bosnianTranscription: "El-Hašr",
+        },
+      },
+      {
+        id: 60,
+        startAyah: 1,
+        endAyah: 13,
+        name: {
+          arabic: "الممتحنة",
+          english: "She that is to be examined",
+          englishTranscription: "Al-Mumtahanah",
+          bosnian: "Provjerena",
+          bosnianTranscription: "El-Mumtehine",
+        },
+      },
+      {
+        id: 61,
+        startAyah: 1,
+        endAyah: 14,
+        name: {
+          arabic: "الصف",
+          english: "The Ranks",
+          englishTranscription: "As-Saf",
+          bosnian: "Bojni red",
+          bosnianTranscription: "Es-Saff",
+        },
+      },
+      {
+        id: 62,
+        startAyah: 1,
+        endAyah: 11,
+        name: {
+          arabic: "الجمعة",
+          english: "The Congregation, Friday",
+          englishTranscription: "Al-Jumu'ah",
+          bosnian: "Petak",
+          bosnianTranscription: "El-Džumu'a",
+        },
+      },
+      {
+        id: 63,
+        startAyah: 1,
+        endAyah: 11,
+        name: {
+          arabic: "المنافقون",
+          english: "The Hypocrites",
+          englishTranscription: "Al-Munafiqun",
+          bosnian: "Licemjeri",
+          bosnianTranscription: "El-Munafikun",
+        },
+      },
+      {
+        id: 64,
+        startAyah: 1,
+        endAyah: 18,
+        name: {
+          arabic: "التغابن",
+          english: "The Mutual Disillusion",
+          englishTranscription: "At-Taghabun",
+          bosnian: "Samoobmana",
+          bosnianTranscription: "Et-Tegabun",
+        },
+      },
+      {
+        id: 65,
+        startAyah: 1,
+        endAyah: 12,
+        name: {
+          arabic: "الطلاق",
+          english: "The Divorce",
+          englishTranscription: "At-Talaq",
+          bosnian: "Razvod braka",
+          bosnianTranscription: "Et-Talak",
+        },
+      },
+      {
+        id: 66,
+        startAyah: 1,
+        endAyah: 12,
+        name: {
+          arabic: "التحريم",
+          english: "The Prohibtiion",
+          englishTranscription: "At-Tahrim",
+          bosnian: "Zabrana",
+          bosnianTranscription: "Et-Tahrim",
+        },
+      },
+    ],
+    firstAyahId: 5105,
+    lastAyahId: 5241,
+    numberOfAyahs: 137,
+    startPage: 542,
+    endPage: 561,
+  },
+  {
+    id: 29,
+    juzNumber: 29,
+    surahs: [
+      {
+        id: 67,
+        startAyah: 1,
+        endAyah: 30,
+        name: {
+          arabic: "الملك",
+          english: "The Sovereignty",
+          englishTranscription: "Al-Mulk",
+          bosnian: "Vlast",
+          bosnianTranscription: "El-Mulk",
+        },
+      },
+      {
+        id: 68,
+        startAyah: 1,
+        endAyah: 52,
+        name: {
+          arabic: "القلم",
+          english: "The Pen",
+          englishTranscription: "Al-Qalam",
+          bosnian: "Kalem",
+          bosnianTranscription: "El-Kalem",
+        },
+      },
+      {
+        id: 69,
+        startAyah: 1,
+        endAyah: 52,
+        name: {
+          arabic: "الحاقة",
+          english: "The Reality",
+          englishTranscription: "Al-Haqqah",
+          bosnian: "Čas neizbježni",
+          bosnianTranscription: "El-Hakka",
+        },
+      },
+      {
+        id: 70,
+        startAyah: 1,
+        endAyah: 44,
+        name: {
+          arabic: "المعارج",
+          english: "The Ascending Stairways",
+          englishTranscription: "Al-Ma'arij",
+          bosnian: "Stepeni",
+          bosnianTranscription: "El-Me'aridž",
+        },
+      },
+      {
+        id: 71,
+        startAyah: 1,
+        endAyah: 28,
+        name: {
+          arabic: "نوح",
+          english: "Noah",
+          englishTranscription: "Nuh",
+          bosnian: "Nuh",
+          bosnianTranscription: "Nuh",
+        },
+      },
+      {
+        id: 72,
+        startAyah: 1,
+        endAyah: 28,
+        name: {
+          arabic: "الجن",
+          english: "The Jinn",
+          englishTranscription: "Al-Jinn",
+          bosnian: "Džini",
+          bosnianTranscription: "El-Džinn",
+        },
+      },
+      {
+        id: 73,
+        startAyah: 1,
+        endAyah: 20,
+        name: {
+          arabic: "المزمل",
+          english: "The Enshrouded One",
+          englishTranscription: "Al-Muzzammil",
+          bosnian: "Umotani",
+          bosnianTranscription: "El-Muzzemmil",
+        },
+      },
+      {
+        id: 74,
+        startAyah: 1,
+        endAyah: 56,
+        name: {
+          arabic: "المدثر",
+          english: "The Cloaked One",
+          englishTranscription: "Al-Muddaththir",
+          bosnian: "Pokriveni",
+          bosnianTranscription: "El-Muddessir",
+        },
+      },
+      {
+        id: 75,
+        startAyah: 1,
+        endAyah: 40,
+        name: {
+          arabic: "القيامة",
+          english: "The Resurrection",
+          englishTranscription: "Al-Qiyamah",
+          bosnian: "Smak svijeta",
+          bosnianTranscription: "El-Kijame",
+        },
+      },
+      {
+        id: 76,
+        startAyah: 1,
+        endAyah: 31,
+        name: {
+          arabic: "الانسان",
+          english: "The Man",
+          englishTranscription: "Al-Insan",
+          bosnian: "Čovjek",
+          bosnianTranscription: "El-Insan",
+        },
+      },
+      {
+        id: 77,
+        startAyah: 1,
+        endAyah: 50,
+        name: {
+          arabic: "المرسلات",
+          english: "The Emissaries",
+          englishTranscription: "Al-Mursalat",
+          bosnian: "Poslani",
+          bosnianTranscription: "El-Murselat",
+        },
+      },
+    ],
+    firstAyahId: 5242,
+    lastAyahId: 5672,
+    numberOfAyahs: 431,
+    startPage: 562,
+    endPage: 581,
+  },
+  {
+    id: 30,
+    juzNumber: 30,
+    surahs: [
+      {
+        id: 78,
+        startAyah: 1,
+        endAyah: 40,
+        name: {
+          arabic: "النبإ",
+          english: "The Tidings",
+          englishTranscription: "An-Naba",
+          bosnian: "Vijest",
+          bosnianTranscription: "En-Nebe'",
+        },
+      },
+      {
+        id: 79,
+        startAyah: 1,
+        endAyah: 46,
+        name: {
+          arabic: "النازعات",
+          english: "Those who drag forth",
+          englishTranscription: "An-Nazi'at",
+          bosnian: "Oni koji čupaju",
+          bosnianTranscription: "En-Nazi'at",
+        },
+      },
+      {
+        id: 80,
+        startAyah: 1,
+        endAyah: 42,
+        name: {
+          arabic: "عبس",
+          english: "He Frowned",
+          englishTranscription: "'Abasa",
+          bosnian: "Namrštio se",
+          bosnianTranscription: "'Abese'",
+        },
+      },
+      {
+        id: 81,
+        startAyah: 1,
+        endAyah: 29,
+        name: {
+          arabic: "التكوير",
+          english: "The Overthrowing",
+          englishTranscription: "At-Takwir",
+          bosnian: "Prestanak sjaja",
+          bosnianTranscription: "Et-Tekvir",
+        },
+      },
+      {
+        id: 82,
+        startAyah: 1,
+        endAyah: 19,
+        name: {
+          arabic: "الإنفطار",
+          english: "The Cleaving",
+          englishTranscription: "Al-Infitar",
+          bosnian: "Rascjepljenje",
+          bosnianTranscription: "El-Infitar",
+        },
+      },
+      {
+        id: 83,
+        startAyah: 1,
+        endAyah: 36,
+        name: {
+          arabic: "المطففين",
+          english: "The Defrauding",
+          englishTranscription: "Al-Mutaffifin",
+          bosnian: "Oni koji pri mjerenju zakidaju",
+          bosnianTranscription: "El-Mutaffifin",
+        },
+      },
+      {
+        id: 84,
+        startAyah: 1,
+        endAyah: 25,
+        name: {
+          arabic: "الإنشقاق",
+          english: "The Sundering",
+          englishTranscription: "Al-Inshiqaq",
+          bosnian: "Cijepanje",
+          bosnianTranscription: "El-Inšikak",
+        },
+      },
+      {
+        id: 85,
+        startAyah: 1,
+        endAyah: 22,
+        name: {
+          arabic: "البروج",
+          english: "The Mansions of the Stars",
+          englishTranscription: "Al-Buruj",
+          bosnian: "Sazviježđa",
+          bosnianTranscription: "El-Burudž",
+        },
+      },
+      {
+        id: 86,
+        startAyah: 1,
+        endAyah: 17,
+        name: {
+          arabic: "الطارق",
+          english: "The Nightcommer",
+          englishTranscription: "At-Tariq",
+          bosnian: "Danica",
+          bosnianTranscription: "Et-Tarik",
+        },
+      },
+      {
+        id: 87,
+        startAyah: 1,
+        endAyah: 19,
+        name: {
+          arabic: "الأعلى",
+          english: "The Most High",
+          englishTranscription: "Al-A'la",
+          bosnian: "Svevišnji",
+          bosnianTranscription: "El-E'la",
+        },
+      },
+      {
+        id: 88,
+        startAyah: 1,
+        endAyah: 26,
+        name: {
+          arabic: "الغاشية",
+          english: "The Overwhelming",
+          englishTranscription: "Al-Ghashiyah",
+          bosnian: "Teška nevolja",
+          bosnianTranscription: "El-Gašije",
+        },
+      },
+      {
+        id: 89,
+        startAyah: 1,
+        endAyah: 30,
+        name: {
+          arabic: "الفجر",
+          english: "The Dawn",
+          englishTranscription: "Al-Fajr",
+          bosnian: "Zora",
+          bosnianTranscription: "El-Fedžr",
+        },
+      },
+      {
+        id: 90,
+        startAyah: 1,
+        endAyah: 20,
+        name: {
+          arabic: "البلد",
+          english: "The City",
+          englishTranscription: "Al-Balad",
+          bosnian: "Grad",
+          bosnianTranscription: "El-Beled",
+        },
+      },
+      {
+        id: 91,
+        startAyah: 1,
+        endAyah: 15,
+        name: {
+          arabic: "الشمس",
+          english: "The Sun",
+          englishTranscription: "Ash-Shams",
+          bosnian: "Sunce",
+          bosnianTranscription: "Eš-Šems",
+        },
+      },
+      {
+        id: 92,
+        startAyah: 1,
+        endAyah: 21,
+        name: {
+          arabic: "الليل",
+          english: "The Night",
+          englishTranscription: "Al-Layl",
+          bosnian: "Noć",
+          bosnianTranscription: "El-Lejl",
+        },
+      },
+      {
+        id: 93,
+        startAyah: 1,
+        endAyah: 11,
+        name: {
+          arabic: "الضحى",
+          english: "The Morning Hours",
+          englishTranscription: "Ad-Duhaa",
+          bosnian: "Jutro",
+          bosnianTranscription: "Ed-Duha",
+        },
+      },
+      {
+        id: 94,
+        startAyah: 1,
+        endAyah: 8,
+        name: {
+          arabic: "الشرح",
+          english: "The Relief",
+          englishTranscription: "Ash-Sharh",
+          bosnian: "Širokogrudnost",
+          bosnianTranscription: "El-Inširah",
+        },
+      },
+      {
+        id: 95,
+        startAyah: 1,
+        endAyah: 8,
+        name: {
+          arabic: "التين",
+          english: "The Fig",
+          englishTranscription: "At-Tin",
+          bosnian: "Smokva",
+          bosnianTranscription: "Et-Tin",
+        },
+      },
+      {
+        id: 96,
+        startAyah: 1,
+        endAyah: 19,
+        name: {
+          arabic: "العلق",
+          english: "The Clot",
+          englishTranscription: "Al-'Alaq",
+          bosnian: "Ugrušak",
+          bosnianTranscription: "El-'Alek",
+        },
+      },
+      {
+        id: 97,
+        startAyah: 1,
+        endAyah: 5,
+        name: {
+          arabic: "القدر",
+          english: "The Power",
+          englishTranscription: "Al-Qadr",
+          bosnian: "Noć Kadr",
+          bosnianTranscription: "El-Kadr",
+        },
+      },
+      {
+        id: 98,
+        startAyah: 1,
+        endAyah: 8,
+        name: {
+          arabic: "البينة",
+          english: "The Clear Proof",
+          englishTranscription: "Al-Bayyinah",
+          bosnian: "Dokaz jasni",
+          bosnianTranscription: "El-Bejjine",
+        },
+      },
+      {
+        id: 99,
+        startAyah: 1,
+        endAyah: 8,
+        name: {
+          arabic: "الزلزلة",
+          english: "The Earthquake",
+          englishTranscription: "Az-Zalzalah",
+          bosnian: "Zemljotres",
+          bosnianTranscription: "Ez-Zelzele",
+        },
+      },
+      {
+        id: 100,
+        startAyah: 1,
+        endAyah: 11,
+        name: {
+          arabic: "العاديات",
+          english: "The Courser",
+          englishTranscription: "Al-'Adiyat",
+          bosnian: "Oni koji jure",
+          bosnianTranscription: "El-'Adijat",
+        },
+      },
+      {
+        id: 101,
+        startAyah: 1,
+        endAyah: 11,
+        name: {
+          arabic: "القارعة",
+          english: "The Calamity",
+          englishTranscription: "Al-Qari'ah",
+          bosnian: "Smak svijeta",
+          bosnianTranscription: "El-Kari'a",
+        },
+      },
+      {
+        id: 102,
+        startAyah: 1,
+        endAyah: 8,
+        name: {
+          arabic: "التكاثر",
+          english: "The Rivalry in world increase",
+          englishTranscription: "At-Takathur",
+          bosnian: "Nadmetanje",
+          bosnianTranscription: "Et-Tekasur",
+        },
+      },
+      {
+        id: 103,
+        startAyah: 1,
+        endAyah: 3,
+        name: {
+          arabic: "العصر",
+          english: "The Declining Day",
+          englishTranscription: "Al-'Asr",
+          bosnian: "Vrijeme",
+          bosnianTranscription: "El-'Asr'",
+        },
+      },
+      {
+        id: 104,
+        startAyah: 1,
+        endAyah: 9,
+        name: {
+          arabic: "الهمزة",
+          english: "The Traducer",
+          englishTranscription: "Al-Humazah",
+          bosnian: "Klevetnik",
+          bosnianTranscription: "El-Humeze",
+        },
+      },
+      {
+        id: 105,
+        startAyah: 1,
+        endAyah: 5,
+        name: {
+          arabic: "الفيل",
+          english: "The Elephant",
+          englishTranscription: "Al-Fil",
+          bosnian: "Slon",
+          bosnianTranscription: "El-Fil",
+        },
+      },
+      {
+        id: 106,
+        startAyah: 1,
+        endAyah: 4,
+        name: {
+          arabic: "قريش",
+          english: "Quraysh",
+          englishTranscription: "Quraysh",
+          bosnian: "Kurejšije",
+          bosnianTranscription: "Kurejš",
+        },
+      },
+      {
+        id: 107,
+        startAyah: 1,
+        endAyah: 7,
+        name: {
+          arabic: "الماعون",
+          english: "The Small Kindesses",
+          englishTranscription: "Al-Ma'un",
+          bosnian: "Davanje u naruč",
+          bosnianTranscription: "El-Ma'un",
+        },
+      },
+      {
+        id: 108,
+        startAyah: 1,
+        endAyah: 3,
+        name: {
+          arabic: "الكوثر",
+          english: "The Abundance",
+          englishTranscription: "Al-Kawthar",
+          bosnian: "Mnogo dobro",
+          bosnianTranscription: "El-Kevser",
+        },
+      },
+      {
+        id: 109,
+        startAyah: 1,
+        endAyah: 6,
+        name: {
+          arabic: "الكافرون",
+          english: "The Disbelievers",
+          englishTranscription: "Al-Kafirun",
+          bosnian: "Nevjernici",
+          bosnianTranscription: "El-Kafirun",
+        },
+      },
+      {
+        id: 110,
+        startAyah: 1,
+        endAyah: 3,
+        name: {
+          arabic: "النصر",
+          english: "The Divine Support",
+          englishTranscription: "An-Nasr",
+          bosnian: "Pomoć",
+          bosnianTranscription: "En-Nasr",
+        },
+      },
+      {
+        id: 111,
+        startAyah: 1,
+        endAyah: 5,
+        name: {
+          arabic: "المسد",
+          english: "The Palm Fiber",
+          englishTranscription: "Al-Masad",
+          bosnian: "Plamen",
+          bosnianTranscription: "El-Leheb",
+        },
+      },
+      {
+        id: 112,
+        startAyah: 1,
+        endAyah: 4,
+        name: {
+          arabic: "الإخلاص",
+          english: "The Sincerity",
+          englishTranscription: "Al-Ikhlas",
+          bosnian: "Iskrenost",
+          bosnianTranscription: "El-Ihlas",
+        },
+      },
+      {
+        id: 113,
+        startAyah: 1,
+        endAyah: 5,
+        name: {
+          arabic: "الفلق",
+          english: "The Daybreak",
+          englishTranscription: "Al-Falaq",
+          bosnian: "Svitanje",
+          bosnianTranscription: "El-Felek",
+        },
+      },
+      {
+        id: 114,
+        startAyah: 1,
+        endAyah: 6,
+        name: {
+          arabic: "الناس",
+          english: "The Mankind",
+          englishTranscription: "An-Nas",
+          bosnian: "Ljudi",
+          bosnianTranscription: "En-Nas",
+        },
+      },
+    ],
+    firstAyahId: 5673,
+    lastAyahId: 6236,
+    numberOfAyahs: 564,
+    startPage: 582,
+    endPage: 604,
+  },
 ];
 
 const wordsAndLettersPerPage = [
-	{
-		"page":1,
-		"wordsNumber":29,
-		"lettersNumber":145
-	},
-	{
-		"page":2,
-		"wordsNumber":36,
-		"lettersNumber":165
-	},
-	{
-		"page":3,
-		"wordsNumber":127,
-		"lettersNumber":563
-	},
-	{
-		"page":4,
-		"wordsNumber":134,
-		"lettersNumber":576
-	},
-	{
-		"page":5,
-		"wordsNumber":125,
-		"lettersNumber":515
-	},
-	{
-		"page":6,
-		"wordsNumber":138,
-		"lettersNumber":606
-	},
-	{
-		"page":7,
-		"wordsNumber":129,
-		"lettersNumber":620
-	},
-	{
-		"page":8,
-		"wordsNumber":120,
-		"lettersNumber":561
-	},
-	{
-		"page":9,
-		"wordsNumber":125,
-		"lettersNumber":551
-	},
-	{
-		"page":10,
-		"wordsNumber":134,
-		"lettersNumber":567
-	},
-	{
-		"page":11,
-		"wordsNumber":141,
-		"lettersNumber":582
-	},
-	{
-		"page":12,
-		"wordsNumber":119,
-		"lettersNumber":533
-	},
-	{
-		"page":13,
-		"wordsNumber":115,
-		"lettersNumber":552
-	},
-	{
-		"page":14,
-		"wordsNumber":121,
-		"lettersNumber":516
-	},
-	{
-		"page":15,
-		"wordsNumber":123,
-		"lettersNumber":517
-	},
-	{
-		"page":16,
-		"wordsNumber":123,
-		"lettersNumber":522
-	},
-	{
-		"page":17,
-		"wordsNumber":139,
-		"lettersNumber":522
-	},
-	{
-		"page":18,
-		"wordsNumber":132,
-		"lettersNumber":561
-	},
-	{
-		"page":19,
-		"wordsNumber":146,
-		"lettersNumber":631
-	},
-	{
-		"page":20,
-		"wordsNumber":132,
-		"lettersNumber":571
-	},
-	{
-		"page":21,
-		"wordsNumber":134,
-		"lettersNumber":558
-	},
-	{
-		"page":22,
-		"wordsNumber":132,
-		"lettersNumber":562
-	},
-	{
-		"page":23,
-		"wordsNumber":121,
-		"lettersNumber":552
-	},
-	{
-		"page":24,
-		"wordsNumber":130,
-		"lettersNumber":586
-	},
-	{
-		"page":25,
-		"wordsNumber":136,
-		"lettersNumber":583
-	},
-	{
-		"page":26,
-		"wordsNumber":133,
-		"lettersNumber":555
-	},
-	{
-		"page":27,
-		"wordsNumber":126,
-		"lettersNumber":611
-	},
-	{
-		"page":28,
-		"wordsNumber":123,
-		"lettersNumber":502
-	},
-	{
-		"page":29,
-		"wordsNumber":122,
-		"lettersNumber":554
-	},
-	{
-		"page":30,
-		"wordsNumber":155,
-		"lettersNumber":684
-	},
-	{
-		"page":31,
-		"wordsNumber":113,
-		"lettersNumber":471
-	},
-	{
-		"page":32,
-		"wordsNumber":123,
-		"lettersNumber":517
-	},
-	{
-		"page":33,
-		"wordsNumber":141,
-		"lettersNumber":612
-	},
-	{
-		"page":34,
-		"wordsNumber":124,
-		"lettersNumber":539
-	},
-	{
-		"page":35,
-		"wordsNumber":122,
-		"lettersNumber":570
-	},
-	{
-		"page":36,
-		"wordsNumber":150,
-		"lettersNumber":635
-	},
-	{
-		"page":37,
-		"wordsNumber":142,
-		"lettersNumber":642
-	},
-	{
-		"page":38,
-		"wordsNumber":132,
-		"lettersNumber":574
-	},
-	{
-		"page":39,
-		"wordsNumber":116,
-		"lettersNumber":505
-	},
-	{
-		"page":40,
-		"wordsNumber":127,
-		"lettersNumber":497
-	},
-	{
-		"page":41,
-		"wordsNumber":111,
-		"lettersNumber":481
-	},
-	{
-		"page":42,
-		"wordsNumber":147,
-		"lettersNumber":590
-	},
-	{
-		"page":43,
-		"wordsNumber":134,
-		"lettersNumber":538
-	},
-	{
-		"page":44,
-		"wordsNumber":136,
-		"lettersNumber":557
-	},
-	{
-		"page":45,
-		"wordsNumber":120,
-		"lettersNumber":531
-	},
-	{
-		"page":46,
-		"wordsNumber":110,
-		"lettersNumber":472
-	},
-	{
-		"page":47,
-		"wordsNumber":134,
-		"lettersNumber":553
-	},
-	{
-		"page":48,
-		"wordsNumber":128,
-		"lettersNumber":553
-	},
-	{
-		"page":49,
-		"wordsNumber":136,
-		"lettersNumber":555
-	},
-	{
-		"page":50,
-		"wordsNumber":135,
-		"lettersNumber":541
-	},
-	{
-		"page":51,
-		"wordsNumber":116,
-		"lettersNumber":529
-	},
-	{
-		"page":52,
-		"wordsNumber":116,
-		"lettersNumber":546
-	},
-	{
-		"page":53,
-		"wordsNumber":145,
-		"lettersNumber":571
-	},
-	{
-		"page":54,
-		"wordsNumber":145,
-		"lettersNumber":595
-	},
-	{
-		"page":55,
-		"wordsNumber":131,
-		"lettersNumber":561
-	},
-	{
-		"page":56,
-		"wordsNumber":127,
-		"lettersNumber":537
-	},
-	{
-		"page":57,
-		"wordsNumber":123,
-		"lettersNumber":547
-	},
-	{
-		"page":58,
-		"wordsNumber":134,
-		"lettersNumber":585
-	},
-	{
-		"page":59,
-		"wordsNumber":139,
-		"lettersNumber":579
-	},
-	{
-		"page":60,
-		"wordsNumber":124,
-		"lettersNumber":548
-	},
-	{
-		"page":61,
-		"wordsNumber":127,
-		"lettersNumber":545
-	},
-	{
-		"page":62,
-		"wordsNumber":141,
-		"lettersNumber":588
-	},
-	{
-		"page":63,
-		"wordsNumber":129,
-		"lettersNumber":597
-	},
-	{
-		"page":64,
-		"wordsNumber":118,
-		"lettersNumber":543
-	},
-	{
-		"page":65,
-		"wordsNumber":130,
-		"lettersNumber":569
-	},
-	{
-		"page":66,
-		"wordsNumber":126,
-		"lettersNumber":570
-	},
-	{
-		"page":67,
-		"wordsNumber":114,
-		"lettersNumber":531
-	},
-	{
-		"page":68,
-		"wordsNumber":132,
-		"lettersNumber":575
-	},
-	{
-		"page":69,
-		"wordsNumber":102,
-		"lettersNumber":447
-	},
-	{
-		"page":70,
-		"wordsNumber":146,
-		"lettersNumber":592
-	},
-	{
-		"page":71,
-		"wordsNumber":142,
-		"lettersNumber":558
-	},
-	{
-		"page":72,
-		"wordsNumber":133,
-		"lettersNumber":597
-	},
-	{
-		"page":73,
-		"wordsNumber":143,
-		"lettersNumber":602
-	},
-	{
-		"page":74,
-		"wordsNumber":118,
-		"lettersNumber":516
-	},
-	{
-		"page":75,
-		"wordsNumber":127,
-		"lettersNumber":579
-	},
-	{
-		"page":76,
-		"wordsNumber":118,
-		"lettersNumber":513
-	},
-	{
-		"page":77,
-		"wordsNumber":139,
-		"lettersNumber":647
-	},
-	{
-		"page":78,
-		"wordsNumber":131,
-		"lettersNumber":566
-	},
-	{
-		"page":79,
-		"wordsNumber":119,
-		"lettersNumber":435
-	},
-	{
-		"page":80,
-		"wordsNumber":114,
-		"lettersNumber":533
-	},
-	{
-		"page":81,
-		"wordsNumber":99,
-		"lettersNumber":460
-	},
-	{
-		"page":82,
-		"wordsNumber":114,
-		"lettersNumber":512
-	},
-	{
-		"page":83,
-		"wordsNumber":115,
-		"lettersNumber":501
-	},
-	{
-		"page":84,
-		"wordsNumber":109,
-		"lettersNumber":520
-	},
-	{
-		"page":85,
-		"wordsNumber":136,
-		"lettersNumber":583
-	},
-	{
-		"page":86,
-		"wordsNumber":139,
-		"lettersNumber":603
-	},
-	{
-		"page":87,
-		"wordsNumber":143,
-		"lettersNumber":630
-	},
-	{
-		"page":88,
-		"wordsNumber":119,
-		"lettersNumber":511
-	},
-	{
-		"page":89,
-		"wordsNumber":127,
-		"lettersNumber":560
-	},
-	{
-		"page":90,
-		"wordsNumber":153,
-		"lettersNumber":661
-	},
-	{
-		"page":91,
-		"wordsNumber":138,
-		"lettersNumber":562
-	},
-	{
-		"page":92,
-		"wordsNumber":135,
-		"lettersNumber":609
-	},
-	{
-		"page":93,
-		"wordsNumber":115,
-		"lettersNumber":477
-	},
-	{
-		"page":94,
-		"wordsNumber":144,
-		"lettersNumber":661
-	},
-	{
-		"page":95,
-		"wordsNumber":119,
-		"lettersNumber":548
-	},
-	{
-		"page":96,
-		"wordsNumber":131,
-		"lettersNumber":532
-	},
-	{
-		"page":97,
-		"wordsNumber":120,
-		"lettersNumber":503
-	},
-	{
-		"page":98,
-		"wordsNumber":126,
-		"lettersNumber":530
-	},
-	{
-		"page":99,
-		"wordsNumber":130,
-		"lettersNumber":552
-	},
-	{
-		"page":100,
-		"wordsNumber":138,
-		"lettersNumber":609
-	},
-	{
-		"page":101,
-		"wordsNumber":128,
-		"lettersNumber":585
-	},
-	{
-		"page":102,
-		"wordsNumber":131,
-		"lettersNumber":580
-	},
-	{
-		"page":103,
-		"wordsNumber":138,
-		"lettersNumber":623
-	},
-	{
-		"page":104,
-		"wordsNumber":124,
-		"lettersNumber":555
-	},
-	{
-		"page":105,
-		"wordsNumber":123,
-		"lettersNumber":558
-	},
-	{
-		"page":106,
-		"wordsNumber":125,
-		"lettersNumber":532
-	},
-	{
-		"page":107,
-		"wordsNumber":135,
-		"lettersNumber":617
-	},
-	{
-		"page":108,
-		"wordsNumber":116,
-		"lettersNumber":534
-	},
-	{
-		"page":109,
-		"wordsNumber":107,
-		"lettersNumber":498
-	},
-	{
-		"page":110,
-		"wordsNumber":108,
-		"lettersNumber":449
-	},
-	{
-		"page":111,
-		"wordsNumber":132,
-		"lettersNumber":582
-	},
-	{
-		"page":112,
-		"wordsNumber":130,
-		"lettersNumber":550
-	},
-	{
-		"page":113,
-		"wordsNumber":124,
-		"lettersNumber":514
-	},
-	{
-		"page":114,
-		"wordsNumber":125,
-		"lettersNumber":517
-	},
-	{
-		"page":115,
-		"wordsNumber":113,
-		"lettersNumber":520
-	},
-	{
-		"page":116,
-		"wordsNumber":136,
-		"lettersNumber":594
-	},
-	{
-		"page":117,
-		"wordsNumber":149,
-		"lettersNumber":688
-	},
-	{
-		"page":118,
-		"wordsNumber":148,
-		"lettersNumber":661
-	},
-	{
-		"page":119,
-		"wordsNumber":129,
-		"lettersNumber":572
-	},
-	{
-		"page":120,
-		"wordsNumber":126,
-		"lettersNumber":512
-	},
-	{
-		"page":121,
-		"wordsNumber":110,
-		"lettersNumber":483
-	},
-	{
-		"page":122,
-		"wordsNumber":132,
-		"lettersNumber":591
-	},
-	{
-		"page":123,
-		"wordsNumber":145,
-		"lettersNumber":667
-	},
-	{
-		"page":124,
-		"wordsNumber":137,
-		"lettersNumber":583
-	},
-	{
-		"page":125,
-		"wordsNumber":142,
-		"lettersNumber":629
-	},
-	{
-		"page":126,
-		"wordsNumber":127,
-		"lettersNumber":555
-	},
-	{
-		"page":127,
-		"wordsNumber":158,
-		"lettersNumber":623
-	},
-	{
-		"page":128,
-		"wordsNumber":123,
-		"lettersNumber":523
-	},
-	{
-		"page":129,
-		"wordsNumber":132,
-		"lettersNumber":524
-	},
-	{
-		"page":130,
-		"wordsNumber":157,
-		"lettersNumber":652
-	},
-	{
-		"page":131,
-		"wordsNumber":147,
-		"lettersNumber":619
-	},
-	{
-		"page":132,
-		"wordsNumber":140,
-		"lettersNumber":579
-	},
-	{
-		"page":133,
-		"wordsNumber":139,
-		"lettersNumber":569
-	},
-	{
-		"page":134,
-		"wordsNumber":136,
-		"lettersNumber":540
-	},
-	{
-		"page":135,
-		"wordsNumber":142,
-		"lettersNumber":585
-	},
-	{
-		"page":136,
-		"wordsNumber":128,
-		"lettersNumber":528
-	},
-	{
-		"page":137,
-		"wordsNumber":132,
-		"lettersNumber":540
-	},
-	{
-		"page":138,
-		"wordsNumber":119,
-		"lettersNumber":556
-	},
-	{
-		"page":139,
-		"wordsNumber":144,
-		"lettersNumber":603
-	},
-	{
-		"page":140,
-		"wordsNumber":135,
-		"lettersNumber":582
-	},
-	{
-		"page":141,
-		"wordsNumber":133,
-		"lettersNumber":554
-	},
-	{
-		"page":142,
-		"wordsNumber":130,
-		"lettersNumber":554
-	},
-	{
-		"page":143,
-		"wordsNumber":130,
-		"lettersNumber":560
-	},
-	{
-		"page":144,
-		"wordsNumber":127,
-		"lettersNumber":560
-	},
-	{
-		"page":145,
-		"wordsNumber":103,
-		"lettersNumber":438
-	},
-	{
-		"page":146,
-		"wordsNumber":115,
-		"lettersNumber":512
-	},
-	{
-		"page":147,
-		"wordsNumber":130,
-		"lettersNumber":525
-	},
-	{
-		"page":148,
-		"wordsNumber":127,
-		"lettersNumber":530
-	},
-	{
-		"page":149,
-		"wordsNumber":126,
-		"lettersNumber":552
-	},
-	{
-		"page":150,
-		"wordsNumber":155,
-		"lettersNumber":607
-	},
-	{
-		"page":151,
-		"wordsNumber":109,
-		"lettersNumber":487
-	},
-	{
-		"page":152,
-		"wordsNumber":147,
-		"lettersNumber":634
-	},
-	{
-		"page":153,
-		"wordsNumber":134,
-		"lettersNumber":602
-	},
-	{
-		"page":154,
-		"wordsNumber":147,
-		"lettersNumber":626
-	},
-	{
-		"page":155,
-		"wordsNumber":138,
-		"lettersNumber":595
-	},
-	{
-		"page":156,
-		"wordsNumber":137,
-		"lettersNumber":631
-	},
-	{
-		"page":157,
-		"wordsNumber":132,
-		"lettersNumber":560
-	},
-	{
-		"page":158,
-		"wordsNumber":133,
-		"lettersNumber":556
-	},
-	{
-		"page":159,
-		"wordsNumber":123,
-		"lettersNumber":522
-	},
-	{
-		"page":160,
-		"wordsNumber":115,
-		"lettersNumber":510
-	},
-	{
-		"page":161,
-		"wordsNumber":108,
-		"lettersNumber":479
-	},
-	{
-		"page":162,
-		"wordsNumber":140,
-		"lettersNumber":604
-	},
-	{
-		"page":163,
-		"wordsNumber":121,
-		"lettersNumber":537
-	},
-	{
-		"page":164,
-		"wordsNumber":129,
-		"lettersNumber":536
-	},
-	{
-		"page":165,
-		"wordsNumber":124,
-		"lettersNumber":550
-	},
-	{
-		"page":166,
-		"wordsNumber":120,
-		"lettersNumber":556
-	},
-	{
-		"page":167,
-		"wordsNumber":124,
-		"lettersNumber":540
-	},
-	{
-		"page":168,
-		"wordsNumber":123,
-		"lettersNumber":535
-	},
-	{
-		"page":169,
-		"wordsNumber":135,
-		"lettersNumber":580
-	},
-	{
-		"page":170,
-		"wordsNumber":112,
-		"lettersNumber":528
-	},
-	{
-		"page":171,
-		"wordsNumber":107,
-		"lettersNumber":487
-	},
-	{
-		"page":172,
-		"wordsNumber":131,
-		"lettersNumber":584
-	},
-	{
-		"page":173,
-		"wordsNumber":127,
-		"lettersNumber":564
-	},
-	{
-		"page":174,
-		"wordsNumber":144,
-		"lettersNumber":604
-	},
-	{
-		"page":175,
-		"wordsNumber":135,
-		"lettersNumber":564
-	},
-	{
-		"page":176,
-		"wordsNumber":125,
-		"lettersNumber":543
-	},
-	{
-		"page":177,
-		"wordsNumber":105,
-		"lettersNumber":490
-	},
-	{
-		"page":178,
-		"wordsNumber":124,
-		"lettersNumber":547
-	},
-	{
-		"page":179,
-		"wordsNumber":124,
-		"lettersNumber":545
-	},
-	{
-		"page":180,
-		"wordsNumber":122,
-		"lettersNumber":558
-	},
-	{
-		"page":181,
-		"wordsNumber":115,
-		"lettersNumber":503
-	},
-	{
-		"page":182,
-		"wordsNumber":119,
-		"lettersNumber":539
-	},
-	{
-		"page":183,
-		"wordsNumber":123,
-		"lettersNumber":537
-	},
-	{
-		"page":184,
-		"wordsNumber":134,
-		"lettersNumber":550
-	},
-	{
-		"page":185,
-		"wordsNumber":133,
-		"lettersNumber":554
-	},
-	{
-		"page":186,
-		"wordsNumber":135,
-		"lettersNumber":598
-	},
-	{
-		"page":187,
-		"wordsNumber":121,
-		"lettersNumber":546
-	},
-	{
-		"page":188,
-		"wordsNumber":113,
-		"lettersNumber":518
-	},
-	{
-		"page":189,
-		"wordsNumber":127,
-		"lettersNumber":581
-	},
-	{
-		"page":190,
-		"wordsNumber":111,
-		"lettersNumber":524
-	},
-	{
-		"page":191,
-		"wordsNumber":114,
-		"lettersNumber":491
-	},
-	{
-		"page":192,
-		"wordsNumber":112,
-		"lettersNumber":510
-	},
-	{
-		"page":193,
-		"wordsNumber":118,
-		"lettersNumber":503
-	},
-	{
-		"page":194,
-		"wordsNumber":111,
-		"lettersNumber":543
-	},
-	{
-		"page":195,
-		"wordsNumber":117,
-		"lettersNumber":483
-	},
-	{
-		"page":196,
-		"wordsNumber":121,
-		"lettersNumber":547
-	},
-	{
-		"page":197,
-		"wordsNumber":109,
-		"lettersNumber":508
-	},
-	{
-		"page":198,
-		"wordsNumber":106,
-		"lettersNumber":537
-	},
-	{
-		"page":199,
-		"wordsNumber":124,
-		"lettersNumber":549
-	},
-	{
-		"page":200,
-		"wordsNumber":137,
-		"lettersNumber":604
-	},
-	{
-		"page":201,
-		"wordsNumber":123,
-		"lettersNumber":541
-	},
-	{
-		"page":202,
-		"wordsNumber":121,
-		"lettersNumber":532
-	},
-	{
-		"page":203,
-		"wordsNumber":124,
-		"lettersNumber":573
-	},
-	{
-		"page":204,
-		"wordsNumber":126,
-		"lettersNumber":540
-	},
-	{
-		"page":205,
-		"wordsNumber":120,
-		"lettersNumber":512
-	},
-	{
-		"page":206,
-		"wordsNumber":131,
-		"lettersNumber":548
-	},
-	{
-		"page":207,
-		"wordsNumber":112,
-		"lettersNumber":466
-	},
-	{
-		"page":208,
-		"wordsNumber":125,
-		"lettersNumber":526
-	},
-	{
-		"page":209,
-		"wordsNumber":122,
-		"lettersNumber":563
-	},
-	{
-		"page":210,
-		"wordsNumber":133,
-		"lettersNumber":521
-	},
-	{
-		"page":211,
-		"wordsNumber":142,
-		"lettersNumber":609
-	},
-	{
-		"page":212,
-		"wordsNumber":135,
-		"lettersNumber":593
-	},
-	{
-		"page":213,
-		"wordsNumber":158,
-		"lettersNumber":605
-	},
-	{
-		"page":214,
-		"wordsNumber":144,
-		"lettersNumber":586
-	},
-	{
-		"page":215,
-		"wordsNumber":147,
-		"lettersNumber":566
-	},
-	{
-		"page":216,
-		"wordsNumber":126,
-		"lettersNumber":508
-	},
-	{
-		"page":217,
-		"wordsNumber":139,
-		"lettersNumber":612
-	},
-	{
-		"page":218,
-		"wordsNumber":134,
-		"lettersNumber":588
-	},
-	{
-		"page":219,
-		"wordsNumber":131,
-		"lettersNumber":560
-	},
-	{
-		"page":220,
-		"wordsNumber":140,
-		"lettersNumber":572
-	},
-	{
-		"page":221,
-		"wordsNumber":128,
-		"lettersNumber":500
-	},
-	{
-		"page":222,
-		"wordsNumber":130,
-		"lettersNumber":532
-	},
-	{
-		"page":223,
-		"wordsNumber":137,
-		"lettersNumber":568
-	},
-	{
-		"page":224,
-		"wordsNumber":133,
-		"lettersNumber":569
-	},
-	{
-		"page":225,
-		"wordsNumber":143,
-		"lettersNumber":585
-	},
-	{
-		"page":226,
-		"wordsNumber":140,
-		"lettersNumber":559
-	},
-	{
-		"page":227,
-		"wordsNumber":141,
-		"lettersNumber":552
-	},
-	{
-		"page":228,
-		"wordsNumber":153,
-		"lettersNumber":617
-	},
-	{
-		"page":229,
-		"wordsNumber":130,
-		"lettersNumber":543
-	},
-	{
-		"page":230,
-		"wordsNumber":148,
-		"lettersNumber":589
-	},
-	{
-		"page":231,
-		"wordsNumber":126,
-		"lettersNumber":538
-	},
-	{
-		"page":232,
-		"wordsNumber":127,
-		"lettersNumber":543
-	},
-	{
-		"page":233,
-		"wordsNumber":136,
-		"lettersNumber":551
-	},
-	{
-		"page":234,
-		"wordsNumber":132,
-		"lettersNumber":548
-	},
-	{
-		"page":235,
-		"wordsNumber":112,
-		"lettersNumber":488
-	},
-	{
-		"page":236,
-		"wordsNumber":133,
-		"lettersNumber":555
-	},
-	{
-		"page":237,
-		"wordsNumber":123,
-		"lettersNumber":556
-	},
-	{
-		"page":238,
-		"wordsNumber":135,
-		"lettersNumber":520
-	},
-	{
-		"page":239,
-		"wordsNumber":142,
-		"lettersNumber":593
-	},
-	{
-		"page":240,
-		"wordsNumber":128,
-		"lettersNumber":545
-	},
-	{
-		"page":241,
-		"wordsNumber":144,
-		"lettersNumber":588
-	},
-	{
-		"page":242,
-		"wordsNumber":133,
-		"lettersNumber":577
-	},
-	{
-		"page":243,
-		"wordsNumber":139,
-		"lettersNumber":556
-	},
-	{
-		"page":244,
-		"wordsNumber":133,
-		"lettersNumber":527
-	},
-	{
-		"page":245,
-		"wordsNumber":133,
-		"lettersNumber":533
-	},
-	{
-		"page":246,
-		"wordsNumber":124,
-		"lettersNumber":524
-	},
-	{
-		"page":247,
-		"wordsNumber":138,
-		"lettersNumber":562
-	},
-	{
-		"page":248,
-		"wordsNumber":130,
-		"lettersNumber":539
-	},
-	{
-		"page":249,
-		"wordsNumber":117,
-		"lettersNumber":505
-	},
-	{
-		"page":250,
-		"wordsNumber":132,
-		"lettersNumber":537
-	},
-	{
-		"page":251,
-		"wordsNumber":152,
-		"lettersNumber":653
-	},
-	{
-		"page":252,
-		"wordsNumber":145,
-		"lettersNumber":638
-	},
-	{
-		"page":253,
-		"wordsNumber":153,
-		"lettersNumber":587
-	},
-	{
-		"page":254,
-		"wordsNumber":139,
-		"lettersNumber":576
-	},
-	{
-		"page":255,
-		"wordsNumber":101,
-		"lettersNumber":429
-	},
-	{
-		"page":256,
-		"wordsNumber":120,
-		"lettersNumber":516
-	},
-	{
-		"page":257,
-		"wordsNumber":122,
-		"lettersNumber":514
-	},
-	{
-		"page":258,
-		"wordsNumber":129,
-		"lettersNumber":542
-	},
-	{
-		"page":259,
-		"wordsNumber":126,
-		"lettersNumber":548
-	},
-	{
-		"page":260,
-		"wordsNumber":130,
-		"lettersNumber":542
-	},
-	{
-		"page":261,
-		"wordsNumber":117,
-		"lettersNumber":522
-	},
-	{
-		"page":262,
-		"wordsNumber":111,
-		"lettersNumber":478
-	},
-	{
-		"page":263,
-		"wordsNumber":128,
-		"lettersNumber":565
-	},
-	{
-		"page":264,
-		"wordsNumber":127,
-		"lettersNumber":524
-	},
-	{
-		"page":265,
-		"wordsNumber":124,
-		"lettersNumber":542
-	},
-	{
-		"page":266,
-		"wordsNumber":120,
-		"lettersNumber":576
-	},
-	{
-		"page":267,
-		"wordsNumber":102,
-		"lettersNumber":456
-	},
-	{
-		"page":268,
-		"wordsNumber":111,
-		"lettersNumber":492
-	},
-	{
-		"page":269,
-		"wordsNumber":124,
-		"lettersNumber":536
-	},
-	{
-		"page":270,
-		"wordsNumber":127,
-		"lettersNumber":583
-	},
-	{
-		"page":271,
-		"wordsNumber":136,
-		"lettersNumber":554
-	},
-	{
-		"page":272,
-		"wordsNumber":141,
-		"lettersNumber":589
-	},
-	{
-		"page":273,
-		"wordsNumber":136,
-		"lettersNumber":588
-	},
-	{
-		"page":274,
-		"wordsNumber":148,
-		"lettersNumber":609
-	},
-	{
-		"page":275,
-		"wordsNumber":133,
-		"lettersNumber":531
-	},
-	{
-		"page":276,
-		"wordsNumber":117,
-		"lettersNumber":529
-	},
-	{
-		"page":277,
-		"wordsNumber":122,
-		"lettersNumber":533
-	},
-	{
-		"page":278,
-		"wordsNumber":124,
-		"lettersNumber":525
-	},
-	{
-		"page":279,
-		"wordsNumber":112,
-		"lettersNumber":479
-	},
-	{
-		"page":280,
-		"wordsNumber":125,
-		"lettersNumber":526
-	},
-	{
-		"page":281,
-		"wordsNumber":131,
-		"lettersNumber":543
-	},
-	{
-		"page":282,
-		"wordsNumber":106,
-		"lettersNumber":486
-	},
-	{
-		"page":283,
-		"wordsNumber":135,
-		"lettersNumber":615
-	},
-	{
-		"page":284,
-		"wordsNumber":130,
-		"lettersNumber":563
-	},
-	{
-		"page":285,
-		"wordsNumber":144,
-		"lettersNumber":595
-	},
-	{
-		"page":286,
-		"wordsNumber":147,
-		"lettersNumber":642
-	},
-	{
-		"page":287,
-		"wordsNumber":133,
-		"lettersNumber":569
-	},
-	{
-		"page":288,
-		"wordsNumber":126,
-		"lettersNumber":554
-	},
-	{
-		"page":289,
-		"wordsNumber":132,
-		"lettersNumber":557
-	},
-	{
-		"page":290,
-		"wordsNumber":136,
-		"lettersNumber":554
-	},
-	{
-		"page":291,
-		"wordsNumber":141,
-		"lettersNumber":553
-	},
-	{
-		"page":292,
-		"wordsNumber":134,
-		"lettersNumber":590
-	},
-	{
-		"page":293,
-		"wordsNumber":127,
-		"lettersNumber":541
-	},
-	{
-		"page":294,
-		"wordsNumber":134,
-		"lettersNumber":551
-	},
-	{
-		"page":295,
-		"wordsNumber":126,
-		"lettersNumber":548
-	},
-	{
-		"page":296,
-		"wordsNumber":135,
-		"lettersNumber":551
-	},
-	{
-		"page":297,
-		"wordsNumber":136,
-		"lettersNumber":600
-	},
-	{
-		"page":298,
-		"wordsNumber":152,
-		"lettersNumber":591
-	},
-	{
-		"page":299,
-		"wordsNumber":129,
-		"lettersNumber":592
-	},
-	{
-		"page":300,
-		"wordsNumber":132,
-		"lettersNumber":564
-	},
-	{
-		"page":301,
-		"wordsNumber":149,
-		"lettersNumber":576
-	},
-	{
-		"page":302,
-		"wordsNumber":138,
-		"lettersNumber":581
-	},
-	{
-		"page":303,
-		"wordsNumber":160,
-		"lettersNumber":619
-	},
-	{
-		"page":304,
-		"wordsNumber":153,
-		"lettersNumber":656
-	},
-	{
-		"page":305,
-		"wordsNumber":110,
-		"lettersNumber":408
-	},
-	{
-		"page":306,
-		"wordsNumber":110,
-		"lettersNumber":408
-	},
-	{
-		"page":307,
-		"wordsNumber":138,
-		"lettersNumber":566
-	},
-	{
-		"page":308,
-		"wordsNumber":145,
-		"lettersNumber":590
-	},
-	{
-		"page":309,
-		"wordsNumber":146,
-		"lettersNumber":626
-	},
-	{
-		"page":310,
-		"wordsNumber":136,
-		"lettersNumber":574
-	},
-	{
-		"page":311,
-		"wordsNumber":125,
-		"lettersNumber":543
-	},
-	{
-		"page":312,
-		"wordsNumber":115,
-		"lettersNumber":470
-	},
-	{
-		"page":313,
-		"wordsNumber":134,
-		"lettersNumber":531
-	},
-	{
-		"page":314,
-		"wordsNumber":151,
-		"lettersNumber":589
-	},
-	{
-		"page":315,
-		"wordsNumber":131,
-		"lettersNumber":568
-	},
-	{
-		"page":316,
-		"wordsNumber":152,
-		"lettersNumber":617
-	},
-	{
-		"page":317,
-		"wordsNumber":135,
-		"lettersNumber":574
-	},
-	{
-		"page":318,
-		"wordsNumber":138,
-		"lettersNumber":549
-	},
-	{
-		"page":319,
-		"wordsNumber":139,
-		"lettersNumber":563
-	},
-	{
-		"page":320,
-		"wordsNumber":134,
-		"lettersNumber":523
-	},
-	{
-		"page":321,
-		"wordsNumber":139,
-		"lettersNumber":595
-	},
-	{
-		"page":322,
-		"wordsNumber":104,
-		"lettersNumber":466
-	},
-	{
-		"page":323,
-		"wordsNumber":137,
-		"lettersNumber":580
-	},
-	{
-		"page":324,
-		"wordsNumber":127,
-		"lettersNumber":547
-	},
-	{
-		"page":325,
-		"wordsNumber":116,
-		"lettersNumber":493
-	},
-	{
-		"page":326,
-		"wordsNumber":125,
-		"lettersNumber":552
-	},
-	{
-		"page":327,
-		"wordsNumber":117,
-		"lettersNumber":542
-	},
-	{
-		"page":328,
-		"wordsNumber":113,
-		"lettersNumber":542
-	},
-	{
-		"page":329,
-		"wordsNumber":112,
-		"lettersNumber":487
-	},
-	{
-		"page":330,
-		"wordsNumber":109,
-		"lettersNumber":459
-	},
-	{
-		"page":331,
-		"wordsNumber":109,
-		"lettersNumber":462
-	},
-	{
-		"page":332,
-		"wordsNumber":123,
-		"lettersNumber":479
-	},
-	{
-		"page":333,
-		"wordsNumber":150,
-		"lettersNumber":581
-	},
-	{
-		"page":334,
-		"wordsNumber":129,
-		"lettersNumber":543
-	},
-	{
-		"page":335,
-		"wordsNumber":116,
-		"lettersNumber":514
-	},
-	{
-		"page":336,
-		"wordsNumber":136,
-		"lettersNumber":592
-	},
-	{
-		"page":337,
-		"wordsNumber":123,
-		"lettersNumber":542
-	},
-	{
-		"page":338,
-		"wordsNumber":129,
-		"lettersNumber":553
-	},
-	{
-		"page":339,
-		"wordsNumber":120,
-		"lettersNumber":492
-	},
-	{
-		"page":340,
-		"wordsNumber":135,
-		"lettersNumber":543
-	},
-	{
-		"page":341,
-		"wordsNumber":113,
-		"lettersNumber":504
-	},
-	{
-		"page":342,
-		"wordsNumber":111,
-		"lettersNumber":505
-	},
-	{
-		"page":343,
-		"wordsNumber":143,
-		"lettersNumber":597
-	},
-	{
-		"page":344,
-		"wordsNumber":141,
-		"lettersNumber":607
-	},
-	{
-		"page":345,
-		"wordsNumber":133,
-		"lettersNumber":597
-	},
-	{
-		"page":346,
-		"wordsNumber":136,
-		"lettersNumber":588
-	},
-	{
-		"page":347,
-		"wordsNumber":129,
-		"lettersNumber":544
-	},
-	{
-		"page":348,
-		"wordsNumber":131,
-		"lettersNumber":537
-	},
-	{
-		"page":349,
-		"wordsNumber":126,
-		"lettersNumber":532
-	},
-	{
-		"page":350,
-		"wordsNumber":138,
-		"lettersNumber":629
-	},
-	{
-		"page":351,
-		"wordsNumber":144,
-		"lettersNumber":611
-	},
-	{
-		"page":352,
-		"wordsNumber":127,
-		"lettersNumber":624
-	},
-	{
-		"page":353,
-		"wordsNumber":132,
-		"lettersNumber":574
-	},
-	{
-		"page":354,
-		"wordsNumber":140,
-		"lettersNumber":619
-	},
-	{
-		"page":355,
-		"wordsNumber":154,
-		"lettersNumber":610
-	},
-	{
-		"page":356,
-		"wordsNumber":146,
-		"lettersNumber":620
-	},
-	{
-		"page":357,
-		"wordsNumber":129,
-		"lettersNumber":599
-	},
-	{
-		"page":358,
-		"wordsNumber":118,
-		"lettersNumber":507
-	},
-	{
-		"page":359,
-		"wordsNumber":116,
-		"lettersNumber":504
-	},
-	{
-		"page":360,
-		"wordsNumber":126,
-		"lettersNumber":537
-	},
-	{
-		"page":361,
-		"wordsNumber":121,
-		"lettersNumber":526
-	},
-	{
-		"page":362,
-		"wordsNumber":124,
-		"lettersNumber":582
-	},
-	{
-		"page":363,
-		"wordsNumber":118,
-		"lettersNumber":537
-	},
-	{
-		"page":364,
-		"wordsNumber":134,
-		"lettersNumber":554
-	},
-	{
-		"page":365,
-		"wordsNumber":129,
-		"lettersNumber":558
-	},
-	{
-		"page":366,
-		"wordsNumber":113,
-		"lettersNumber":495
-	},
-	{
-		"page":367,
-		"wordsNumber":133,
-		"lettersNumber":547
-	},
-	{
-		"page":368,
-		"wordsNumber":133,
-		"lettersNumber":564
-	},
-	{
-		"page":369,
-		"wordsNumber":134,
-		"lettersNumber":610
-	},
-	{
-		"page":370,
-		"wordsNumber":126,
-		"lettersNumber":547
-	},
-	{
-		"page":371,
-		"wordsNumber":141,
-		"lettersNumber":584
-	},
-	{
-		"page":372,
-		"wordsNumber":136,
-		"lettersNumber":574
-	},
-	{
-		"page":373,
-		"wordsNumber":131,
-		"lettersNumber":556
-	},
-	{
-		"page":374,
-		"wordsNumber":137,
-		"lettersNumber":591
-	},
-	{
-		"page":375,
-		"wordsNumber":128,
-		"lettersNumber":555
-	},
-	{
-		"page":376,
-		"wordsNumber":119,
-		"lettersNumber":522
-	},
-	{
-		"page":377,
-		"wordsNumber":138,
-		"lettersNumber":573
-	},
-	{
-		"page":378,
-		"wordsNumber":131,
-		"lettersNumber":577
-	},
-	{
-		"page":379,
-		"wordsNumber":134,
-		"lettersNumber":582
-	},
-	{
-		"page":380,
-		"wordsNumber":159,
-		"lettersNumber":629
-	},
-	{
-		"page":381,
-		"wordsNumber":113,
-		"lettersNumber":514
-	},
-	{
-		"page":382,
-		"wordsNumber":124,
-		"lettersNumber":526
-	},
-	{
-		"page":383,
-		"wordsNumber":142,
-		"lettersNumber":563
-	},
-	{
-		"page":384,
-		"wordsNumber":143,
-		"lettersNumber":588
-	},
-	{
-		"page":385,
-		"wordsNumber":112,
-		"lettersNumber":472
-	},
-	{
-		"page":386,
-		"wordsNumber":125,
-		"lettersNumber":511
-	},
-	{
-		"page":387,
-		"wordsNumber":146,
-		"lettersNumber":594
-	},
-	{
-		"page":388,
-		"wordsNumber":133,
-		"lettersNumber":527
-	},
-	{
-		"page":389,
-		"wordsNumber":128,
-		"lettersNumber":531
-	},
-	{
-		"page":390,
-		"wordsNumber":119,
-		"lettersNumber":527
-	},
-	{
-		"page":391,
-		"wordsNumber":131,
-		"lettersNumber":546
-	},
-	{
-		"page":392,
-		"wordsNumber":131,
-		"lettersNumber":562
-	},
-	{
-		"page":393,
-		"wordsNumber":131,
-		"lettersNumber":585
-	},
-	{
-		"page":394,
-		"wordsNumber":133,
-		"lettersNumber":553
-	},
-	{
-		"page":395,
-		"wordsNumber":139,
-		"lettersNumber":571
-	},
-	{
-		"page":396,
-		"wordsNumber":123,
-		"lettersNumber":479
-	},
-	{
-		"page":397,
-		"wordsNumber":122,
-		"lettersNumber":576
-	},
-	{
-		"page":398,
-		"wordsNumber":129,
-		"lettersNumber":540
-	},
-	{
-		"page":399,
-		"wordsNumber":120,
-		"lettersNumber":512
-	},
-	{
-		"page":400,
-		"wordsNumber":112,
-		"lettersNumber":500
-	},
-	{
-		"page":401,
-		"wordsNumber":111,
-		"lettersNumber":502
-	},
-	{
-		"page":402,
-		"wordsNumber":121,
-		"lettersNumber":535
-	},
-	{
-		"page":403,
-		"wordsNumber":129,
-		"lettersNumber":590
-	},
-	{
-		"page":404,
-		"wordsNumber":109,
-		"lettersNumber":473
-	},
-	{
-		"page":405,
-		"wordsNumber":124,
-		"lettersNumber":568
-	},
-	{
-		"page":406,
-		"wordsNumber":118,
-		"lettersNumber":530
-	},
-	{
-		"page":407,
-		"wordsNumber":127,
-		"lettersNumber":536
-	},
-	{
-		"page":408,
-		"wordsNumber":139,
-		"lettersNumber":583
-	},
-	{
-		"page":409,
-		"wordsNumber":142,
-		"lettersNumber":597
-	},
-	{
-		"page":410,
-		"wordsNumber":136,
-		"lettersNumber":558
-	},
-	{
-		"page":411,
-		"wordsNumber":116,
-		"lettersNumber":494
-	},
-	{
-		"page":412,
-		"wordsNumber":146,
-		"lettersNumber":566
-	},
-	{
-		"page":413,
-		"wordsNumber":145,
-		"lettersNumber":582
-	},
-	{
-		"page":414,
-		"wordsNumber":139,
-		"lettersNumber":540
-	},
-	{
-		"page":415,
-		"wordsNumber":131,
-		"lettersNumber":506
-	},
-	{
-		"page":416,
-		"wordsNumber":126,
-		"lettersNumber":560
-	},
-	{
-		"page":417,
-		"wordsNumber":115,
-		"lettersNumber":502
-	},
-	{
-		"page":418,
-		"wordsNumber":116,
-		"lettersNumber":530
-	},
-	{
-		"page":419,
-		"wordsNumber":133,
-		"lettersNumber":612
-	},
-	{
-		"page":420,
-		"wordsNumber":146,
-		"lettersNumber":615
-	},
-	{
-		"page":421,
-		"wordsNumber":124,
-		"lettersNumber":574
-	},
-	{
-		"page":422,
-		"wordsNumber":102,
-		"lettersNumber":547
-	},
-	{
-		"page":423,
-		"wordsNumber":147,
-		"lettersNumber":608
-	},
-	{
-		"page":424,
-		"wordsNumber":124,
-		"lettersNumber":566
-	},
-	{
-		"page":425,
-		"wordsNumber":140,
-		"lettersNumber":561
-	},
-	{
-		"page":426,
-		"wordsNumber":127,
-		"lettersNumber":585
-	},
-	{
-		"page":427,
-		"wordsNumber":128,
-		"lettersNumber":620
-	},
-	{
-		"page":428,
-		"wordsNumber":120,
-		"lettersNumber":484
-	},
-	{
-		"page":429,
-		"wordsNumber":142,
-		"lettersNumber":580
-	},
-	{
-		"page":430,
-		"wordsNumber":137,
-		"lettersNumber":563
-	},
-	{
-		"page":431,
-		"wordsNumber":132,
-		"lettersNumber":547
-	},
-	{
-		"page":432,
-		"wordsNumber":136,
-		"lettersNumber":592
-	},
-	{
-		"page":433,
-		"wordsNumber":148,
-		"lettersNumber":593
-	},
-	{
-		"page":434,
-		"wordsNumber":132,
-		"lettersNumber":507
-	},
-	{
-		"page":435,
-		"wordsNumber":151,
-		"lettersNumber":620
-	},
-	{
-		"page":436,
-		"wordsNumber":129,
-		"lettersNumber":554
-	},
-	{
-		"page":437,
-		"wordsNumber":127,
-		"lettersNumber":557
-	},
-	{
-		"page":438,
-		"wordsNumber":128,
-		"lettersNumber":547
-	},
-	{
-		"page":439,
-		"wordsNumber":151,
-		"lettersNumber":622
-	},
-	{
-		"page":440,
-		"wordsNumber":108,
-		"lettersNumber":462
-	},
-	{
-		"page":441,
-		"wordsNumber":129,
-		"lettersNumber":555
-	},
-	{
-		"page":442,
-		"wordsNumber":129,
-		"lettersNumber":552
-	},
-	{
-		"page":443,
-		"wordsNumber":140,
-		"lettersNumber":567
-	},
-	{
-		"page":444,
-		"wordsNumber":122,
-		"lettersNumber":539
-	},
-	{
-		"page":445,
-		"wordsNumber":122,
-		"lettersNumber":505
-	},
-	{
-		"page":446,
-		"wordsNumber":125,
-		"lettersNumber":565
-	},
-	{
-		"page":447,
-		"wordsNumber":135,
-		"lettersNumber":585
-	},
-	{
-		"page":448,
-		"wordsNumber":123,
-		"lettersNumber":556
-	},
-	{
-		"page":449,
-		"wordsNumber":135,
-		"lettersNumber":584
-	},
-	{
-		"page":450,
-		"wordsNumber":106,
-		"lettersNumber":539
-	},
-	{
-		"page":451,
-		"wordsNumber":116,
-		"lettersNumber":552
-	},
-	{
-		"page":452,
-		"wordsNumber":121,
-		"lettersNumber":547
-	},
-	{
-		"page":453,
-		"wordsNumber":138,
-		"lettersNumber":559
-	},
-	{
-		"page":454,
-		"wordsNumber":145,
-		"lettersNumber":611
-	},
-	{
-		"page":455,
-		"wordsNumber":138,
-		"lettersNumber":607
-	},
-	{
-		"page":456,
-		"wordsNumber":133,
-		"lettersNumber":589
-	},
-	{
-		"page":457,
-		"wordsNumber":149,
-		"lettersNumber":604
-	},
-	{
-		"page":458,
-		"wordsNumber":118,
-		"lettersNumber":487
-	},
-	{
-		"page":459,
-		"wordsNumber":146,
-		"lettersNumber":590
-	},
-	{
-		"page":460,
-		"wordsNumber":150,
-		"lettersNumber":622
-	},
-	{
-		"page":461,
-		"wordsNumber":137,
-		"lettersNumber":571
-	},
-	{
-		"page":462,
-		"wordsNumber":123,
-		"lettersNumber":504
-	},
-	{
-		"page":463,
-		"wordsNumber":129,
-		"lettersNumber":536
-	},
-	{
-		"page":464,
-		"wordsNumber":137,
-		"lettersNumber":553
-	},
-	{
-		"page":465,
-		"wordsNumber":120,
-		"lettersNumber":526
-	},
-	{
-		"page":466,
-		"wordsNumber":125,
-		"lettersNumber":548
-	},
-	{
-		"page":467,
-		"wordsNumber":109,
-		"lettersNumber":486
-	},
-	{
-		"page":468,
-		"wordsNumber":124,
-		"lettersNumber":537
-	},
-	{
-		"page":469,
-		"wordsNumber":124,
-		"lettersNumber":539
-	},
-	{
-		"page":470,
-		"wordsNumber":142,
-		"lettersNumber":542
-	},
-	{
-		"page":471,
-		"wordsNumber":127,
-		"lettersNumber":514
-	},
-	{
-		"page":472,
-		"wordsNumber":125,
-		"lettersNumber":522
-	},
-	{
-		"page":473,
-		"wordsNumber":109,
-		"lettersNumber":502
-	},
-	{
-		"page":474,
-		"wordsNumber":118,
-		"lettersNumber":495
-	},
-	{
-		"page":475,
-		"wordsNumber":130,
-		"lettersNumber":531
-	},
-	{
-		"page":476,
-		"wordsNumber":128,
-		"lettersNumber":545
-	},
-	{
-		"page":477,
-		"wordsNumber":114,
-		"lettersNumber":512
-	},
-	{
-		"page":478,
-		"wordsNumber":134,
-		"lettersNumber":606
-	},
-	{
-		"page":479,
-		"wordsNumber":134,
-		"lettersNumber":606
-	},
-	{
-		"page":480,
-		"wordsNumber":122,
-		"lettersNumber":534
-	},
-	{
-		"page":481,
-		"wordsNumber":146,
-		"lettersNumber":578
-	},
-	{
-		"page":482,
-		"wordsNumber":144,
-		"lettersNumber":540
-	},
-	{
-		"page":483,
-		"wordsNumber":125,
-		"lettersNumber":513
-	},
-	{
-		"page":484,
-		"wordsNumber":134,
-		"lettersNumber":561
-	},
-	{
-		"page":485,
-		"wordsNumber":128,
-		"lettersNumber":524
-	},
-	{
-		"page":486,
-		"wordsNumber":145,
-		"lettersNumber":598
-	},
-	{
-		"page":487,
-		"wordsNumber":147,
-		"lettersNumber":625
-	},
-	{
-		"page":488,
-		"wordsNumber":139,
-		"lettersNumber":548
-	},
-	{
-		"page":489,
-		"wordsNumber":108,
-		"lettersNumber":458
-	},
-	{
-		"page":490,
-		"wordsNumber":130,
-		"lettersNumber":554
-	},
-	{
-		"page":491,
-		"wordsNumber":133,
-		"lettersNumber":583
-	},
-	{
-		"page":492,
-		"wordsNumber":125,
-		"lettersNumber":553
-	},
-	{
-		"page":493,
-		"wordsNumber":128,
-		"lettersNumber":538
-	},
-	{
-		"page":494,
-		"wordsNumber":117,
-		"lettersNumber":536
-	},
-	{
-		"page":495,
-		"wordsNumber":131,
-		"lettersNumber":584
-	},
-	{
-		"page":496,
-		"wordsNumber":111,
-		"lettersNumber":458
-	},
-	{
-		"page":497,
-		"wordsNumber":131,
-		"lettersNumber":581
-	},
-	{
-		"page":498,
-		"wordsNumber":104,
-		"lettersNumber":444
-	},
-	{
-		"page":499,
-		"wordsNumber":143,
-		"lettersNumber":594
-	},
-	{
-		"page":500,
-		"wordsNumber":127,
-		"lettersNumber":574
-	},
-	{
-		"page":501,
-		"wordsNumber":161,
-		"lettersNumber":667
-	},
-	{
-		"page":502,
-		"wordsNumber":126,
-		"lettersNumber":535
-	},
-	{
-		"page":503,
-		"wordsNumber":153,
-		"lettersNumber":622
-	},
-	{
-		"page":504,
-		"wordsNumber":144,
-		"lettersNumber":628
-	},
-	{
-		"page":505,
-		"wordsNumber":141,
-		"lettersNumber":601
-	},
-	{
-		"page":506,
-		"wordsNumber":136,
-		"lettersNumber":558
-	},
-	{
-		"page":507,
-		"wordsNumber":139,
-		"lettersNumber":638
-	},
-	{
-		"page":508,
-		"wordsNumber":152,
-		"lettersNumber":658
-	},
-	{
-		"page":509,
-		"wordsNumber":122,
-		"lettersNumber":540
-	},
-	{
-		"page":510,
-		"wordsNumber":126,
-		"lettersNumber":602
-	},
-	{
-		"page":511,
-		"wordsNumber":104,
-		"lettersNumber":519
-	},
-	{
-		"page":512,
-		"wordsNumber":136,
-		"lettersNumber":588
-	},
-	{
-		"page":513,
-		"wordsNumber":137,
-		"lettersNumber":592
-	},
-	{
-		"page":514,
-		"wordsNumber":129,
-		"lettersNumber":567
-	},
-	{
-		"page":515,
-		"wordsNumber":117,
-		"lettersNumber":533
-	},
-	{
-		"page":516,
-		"wordsNumber":143,
-		"lettersNumber":643
-	},
-	{
-		"page":517,
-		"wordsNumber":141,
-		"lettersNumber":619
-	},
-	{
-		"page":518,
-		"wordsNumber":120,
-		"lettersNumber":505
-	},
-	{
-		"page":519,
-		"wordsNumber":153,
-		"lettersNumber":614
-	},
-	{
-		"page":520,
-		"wordsNumber":114,
-		"lettersNumber":483
-	},
-	{
-		"page":521,
-		"wordsNumber":136,
-		"lettersNumber":589
-	},
-	{
-		"page":522,
-		"wordsNumber":143,
-		"lettersNumber":612
-	},
-	{
-		"page":523,
-		"wordsNumber":114,
-		"lettersNumber":472
-	},
-	{
-		"page":524,
-		"wordsNumber":131,
-		"lettersNumber":569
-	},
-	{
-		"page":525,
-		"wordsNumber":134,
-		"lettersNumber":559
-	},
-	{
-		"page":526,
-		"wordsNumber":138,
-		"lettersNumber":536
-	},
-	{
-		"page":527,
-		"wordsNumber":151,
-		"lettersNumber":596
-	},
-	{
-		"page":528,
-		"wordsNumber":108,
-		"lettersNumber":464
-	},
-	{
-		"page":529,
-		"wordsNumber":138,
-		"lettersNumber":594
-	},
-	{
-		"page":530,
-		"wordsNumber":135,
-		"lettersNumber":591
-	},
-	{
-		"page":531,
-		"wordsNumber":90,
-		"lettersNumber":416
-	},
-	{
-		"page":532,
-		"wordsNumber":127,
-		"lettersNumber":582
-	},
-	{
-		"page":533,
-		"wordsNumber":117,
-		"lettersNumber":559
-	},
-	{
-		"page":534,
-		"wordsNumber":99,
-		"lettersNumber":470
-	},
-	{
-		"page":535,
-		"wordsNumber":122,
-		"lettersNumber":569
-	},
-	{
-		"page":536,
-		"wordsNumber":122,
-		"lettersNumber":578
-	},
-	{
-		"page":537,
-		"wordsNumber":114,
-		"lettersNumber":487
-	},
-	{
-		"page":538,
-		"wordsNumber":152,
-		"lettersNumber":632
-	},
-	{
-		"page":539,
-		"wordsNumber":137,
-		"lettersNumber":636
-	},
-	{
-		"page":540,
-		"wordsNumber":132,
-		"lettersNumber":580
-	},
-	{
-		"page":541,
-		"wordsNumber":124,
-		"lettersNumber":583
-	},
-	{
-		"page":542,
-		"wordsNumber":121,
-		"lettersNumber":528
-	},
-	{
-		"page":543,
-		"wordsNumber":151,
-		"lettersNumber":659
-	},
-	{
-		"page":544,
-		"wordsNumber":149,
-		"lettersNumber":648
-	},
-	{
-		"page":545,
-		"wordsNumber":116,
-		"lettersNumber":512
-	},
-	{
-		"page":546,
-		"wordsNumber":136,
-		"lettersNumber":603
-	},
-	{
-		"page":547,
-		"wordsNumber":130,
-		"lettersNumber":564
-	},
-	{
-		"page":548,
-		"wordsNumber":114,
-		"lettersNumber":528
-	},
-	{
-		"page":549,
-		"wordsNumber":139,
-		"lettersNumber":628
-	},
-	{
-		"page":550,
-		"wordsNumber":152,
-		"lettersNumber":683
-	},
-	{
-		"page":551,
-		"wordsNumber":119,
-		"lettersNumber":513
-	},
-	{
-		"page":552,
-		"wordsNumber":159,
-		"lettersNumber":716
-	},
-	{
-		"page":553,
-		"wordsNumber":118,
-		"lettersNumber":522
-	},
-	{
-		"page":554,
-		"wordsNumber":119,
-		"lettersNumber":532
-	},
-	{
-		"page":555,
-		"wordsNumber":118,
-		"lettersNumber":525
-	},
-	{
-		"page":556,
-		"wordsNumber":135,
-		"lettersNumber":598
-	},
-	{
-		"page":557,
-		"wordsNumber":106,
-		"lettersNumber":501
-	},
-	{
-		"page":558,
-		"wordsNumber":134,
-		"lettersNumber":554
-	},
-	{
-		"page":559,
-		"wordsNumber":153,
-		"lettersNumber":654
-	},
-	{
-		"page":560,
-		"wordsNumber":125,
-		"lettersNumber":557
-	},
-	{
-		"page":561,
-		"wordsNumber":124,
-		"lettersNumber":555
-	},
-	{
-		"page":562,
-		"wordsNumber":131,
-		"lettersNumber":552
-	},
-	{
-		"page":563,
-		"wordsNumber":151,
-		"lettersNumber":602
-	},
-	{
-		"page":564,
-		"wordsNumber":119,
-		"lettersNumber":473
-	},
-	{
-		"page":565,
-		"wordsNumber":151,
-		"lettersNumber":671
-	},
-	{
-		"page":566,
-		"wordsNumber":122,
-		"lettersNumber":535
-	},
-	{
-		"page":567,
-		"wordsNumber":138,
-		"lettersNumber":622
-	},
-	{
-		"page":568,
-		"wordsNumber":121,
-		"lettersNumber":514
-	},
-	{
-		"page":569,
-		"wordsNumber":134,
-		"lettersNumber":597
-	},
-	{
-		"page":570,
-		"wordsNumber":127,
-		"lettersNumber":554
-	},
-	{
-		"page":571,
-		"wordsNumber":140,
-		"lettersNumber":605
-	},
-	{
-		"page":572,
-		"wordsNumber":136,
-		"lettersNumber":526
-	},
-	{
-		"page":573,
-		"wordsNumber":149,
-		"lettersNumber":586
-	},
-	{
-		"page":574,
-		"wordsNumber":121,
-		"lettersNumber":528
-	},
-	{
-		"page":575,
-		"wordsNumber":129,
-		"lettersNumber":552
-	},
-	{
-		"page":576,
-		"wordsNumber":158,
-		"lettersNumber":635
-	},
-	{
-		"page":577,
-		"wordsNumber":126,
-		"lettersNumber":526
-	},
-	{
-		"page":578,
-		"wordsNumber":126,
-		"lettersNumber":526
-	},
-	{
-		"page":579,
-		"wordsNumber":147,
-		"lettersNumber":668
-	},
-	{
-		"page":580,
-		"wordsNumber":107,
-		"lettersNumber":493
-	},
-	{
-		"page":581,
-		"wordsNumber":128,
-		"lettersNumber":584
-	},
-	{
-		"page":582,
-		"wordsNumber":105,
-		"lettersNumber":500
-	},
-	{
-		"page":583,
-		"wordsNumber":113,
-		"lettersNumber":524
-	},
-	{
-		"page":584,
-		"wordsNumber":134,
-		"lettersNumber":563
-	},
-	{
-		"page":585,
-		"wordsNumber":133,
-		"lettersNumber":553
-	},
-	{
-		"page":586,
-		"wordsNumber":104,
-		"lettersNumber":435
-	},
-	{
-		"page":587,
-		"wordsNumber":105,
-		"lettersNumber":453
-	},
-	{
-		"page":588,
-		"wordsNumber":135,
-		"lettersNumber":595
-	},
-	{
-		"page":589,
-		"wordsNumber":116,
-		"lettersNumber":486
-	},
-	{
-		"page":590,
-		"wordsNumber":109,
-		"lettersNumber":470
-	},
-	{
-		"page":591,
-		"wordsNumber":118,
-		"lettersNumber":481
-	},
-	{
-		"page":592,
-		"wordsNumber":107,
-		"lettersNumber":452
-	},
-	{
-		"page":593,
-		"wordsNumber":111,
-		"lettersNumber":465
-	},
-	{
-		"page":594,
-		"wordsNumber":108,
-		"lettersNumber":467
-	},
-	{
-		"page":595,
-		"wordsNumber":99,
-		"lettersNumber":456
-	},
-	{
-		"page":596,
-		"wordsNumber":93,
-		"lettersNumber":378
-	},
-	{
-		"page":597,
-		"wordsNumber":106,
-		"lettersNumber":451
-	},
-	{
-		"page":598,
-		"wordsNumber":103,
-		"lettersNumber":439
-	},
-	{
-		"page":599,
-		"wordsNumber":88,
-		"lettersNumber":379
-	},
-	{
-		"page":600,
-		"wordsNumber":73,
-		"lettersNumber":316
-	},
-	{
-		"page":601,
-		"wordsNumber":70,
-		"lettersNumber":304
-	},
-	{
-		"page":602,
-		"wordsNumber":52,
-		"lettersNumber":236
-	},
-	{
-		"page":603,
-		"wordsNumber":68,
-		"lettersNumber":261
-	},
-	{
-		"page":604,
-		"wordsNumber":58,
-		"lettersNumber":201
-	}
+  {
+    page: 1,
+    wordsNumber: 29,
+    lettersNumber: 145,
+  },
+  {
+    page: 2,
+    wordsNumber: 36,
+    lettersNumber: 165,
+  },
+  {
+    page: 3,
+    wordsNumber: 127,
+    lettersNumber: 563,
+  },
+  {
+    page: 4,
+    wordsNumber: 134,
+    lettersNumber: 576,
+  },
+  {
+    page: 5,
+    wordsNumber: 125,
+    lettersNumber: 515,
+  },
+  {
+    page: 6,
+    wordsNumber: 138,
+    lettersNumber: 606,
+  },
+  {
+    page: 7,
+    wordsNumber: 129,
+    lettersNumber: 620,
+  },
+  {
+    page: 8,
+    wordsNumber: 120,
+    lettersNumber: 561,
+  },
+  {
+    page: 9,
+    wordsNumber: 125,
+    lettersNumber: 551,
+  },
+  {
+    page: 10,
+    wordsNumber: 134,
+    lettersNumber: 567,
+  },
+  {
+    page: 11,
+    wordsNumber: 141,
+    lettersNumber: 582,
+  },
+  {
+    page: 12,
+    wordsNumber: 119,
+    lettersNumber: 533,
+  },
+  {
+    page: 13,
+    wordsNumber: 115,
+    lettersNumber: 552,
+  },
+  {
+    page: 14,
+    wordsNumber: 121,
+    lettersNumber: 516,
+  },
+  {
+    page: 15,
+    wordsNumber: 123,
+    lettersNumber: 517,
+  },
+  {
+    page: 16,
+    wordsNumber: 123,
+    lettersNumber: 522,
+  },
+  {
+    page: 17,
+    wordsNumber: 139,
+    lettersNumber: 522,
+  },
+  {
+    page: 18,
+    wordsNumber: 132,
+    lettersNumber: 561,
+  },
+  {
+    page: 19,
+    wordsNumber: 146,
+    lettersNumber: 631,
+  },
+  {
+    page: 20,
+    wordsNumber: 132,
+    lettersNumber: 571,
+  },
+  {
+    page: 21,
+    wordsNumber: 134,
+    lettersNumber: 558,
+  },
+  {
+    page: 22,
+    wordsNumber: 132,
+    lettersNumber: 562,
+  },
+  {
+    page: 23,
+    wordsNumber: 121,
+    lettersNumber: 552,
+  },
+  {
+    page: 24,
+    wordsNumber: 130,
+    lettersNumber: 586,
+  },
+  {
+    page: 25,
+    wordsNumber: 136,
+    lettersNumber: 583,
+  },
+  {
+    page: 26,
+    wordsNumber: 133,
+    lettersNumber: 555,
+  },
+  {
+    page: 27,
+    wordsNumber: 126,
+    lettersNumber: 611,
+  },
+  {
+    page: 28,
+    wordsNumber: 123,
+    lettersNumber: 502,
+  },
+  {
+    page: 29,
+    wordsNumber: 122,
+    lettersNumber: 554,
+  },
+  {
+    page: 30,
+    wordsNumber: 155,
+    lettersNumber: 684,
+  },
+  {
+    page: 31,
+    wordsNumber: 113,
+    lettersNumber: 471,
+  },
+  {
+    page: 32,
+    wordsNumber: 123,
+    lettersNumber: 517,
+  },
+  {
+    page: 33,
+    wordsNumber: 141,
+    lettersNumber: 612,
+  },
+  {
+    page: 34,
+    wordsNumber: 124,
+    lettersNumber: 539,
+  },
+  {
+    page: 35,
+    wordsNumber: 122,
+    lettersNumber: 570,
+  },
+  {
+    page: 36,
+    wordsNumber: 150,
+    lettersNumber: 635,
+  },
+  {
+    page: 37,
+    wordsNumber: 142,
+    lettersNumber: 642,
+  },
+  {
+    page: 38,
+    wordsNumber: 132,
+    lettersNumber: 574,
+  },
+  {
+    page: 39,
+    wordsNumber: 116,
+    lettersNumber: 505,
+  },
+  {
+    page: 40,
+    wordsNumber: 127,
+    lettersNumber: 497,
+  },
+  {
+    page: 41,
+    wordsNumber: 111,
+    lettersNumber: 481,
+  },
+  {
+    page: 42,
+    wordsNumber: 147,
+    lettersNumber: 590,
+  },
+  {
+    page: 43,
+    wordsNumber: 134,
+    lettersNumber: 538,
+  },
+  {
+    page: 44,
+    wordsNumber: 136,
+    lettersNumber: 557,
+  },
+  {
+    page: 45,
+    wordsNumber: 120,
+    lettersNumber: 531,
+  },
+  {
+    page: 46,
+    wordsNumber: 110,
+    lettersNumber: 472,
+  },
+  {
+    page: 47,
+    wordsNumber: 134,
+    lettersNumber: 553,
+  },
+  {
+    page: 48,
+    wordsNumber: 128,
+    lettersNumber: 553,
+  },
+  {
+    page: 49,
+    wordsNumber: 136,
+    lettersNumber: 555,
+  },
+  {
+    page: 50,
+    wordsNumber: 135,
+    lettersNumber: 541,
+  },
+  {
+    page: 51,
+    wordsNumber: 116,
+    lettersNumber: 529,
+  },
+  {
+    page: 52,
+    wordsNumber: 116,
+    lettersNumber: 546,
+  },
+  {
+    page: 53,
+    wordsNumber: 145,
+    lettersNumber: 571,
+  },
+  {
+    page: 54,
+    wordsNumber: 145,
+    lettersNumber: 595,
+  },
+  {
+    page: 55,
+    wordsNumber: 131,
+    lettersNumber: 561,
+  },
+  {
+    page: 56,
+    wordsNumber: 127,
+    lettersNumber: 537,
+  },
+  {
+    page: 57,
+    wordsNumber: 123,
+    lettersNumber: 547,
+  },
+  {
+    page: 58,
+    wordsNumber: 134,
+    lettersNumber: 585,
+  },
+  {
+    page: 59,
+    wordsNumber: 139,
+    lettersNumber: 579,
+  },
+  {
+    page: 60,
+    wordsNumber: 124,
+    lettersNumber: 548,
+  },
+  {
+    page: 61,
+    wordsNumber: 127,
+    lettersNumber: 545,
+  },
+  {
+    page: 62,
+    wordsNumber: 141,
+    lettersNumber: 588,
+  },
+  {
+    page: 63,
+    wordsNumber: 129,
+    lettersNumber: 597,
+  },
+  {
+    page: 64,
+    wordsNumber: 118,
+    lettersNumber: 543,
+  },
+  {
+    page: 65,
+    wordsNumber: 130,
+    lettersNumber: 569,
+  },
+  {
+    page: 66,
+    wordsNumber: 126,
+    lettersNumber: 570,
+  },
+  {
+    page: 67,
+    wordsNumber: 114,
+    lettersNumber: 531,
+  },
+  {
+    page: 68,
+    wordsNumber: 132,
+    lettersNumber: 575,
+  },
+  {
+    page: 69,
+    wordsNumber: 102,
+    lettersNumber: 447,
+  },
+  {
+    page: 70,
+    wordsNumber: 146,
+    lettersNumber: 592,
+  },
+  {
+    page: 71,
+    wordsNumber: 142,
+    lettersNumber: 558,
+  },
+  {
+    page: 72,
+    wordsNumber: 133,
+    lettersNumber: 597,
+  },
+  {
+    page: 73,
+    wordsNumber: 143,
+    lettersNumber: 602,
+  },
+  {
+    page: 74,
+    wordsNumber: 118,
+    lettersNumber: 516,
+  },
+  {
+    page: 75,
+    wordsNumber: 127,
+    lettersNumber: 579,
+  },
+  {
+    page: 76,
+    wordsNumber: 118,
+    lettersNumber: 513,
+  },
+  {
+    page: 77,
+    wordsNumber: 139,
+    lettersNumber: 647,
+  },
+  {
+    page: 78,
+    wordsNumber: 131,
+    lettersNumber: 566,
+  },
+  {
+    page: 79,
+    wordsNumber: 119,
+    lettersNumber: 435,
+  },
+  {
+    page: 80,
+    wordsNumber: 114,
+    lettersNumber: 533,
+  },
+  {
+    page: 81,
+    wordsNumber: 99,
+    lettersNumber: 460,
+  },
+  {
+    page: 82,
+    wordsNumber: 114,
+    lettersNumber: 512,
+  },
+  {
+    page: 83,
+    wordsNumber: 115,
+    lettersNumber: 501,
+  },
+  {
+    page: 84,
+    wordsNumber: 109,
+    lettersNumber: 520,
+  },
+  {
+    page: 85,
+    wordsNumber: 136,
+    lettersNumber: 583,
+  },
+  {
+    page: 86,
+    wordsNumber: 139,
+    lettersNumber: 603,
+  },
+  {
+    page: 87,
+    wordsNumber: 143,
+    lettersNumber: 630,
+  },
+  {
+    page: 88,
+    wordsNumber: 119,
+    lettersNumber: 511,
+  },
+  {
+    page: 89,
+    wordsNumber: 127,
+    lettersNumber: 560,
+  },
+  {
+    page: 90,
+    wordsNumber: 153,
+    lettersNumber: 661,
+  },
+  {
+    page: 91,
+    wordsNumber: 138,
+    lettersNumber: 562,
+  },
+  {
+    page: 92,
+    wordsNumber: 135,
+    lettersNumber: 609,
+  },
+  {
+    page: 93,
+    wordsNumber: 115,
+    lettersNumber: 477,
+  },
+  {
+    page: 94,
+    wordsNumber: 144,
+    lettersNumber: 661,
+  },
+  {
+    page: 95,
+    wordsNumber: 119,
+    lettersNumber: 548,
+  },
+  {
+    page: 96,
+    wordsNumber: 131,
+    lettersNumber: 532,
+  },
+  {
+    page: 97,
+    wordsNumber: 120,
+    lettersNumber: 503,
+  },
+  {
+    page: 98,
+    wordsNumber: 126,
+    lettersNumber: 530,
+  },
+  {
+    page: 99,
+    wordsNumber: 130,
+    lettersNumber: 552,
+  },
+  {
+    page: 100,
+    wordsNumber: 138,
+    lettersNumber: 609,
+  },
+  {
+    page: 101,
+    wordsNumber: 128,
+    lettersNumber: 585,
+  },
+  {
+    page: 102,
+    wordsNumber: 131,
+    lettersNumber: 580,
+  },
+  {
+    page: 103,
+    wordsNumber: 138,
+    lettersNumber: 623,
+  },
+  {
+    page: 104,
+    wordsNumber: 124,
+    lettersNumber: 555,
+  },
+  {
+    page: 105,
+    wordsNumber: 123,
+    lettersNumber: 558,
+  },
+  {
+    page: 106,
+    wordsNumber: 125,
+    lettersNumber: 532,
+  },
+  {
+    page: 107,
+    wordsNumber: 135,
+    lettersNumber: 617,
+  },
+  {
+    page: 108,
+    wordsNumber: 116,
+    lettersNumber: 534,
+  },
+  {
+    page: 109,
+    wordsNumber: 107,
+    lettersNumber: 498,
+  },
+  {
+    page: 110,
+    wordsNumber: 108,
+    lettersNumber: 449,
+  },
+  {
+    page: 111,
+    wordsNumber: 132,
+    lettersNumber: 582,
+  },
+  {
+    page: 112,
+    wordsNumber: 130,
+    lettersNumber: 550,
+  },
+  {
+    page: 113,
+    wordsNumber: 124,
+    lettersNumber: 514,
+  },
+  {
+    page: 114,
+    wordsNumber: 125,
+    lettersNumber: 517,
+  },
+  {
+    page: 115,
+    wordsNumber: 113,
+    lettersNumber: 520,
+  },
+  {
+    page: 116,
+    wordsNumber: 136,
+    lettersNumber: 594,
+  },
+  {
+    page: 117,
+    wordsNumber: 149,
+    lettersNumber: 688,
+  },
+  {
+    page: 118,
+    wordsNumber: 148,
+    lettersNumber: 661,
+  },
+  {
+    page: 119,
+    wordsNumber: 129,
+    lettersNumber: 572,
+  },
+  {
+    page: 120,
+    wordsNumber: 126,
+    lettersNumber: 512,
+  },
+  {
+    page: 121,
+    wordsNumber: 110,
+    lettersNumber: 483,
+  },
+  {
+    page: 122,
+    wordsNumber: 132,
+    lettersNumber: 591,
+  },
+  {
+    page: 123,
+    wordsNumber: 145,
+    lettersNumber: 667,
+  },
+  {
+    page: 124,
+    wordsNumber: 137,
+    lettersNumber: 583,
+  },
+  {
+    page: 125,
+    wordsNumber: 142,
+    lettersNumber: 629,
+  },
+  {
+    page: 126,
+    wordsNumber: 127,
+    lettersNumber: 555,
+  },
+  {
+    page: 127,
+    wordsNumber: 158,
+    lettersNumber: 623,
+  },
+  {
+    page: 128,
+    wordsNumber: 123,
+    lettersNumber: 523,
+  },
+  {
+    page: 129,
+    wordsNumber: 132,
+    lettersNumber: 524,
+  },
+  {
+    page: 130,
+    wordsNumber: 157,
+    lettersNumber: 652,
+  },
+  {
+    page: 131,
+    wordsNumber: 147,
+    lettersNumber: 619,
+  },
+  {
+    page: 132,
+    wordsNumber: 140,
+    lettersNumber: 579,
+  },
+  {
+    page: 133,
+    wordsNumber: 139,
+    lettersNumber: 569,
+  },
+  {
+    page: 134,
+    wordsNumber: 136,
+    lettersNumber: 540,
+  },
+  {
+    page: 135,
+    wordsNumber: 142,
+    lettersNumber: 585,
+  },
+  {
+    page: 136,
+    wordsNumber: 128,
+    lettersNumber: 528,
+  },
+  {
+    page: 137,
+    wordsNumber: 132,
+    lettersNumber: 540,
+  },
+  {
+    page: 138,
+    wordsNumber: 119,
+    lettersNumber: 556,
+  },
+  {
+    page: 139,
+    wordsNumber: 144,
+    lettersNumber: 603,
+  },
+  {
+    page: 140,
+    wordsNumber: 135,
+    lettersNumber: 582,
+  },
+  {
+    page: 141,
+    wordsNumber: 133,
+    lettersNumber: 554,
+  },
+  {
+    page: 142,
+    wordsNumber: 130,
+    lettersNumber: 554,
+  },
+  {
+    page: 143,
+    wordsNumber: 130,
+    lettersNumber: 560,
+  },
+  {
+    page: 144,
+    wordsNumber: 127,
+    lettersNumber: 560,
+  },
+  {
+    page: 145,
+    wordsNumber: 103,
+    lettersNumber: 438,
+  },
+  {
+    page: 146,
+    wordsNumber: 115,
+    lettersNumber: 512,
+  },
+  {
+    page: 147,
+    wordsNumber: 130,
+    lettersNumber: 525,
+  },
+  {
+    page: 148,
+    wordsNumber: 127,
+    lettersNumber: 530,
+  },
+  {
+    page: 149,
+    wordsNumber: 126,
+    lettersNumber: 552,
+  },
+  {
+    page: 150,
+    wordsNumber: 155,
+    lettersNumber: 607,
+  },
+  {
+    page: 151,
+    wordsNumber: 109,
+    lettersNumber: 487,
+  },
+  {
+    page: 152,
+    wordsNumber: 147,
+    lettersNumber: 634,
+  },
+  {
+    page: 153,
+    wordsNumber: 134,
+    lettersNumber: 602,
+  },
+  {
+    page: 154,
+    wordsNumber: 147,
+    lettersNumber: 626,
+  },
+  {
+    page: 155,
+    wordsNumber: 138,
+    lettersNumber: 595,
+  },
+  {
+    page: 156,
+    wordsNumber: 137,
+    lettersNumber: 631,
+  },
+  {
+    page: 157,
+    wordsNumber: 132,
+    lettersNumber: 560,
+  },
+  {
+    page: 158,
+    wordsNumber: 133,
+    lettersNumber: 556,
+  },
+  {
+    page: 159,
+    wordsNumber: 123,
+    lettersNumber: 522,
+  },
+  {
+    page: 160,
+    wordsNumber: 115,
+    lettersNumber: 510,
+  },
+  {
+    page: 161,
+    wordsNumber: 108,
+    lettersNumber: 479,
+  },
+  {
+    page: 162,
+    wordsNumber: 140,
+    lettersNumber: 604,
+  },
+  {
+    page: 163,
+    wordsNumber: 121,
+    lettersNumber: 537,
+  },
+  {
+    page: 164,
+    wordsNumber: 129,
+    lettersNumber: 536,
+  },
+  {
+    page: 165,
+    wordsNumber: 124,
+    lettersNumber: 550,
+  },
+  {
+    page: 166,
+    wordsNumber: 120,
+    lettersNumber: 556,
+  },
+  {
+    page: 167,
+    wordsNumber: 124,
+    lettersNumber: 540,
+  },
+  {
+    page: 168,
+    wordsNumber: 123,
+    lettersNumber: 535,
+  },
+  {
+    page: 169,
+    wordsNumber: 135,
+    lettersNumber: 580,
+  },
+  {
+    page: 170,
+    wordsNumber: 112,
+    lettersNumber: 528,
+  },
+  {
+    page: 171,
+    wordsNumber: 107,
+    lettersNumber: 487,
+  },
+  {
+    page: 172,
+    wordsNumber: 131,
+    lettersNumber: 584,
+  },
+  {
+    page: 173,
+    wordsNumber: 127,
+    lettersNumber: 564,
+  },
+  {
+    page: 174,
+    wordsNumber: 144,
+    lettersNumber: 604,
+  },
+  {
+    page: 175,
+    wordsNumber: 135,
+    lettersNumber: 564,
+  },
+  {
+    page: 176,
+    wordsNumber: 125,
+    lettersNumber: 543,
+  },
+  {
+    page: 177,
+    wordsNumber: 105,
+    lettersNumber: 490,
+  },
+  {
+    page: 178,
+    wordsNumber: 124,
+    lettersNumber: 547,
+  },
+  {
+    page: 179,
+    wordsNumber: 124,
+    lettersNumber: 545,
+  },
+  {
+    page: 180,
+    wordsNumber: 122,
+    lettersNumber: 558,
+  },
+  {
+    page: 181,
+    wordsNumber: 115,
+    lettersNumber: 503,
+  },
+  {
+    page: 182,
+    wordsNumber: 119,
+    lettersNumber: 539,
+  },
+  {
+    page: 183,
+    wordsNumber: 123,
+    lettersNumber: 537,
+  },
+  {
+    page: 184,
+    wordsNumber: 134,
+    lettersNumber: 550,
+  },
+  {
+    page: 185,
+    wordsNumber: 133,
+    lettersNumber: 554,
+  },
+  {
+    page: 186,
+    wordsNumber: 135,
+    lettersNumber: 598,
+  },
+  {
+    page: 187,
+    wordsNumber: 121,
+    lettersNumber: 546,
+  },
+  {
+    page: 188,
+    wordsNumber: 113,
+    lettersNumber: 518,
+  },
+  {
+    page: 189,
+    wordsNumber: 127,
+    lettersNumber: 581,
+  },
+  {
+    page: 190,
+    wordsNumber: 111,
+    lettersNumber: 524,
+  },
+  {
+    page: 191,
+    wordsNumber: 114,
+    lettersNumber: 491,
+  },
+  {
+    page: 192,
+    wordsNumber: 112,
+    lettersNumber: 510,
+  },
+  {
+    page: 193,
+    wordsNumber: 118,
+    lettersNumber: 503,
+  },
+  {
+    page: 194,
+    wordsNumber: 111,
+    lettersNumber: 543,
+  },
+  {
+    page: 195,
+    wordsNumber: 117,
+    lettersNumber: 483,
+  },
+  {
+    page: 196,
+    wordsNumber: 121,
+    lettersNumber: 547,
+  },
+  {
+    page: 197,
+    wordsNumber: 109,
+    lettersNumber: 508,
+  },
+  {
+    page: 198,
+    wordsNumber: 106,
+    lettersNumber: 537,
+  },
+  {
+    page: 199,
+    wordsNumber: 124,
+    lettersNumber: 549,
+  },
+  {
+    page: 200,
+    wordsNumber: 137,
+    lettersNumber: 604,
+  },
+  {
+    page: 201,
+    wordsNumber: 123,
+    lettersNumber: 541,
+  },
+  {
+    page: 202,
+    wordsNumber: 121,
+    lettersNumber: 532,
+  },
+  {
+    page: 203,
+    wordsNumber: 124,
+    lettersNumber: 573,
+  },
+  {
+    page: 204,
+    wordsNumber: 126,
+    lettersNumber: 540,
+  },
+  {
+    page: 205,
+    wordsNumber: 120,
+    lettersNumber: 512,
+  },
+  {
+    page: 206,
+    wordsNumber: 131,
+    lettersNumber: 548,
+  },
+  {
+    page: 207,
+    wordsNumber: 112,
+    lettersNumber: 466,
+  },
+  {
+    page: 208,
+    wordsNumber: 125,
+    lettersNumber: 526,
+  },
+  {
+    page: 209,
+    wordsNumber: 122,
+    lettersNumber: 563,
+  },
+  {
+    page: 210,
+    wordsNumber: 133,
+    lettersNumber: 521,
+  },
+  {
+    page: 211,
+    wordsNumber: 142,
+    lettersNumber: 609,
+  },
+  {
+    page: 212,
+    wordsNumber: 135,
+    lettersNumber: 593,
+  },
+  {
+    page: 213,
+    wordsNumber: 158,
+    lettersNumber: 605,
+  },
+  {
+    page: 214,
+    wordsNumber: 144,
+    lettersNumber: 586,
+  },
+  {
+    page: 215,
+    wordsNumber: 147,
+    lettersNumber: 566,
+  },
+  {
+    page: 216,
+    wordsNumber: 126,
+    lettersNumber: 508,
+  },
+  {
+    page: 217,
+    wordsNumber: 139,
+    lettersNumber: 612,
+  },
+  {
+    page: 218,
+    wordsNumber: 134,
+    lettersNumber: 588,
+  },
+  {
+    page: 219,
+    wordsNumber: 131,
+    lettersNumber: 560,
+  },
+  {
+    page: 220,
+    wordsNumber: 140,
+    lettersNumber: 572,
+  },
+  {
+    page: 221,
+    wordsNumber: 128,
+    lettersNumber: 500,
+  },
+  {
+    page: 222,
+    wordsNumber: 130,
+    lettersNumber: 532,
+  },
+  {
+    page: 223,
+    wordsNumber: 137,
+    lettersNumber: 568,
+  },
+  {
+    page: 224,
+    wordsNumber: 133,
+    lettersNumber: 569,
+  },
+  {
+    page: 225,
+    wordsNumber: 143,
+    lettersNumber: 585,
+  },
+  {
+    page: 226,
+    wordsNumber: 140,
+    lettersNumber: 559,
+  },
+  {
+    page: 227,
+    wordsNumber: 141,
+    lettersNumber: 552,
+  },
+  {
+    page: 228,
+    wordsNumber: 153,
+    lettersNumber: 617,
+  },
+  {
+    page: 229,
+    wordsNumber: 130,
+    lettersNumber: 543,
+  },
+  {
+    page: 230,
+    wordsNumber: 148,
+    lettersNumber: 589,
+  },
+  {
+    page: 231,
+    wordsNumber: 126,
+    lettersNumber: 538,
+  },
+  {
+    page: 232,
+    wordsNumber: 127,
+    lettersNumber: 543,
+  },
+  {
+    page: 233,
+    wordsNumber: 136,
+    lettersNumber: 551,
+  },
+  {
+    page: 234,
+    wordsNumber: 132,
+    lettersNumber: 548,
+  },
+  {
+    page: 235,
+    wordsNumber: 112,
+    lettersNumber: 488,
+  },
+  {
+    page: 236,
+    wordsNumber: 133,
+    lettersNumber: 555,
+  },
+  {
+    page: 237,
+    wordsNumber: 123,
+    lettersNumber: 556,
+  },
+  {
+    page: 238,
+    wordsNumber: 135,
+    lettersNumber: 520,
+  },
+  {
+    page: 239,
+    wordsNumber: 142,
+    lettersNumber: 593,
+  },
+  {
+    page: 240,
+    wordsNumber: 128,
+    lettersNumber: 545,
+  },
+  {
+    page: 241,
+    wordsNumber: 144,
+    lettersNumber: 588,
+  },
+  {
+    page: 242,
+    wordsNumber: 133,
+    lettersNumber: 577,
+  },
+  {
+    page: 243,
+    wordsNumber: 139,
+    lettersNumber: 556,
+  },
+  {
+    page: 244,
+    wordsNumber: 133,
+    lettersNumber: 527,
+  },
+  {
+    page: 245,
+    wordsNumber: 133,
+    lettersNumber: 533,
+  },
+  {
+    page: 246,
+    wordsNumber: 124,
+    lettersNumber: 524,
+  },
+  {
+    page: 247,
+    wordsNumber: 138,
+    lettersNumber: 562,
+  },
+  {
+    page: 248,
+    wordsNumber: 130,
+    lettersNumber: 539,
+  },
+  {
+    page: 249,
+    wordsNumber: 117,
+    lettersNumber: 505,
+  },
+  {
+    page: 250,
+    wordsNumber: 132,
+    lettersNumber: 537,
+  },
+  {
+    page: 251,
+    wordsNumber: 152,
+    lettersNumber: 653,
+  },
+  {
+    page: 252,
+    wordsNumber: 145,
+    lettersNumber: 638,
+  },
+  {
+    page: 253,
+    wordsNumber: 153,
+    lettersNumber: 587,
+  },
+  {
+    page: 254,
+    wordsNumber: 139,
+    lettersNumber: 576,
+  },
+  {
+    page: 255,
+    wordsNumber: 101,
+    lettersNumber: 429,
+  },
+  {
+    page: 256,
+    wordsNumber: 120,
+    lettersNumber: 516,
+  },
+  {
+    page: 257,
+    wordsNumber: 122,
+    lettersNumber: 514,
+  },
+  {
+    page: 258,
+    wordsNumber: 129,
+    lettersNumber: 542,
+  },
+  {
+    page: 259,
+    wordsNumber: 126,
+    lettersNumber: 548,
+  },
+  {
+    page: 260,
+    wordsNumber: 130,
+    lettersNumber: 542,
+  },
+  {
+    page: 261,
+    wordsNumber: 117,
+    lettersNumber: 522,
+  },
+  {
+    page: 262,
+    wordsNumber: 111,
+    lettersNumber: 478,
+  },
+  {
+    page: 263,
+    wordsNumber: 128,
+    lettersNumber: 565,
+  },
+  {
+    page: 264,
+    wordsNumber: 127,
+    lettersNumber: 524,
+  },
+  {
+    page: 265,
+    wordsNumber: 124,
+    lettersNumber: 542,
+  },
+  {
+    page: 266,
+    wordsNumber: 120,
+    lettersNumber: 576,
+  },
+  {
+    page: 267,
+    wordsNumber: 102,
+    lettersNumber: 456,
+  },
+  {
+    page: 268,
+    wordsNumber: 111,
+    lettersNumber: 492,
+  },
+  {
+    page: 269,
+    wordsNumber: 124,
+    lettersNumber: 536,
+  },
+  {
+    page: 270,
+    wordsNumber: 127,
+    lettersNumber: 583,
+  },
+  {
+    page: 271,
+    wordsNumber: 136,
+    lettersNumber: 554,
+  },
+  {
+    page: 272,
+    wordsNumber: 141,
+    lettersNumber: 589,
+  },
+  {
+    page: 273,
+    wordsNumber: 136,
+    lettersNumber: 588,
+  },
+  {
+    page: 274,
+    wordsNumber: 148,
+    lettersNumber: 609,
+  },
+  {
+    page: 275,
+    wordsNumber: 133,
+    lettersNumber: 531,
+  },
+  {
+    page: 276,
+    wordsNumber: 117,
+    lettersNumber: 529,
+  },
+  {
+    page: 277,
+    wordsNumber: 122,
+    lettersNumber: 533,
+  },
+  {
+    page: 278,
+    wordsNumber: 124,
+    lettersNumber: 525,
+  },
+  {
+    page: 279,
+    wordsNumber: 112,
+    lettersNumber: 479,
+  },
+  {
+    page: 280,
+    wordsNumber: 125,
+    lettersNumber: 526,
+  },
+  {
+    page: 281,
+    wordsNumber: 131,
+    lettersNumber: 543,
+  },
+  {
+    page: 282,
+    wordsNumber: 106,
+    lettersNumber: 486,
+  },
+  {
+    page: 283,
+    wordsNumber: 135,
+    lettersNumber: 615,
+  },
+  {
+    page: 284,
+    wordsNumber: 130,
+    lettersNumber: 563,
+  },
+  {
+    page: 285,
+    wordsNumber: 144,
+    lettersNumber: 595,
+  },
+  {
+    page: 286,
+    wordsNumber: 147,
+    lettersNumber: 642,
+  },
+  {
+    page: 287,
+    wordsNumber: 133,
+    lettersNumber: 569,
+  },
+  {
+    page: 288,
+    wordsNumber: 126,
+    lettersNumber: 554,
+  },
+  {
+    page: 289,
+    wordsNumber: 132,
+    lettersNumber: 557,
+  },
+  {
+    page: 290,
+    wordsNumber: 136,
+    lettersNumber: 554,
+  },
+  {
+    page: 291,
+    wordsNumber: 141,
+    lettersNumber: 553,
+  },
+  {
+    page: 292,
+    wordsNumber: 134,
+    lettersNumber: 590,
+  },
+  {
+    page: 293,
+    wordsNumber: 127,
+    lettersNumber: 541,
+  },
+  {
+    page: 294,
+    wordsNumber: 134,
+    lettersNumber: 551,
+  },
+  {
+    page: 295,
+    wordsNumber: 126,
+    lettersNumber: 548,
+  },
+  {
+    page: 296,
+    wordsNumber: 135,
+    lettersNumber: 551,
+  },
+  {
+    page: 297,
+    wordsNumber: 136,
+    lettersNumber: 600,
+  },
+  {
+    page: 298,
+    wordsNumber: 152,
+    lettersNumber: 591,
+  },
+  {
+    page: 299,
+    wordsNumber: 129,
+    lettersNumber: 592,
+  },
+  {
+    page: 300,
+    wordsNumber: 132,
+    lettersNumber: 564,
+  },
+  {
+    page: 301,
+    wordsNumber: 149,
+    lettersNumber: 576,
+  },
+  {
+    page: 302,
+    wordsNumber: 138,
+    lettersNumber: 581,
+  },
+  {
+    page: 303,
+    wordsNumber: 160,
+    lettersNumber: 619,
+  },
+  {
+    page: 304,
+    wordsNumber: 153,
+    lettersNumber: 656,
+  },
+  {
+    page: 305,
+    wordsNumber: 110,
+    lettersNumber: 408,
+  },
+  {
+    page: 306,
+    wordsNumber: 110,
+    lettersNumber: 408,
+  },
+  {
+    page: 307,
+    wordsNumber: 138,
+    lettersNumber: 566,
+  },
+  {
+    page: 308,
+    wordsNumber: 145,
+    lettersNumber: 590,
+  },
+  {
+    page: 309,
+    wordsNumber: 146,
+    lettersNumber: 626,
+  },
+  {
+    page: 310,
+    wordsNumber: 136,
+    lettersNumber: 574,
+  },
+  {
+    page: 311,
+    wordsNumber: 125,
+    lettersNumber: 543,
+  },
+  {
+    page: 312,
+    wordsNumber: 115,
+    lettersNumber: 470,
+  },
+  {
+    page: 313,
+    wordsNumber: 134,
+    lettersNumber: 531,
+  },
+  {
+    page: 314,
+    wordsNumber: 151,
+    lettersNumber: 589,
+  },
+  {
+    page: 315,
+    wordsNumber: 131,
+    lettersNumber: 568,
+  },
+  {
+    page: 316,
+    wordsNumber: 152,
+    lettersNumber: 617,
+  },
+  {
+    page: 317,
+    wordsNumber: 135,
+    lettersNumber: 574,
+  },
+  {
+    page: 318,
+    wordsNumber: 138,
+    lettersNumber: 549,
+  },
+  {
+    page: 319,
+    wordsNumber: 139,
+    lettersNumber: 563,
+  },
+  {
+    page: 320,
+    wordsNumber: 134,
+    lettersNumber: 523,
+  },
+  {
+    page: 321,
+    wordsNumber: 139,
+    lettersNumber: 595,
+  },
+  {
+    page: 322,
+    wordsNumber: 104,
+    lettersNumber: 466,
+  },
+  {
+    page: 323,
+    wordsNumber: 137,
+    lettersNumber: 580,
+  },
+  {
+    page: 324,
+    wordsNumber: 127,
+    lettersNumber: 547,
+  },
+  {
+    page: 325,
+    wordsNumber: 116,
+    lettersNumber: 493,
+  },
+  {
+    page: 326,
+    wordsNumber: 125,
+    lettersNumber: 552,
+  },
+  {
+    page: 327,
+    wordsNumber: 117,
+    lettersNumber: 542,
+  },
+  {
+    page: 328,
+    wordsNumber: 113,
+    lettersNumber: 542,
+  },
+  {
+    page: 329,
+    wordsNumber: 112,
+    lettersNumber: 487,
+  },
+  {
+    page: 330,
+    wordsNumber: 109,
+    lettersNumber: 459,
+  },
+  {
+    page: 331,
+    wordsNumber: 109,
+    lettersNumber: 462,
+  },
+  {
+    page: 332,
+    wordsNumber: 123,
+    lettersNumber: 479,
+  },
+  {
+    page: 333,
+    wordsNumber: 150,
+    lettersNumber: 581,
+  },
+  {
+    page: 334,
+    wordsNumber: 129,
+    lettersNumber: 543,
+  },
+  {
+    page: 335,
+    wordsNumber: 116,
+    lettersNumber: 514,
+  },
+  {
+    page: 336,
+    wordsNumber: 136,
+    lettersNumber: 592,
+  },
+  {
+    page: 337,
+    wordsNumber: 123,
+    lettersNumber: 542,
+  },
+  {
+    page: 338,
+    wordsNumber: 129,
+    lettersNumber: 553,
+  },
+  {
+    page: 339,
+    wordsNumber: 120,
+    lettersNumber: 492,
+  },
+  {
+    page: 340,
+    wordsNumber: 135,
+    lettersNumber: 543,
+  },
+  {
+    page: 341,
+    wordsNumber: 113,
+    lettersNumber: 504,
+  },
+  {
+    page: 342,
+    wordsNumber: 111,
+    lettersNumber: 505,
+  },
+  {
+    page: 343,
+    wordsNumber: 143,
+    lettersNumber: 597,
+  },
+  {
+    page: 344,
+    wordsNumber: 141,
+    lettersNumber: 607,
+  },
+  {
+    page: 345,
+    wordsNumber: 133,
+    lettersNumber: 597,
+  },
+  {
+    page: 346,
+    wordsNumber: 136,
+    lettersNumber: 588,
+  },
+  {
+    page: 347,
+    wordsNumber: 129,
+    lettersNumber: 544,
+  },
+  {
+    page: 348,
+    wordsNumber: 131,
+    lettersNumber: 537,
+  },
+  {
+    page: 349,
+    wordsNumber: 126,
+    lettersNumber: 532,
+  },
+  {
+    page: 350,
+    wordsNumber: 138,
+    lettersNumber: 629,
+  },
+  {
+    page: 351,
+    wordsNumber: 144,
+    lettersNumber: 611,
+  },
+  {
+    page: 352,
+    wordsNumber: 127,
+    lettersNumber: 624,
+  },
+  {
+    page: 353,
+    wordsNumber: 132,
+    lettersNumber: 574,
+  },
+  {
+    page: 354,
+    wordsNumber: 140,
+    lettersNumber: 619,
+  },
+  {
+    page: 355,
+    wordsNumber: 154,
+    lettersNumber: 610,
+  },
+  {
+    page: 356,
+    wordsNumber: 146,
+    lettersNumber: 620,
+  },
+  {
+    page: 357,
+    wordsNumber: 129,
+    lettersNumber: 599,
+  },
+  {
+    page: 358,
+    wordsNumber: 118,
+    lettersNumber: 507,
+  },
+  {
+    page: 359,
+    wordsNumber: 116,
+    lettersNumber: 504,
+  },
+  {
+    page: 360,
+    wordsNumber: 126,
+    lettersNumber: 537,
+  },
+  {
+    page: 361,
+    wordsNumber: 121,
+    lettersNumber: 526,
+  },
+  {
+    page: 362,
+    wordsNumber: 124,
+    lettersNumber: 582,
+  },
+  {
+    page: 363,
+    wordsNumber: 118,
+    lettersNumber: 537,
+  },
+  {
+    page: 364,
+    wordsNumber: 134,
+    lettersNumber: 554,
+  },
+  {
+    page: 365,
+    wordsNumber: 129,
+    lettersNumber: 558,
+  },
+  {
+    page: 366,
+    wordsNumber: 113,
+    lettersNumber: 495,
+  },
+  {
+    page: 367,
+    wordsNumber: 133,
+    lettersNumber: 547,
+  },
+  {
+    page: 368,
+    wordsNumber: 133,
+    lettersNumber: 564,
+  },
+  {
+    page: 369,
+    wordsNumber: 134,
+    lettersNumber: 610,
+  },
+  {
+    page: 370,
+    wordsNumber: 126,
+    lettersNumber: 547,
+  },
+  {
+    page: 371,
+    wordsNumber: 141,
+    lettersNumber: 584,
+  },
+  {
+    page: 372,
+    wordsNumber: 136,
+    lettersNumber: 574,
+  },
+  {
+    page: 373,
+    wordsNumber: 131,
+    lettersNumber: 556,
+  },
+  {
+    page: 374,
+    wordsNumber: 137,
+    lettersNumber: 591,
+  },
+  {
+    page: 375,
+    wordsNumber: 128,
+    lettersNumber: 555,
+  },
+  {
+    page: 376,
+    wordsNumber: 119,
+    lettersNumber: 522,
+  },
+  {
+    page: 377,
+    wordsNumber: 138,
+    lettersNumber: 573,
+  },
+  {
+    page: 378,
+    wordsNumber: 131,
+    lettersNumber: 577,
+  },
+  {
+    page: 379,
+    wordsNumber: 134,
+    lettersNumber: 582,
+  },
+  {
+    page: 380,
+    wordsNumber: 159,
+    lettersNumber: 629,
+  },
+  {
+    page: 381,
+    wordsNumber: 113,
+    lettersNumber: 514,
+  },
+  {
+    page: 382,
+    wordsNumber: 124,
+    lettersNumber: 526,
+  },
+  {
+    page: 383,
+    wordsNumber: 142,
+    lettersNumber: 563,
+  },
+  {
+    page: 384,
+    wordsNumber: 143,
+    lettersNumber: 588,
+  },
+  {
+    page: 385,
+    wordsNumber: 112,
+    lettersNumber: 472,
+  },
+  {
+    page: 386,
+    wordsNumber: 125,
+    lettersNumber: 511,
+  },
+  {
+    page: 387,
+    wordsNumber: 146,
+    lettersNumber: 594,
+  },
+  {
+    page: 388,
+    wordsNumber: 133,
+    lettersNumber: 527,
+  },
+  {
+    page: 389,
+    wordsNumber: 128,
+    lettersNumber: 531,
+  },
+  {
+    page: 390,
+    wordsNumber: 119,
+    lettersNumber: 527,
+  },
+  {
+    page: 391,
+    wordsNumber: 131,
+    lettersNumber: 546,
+  },
+  {
+    page: 392,
+    wordsNumber: 131,
+    lettersNumber: 562,
+  },
+  {
+    page: 393,
+    wordsNumber: 131,
+    lettersNumber: 585,
+  },
+  {
+    page: 394,
+    wordsNumber: 133,
+    lettersNumber: 553,
+  },
+  {
+    page: 395,
+    wordsNumber: 139,
+    lettersNumber: 571,
+  },
+  {
+    page: 396,
+    wordsNumber: 123,
+    lettersNumber: 479,
+  },
+  {
+    page: 397,
+    wordsNumber: 122,
+    lettersNumber: 576,
+  },
+  {
+    page: 398,
+    wordsNumber: 129,
+    lettersNumber: 540,
+  },
+  {
+    page: 399,
+    wordsNumber: 120,
+    lettersNumber: 512,
+  },
+  {
+    page: 400,
+    wordsNumber: 112,
+    lettersNumber: 500,
+  },
+  {
+    page: 401,
+    wordsNumber: 111,
+    lettersNumber: 502,
+  },
+  {
+    page: 402,
+    wordsNumber: 121,
+    lettersNumber: 535,
+  },
+  {
+    page: 403,
+    wordsNumber: 129,
+    lettersNumber: 590,
+  },
+  {
+    page: 404,
+    wordsNumber: 109,
+    lettersNumber: 473,
+  },
+  {
+    page: 405,
+    wordsNumber: 124,
+    lettersNumber: 568,
+  },
+  {
+    page: 406,
+    wordsNumber: 118,
+    lettersNumber: 530,
+  },
+  {
+    page: 407,
+    wordsNumber: 127,
+    lettersNumber: 536,
+  },
+  {
+    page: 408,
+    wordsNumber: 139,
+    lettersNumber: 583,
+  },
+  {
+    page: 409,
+    wordsNumber: 142,
+    lettersNumber: 597,
+  },
+  {
+    page: 410,
+    wordsNumber: 136,
+    lettersNumber: 558,
+  },
+  {
+    page: 411,
+    wordsNumber: 116,
+    lettersNumber: 494,
+  },
+  {
+    page: 412,
+    wordsNumber: 146,
+    lettersNumber: 566,
+  },
+  {
+    page: 413,
+    wordsNumber: 145,
+    lettersNumber: 582,
+  },
+  {
+    page: 414,
+    wordsNumber: 139,
+    lettersNumber: 540,
+  },
+  {
+    page: 415,
+    wordsNumber: 131,
+    lettersNumber: 506,
+  },
+  {
+    page: 416,
+    wordsNumber: 126,
+    lettersNumber: 560,
+  },
+  {
+    page: 417,
+    wordsNumber: 115,
+    lettersNumber: 502,
+  },
+  {
+    page: 418,
+    wordsNumber: 116,
+    lettersNumber: 530,
+  },
+  {
+    page: 419,
+    wordsNumber: 133,
+    lettersNumber: 612,
+  },
+  {
+    page: 420,
+    wordsNumber: 146,
+    lettersNumber: 615,
+  },
+  {
+    page: 421,
+    wordsNumber: 124,
+    lettersNumber: 574,
+  },
+  {
+    page: 422,
+    wordsNumber: 102,
+    lettersNumber: 547,
+  },
+  {
+    page: 423,
+    wordsNumber: 147,
+    lettersNumber: 608,
+  },
+  {
+    page: 424,
+    wordsNumber: 124,
+    lettersNumber: 566,
+  },
+  {
+    page: 425,
+    wordsNumber: 140,
+    lettersNumber: 561,
+  },
+  {
+    page: 426,
+    wordsNumber: 127,
+    lettersNumber: 585,
+  },
+  {
+    page: 427,
+    wordsNumber: 128,
+    lettersNumber: 620,
+  },
+  {
+    page: 428,
+    wordsNumber: 120,
+    lettersNumber: 484,
+  },
+  {
+    page: 429,
+    wordsNumber: 142,
+    lettersNumber: 580,
+  },
+  {
+    page: 430,
+    wordsNumber: 137,
+    lettersNumber: 563,
+  },
+  {
+    page: 431,
+    wordsNumber: 132,
+    lettersNumber: 547,
+  },
+  {
+    page: 432,
+    wordsNumber: 136,
+    lettersNumber: 592,
+  },
+  {
+    page: 433,
+    wordsNumber: 148,
+    lettersNumber: 593,
+  },
+  {
+    page: 434,
+    wordsNumber: 132,
+    lettersNumber: 507,
+  },
+  {
+    page: 435,
+    wordsNumber: 151,
+    lettersNumber: 620,
+  },
+  {
+    page: 436,
+    wordsNumber: 129,
+    lettersNumber: 554,
+  },
+  {
+    page: 437,
+    wordsNumber: 127,
+    lettersNumber: 557,
+  },
+  {
+    page: 438,
+    wordsNumber: 128,
+    lettersNumber: 547,
+  },
+  {
+    page: 439,
+    wordsNumber: 151,
+    lettersNumber: 622,
+  },
+  {
+    page: 440,
+    wordsNumber: 108,
+    lettersNumber: 462,
+  },
+  {
+    page: 441,
+    wordsNumber: 129,
+    lettersNumber: 555,
+  },
+  {
+    page: 442,
+    wordsNumber: 129,
+    lettersNumber: 552,
+  },
+  {
+    page: 443,
+    wordsNumber: 140,
+    lettersNumber: 567,
+  },
+  {
+    page: 444,
+    wordsNumber: 122,
+    lettersNumber: 539,
+  },
+  {
+    page: 445,
+    wordsNumber: 122,
+    lettersNumber: 505,
+  },
+  {
+    page: 446,
+    wordsNumber: 125,
+    lettersNumber: 565,
+  },
+  {
+    page: 447,
+    wordsNumber: 135,
+    lettersNumber: 585,
+  },
+  {
+    page: 448,
+    wordsNumber: 123,
+    lettersNumber: 556,
+  },
+  {
+    page: 449,
+    wordsNumber: 135,
+    lettersNumber: 584,
+  },
+  {
+    page: 450,
+    wordsNumber: 106,
+    lettersNumber: 539,
+  },
+  {
+    page: 451,
+    wordsNumber: 116,
+    lettersNumber: 552,
+  },
+  {
+    page: 452,
+    wordsNumber: 121,
+    lettersNumber: 547,
+  },
+  {
+    page: 453,
+    wordsNumber: 138,
+    lettersNumber: 559,
+  },
+  {
+    page: 454,
+    wordsNumber: 145,
+    lettersNumber: 611,
+  },
+  {
+    page: 455,
+    wordsNumber: 138,
+    lettersNumber: 607,
+  },
+  {
+    page: 456,
+    wordsNumber: 133,
+    lettersNumber: 589,
+  },
+  {
+    page: 457,
+    wordsNumber: 149,
+    lettersNumber: 604,
+  },
+  {
+    page: 458,
+    wordsNumber: 118,
+    lettersNumber: 487,
+  },
+  {
+    page: 459,
+    wordsNumber: 146,
+    lettersNumber: 590,
+  },
+  {
+    page: 460,
+    wordsNumber: 150,
+    lettersNumber: 622,
+  },
+  {
+    page: 461,
+    wordsNumber: 137,
+    lettersNumber: 571,
+  },
+  {
+    page: 462,
+    wordsNumber: 123,
+    lettersNumber: 504,
+  },
+  {
+    page: 463,
+    wordsNumber: 129,
+    lettersNumber: 536,
+  },
+  {
+    page: 464,
+    wordsNumber: 137,
+    lettersNumber: 553,
+  },
+  {
+    page: 465,
+    wordsNumber: 120,
+    lettersNumber: 526,
+  },
+  {
+    page: 466,
+    wordsNumber: 125,
+    lettersNumber: 548,
+  },
+  {
+    page: 467,
+    wordsNumber: 109,
+    lettersNumber: 486,
+  },
+  {
+    page: 468,
+    wordsNumber: 124,
+    lettersNumber: 537,
+  },
+  {
+    page: 469,
+    wordsNumber: 124,
+    lettersNumber: 539,
+  },
+  {
+    page: 470,
+    wordsNumber: 142,
+    lettersNumber: 542,
+  },
+  {
+    page: 471,
+    wordsNumber: 127,
+    lettersNumber: 514,
+  },
+  {
+    page: 472,
+    wordsNumber: 125,
+    lettersNumber: 522,
+  },
+  {
+    page: 473,
+    wordsNumber: 109,
+    lettersNumber: 502,
+  },
+  {
+    page: 474,
+    wordsNumber: 118,
+    lettersNumber: 495,
+  },
+  {
+    page: 475,
+    wordsNumber: 130,
+    lettersNumber: 531,
+  },
+  {
+    page: 476,
+    wordsNumber: 128,
+    lettersNumber: 545,
+  },
+  {
+    page: 477,
+    wordsNumber: 114,
+    lettersNumber: 512,
+  },
+  {
+    page: 478,
+    wordsNumber: 134,
+    lettersNumber: 606,
+  },
+  {
+    page: 479,
+    wordsNumber: 134,
+    lettersNumber: 606,
+  },
+  {
+    page: 480,
+    wordsNumber: 122,
+    lettersNumber: 534,
+  },
+  {
+    page: 481,
+    wordsNumber: 146,
+    lettersNumber: 578,
+  },
+  {
+    page: 482,
+    wordsNumber: 144,
+    lettersNumber: 540,
+  },
+  {
+    page: 483,
+    wordsNumber: 125,
+    lettersNumber: 513,
+  },
+  {
+    page: 484,
+    wordsNumber: 134,
+    lettersNumber: 561,
+  },
+  {
+    page: 485,
+    wordsNumber: 128,
+    lettersNumber: 524,
+  },
+  {
+    page: 486,
+    wordsNumber: 145,
+    lettersNumber: 598,
+  },
+  {
+    page: 487,
+    wordsNumber: 147,
+    lettersNumber: 625,
+  },
+  {
+    page: 488,
+    wordsNumber: 139,
+    lettersNumber: 548,
+  },
+  {
+    page: 489,
+    wordsNumber: 108,
+    lettersNumber: 458,
+  },
+  {
+    page: 490,
+    wordsNumber: 130,
+    lettersNumber: 554,
+  },
+  {
+    page: 491,
+    wordsNumber: 133,
+    lettersNumber: 583,
+  },
+  {
+    page: 492,
+    wordsNumber: 125,
+    lettersNumber: 553,
+  },
+  {
+    page: 493,
+    wordsNumber: 128,
+    lettersNumber: 538,
+  },
+  {
+    page: 494,
+    wordsNumber: 117,
+    lettersNumber: 536,
+  },
+  {
+    page: 495,
+    wordsNumber: 131,
+    lettersNumber: 584,
+  },
+  {
+    page: 496,
+    wordsNumber: 111,
+    lettersNumber: 458,
+  },
+  {
+    page: 497,
+    wordsNumber: 131,
+    lettersNumber: 581,
+  },
+  {
+    page: 498,
+    wordsNumber: 104,
+    lettersNumber: 444,
+  },
+  {
+    page: 499,
+    wordsNumber: 143,
+    lettersNumber: 594,
+  },
+  {
+    page: 500,
+    wordsNumber: 127,
+    lettersNumber: 574,
+  },
+  {
+    page: 501,
+    wordsNumber: 161,
+    lettersNumber: 667,
+  },
+  {
+    page: 502,
+    wordsNumber: 126,
+    lettersNumber: 535,
+  },
+  {
+    page: 503,
+    wordsNumber: 153,
+    lettersNumber: 622,
+  },
+  {
+    page: 504,
+    wordsNumber: 144,
+    lettersNumber: 628,
+  },
+  {
+    page: 505,
+    wordsNumber: 141,
+    lettersNumber: 601,
+  },
+  {
+    page: 506,
+    wordsNumber: 136,
+    lettersNumber: 558,
+  },
+  {
+    page: 507,
+    wordsNumber: 139,
+    lettersNumber: 638,
+  },
+  {
+    page: 508,
+    wordsNumber: 152,
+    lettersNumber: 658,
+  },
+  {
+    page: 509,
+    wordsNumber: 122,
+    lettersNumber: 540,
+  },
+  {
+    page: 510,
+    wordsNumber: 126,
+    lettersNumber: 602,
+  },
+  {
+    page: 511,
+    wordsNumber: 104,
+    lettersNumber: 519,
+  },
+  {
+    page: 512,
+    wordsNumber: 136,
+    lettersNumber: 588,
+  },
+  {
+    page: 513,
+    wordsNumber: 137,
+    lettersNumber: 592,
+  },
+  {
+    page: 514,
+    wordsNumber: 129,
+    lettersNumber: 567,
+  },
+  {
+    page: 515,
+    wordsNumber: 117,
+    lettersNumber: 533,
+  },
+  {
+    page: 516,
+    wordsNumber: 143,
+    lettersNumber: 643,
+  },
+  {
+    page: 517,
+    wordsNumber: 141,
+    lettersNumber: 619,
+  },
+  {
+    page: 518,
+    wordsNumber: 120,
+    lettersNumber: 505,
+  },
+  {
+    page: 519,
+    wordsNumber: 153,
+    lettersNumber: 614,
+  },
+  {
+    page: 520,
+    wordsNumber: 114,
+    lettersNumber: 483,
+  },
+  {
+    page: 521,
+    wordsNumber: 136,
+    lettersNumber: 589,
+  },
+  {
+    page: 522,
+    wordsNumber: 143,
+    lettersNumber: 612,
+  },
+  {
+    page: 523,
+    wordsNumber: 114,
+    lettersNumber: 472,
+  },
+  {
+    page: 524,
+    wordsNumber: 131,
+    lettersNumber: 569,
+  },
+  {
+    page: 525,
+    wordsNumber: 134,
+    lettersNumber: 559,
+  },
+  {
+    page: 526,
+    wordsNumber: 138,
+    lettersNumber: 536,
+  },
+  {
+    page: 527,
+    wordsNumber: 151,
+    lettersNumber: 596,
+  },
+  {
+    page: 528,
+    wordsNumber: 108,
+    lettersNumber: 464,
+  },
+  {
+    page: 529,
+    wordsNumber: 138,
+    lettersNumber: 594,
+  },
+  {
+    page: 530,
+    wordsNumber: 135,
+    lettersNumber: 591,
+  },
+  {
+    page: 531,
+    wordsNumber: 90,
+    lettersNumber: 416,
+  },
+  {
+    page: 532,
+    wordsNumber: 127,
+    lettersNumber: 582,
+  },
+  {
+    page: 533,
+    wordsNumber: 117,
+    lettersNumber: 559,
+  },
+  {
+    page: 534,
+    wordsNumber: 99,
+    lettersNumber: 470,
+  },
+  {
+    page: 535,
+    wordsNumber: 122,
+    lettersNumber: 569,
+  },
+  {
+    page: 536,
+    wordsNumber: 122,
+    lettersNumber: 578,
+  },
+  {
+    page: 537,
+    wordsNumber: 114,
+    lettersNumber: 487,
+  },
+  {
+    page: 538,
+    wordsNumber: 152,
+    lettersNumber: 632,
+  },
+  {
+    page: 539,
+    wordsNumber: 137,
+    lettersNumber: 636,
+  },
+  {
+    page: 540,
+    wordsNumber: 132,
+    lettersNumber: 580,
+  },
+  {
+    page: 541,
+    wordsNumber: 124,
+    lettersNumber: 583,
+  },
+  {
+    page: 542,
+    wordsNumber: 121,
+    lettersNumber: 528,
+  },
+  {
+    page: 543,
+    wordsNumber: 151,
+    lettersNumber: 659,
+  },
+  {
+    page: 544,
+    wordsNumber: 149,
+    lettersNumber: 648,
+  },
+  {
+    page: 545,
+    wordsNumber: 116,
+    lettersNumber: 512,
+  },
+  {
+    page: 546,
+    wordsNumber: 136,
+    lettersNumber: 603,
+  },
+  {
+    page: 547,
+    wordsNumber: 130,
+    lettersNumber: 564,
+  },
+  {
+    page: 548,
+    wordsNumber: 114,
+    lettersNumber: 528,
+  },
+  {
+    page: 549,
+    wordsNumber: 139,
+    lettersNumber: 628,
+  },
+  {
+    page: 550,
+    wordsNumber: 152,
+    lettersNumber: 683,
+  },
+  {
+    page: 551,
+    wordsNumber: 119,
+    lettersNumber: 513,
+  },
+  {
+    page: 552,
+    wordsNumber: 159,
+    lettersNumber: 716,
+  },
+  {
+    page: 553,
+    wordsNumber: 118,
+    lettersNumber: 522,
+  },
+  {
+    page: 554,
+    wordsNumber: 119,
+    lettersNumber: 532,
+  },
+  {
+    page: 555,
+    wordsNumber: 118,
+    lettersNumber: 525,
+  },
+  {
+    page: 556,
+    wordsNumber: 135,
+    lettersNumber: 598,
+  },
+  {
+    page: 557,
+    wordsNumber: 106,
+    lettersNumber: 501,
+  },
+  {
+    page: 558,
+    wordsNumber: 134,
+    lettersNumber: 554,
+  },
+  {
+    page: 559,
+    wordsNumber: 153,
+    lettersNumber: 654,
+  },
+  {
+    page: 560,
+    wordsNumber: 125,
+    lettersNumber: 557,
+  },
+  {
+    page: 561,
+    wordsNumber: 124,
+    lettersNumber: 555,
+  },
+  {
+    page: 562,
+    wordsNumber: 131,
+    lettersNumber: 552,
+  },
+  {
+    page: 563,
+    wordsNumber: 151,
+    lettersNumber: 602,
+  },
+  {
+    page: 564,
+    wordsNumber: 119,
+    lettersNumber: 473,
+  },
+  {
+    page: 565,
+    wordsNumber: 151,
+    lettersNumber: 671,
+  },
+  {
+    page: 566,
+    wordsNumber: 122,
+    lettersNumber: 535,
+  },
+  {
+    page: 567,
+    wordsNumber: 138,
+    lettersNumber: 622,
+  },
+  {
+    page: 568,
+    wordsNumber: 121,
+    lettersNumber: 514,
+  },
+  {
+    page: 569,
+    wordsNumber: 134,
+    lettersNumber: 597,
+  },
+  {
+    page: 570,
+    wordsNumber: 127,
+    lettersNumber: 554,
+  },
+  {
+    page: 571,
+    wordsNumber: 140,
+    lettersNumber: 605,
+  },
+  {
+    page: 572,
+    wordsNumber: 136,
+    lettersNumber: 526,
+  },
+  {
+    page: 573,
+    wordsNumber: 149,
+    lettersNumber: 586,
+  },
+  {
+    page: 574,
+    wordsNumber: 121,
+    lettersNumber: 528,
+  },
+  {
+    page: 575,
+    wordsNumber: 129,
+    lettersNumber: 552,
+  },
+  {
+    page: 576,
+    wordsNumber: 158,
+    lettersNumber: 635,
+  },
+  {
+    page: 577,
+    wordsNumber: 126,
+    lettersNumber: 526,
+  },
+  {
+    page: 578,
+    wordsNumber: 126,
+    lettersNumber: 526,
+  },
+  {
+    page: 579,
+    wordsNumber: 147,
+    lettersNumber: 668,
+  },
+  {
+    page: 580,
+    wordsNumber: 107,
+    lettersNumber: 493,
+  },
+  {
+    page: 581,
+    wordsNumber: 128,
+    lettersNumber: 584,
+  },
+  {
+    page: 582,
+    wordsNumber: 105,
+    lettersNumber: 500,
+  },
+  {
+    page: 583,
+    wordsNumber: 113,
+    lettersNumber: 524,
+  },
+  {
+    page: 584,
+    wordsNumber: 134,
+    lettersNumber: 563,
+  },
+  {
+    page: 585,
+    wordsNumber: 133,
+    lettersNumber: 553,
+  },
+  {
+    page: 586,
+    wordsNumber: 104,
+    lettersNumber: 435,
+  },
+  {
+    page: 587,
+    wordsNumber: 105,
+    lettersNumber: 453,
+  },
+  {
+    page: 588,
+    wordsNumber: 135,
+    lettersNumber: 595,
+  },
+  {
+    page: 589,
+    wordsNumber: 116,
+    lettersNumber: 486,
+  },
+  {
+    page: 590,
+    wordsNumber: 109,
+    lettersNumber: 470,
+  },
+  {
+    page: 591,
+    wordsNumber: 118,
+    lettersNumber: 481,
+  },
+  {
+    page: 592,
+    wordsNumber: 107,
+    lettersNumber: 452,
+  },
+  {
+    page: 593,
+    wordsNumber: 111,
+    lettersNumber: 465,
+  },
+  {
+    page: 594,
+    wordsNumber: 108,
+    lettersNumber: 467,
+  },
+  {
+    page: 595,
+    wordsNumber: 99,
+    lettersNumber: 456,
+  },
+  {
+    page: 596,
+    wordsNumber: 93,
+    lettersNumber: 378,
+  },
+  {
+    page: 597,
+    wordsNumber: 106,
+    lettersNumber: 451,
+  },
+  {
+    page: 598,
+    wordsNumber: 103,
+    lettersNumber: 439,
+  },
+  {
+    page: 599,
+    wordsNumber: 88,
+    lettersNumber: 379,
+  },
+  {
+    page: 600,
+    wordsNumber: 73,
+    lettersNumber: 316,
+  },
+  {
+    page: 601,
+    wordsNumber: 70,
+    lettersNumber: 304,
+  },
+  {
+    page: 602,
+    wordsNumber: 52,
+    lettersNumber: 236,
+  },
+  {
+    page: 603,
+    wordsNumber: 68,
+    lettersNumber: 261,
+  },
+  {
+    page: 604,
+    wordsNumber: 58,
+    lettersNumber: 201,
+  },
 ];
 
 module.exports = {
   suraList,
   juzList,
-  wordsAndLettersPerPage
+  wordsAndLettersPerPage,
 };

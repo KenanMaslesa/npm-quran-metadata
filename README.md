@@ -227,134 +227,157 @@ quranMetaData.getJuzList();
 
 RESPONSE:
 [
-	{
-		"id":1,
-		"juzNumber":1,
-		"surahs":[
-			{
-				"id":1,
-				"startAyah":1,
-				"endAyah":7,
-				"name":{
-					"arabic":"الفاتحة",
-					"english":"The Opener",
-					"englishTranscription":"Al-Fatihah",
-					"bosnian":"Pristup",
-					"bosnianTranscription":"El-Fatiha"
-				}
-			},
-			{
-				"id":2,
-				"startAyah":1,
-				"endAyah":141,
-				"name":{
-					"arabic":"الفاتحة",
-					"english":"The Opener",
-					"englishTranscription":"Al-Fatihah",
-					"bosnian":"Pristup",
-					"bosnianTranscription":"El-Fatiha"
-				}
-			}
-		],
-		"firstAyahId":1,
-		"lastAyahId":148,
-		"numberOfAyahs":148,
-		"startPage":1,
-		"endPage":21
-	},
-	{
-		"id":2,
-		"juzNumber":2,
-		"surahs":[
-			{
-				"id":2,
-				"startAyah":142,
-				"endAyah":252,
-				"name":{
-					"arabic":"البقرة",
-					"english":"The Cow",
-					"englishTranscription":"Al-Baqarah",
-					"bosnian":"Krava",
-					"bosnianTranscription":"El-Bekare"
-				}
-			}
-		],
-		"firstAyahId":149,
-		"lastAyahId":259,
-		"numberOfAyahs":111,
-		"startPage":22,
-		"endPage":41
-	},
-	{
-		"id":3,
-		"juzNumber":3,
-		"surahs":[
-			{
-				"id":2,
-				"startAyah":253,
-				"endAyah":286,
-				"name":{
-					"arabic":"آل عمران",
-					"english":"Family of Imran",
-					"englishTranscription":"Ali 'Imran",
-					"bosnian":"Imranova porodica",
-					"bosnianTranscription":"Ali-'Imran"
-				}
-			},
-			{
-				"id":3,
-				"startAyah":1,
-				"endAyah":92,
-				"name":{
-					"arabic":"آل عمران",
-					"english":"Family of Imran",
-					"englishTranscription":"Ali 'Imran",
-					"bosnian":"Imranova porodica",
-					"bosnianTranscription":"Ali-'Imran"
-				}
-			}
-		],
-		"firstAyahId":260,
-		"lastAyahId":385,
-		"numberOfAyahs":126,
-		"startPage":42,
-		"endPage":61
-	},
-	{
-		"id":4,
-		"juzNumber":4,
-		"surahs":[
-			{
-				"id":3,
-				"startAyah":93,
-				"endAyah":200,
-				"name":{
-					"arabic":"النساء",
-					"english":"The Women",
-					"englishTranscription":"An-Nisa",
-					"bosnian":"Žene",
-					"bosnianTranscription":"En-Nisa"
-				}
-			},
-			{
-				"id":4,
-				"startAyah":1,
-				"endAyah":23,
-				"name":{
-					"arabic":"النساء",
-					"english":"The Women",
-					"englishTranscription":"An-Nisa",
-					"bosnian":"Žene",
-					"bosnianTranscription":"En-Nisa"
-				}
-			}
-		],
-		"firstAyahId":386,
-		"lastAyahId":516,
-		"numberOfAyahs":131,
-		"startPage":62,
-		"endPage":81
-	},
+  {
+    id: 1,
+    juzNumber: 1,
+    surahs: [
+      {
+        id: 1,
+        startAyah: 1,
+        endAyah: 7,
+        name: {
+          arabic: "الفاتحة",
+          english: "The Opener",
+          englishTranscription: "Al-Fatihah",
+          bosnian: "Pristup",
+          bosnianTranscription: "El-Fatiha",
+        },
+      },
+      {
+        id: 2,
+        startAyah: 1,
+        endAyah: 141,
+        name: {
+          arabic: "البقرة",
+          english: "The Cow",
+          englishTranscription: "Al-Baqarah",
+          bosnian: "Krava",
+          bosnianTranscription: "El-Bekare",
+        },
+      },
+    ],
+    firstAyahId: 1,
+    lastAyahId: 148,
+    numberOfAyahs: 148,
+    startPage: 1,
+    endPage: 21,
+  },
+  {
+    id: 2,
+    juzNumber: 2,
+    surahs: [
+      {
+        id: 2,
+        startAyah: 142,
+        endAyah: 252,
+        name: {
+          arabic: "البقرة",
+          english: "The Cow",
+          englishTranscription: "Al-Baqarah",
+          bosnian: "Krava",
+          bosnianTranscription: "El-Bekare",
+        },
+      },
+    ],
+    firstAyahId: 149,
+    lastAyahId: 259,
+    numberOfAyahs: 111,
+    startPage: 22,
+    endPage: 41,
+  },
+  {
+    id: 3,
+    juzNumber: 3,
+    surahs: [
+      {
+        id: 2,
+        startAyah: 253,
+        endAyah: 286,
+        name: {
+          arabic: "البقرة",
+          english: "The Cow",
+          englishTranscription: "Al-Baqarah",
+          bosnian: "Krava",
+          bosnianTranscription: "El-Bekare",
+        },
+      },
+      {
+        id: 3,
+        startAyah: 1,
+        endAyah: 92,
+        name: {
+          arabic: "آل عمران",
+          english: "Family of Imran",
+          englishTranscription: "Ali 'Imran",
+          bosnian: "Imranova porodica",
+          bosnianTranscription: "Ali-'Imran",
+        },
+      },
+    ],
+    firstAyahId: 260,
+    lastAyahId: 385,
+    numberOfAyahs: 126,
+    startPage: 42,
+    endPage: 61,
+  },
+  {
+    id: 4,
+    juzNumber: 4,
+    surahs: [
+      {
+        id: 3,
+        startAyah: 93,
+        endAyah: 200,
+        name: {
+          arabic: "آل عمران",
+          english: "Family of Imran",
+          englishTranscription: "Ali 'Imran",
+          bosnian: "Imranova porodica",
+          bosnianTranscription: "Ali-'Imran",
+        },
+      },
+      {
+        id: 4,
+        startAyah: 1,
+        endAyah: 23,
+        name: {
+          arabic: "النساء",
+          english: "The Women",
+          englishTranscription: "An-Nisa",
+          bosnian: "Žene",
+          bosnianTranscription: "En-Nisa",
+        },
+      },
+    ],
+    firstAyahId: 386,
+    lastAyahId: 516,
+    numberOfAyahs: 131,
+    startPage: 62,
+    endPage: 81,
+  },
+  {
+    id: 5,
+    juzNumber: 5,
+    surahs: [
+      {
+        id: 4,
+        startAyah: 24,
+        endAyah: 147,
+        name: {
+          arabic: "النساء",
+          english: "The Women",
+          englishTranscription: "An-Nisa",
+          bosnian: "Žene",
+          bosnianTranscription: "En-Nisa",
+        },
+      },
+    ],
+    firstAyahId: 517,
+    lastAyahId: 640,
+    numberOfAyahs: 124,
+    startPage: 82,
+    endPage: 101,
+  },
 	....
 ]
 ```
