@@ -124,7 +124,7 @@ EXAMPLE:
 quranMetaData.getSuraByPageNumber(604);
 
 REPONSE:
-```
+```typescript
 [
 	{
 		"index":112,
