@@ -199,6 +199,8 @@ REPONSE:
 		"totalPages":1
 	}
 ]
+```
+
 ```typescript
 quranMetaData.sortSuraListByFirstPublished();
 ```
