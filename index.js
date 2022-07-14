@@ -1,11 +1,11 @@
 const data = require("./data");
 
-function getSuraList() {
+const getSuraList = () => {
   const suraList = [...data.suraList];
   return suraList;
 }
 
-function searchSuraByBosnianName(name) {
+const searchSuraByBosnianName = (name) => {
   const suraList = [...data.suraList];
 
   return suraList.filter(
@@ -15,7 +15,7 @@ function searchSuraByBosnianName(name) {
   );
 }
 
-function searchSuraByEnglishName(name) {
+const searchSuraByEnglishName = (name) => {
   const suraList = [...data.suraList];
 
   return suraList.filter(
@@ -25,7 +25,7 @@ function searchSuraByEnglishName(name) {
   );
 }
 
-function searchSuraByArabicName(name) {
+const searchSuraByArabicName = (name) => {
   const suraList = [...data.suraList];
 
   return suraList.filter(
@@ -34,7 +34,7 @@ function searchSuraByArabicName(name) {
   );
 }
 
-function searchSuraByName(name) {
+const searchSuraByName = (name) => {
   const suraList = [...data.suraList];
 
   return suraList.filter(
@@ -45,11 +45,11 @@ function searchSuraByName(name) {
   );
 }
 
-function getSuraByIndex(index) {
+const getSuraByIndex = (index) => {
   return data.suraList.filter(sura => +sura.index === +index)[0];
 }
 
-function sortSuraListByFirstPublished() {
+const sortSuraListByFirstPublished = () => {
   const suraList = [...data.suraList];
 
   return suraList.sort((a, b) => {
@@ -57,7 +57,7 @@ function sortSuraListByFirstPublished() {
   });
 }
 
-function sortSuraListByLastPublished() {
+const sortSuraListByLastPublished = () => {
   const suraList = [...data.suraList];
 
   return suraList.sort((a, b) => {
@@ -65,19 +65,19 @@ function sortSuraListByLastPublished() {
   });
 }
 
-function getSuraListPublishedInMekka() {
+const getSuraListPublishedInMekka = () => {
   const suraList = [...data.suraList];
 
   return suraList.filter(sura => sura.type === "Meccan");
 }
 
-function getSuraListPublishedInMedina() {
+const getSuraListPublishedInMedina = () => {
   const suraList = [...data.suraList];
 
   return suraList.filter(sura => sura.type === "Medinan");
 }
 
-function getSuraByPageNumber(page) {
+const getSuraByPageNumber = (page) => {
   const suraList = [...data.suraList];
   let suraVm = [];
   suraList.forEach((sura) => {
@@ -91,7 +91,7 @@ function getSuraByPageNumber(page) {
   return suraVm;
 }
 
-function getJuzByPageNumber(page) {
+const getJuzByPageNumber = (page) => {
   const juzList = [...data.juzList];
   let juzVm;
   juzList.forEach((juz) => {
@@ -105,7 +105,7 @@ function getJuzByPageNumber(page) {
   return juzVm;
 }
 
-function getSuraListByJuz(juzIndex) {
+const getSuraListByJuz = (juzIndex) => {
     const suraListFromJuzlist = data.juzList.filter(juz => +juz.id === +juzIndex).map(item => item.surahs)[0];
     const returnedData = [];
     suraListFromJuzlist.forEach(sura => {
@@ -116,21 +116,35 @@ function getSuraListByJuz(juzIndex) {
 }
 
 
-function getJuzList() {
+const getJuzList = () => {
   return data.juzList;
 }
 
-function searchJuzListById(id) {
+const searchJuzListById = (id) => {
   const juzList = [...data.juzList];
   return juzList.filter(item => contains(item.id, id));
 }
 
-function getJuzById(id) {
+const getJuzById = (id) => {
   return data.juzList.filter(juz => +juz.id === +id)[0];
 }
 
-function getNumberOfWordsAndLettersPerPage(page) {
+const getNumberOfWordsAndLettersPerPage = (page) => {
   return data.wordsAndLettersPerPage.filter(item => item.page === +page)[0];
+}
+
+const getPageInfo = (page) => {
+  const sura = getSuraByPageNumber(page);
+  const juz = getJuzByPageNumber(page);
+  const numberOfWordsAndLetters = getNumberOfWordsAndLettersPerPage(page);
+  const response = {
+      pageNumber: page,
+      sura: sura.map(item => item.name),
+      juz: juz.id,
+      wordsNumber: numberOfWordsAndLetters.wordsNumber,
+      lettersNumber: numberOfWordsAndLetters.lettersNumber,
+  }
+  return response;
 }
 
 //helpers
@@ -155,5 +169,6 @@ module.exports = {
   searchSuraByEnglishName,
   searchSuraByArabicName,
   getSuraByPageNumber,
-  getJuzByPageNumber
+  getJuzByPageNumber,
+  getPageInfo
 };

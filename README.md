@@ -7,7 +7,7 @@
 npm install @kmaslesa/quran-metadata
 ```
 ## Functions
-```bash
+```typescript
   getSuraList,
   searchSuraByName,
   searchSuraByBosnianName,
@@ -24,66 +24,116 @@ npm install @kmaslesa/quran-metadata
   getJuzList,
   getJuzById,
   searchJuzListById,
-  getNumberOfWordsAndLettersPerPage
+  getNumberOfWordsAndLettersPerPage,
+  getPageInfo
 ```
 ## Usage
 ```typescript
 const quranMetaData = require('@kmaslesa/quran-metadata');
 ```
 
-```bash
+```typescript
 quranMetaData.getSuraList();
 
 RESPONSE:
 [
-	{
-		"index":1,
-		"numberOfAyas":7,
-		"startAyaIndex":0,
-		"name":{
-			"arabic":"الفاتحة",
-			"english":"The Opener",
-			"englishTranscription":"Al-Fatihah",
-			"bosnian":"Pristup",
-			"bosnianTranscription":"El-Fatiha"
-		},
-		"aboutSura":{
-			"bosnian":"Obraćanje i usmjeravanje ka Allahu kroz obožavanje jedino Njega."
-		},
-		"type":"Meccan",
-		"orderInPublishing":5,
-		"numberOfWords":29,
-		"numberOfLetters":142,
-		"startJuz":1,
-		"endJuz":1,
-		"startPage":1,
-		"endPage":1,
-		"totalPages":1
-	},
-	{
-		"index":2,
-		"numberOfAyas":286,
-		"startAyaIndex":7,
-		"name":{
-			"arabic":"البقرة",
-			"english":"The Cow",
-			"englishTranscription":"Al-Baqarah",
-			"bosnian":"Krava",
-			"bosnianTranscription":"El-Bekare"
-		},
-		"aboutSura":{
-			"bosnian":"Pripremanje umeta za uspostavu života na Zemlji i uspostavljanje Allahove vjere, zatim pojašnjenje vrsta i kategorija ljudi. U ovoj suri su objašnjeni temelji imana i opći principi šerijata."
-		},
-		"type":"Medinan",
-		"orderInPublishing":87,
-		"numberOfWords":6144,
-		"numberOfLetters":25500,
-		"startJuz":1,
-		"endJuz":3,
-		"startPage":2,
-		"endPage":49,
-		"totalPages":48
-	},
+  ...
+  {
+    index: 60,
+    numberOfAyas: 13,
+    startAyaIndex: 5150,
+    name: {
+      arabic: 'الممتحنة',
+      english: 'She that is to be examined',
+      englishTranscription: 'Al-Mumtahanah',
+      bosnian: 'Provjerena',
+      bosnianTranscription: 'El-Mumtehine'
+    },
+    aboutSura: {
+      bosnian: 'Čišćenje vjerničkih srca od prijateljevanja i ljubavi prema drugim vjerama mimo Allahove.'
+    },
+    type: 'Medinan',
+    orderInPublishing: 91,
+    numberOfWords: 356,
+    numberOfLetters: 1510,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 549,
+    endPage: 551,
+    totalPages: 3
+  },
+  {
+    index: 61,
+    numberOfAyas: 14,
+    startAyaIndex: 5163,
+    name: {
+      arabic: 'الصف',
+      english: 'The Ranks',
+      englishTranscription: 'As-Saf',
+      bosnian: 'Bojni red',
+      bosnianTranscription: 'Es-Saff'
+    },
+    aboutSura: {
+      bosnian: 'Stimulisanje vjernika na pomaganje Allahove vjere i borbu na Njegovom putu.'
+    },
+    type: 'Medinan',
+    orderInPublishing: 109,
+    numberOfWords: 230,
+    numberOfLetters: 900,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 551,
+    endPage: 552,
+    totalPages: 2
+  },
+  {
+    index: 62,
+    numberOfAyas: 11,
+    startAyaIndex: 5177,
+    name: {
+      arabic: 'الجمعة',
+      english: 'The Congregation, Friday',
+      englishTranscription: "Al-Jumu'ah",
+      bosnian: 'Petak',
+      bosnianTranscription: "El-Džumu'a"
+    },
+    aboutSura: {
+      bosnian: 'Pojašnjavanje Allahove blagodati ovom ummetu kojeg je posebno odlikovao uputom i slanjem Poslanika, sallallahu alejhi ve sellem, nakon što je bio u zabludi, zaduživanje pokornošću njemu i upozorenje na opasnost poistovjećivanja sa Jevrejima.'
+    },
+    type: 'Medinan',
+    orderInPublishing: 110,
+    numberOfWords: 181,
+    numberOfLetters: 720,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 553,
+    endPage: 554,
+    totalPages: 2
+  },
+  {
+    index: 63,
+    numberOfAyas: 11,
+    startAyaIndex: 5188,
+    name: {
+      arabic: 'المنافقون',
+      english: 'The Hypocrites',
+      englishTranscription: 'Al-Munafiqun',
+      bosnian: 'Licemjeri',
+      bosnianTranscription: 'El-Munafikun'
+    },
+    aboutSura: {
+      bosnian: 'Otkrivanje svojstava licemjera i pojašnjavanje njihovog stava naspram islama i muslimana, te upozorenje na opasnost poistovjećivanja s njima.'
+    },
+    type: 'Medinan',
+    orderInPublishing: 104,
+    numberOfWords: 185,
+    numberOfLetters: 776,
+    startJuz: 28,
+    endJuz: 28,
+    startPage: 554,
+    endPage: 555,
+    totalPages: 2
+  },
 	...
 	]
 ```
@@ -115,7 +165,19 @@ EXMAPLE:
 quranMetaData.getJuzByPageNumber(50);
 
 RESPONSE:
-{"id":3,"juzNumber":3,"surahs":[{"id":2,"startAyah":253,"endAyah":286},{"id":3,"startAyah":1,"endAyah":92}],"firstAyahId":260,"lastAyahId":385,"numberOfAyahs":126,"startPage":42,"endPage":61}
+{
+  id: 3,
+  juzNumber: 3,
+  surahs: [
+    { id: 2, startAyah: 253, endAyah: 286, name: [Object] },
+    { id: 3, startAyah: 1, endAyah: 92, name: [Object] }
+  ],
+  firstAyahId: 260,
+  lastAyahId: 385,
+  numberOfAyahs: 126,
+  startPage: 42,
+  endPage: 61
+}
 ```
 ```typescript
 quranMetaData.getSuraByPageNumber(page); //page = 1-604
@@ -124,81 +186,80 @@ EXAMPLE:
 quranMetaData.getSuraByPageNumber(604);
 
 REPONSE:
-```
 [
-	{
-		"index":112,
-		"numberOfAyas":4,
-		"startAyaIndex":6221,
-		"name":{
-			"arabic":"الإخلاص",
-			"english":"The Sincerity",
-			"englishTranscription":"Al-Ikhlas",
-			"bosnian":"Iskrenost",
-			"bosnianTranscription":"El-Ihlas"
-		},
-		"aboutSura":{
-			"bosnian":"Potvrđivanje da je Allah jedinstven u svome savršenstvu, božanstvenosti i čistoći od mahana"
-		},
-		"type":"Meccan",
-		"orderInPublishing":22,
-		"numberOfWords":19,
-		"numberOfLetters":47,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":604,
-		"endPage":604,
-		"totalPages":1
-	},
-	{
-		"index":113,
-		"numberOfAyas":5,
-		"startAyaIndex":6225,
-		"name":{
-			"arabic":"الفلق",
-			"english":"The Daybreak",
-			"englishTranscription":"Al-Falaq",
-			"bosnian":"Svitanje",
-			"bosnianTranscription":"El-Felek"
-		},
-		"aboutSura":{
-			"bosnian":"Traženje zaštite kod Allaha od vidljivog zla."
-		},
-		"type":"Meccan",
-		"orderInPublishing":20,
-		"numberOfWords":27,
-		"numberOfLetters":74,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":604,
-		"endPage":604,
-		"totalPages":1
-	},
-	{
-		"index":114,
-		"numberOfAyas":6,
-		"startAyaIndex":6230,
-		"name":{
-			"arabic":"الناس",
-			"english":"The Mankind",
-			"englishTranscription":"An-Nas",
-			"bosnian":"Ljudi",
-			"bosnianTranscription":"En-Nas"
-		},
-		"aboutSura":{
-			"bosnian":"Zaštita kod Allaha od zla šejtana i njegovih došaptavanja i od skrivenog zla."
-		},
-		"type":"Meccan",
-		"orderInPublishing":21,
-		"numberOfWords":24,
-		"numberOfLetters":79,
-		"startJuz":30,
-		"endJuz":30,
-		"startPage":604,
-		"endPage":604,
-		"totalPages":1
-	}
+  {
+    index: 112,
+    numberOfAyas: 4,
+    startAyaIndex: 6221,
+    name: {
+      arabic: 'الإخلاص',
+      english: 'The Sincerity',
+      englishTranscription: 'Al-Ikhlas',
+      bosnian: 'Iskrenost',
+      bosnianTranscription: 'El-Ihlas'
+    },
+    aboutSura: {
+      bosnian: 'Potvrđivanje da je Allah jedinstven u svome savršenstvu, božanstvenosti i čistoći od mahana'
+    },
+    type: 'Meccan',
+    orderInPublishing: 22,
+    numberOfWords: 19,
+    numberOfLetters: 47,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 604,
+    endPage: 604,
+    totalPages: 1
+  },
+  {
+    index: 113,
+    numberOfAyas: 5,
+    startAyaIndex: 6225,
+    name: {
+      arabic: 'الفلق',
+      english: 'The Daybreak',
+      englishTranscription: 'Al-Falaq',
+      bosnian: 'Svitanje',
+      bosnianTranscription: 'El-Felek'
+    },
+    aboutSura: { bosnian: 'Traženje zaštite kod Allaha od vidljivog zla.' },
+    type: 'Meccan',
+    orderInPublishing: 20,
+    numberOfWords: 27,
+    numberOfLetters: 74,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 604,
+    endPage: 604,
+    totalPages: 1
+  },
+  {
+    index: 114,
+    numberOfAyas: 6,
+    startAyaIndex: 6230,
+    name: {
+      arabic: 'الناس',
+      english: 'The Mankind',
+      englishTranscription: 'An-Nas',
+      bosnian: 'Ljudi',
+      bosnianTranscription: 'En-Nas'
+    },
+    aboutSura: {
+      bosnian: 'Zaštita kod Allaha od zla šejtana i njegovih došaptavanja i od skrivenog zla.'
+    },
+    type: 'Meccan',
+    orderInPublishing: 21,
+    numberOfWords: 24,
+    numberOfLetters: 79,
+    startJuz: 30,
+    endJuz: 30,
+    startPage: 604,
+    endPage: 604,
+    totalPages: 1
+  }
 ]
+```
+
 ```typescript
 quranMetaData.sortSuraListByFirstPublished();
 ```
@@ -382,11 +443,46 @@ RESPONSE:
 ]
 ```
 
-```bash
+```typescript
 quranMetaData.getNumberOfWordsAndLettersPerPage(1);
 
 RESPONSE:
-{"page":1,"wordsNumber":29,"lettersNumber":145}
+{ page: 1, wordsNumber: 29, lettersNumber: 145 }
+```
+
+```typescript
+quranMetaData.getPageInfo(604);
+
+RESPONSE:
+{
+  pageNumber: 604,
+  sura: [
+    {
+      arabic: 'الإخلاص',
+      english: 'The Sincerity',
+      englishTranscription: 'Al-Ikhlas',
+      bosnian: 'Iskrenost',
+      bosnianTranscription: 'El-Ihlas'
+    },
+    {
+      arabic: 'الفلق',
+      english: 'The Daybreak',
+      englishTranscription: 'Al-Falaq',
+      bosnian: 'Svitanje',
+      bosnianTranscription: 'El-Felek'
+    },
+    {
+      arabic: 'الناس',
+      english: 'The Mankind',
+      englishTranscription: 'An-Nas',
+      bosnian: 'Ljudi',
+      bosnianTranscription: 'En-Nas'
+    }
+  ],
+  juz: 30,
+  wordsNumber: 58,
+  lettersNumber: 201
+}
 ```
 
 
